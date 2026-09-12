@@ -1,0 +1,4258 @@
+{
+  "schema_version": "1.0",
+  "paper": {
+    "id": "einstein-1905-inertia-energy",
+    "title": {
+      "en": "Does the Inertia of a Body Depend upon its Energy-Content?",
+      "zh": "物体的惯性是否取决于它所含的能量？"
+    },
+    "authors": [
+      "Albert Einstein"
+    ],
+    "year": 1905,
+    "citation": "Annalen der Physik 18 (4th series), 639–641 · Received 27 Sep 1905",
+    "doi": "10.1002/andp.19053231314",
+    "source_url": "https://www.fourmilab.ch/etexts/einstein/E_mc2/www/",
+    "original_url": "https://zenodo.org/records/1424057/files/article.pdf?download=1",
+    "rights": {
+      "en": "Fourmilab expressly states that the 1923 source translation and its electronic transcription are in the public domain and may be reproduced in any manner or medium. This dataset reproduces that public-domain English text. The Chinese translation and claim segmentation were prepared by AI for this example. The modern publisher website design and third-party scan hosting metadata are not reproduced as part of the paper.",
+      "zh": "Fourmilab 明示：1923 年来源译本及其电子转录均属公版，可通过任何方式和媒介复制。本数据使用该公版英文本。中文译文与观点划分由 AI 为本例制作。现代出版商网页设计和扫描托管页元数据不属于所复现的论文正文。"
+    },
+    "edition": {
+      "zh": "采用 W. Perrett / G. B. Jeffery 1923 年英译、John Walker 于 2001 年制作的 Fourmilab 电子版，收录该版论文全部正文及脚注。\n英译本以 c 表示光速；德文原刊以 V 表示光速。物理含义一致。\n英文正文保留历史排法“L/9 × 10²⁰”。根据 L/c²，其分母应读作 9 × 10²⁰（约 3 × 10¹⁰ cm/s 的平方）；中文显式加括号以消除歧义。\n论文正文没有单独写出今天常用的 E = mc²；正文给出质量变化关系，并以文字提出更广泛的结论。\n原刊脚注1为前文书目；英译以链接承接。原刊署“伯尔尼，1905年9月”，9月27日为收稿日期。",
+      "en": "Complete paper body and its footnote, using the W. Perrett / G. B. Jeffery English translation (1923), as transcribed by John Walker for Fourmilab (2001).\nThe English edition uses c for the speed of light; the original German paper uses V. The physical meaning is unchanged.\nThe historical notation “L/9 × 10²⁰” is preserved in the English reading text. Its intended denominator is 9 × 10²⁰ (the square of approximately 3 × 10¹⁰ cm/s), not 9 followed by multiplication outside the denominator. The Chinese text makes these parentheses explicit.\nThe familiar standalone equation E = mc² does not occur verbatim in this paper body. The paper states a change-of-mass relation and a broader verbal conclusion.\nOriginal footnote 1 supplies the earlier-paper reference, represented by a link in the English edition. The original is dated Bern, September 1905; September 27 is the receipt date."
+    },
+    "scope": {
+      "en": "From “The results of the previous investigation” through “the emitting and absorbing bodies”, plus the single asterisk footnote. Includes all six displayed equation groups. Excludes Fourmilab’s “About this Edition/Document” editorial text and navigation.",
+      "zh": "从“The results of the previous investigation”至“the emitting and absorbing bodies”的全部正文，另含一条星号脚注；保留全部六组行间公式。Fourmilab 的“About this Edition/Document”编辑说明和导航不计入论文正文。"
+    },
+    "audited_at": "2026-09-12",
+    "sections": [
+      {
+        "id": "principles",
+        "label": {
+          "zh": "前提与光能变换",
+          "en": "Principles & light energy"
+        },
+        "paragraph_id": "p01"
+      },
+      {
+        "id": "experiment",
+        "label": {
+          "zh": "双向发光思想实验",
+          "en": "Symmetric emission"
+        },
+        "paragraph_id": "p08"
+      },
+      {
+        "id": "kinetics",
+        "label": {
+          "zh": "动能与质量变化",
+          "en": "Kinetic energy & mass"
+        },
+        "paragraph_id": "p13"
+      },
+      {
+        "id": "conclusion",
+        "label": {
+          "zh": "结论与实验建议",
+          "en": "Conclusions & proposal"
+        },
+        "paragraph_id": "p20"
+      },
+      {
+        "id": "notes",
+        "label": {
+          "zh": "脚注",
+          "en": "Footnote"
+        },
+        "paragraph_id": "p25"
+      }
+    ]
+  },
+  "paragraphs": [
+    {
+      "id": "p01",
+      "type": "body",
+      "locator": "Original p. 639",
+      "segments": [
+        {
+          "id": "s001",
+          "en": "The results of the previous investigation lead to a very interesting conclusion, which is here to be deduced.",
+          "zh": "此前研究的结果导向一个很有意思的结论，下面就来推导这一结论。",
+          "kind": "claim",
+          "claim_ids": [
+            "c01"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p02",
+      "type": "body",
+      "locator": "Original p. 639",
+      "segments": [
+        {
+          "id": "s002",
+          "en": "I based that investigation on the Maxwell-Hertz equations for empty space,",
+          "zh": "那项研究以真空中的麦克斯韦—赫兹方程为基础，",
+          "kind": "claim",
+          "claim_ids": [
+            "c02"
+          ]
+        },
+        {
+          "id": "s003",
+          "en": "together with the Maxwellian expression for the electromagnetic energy of space,",
+          "zh": "同时采用麦克斯韦关于空间中电磁能量的表达式，",
+          "kind": "claim",
+          "claim_ids": [
+            "c03"
+          ]
+        },
+        {
+          "id": "s004",
+          "en": "and in addition the principle that:—",
+          "zh": "并且采用如下原理：",
+          "kind": "context",
+          "claim_ids": [],
+          "exclusion_reason": {
+            "zh": "符号说明或衔接语句；全文保留，不作为独立论证观点。",
+            "en": "Notation or connective prose, retained in full rather than treated as an independent argumentative claim."
+          }
+        }
+      ]
+    },
+    {
+      "id": "p03",
+      "type": "body",
+      "locator": "Original p. 639",
+      "segments": [
+        {
+          "id": "s005",
+          "en": "The laws by which the states of physical systems alter are independent of the alternative, to which of two systems of coordinates, in uniform motion of parallel translation relatively to each other, these alterations of state are referred (principle of relativity).",
+          "zh": "对于两个彼此作匀速平移的坐标系，无论把物理系统的状态变化归于哪一个坐标系来描述，支配这种变化的定律都相同（相对性原理）。",
+          "kind": "claim",
+          "claim_ids": [
+            "c04"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p04",
+      "type": "body",
+      "locator": "Original p. 639",
+      "segments": [
+        {
+          "id": "s006",
+          "en": "With these principles* as my basis I deduced inter alia the following result (§ 8):—",
+          "zh": "以这些原理*为基础，我曾推导出若干结果，其中包括以下结果（第 8 节）：",
+          "kind": "claim",
+          "claim_ids": [
+            "c05"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p05",
+      "type": "body",
+      "locator": "Original p. 639",
+      "segments": [
+        {
+          "id": "s007",
+          "en": "Let a system of plane waves of light, referred to the system of co-ordinates (x, y, z), possess the energy l; let the direction of the ray (the wave-normal) make an angle φ with the axis of x of the system.",
+          "zh": "设一组平面光波相对于坐标系 (x, y, z) 的能量为 l；光线方向（波面法线）与该坐标系的 x 轴夹角为 φ。",
+          "kind": "claim",
+          "claim_ids": [
+            "c06"
+          ]
+        },
+        {
+          "id": "s008",
+          "en": "If we introduce a new system of co-ordinates (ξ, η, ζ) moving in uniform parallel translation with respect to the system (x, y, z), and having its origin of co-ordinates in motion along the axis of x with the velocity v,",
+          "zh": "若引入一个相对于 (x, y, z) 作匀速平移的新坐标系 (ξ, η, ζ)，其坐标原点以速度 v 沿 x 轴运动，",
+          "kind": "claim",
+          "claim_ids": [
+            "c07"
+          ]
+        },
+        {
+          "id": "s009",
+          "en": "then this quantity of light—measured in the system (ξ, η, ζ)—possesses the energy",
+          "zh": "则这束光在 (ξ, η, ζ) 系中测得的能量为",
+          "kind": "context",
+          "claim_ids": [
+            "c08"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p06",
+      "type": "equation",
+      "locator": "Original p. 639",
+      "segments": [
+        {
+          "id": "s010",
+          "en": "l* = l(1 − (v/c) cos φ)/√(1 − v²/c²)",
+          "zh": "l* = l(1 − (v/c) cos φ)/√(1 − v²/c²)",
+          "kind": "equation",
+          "claim_ids": [
+            "c08"
+          ],
+          "latex": "l^* = l \\frac{1-\\frac{v}{c}\\cos\\phi}{\\sqrt{1-v^2/c^2}}"
+        }
+      ]
+    },
+    {
+      "id": "p07",
+      "type": "body",
+      "locator": "Original p. 639",
+      "segments": [
+        {
+          "id": "s011",
+          "en": "where c denotes the velocity of light. We shall make use of this result in what follows.",
+          "zh": "其中 c 表示光速。下文将使用这一结果。",
+          "kind": "context",
+          "claim_ids": [],
+          "exclusion_reason": {
+            "zh": "符号说明或衔接语句；全文保留，不作为独立论证观点。",
+            "en": "Notation or connective prose, retained in full rather than treated as an independent argumentative claim."
+          }
+        }
+      ]
+    },
+    {
+      "id": "p08",
+      "type": "body",
+      "locator": "Original p. 640",
+      "segments": [
+        {
+          "id": "s012",
+          "en": "Let there be a stationary body in the system (x, y, z), and let its energy—referred to the system (x, y, z) be E₀.",
+          "zh": "设有一个在 (x, y, z) 系中静止的物体，其相对于 (x, y, z) 系的能量为 E₀。",
+          "kind": "claim",
+          "claim_ids": [
+            "c09"
+          ]
+        },
+        {
+          "id": "s013",
+          "en": "Let the energy of the body relative to the system (ξ, η, ζ) moving as above with the velocity v, be H₀.",
+          "zh": "令该物体相对于上述以速度 v 运动的 (ξ, η, ζ) 系的能量为 H₀。",
+          "kind": "claim",
+          "claim_ids": [
+            "c09"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p09",
+      "type": "body",
+      "locator": "Original p. 640",
+      "segments": [
+        {
+          "id": "s014",
+          "en": "Let this body send out, in a direction making an angle φ with the axis of x, plane waves of light, of energy ½L measured relatively to (x, y, z), and simultaneously an equal quantity of light in the opposite direction.",
+          "zh": "令该物体沿与 x 轴夹角为 φ 的方向发出平面光波，其相对于 (x, y, z) 系测得的能量为 ½L，同时沿相反方向发出等量的光。",
+          "kind": "claim",
+          "claim_ids": [
+            "c10"
+          ]
+        },
+        {
+          "id": "s015",
+          "en": "Meanwhile the body remains at rest with respect to the system (x, y, z).",
+          "zh": "在此过程中，物体相对于 (x, y, z) 系保持静止。",
+          "kind": "claim",
+          "claim_ids": [
+            "c11"
+          ]
+        },
+        {
+          "id": "s016",
+          "en": "The principle of energy must apply to this process, and in fact (by the principle of relativity) with respect to both systems of co-ordinates.",
+          "zh": "能量原理必须适用于这一过程；实际上，根据相对性原理，它必须在两个坐标系中都适用。",
+          "kind": "claim",
+          "claim_ids": [
+            "c12"
+          ]
+        },
+        {
+          "id": "s017",
+          "en": "If we call the energy of the body after the emission of light E₁ or H₁ respectively, measured relatively to the system (x, y, z) or (ξ, η, ζ) respectively, then by employing the relation given above we obtain",
+          "zh": "若将物体发光后相对于 (x, y, z) 系和 (ξ, η, ζ) 系测得的能量分别记为 E₁ 和 H₁，那么利用上述关系可得",
+          "kind": "context",
+          "claim_ids": [
+            "c09"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p10",
+      "type": "equation",
+      "locator": "Original p. 640",
+      "segments": [
+        {
+          "id": "s018",
+          "en": "E₀ = E₁ + ½L + ½L,",
+          "zh": "E₀ = E₁ + ½L + ½L，",
+          "kind": "equation",
+          "claim_ids": [
+            "c13"
+          ],
+          "latex": "E_0 = E_1 + \\frac{1}{2}L + \\frac{1}{2}L"
+        },
+        {
+          "id": "s019",
+          "en": "H₀ = H₁ + ½L(1 − (v/c) cos φ)/√(1 − v²/c²) + ½L(1 + (v/c) cos φ)/√(1 − v²/c²) = H₁ + L/√(1 − v²/c²).",
+          "zh": "H₀ = H₁ + ½L(1 − (v/c) cos φ)/√(1 − v²/c²) + ½L(1 + (v/c) cos φ)/√(1 − v²/c²) = H₁ + L/√(1 − v²/c²)。",
+          "kind": "equation",
+          "claim_ids": [
+            "c14"
+          ],
+          "latex": "\\begin{aligned}H_0 &= H_1 + \\frac{1}{2}L\\frac{1-\\frac{v}{c}\\cos\\phi}{\\sqrt{1-v^2/c^2}} + \\frac{1}{2}L\\frac{1+\\frac{v}{c}\\cos\\phi}{\\sqrt{1-v^2/c^2}} \\\\ &= H_1 + \\frac{L}{\\sqrt{1-v^2/c^2}}.\\end{aligned}"
+        }
+      ]
+    },
+    {
+      "id": "p11",
+      "type": "body",
+      "locator": "Original p. 640",
+      "segments": [
+        {
+          "id": "s020",
+          "en": "By subtraction we obtain from these equations",
+          "zh": "将这些方程相减，得到",
+          "kind": "context",
+          "claim_ids": [],
+          "exclusion_reason": {
+            "zh": "符号说明或衔接语句；全文保留，不作为独立论证观点。",
+            "en": "Notation or connective prose, retained in full rather than treated as an independent argumentative claim."
+          }
+        }
+      ]
+    },
+    {
+      "id": "p12",
+      "type": "equation",
+      "locator": "Original p. 640",
+      "segments": [
+        {
+          "id": "s021",
+          "en": "H₀ − E₀ − (H₁ − E₁) = L{1/√(1 − v²/c²) − 1}.",
+          "zh": "H₀ − E₀ − (H₁ − E₁) = L{1/√(1 − v²/c²) − 1}。",
+          "kind": "equation",
+          "claim_ids": [
+            "c15"
+          ],
+          "latex": "H_0-E_0-(H_1-E_1)=L\\left\\{\\frac{1}{\\sqrt{1-v^2/c^2}}-1\\right\\}."
+        }
+      ]
+    },
+    {
+      "id": "p13",
+      "type": "body",
+      "locator": "Original p. 640",
+      "segments": [
+        {
+          "id": "s022",
+          "en": "The two differences of the form H − E occurring in this expression have simple physical significations.",
+          "zh": "这一表达式中两个形如 H − E 的差都有简单的物理意义。",
+          "kind": "context",
+          "claim_ids": [],
+          "exclusion_reason": {
+            "zh": "符号说明或衔接语句；全文保留，不作为独立论证观点。",
+            "en": "Notation or connective prose, retained in full rather than treated as an independent argumentative claim."
+          }
+        },
+        {
+          "id": "s023",
+          "en": "H and E are energy values of the same body referred to two systems of co-ordinates which are in motion relatively to each other, the body being at rest in one of the two systems (system (x, y, z)).",
+          "zh": "H 和 E 是同一物体相对于两个彼此运动的坐标系的能量值，物体在其中一个坐标系（即 (x, y, z) 系）中静止。",
+          "kind": "claim",
+          "claim_ids": [
+            "c09"
+          ]
+        },
+        {
+          "id": "s024",
+          "en": "Thus it is clear that the difference H − E can differ from the kinetic energy K of the body, with respect to the other system (ξ, η, ζ), only by an additive constant C, which depends on the choice of the arbitrary additive constants of the energies H and E.",
+          "zh": "因此显然，差 H − E 与物体相对于另一坐标系 (ξ, η, ζ) 的动能 K 之间，只能相差一个加性常数 C；这个常数取决于对能量 H 和 E 的任意加性常数所作的选择。",
+          "kind": "claim",
+          "claim_ids": [
+            "c16"
+          ]
+        },
+        {
+          "id": "s025",
+          "en": "Thus we may place",
+          "zh": "因此可写成",
+          "kind": "context",
+          "claim_ids": [],
+          "exclusion_reason": {
+            "zh": "符号说明或衔接语句；全文保留，不作为独立论证观点。",
+            "en": "Notation or connective prose, retained in full rather than treated as an independent argumentative claim."
+          }
+        }
+      ]
+    },
+    {
+      "id": "p14",
+      "type": "equation",
+      "locator": "Original p. 641",
+      "segments": [
+        {
+          "id": "s026",
+          "en": "H₀ − E₀ = K₀ + C,",
+          "zh": "H₀ − E₀ = K₀ + C，",
+          "kind": "equation",
+          "claim_ids": [
+            "c16"
+          ],
+          "latex": "H_0-E_0=K_0+C,"
+        },
+        {
+          "id": "s027",
+          "en": "H₁ − E₁ = K₁ + C,",
+          "zh": "H₁ − E₁ = K₁ + C，",
+          "kind": "equation",
+          "claim_ids": [
+            "c16"
+          ],
+          "latex": "H_1-E_1=K_1+C,"
+        }
+      ]
+    },
+    {
+      "id": "p15",
+      "type": "body",
+      "locator": "Original p. 641",
+      "segments": [
+        {
+          "id": "s028",
+          "en": "since C does not change during the emission of light.",
+          "zh": "因为在发光过程中 C 不变。",
+          "kind": "claim",
+          "claim_ids": [
+            "c17"
+          ]
+        },
+        {
+          "id": "s029",
+          "en": "So we have",
+          "zh": "于是有",
+          "kind": "context",
+          "claim_ids": [],
+          "exclusion_reason": {
+            "zh": "符号说明或衔接语句；全文保留，不作为独立论证观点。",
+            "en": "Notation or connective prose, retained in full rather than treated as an independent argumentative claim."
+          }
+        }
+      ]
+    },
+    {
+      "id": "p16",
+      "type": "equation",
+      "locator": "Original p. 641",
+      "segments": [
+        {
+          "id": "s030",
+          "en": "K₀ − K₁ = L{1/√(1 − v²/c²) − 1}.",
+          "zh": "K₀ − K₁ = L{1/√(1 − v²/c²) − 1}。",
+          "kind": "equation",
+          "claim_ids": [
+            "c18"
+          ],
+          "latex": "K_0-K_1=L\\left\\{\\frac{1}{\\sqrt{1-v^2/c^2}}-1\\right\\}."
+        }
+      ]
+    },
+    {
+      "id": "p17",
+      "type": "body",
+      "locator": "Original p. 641",
+      "segments": [
+        {
+          "id": "s031",
+          "en": "The kinetic energy of the body with respect to (ξ, η, ζ) diminishes as a result of the emission of light,",
+          "zh": "物体相对于 (ξ, η, ζ) 系的动能因发光而减小，",
+          "kind": "claim",
+          "claim_ids": [
+            "c19"
+          ]
+        },
+        {
+          "id": "s032",
+          "en": "and the amount of diminution is independent of the properties of the body.",
+          "zh": "且减小量与物体的性质无关。",
+          "kind": "claim",
+          "claim_ids": [
+            "c20"
+          ]
+        },
+        {
+          "id": "s033",
+          "en": "Moreover, the difference K₀ − K₁, like the kinetic energy of the electron (§ 10), depends on the velocity.",
+          "zh": "此外，差 K₀ − K₁ 与电子的动能（第 10 节）一样，依赖于速度。",
+          "kind": "claim",
+          "claim_ids": [
+            "c21"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p18",
+      "type": "body",
+      "locator": "Original p. 641",
+      "segments": [
+        {
+          "id": "s034",
+          "en": "Neglecting magnitudes of fourth and higher orders we may place",
+          "zh": "忽略四阶及更高阶的量，可以写成",
+          "kind": "claim",
+          "claim_ids": [
+            "c22"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p19",
+      "type": "equation",
+      "locator": "Original p. 641",
+      "segments": [
+        {
+          "id": "s035",
+          "en": "K₀ − K₁ = ½(L/c²)v².",
+          "zh": "K₀ − K₁ = ½(L/c²)v²。",
+          "kind": "equation",
+          "claim_ids": [
+            "c22"
+          ],
+          "latex": "K_0-K_1=\\frac{1}{2}\\frac{L}{c^2}v^2."
+        }
+      ]
+    },
+    {
+      "id": "p20",
+      "type": "body",
+      "locator": "Original p. 641",
+      "segments": [
+        {
+          "id": "s036",
+          "en": "From this equation it directly follows that:—",
+          "zh": "由此方程直接得到：",
+          "kind": "context",
+          "claim_ids": [],
+          "exclusion_reason": {
+            "zh": "符号说明或衔接语句；全文保留，不作为独立论证观点。",
+            "en": "Notation or connective prose, retained in full rather than treated as an independent argumentative claim."
+          }
+        }
+      ]
+    },
+    {
+      "id": "p21",
+      "type": "body",
+      "locator": "Original p. 641",
+      "segments": [
+        {
+          "id": "s037",
+          "en": "If a body gives off the energy L in the form of radiation, its mass diminishes by L/c².",
+          "zh": "如果物体以辐射形式放出能量 L，它的质量就减小 L/c²。",
+          "kind": "claim",
+          "claim_ids": [
+            "c23"
+          ]
+        },
+        {
+          "id": "s038",
+          "en": "The fact that the energy withdrawn from the body becomes energy of radiation evidently makes no difference, so that we are led to the more general conclusion that",
+          "zh": "从物体取出的能量恰好转变为辐射能，这一点显然无关紧要；因此我们得到一个更普遍的结论：",
+          "kind": "claim",
+          "claim_ids": [
+            "c24"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p22",
+      "type": "body",
+      "locator": "Original p. 641",
+      "segments": [
+        {
+          "id": "s039",
+          "en": "The mass of a body is a measure of its energy-content;",
+          "zh": "物体的质量是其所含能量的量度；",
+          "kind": "claim",
+          "claim_ids": [
+            "c25"
+          ]
+        },
+        {
+          "id": "s040",
+          "en": "if the energy changes by L, the mass changes in the same sense by L/9 × 10²⁰, the energy being measured in ergs, and the mass in grammes.",
+          "zh": "如果能量变化 L，质量就沿同一方向变化 L/(9 × 10²⁰)，这里能量以尔格计，质量以克计。",
+          "kind": "claim",
+          "claim_ids": [
+            "c26"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p23",
+      "type": "body",
+      "locator": "Original p. 641",
+      "segments": [
+        {
+          "id": "s041",
+          "en": "It is not impossible that with bodies whose energy-content is variable to a high degree (e.g. with radium salts) the theory may be successfully put to the test.",
+          "zh": "对于所含能量能够发生很大变化的物体（例如镭盐），或许有可能成功地检验这一理论。",
+          "kind": "claim",
+          "claim_ids": [
+            "c27",
+            "c28"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p24",
+      "type": "body",
+      "locator": "Original p. 641",
+      "segments": [
+        {
+          "id": "s042",
+          "en": "If the theory corresponds to the facts, radiation conveys inertia between the emitting and absorbing bodies.",
+          "zh": "如果这一理论与事实相符，那么辐射就在发射物体和吸收物体之间传递惯性。",
+          "kind": "claim",
+          "claim_ids": [
+            "c29"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p25",
+      "type": "footnote",
+      "locator": "Original p. 639",
+      "segments": [
+        {
+          "id": "s043",
+          "en": "* The principle of the constancy of the velocity of light is of course contained in Maxwell's equations.",
+          "zh": "* 光速恒定原理当然已包含在麦克斯韦方程中。",
+          "kind": "claim",
+          "claim_ids": [
+            "c30"
+          ]
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "c01",
+      "title": {
+        "zh": "这篇短文从哪里出发？",
+        "en": "Where the note starts"
+      },
+      "kind": "provenance",
+      "assessment": "supported",
+      "summary": {
+        "zh": "这篇短文承接《动体电动力学》，把已有的光能量变换用于一个发光物体，进一步推导其惯性变化。",
+        "en": "This note extends On the Electrodynamics of Moving Bodies, applying its light-energy transformation to an emitting body to infer a change in inertia."
+      },
+      "reasoning": [
+        {
+          "zh": "德文脚注为 Ann. d. Phys. 17, p. 891 (1905)。Fourmilab 把该书目脚注转为开头的链接。",
+          "en": "The German footnote gives Ann. d. Phys. 17, p. 891 (1905). Fourmilab renders it as the opening hyperlink."
+        }
+      ],
+      "limits": [],
+      "segment_ids": [
+        "s001"
+      ],
+      "evidence_ids": [
+        "t-provenance"
+      ],
+      "why": {
+        "zh": "原刊脚注明确指向那篇论文，短文又直接调用其中第 8 节的光能量公式，并联系第 10 节的电子动能。",
+        "en": "The original footnote identifies that paper. The note explicitly uses its section 8 light-energy formula and refers to the electron kinetic energy in section 10."
+      },
+      "story": [
+        {
+          "text": {
+            "zh": "光具有能量，而同一束光的能量读数会随观察者的运动状态改变。《动体电动力学》已经把这种变化算了出来：先求运动观察下的电磁场，再连同光所占体积一起计算总能量。",
+            "en": "Light carries energy, and the energy assigned to the same packet changes with the observer’s motion. On the Electrodynamics of Moving Bodies had already calculated this change by transforming the electromagnetic fields and the volume occupied by the light."
+          },
+          "evidence_ids": [
+            "t-field-energy",
+            "t-light-energy"
+          ]
+        },
+        {
+          "text": {
+            "zh": "短文接着把这个结果用于一个同时向两侧发光的物体。既然两位观察者对光带走的能量给出不同数值，各自的能量守恒式就会给出物体能量变化的不同数值；比较两式，便有了讨论惯性变化的入口。原刊第 639 页的脚注把这条推导与前文清楚地接在一起。",
+            "en": "The note applies that result to a body emitting light in two opposite directions. Since the observers assign different energies to the emitted light, their conservation equations assign different energy losses to the body. Comparing those equations opens the route to its change in inertia. The footnote on original page 639 explicitly connects this argument to the earlier paper."
+          },
+          "evidence_ids": [
+            "t-provenance",
+            "t-emission-setup",
+            "t-energy-balance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c02",
+      "title": {
+        "zh": "真空中的场方程",
+        "en": "Vacuum field equations"
+      },
+      "kind": "assumption",
+      "assessment": "conditional",
+      "summary": {
+        "zh": "真空中的麦克斯韦—赫兹方程能导出电磁波及其传播速度，是这篇推导采用的物理起点。",
+        "en": "The vacuum Maxwell–Hertz equations yield electromagnetic waves and their propagation speed. They are a physical starting point of this argument."
+      },
+      "reasoning": [
+        {
+          "zh": "用现代 Gaussian 记号写作 ∂E/∂t = c∇×B，∂B/∂t = −c∇×E，真空中 ∇·E = ∇·B = 0。",
+          "en": "In modern Gaussian notation: ∂E/∂t = c∇×B, ∂B/∂t = −c∇×E, and in vacuum ∇·E = ∇·B = 0."
+        },
+        {
+          "zh": "再对时间微分并用 ∇×(∇×E)=∇(∇·E)−∇²E，得 ∂²E/∂t²=c²∇²E；B 同理。",
+          "en": "Differentiate once more in time and use the curl-of-curl identity to obtain ∂²E/∂t²=c²∇²E, and similarly for B."
+        },
+        {
+          "zh": "Maxwell 1865 自己的单位下得到 V=√(k/(4πμ))；与上式是单位和记号不同的表达。",
+          "en": "In Maxwell’s 1865 units the result is V=√(k/(4πμ)); this is a different units-and-notation expression."
+        }
+      ],
+      "limits": [
+        {
+          "zh": "Maxwell 方程在一个系中给出传播速度；每个惯性系都采用同一形式，还用到了相对性原理。这里只处理真空，不套用于介质中的相速度。",
+          "en": "Maxwell equations specify propagation speed in a frame; using the same form in every inertial frame also requires relativity. This branch concerns vacuum, not a material medium’s phase velocity."
+        }
+      ],
+      "segment_ids": [
+        "s002"
+      ],
+      "evidence_ids": [
+        "t-maxwell-vacuum"
+      ],
+      "why": {
+        "zh": "把电场和磁场的变化方程联立，就得到以 c 传播的波动方程；这一速度由所采用的场方程确定。",
+        "en": "Combining the equations for changing electric and magnetic fields gives a wave equation with speed c, fixed by the adopted field equations."
+      },
+      "story": [
+        {
+          "text": {
+            "zh": "在这套电磁理论中，电场与磁场的变化相互联系。把其中一个场的变化方程再对时间求导，并代入另一个场的方程，就能消去另一个场，留下单独描述电场或磁场传播的波动方程。Maxwell 的原始论文已经给出了这条推导。",
+            "en": "In this electromagnetic theory, changes in electric and magnetic fields are coupled. Differentiate one field equation in time and substitute the other equation: the second field drops out, leaving a wave equation for the first. Maxwell’s original paper supplies this derivation."
+          },
+          "evidence_ids": [
+            "t-maxwell-original",
+            "t-maxwell-vacuum"
+          ]
+        },
+        {
+          "text": {
+            "zh": "用本文的光速记号，这个结果写成 ∂²E/∂t² = c²∇²E，表示场的扰动以 c 在真空中传播。Einstein 采用这套真空定律，再结合相对性原理，要求彼此匀速运动的观察者也使用同样的场方程。后续光能量变换就在这些前提上展开。",
+            "en": "Using the paper’s light-speed notation, the result is ∂²E/∂t² = c²∇²E: field disturbances propagate through vacuum at c. Einstein adopts these vacuum laws and combines them with relativity, requiring uniformly moving observers to use the same field equations. The light-energy transformation builds on those premises."
+          },
+          "evidence_ids": [
+            "t-maxwell-vacuum",
+            "t-relativity",
+            "t-field-transform"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c03",
+      "title": {
+        "zh": "光的能量怎样计量？",
+        "en": "How light energy is measured"
+      },
+      "kind": "assumption",
+      "assessment": "supported",
+      "summary": {
+        "zh": "光的能量来自电场和磁场的储能；把能量密度在整束光所占的空间内相加，就得到总光能。",
+        "en": "Light’s energy is stored in its electric and magnetic fields. Adding their energy density over the space occupied by the packet gives its total energy."
+      },
+      "reasoning": [
+        {
+          "zh": "Maxwell §71 把电流与势的能量写成体积分，分部积分后得到磁场能量 μI²/(8π)。",
+          "en": "Maxwell §71 writes the current-potential energy as a volume integral; integration by parts gives magnetic energy density μI²/(8π)."
+        },
+        {
+          "zh": "§72 从做功 ∫P df 及线性关系 P=kf 得 ½Pf，三方向相加得电储能。",
+          "en": "Section 72 uses work ∫P df and P=kf to obtain ½Pf, then adds the three directions for electric storage."
+        },
+        {
+          "zh": "采用现代真空 Gaussian 单位，瞬时总场能密度为 (|E|²+|B|²)/(8π)；平面简谐波满足 |E|=|B|，周期平均得到 A²/(8π)。",
+          "en": "In modern vacuum Gaussian units the instantaneous total density is (|E|²+|B|²)/(8π). A sinusoidal plane wave has |E|=|B|, giving cycle-average A²/(8π)."
+        }
+      ],
+      "limits": [
+        {
+          "zh": "振幅 A、瞬时量和周期平均量应采用一致约定。Maxwell 的机械介质解释不是本数据额外采纳的前提。",
+          "en": "Amplitude, instantaneous quantities, and cycle averages require a consistent convention. Maxwell’s mechanical-medium interpretation is not an additional premise adopted here."
+        }
+      ],
+      "segment_ids": [
+        "s003"
+      ],
+      "evidence_ids": [
+        "t-field-energy"
+      ],
+      "why": {
+        "zh": "Maxwell 从建立场所需的功推导储能；对本文采用的平面波，能量密度与场的振幅平方成正比。",
+        "en": "Maxwell derives stored energy from the work required to establish the fields. For the plane waves used here, energy density is proportional to amplitude squared."
+      },
+      "story": [
+        {
+          "text": {
+            "zh": "建立电磁场需要做功，所做的功可以作为场中的能量来计算。Maxwell 对电场采用线性的场与响应关系，把逐步建立电场的功累加，得到电储能；对磁场也写出相应的能量积分。这样，光所带的能量便有了明确的物理计量依据。",
+            "en": "Establishing an electromagnetic field requires work, which can be accounted for as energy stored in the field. Maxwell integrates the work of building an electric field using a linear field–response relation, and gives a corresponding energy integral for the magnetic field. This provides a physical basis for assigning energy to light."
+          },
+          "evidence_ids": [
+            "t-field-energy"
+          ]
+        },
+        {
+          "text": {
+            "zh": "在现代真空 Gaussian 单位中，每单位体积的瞬时场能为 (|E|² + |B|²)/(8π)。对于本文所用的简谐平面波，电场和磁场按固定关系一起振荡；采用一致的振幅及周期平均约定，平均能量密度就是 A²/(8π)。",
+            "en": "In modern vacuum Gaussian units, the instantaneous field energy per unit volume is (|E|² + |B|²)/(8π). In the sinusoidal plane wave used here, the electric and magnetic fields oscillate in a fixed relation. With a consistent amplitude and cycle-average convention, the average density is A²/(8π)."
+          },
+          "evidence_ids": [
+            "t-field-energy"
+          ]
+        },
+        {
+          "text": {
+            "zh": "因此，比较两个观察者测得的总光能，需要同时知道他们测得的场强和同一束光占据的体积。场强决定每单位体积有多少能量，体积决定这些能量要加总多少；这正是后续能量变换需要计算的两个部分。",
+            "en": "Comparing the total light energy measured by two observers therefore requires both the field strength and the volume of the same packet. Field strength determines energy per unit volume; volume determines how much of it to add. These are the two ingredients of the later energy transformation."
+          },
+          "evidence_ids": [
+            "t-field-energy",
+            "t-light-energy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c04",
+      "title": {
+        "zh": "两个惯性系，同一套定律",
+        "en": "The same laws in two inertial frames"
+      },
+      "kind": "postulate",
+      "assessment": "conditional",
+      "summary": {
+        "zh": "相对性原理要求彼此匀速运动的观察者使用同一套物理定律，本文以此为前提。",
+        "en": "The relativity principle requires uniformly moving observers to use the same physical laws. The paper adopts it as a premise."
+      },
+      "reasoning": [
+        {
+          "zh": "选取相对速度为 v 的两个惯性系。",
+          "en": "Choose two inertial frames with relative velocity v."
+        },
+        {
+          "zh": "要求描述同一过程的物理定律形式一致。",
+          "en": "Require the laws describing the same process to have the same form."
+        }
+      ],
+      "limits": [
+        {
+          "zh": "1905 短文没有在此用实验重新证明相对性原理；物理前提应与代数推论分开显示。",
+          "en": "The 1905 note does not experimentally re-establish the relativity principle; physical premises must be displayed separately from algebraic consequences."
+        }
+      ],
+      "segment_ids": [
+        "s005"
+      ],
+      "evidence_ids": [
+        "t-relativity"
+      ],
+      "why": {
+        "zh": "它使同一次发光过程能够在两个坐标系中分别应用能量守恒与真空电磁定律，随后比较各自测得的能量。",
+        "en": "It allows energy conservation and vacuum electromagnetic laws to be applied separately to the same emission in two frames, whose measured energies can then be compared."
+      },
+      "story": [
+        {
+          "text": {
+            "zh": "设两位观察者彼此作匀速平移，他们用自己的坐标和时钟描述同一次发光。相对性原理规定，支配这个过程的定律在双方的描述中保持同一形式。本文从这里出发，接受双方都有权使用同一套真空电磁定律和能量守恒。",
+            "en": "Consider two observers in uniform relative translation, each describing the same emission with their own coordinates and clocks. Relativity states that the laws governing the process retain the same form in both descriptions. The paper starts by accepting that both observers may use the same vacuum electromagnetic laws and energy conservation."
+          },
+          "evidence_ids": [
+            "t-relativity",
+            "t-conservation"
+          ]
+        },
+        {
+          "text": {
+            "zh": "同一套定律仍然允许双方测得不同的能量：坐标、时间和场的读数按相应关系变换。于是，每个观察者都能写出自己成立的能量平衡；把这两套平衡联系起来，才是这篇短文推导新结论的方法。",
+            "en": "The same laws still allow the observers to assign different energies: coordinates, times, and fields transform between their descriptions. Each observer can therefore write a valid energy balance. Connecting those two balances is how this short paper derives its new conclusion."
+          },
+          "evidence_ids": [
+            "t-lorentz",
+            "t-field-transform",
+            "t-light-energy",
+            "t-energy-balance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c05",
+      "title": {
+        "zh": "原文引用对得上吗？",
+        "en": "Does the cited passage match?"
+      },
+      "kind": "cited_derivation",
+      "assessment": "supported",
+      "summary": {
+        "zh": "短文引用的第 8 节确实给出了所需的光能量变换，而且能继续追到场强和光包体积的计算。",
+        "en": "The cited section 8 supplies the required light-energy transformation, with its derivation traceable to field strength and packet volume."
+      },
+      "reasoning": [
+        {
+          "zh": "总能量 l=uS，而 l*=u′S′。",
+          "en": "Total energies are l=uS and l*=u′S′."
+        },
+        {
+          "zh": "合并 u′/u=D² 和 S′/S=1/D，得 l*/l=D。",
+          "en": "Combine u′/u=D² with S′/S=1/D to obtain l*/l=D."
+        },
+        {
+          "zh": "全程使用经典电磁平面波；不需要引入光子或 E=hν。",
+          "en": "This uses classical electromagnetic plane waves throughout; photons or E=hν are not required."
+        }
+      ],
+      "limits": [
+        {
+          "zh": "φ 在发射体静止系测量；|v|<c。式中的 l* 是另一参考系测得的能量。",
+          "en": "The angle φ is measured in the emitter-rest frame and |v|<c. The starred energy is the other frame’s measurement."
+        }
+      ],
+      "segment_ids": [
+        "s006"
+      ],
+      "evidence_ids": [
+        "t-light-energy"
+      ],
+      "why": {
+        "zh": "该节把两个已求出的因素合起来：运动系的能量密度变为 D² 倍，同一光包的体积变为 1/D 倍，总能量因此变为 D 倍。",
+        "en": "Section 8 combines two calculated factors: moving-frame energy density scales by D² and the same packet’s volume by 1/D, so total energy scales by D."
+      },
+      "story": [
+        {
+          "text": {
+            "zh": "总光能等于能量密度乘体积，因此要知道同一束光在另一坐标系中的能量，两个量都要重新计算。电磁场的储能公式给出了能量密度怎样依赖场强；坐标变换则规定另一位观察者怎样描述同一束光。",
+            "en": "Total light energy is energy density times volume, so both quantities must be recalculated in another frame. The field-energy expression gives the dependence of density on field strength, while the coordinate transformation specifies how the other observer describes the same packet."
+          },
+          "evidence_ids": [
+            "t-field-energy",
+            "t-lorentz"
+          ]
+        },
+        {
+          "text": {
+            "zh": "前文先由场变换得到平面波振幅的变化，再在第 8 节求出随光移动的包络在新系中的体积。若把共同出现的运动因子记为 D，密度得到 D²，体积得到 1/D，相乘后只剩 D。这里的体积计算确保双方比较的是同一个光包。",
+            "en": "The earlier paper first obtains the plane-wave amplitude change from the field transformations. Section 8 then calculates the new-frame volume of an envelope moving with the light. Calling the common motion factor D, density contributes D² and volume contributes 1/D; their product leaves D. The volume calculation keeps the comparison tied to the same packet."
+          },
+          "evidence_ids": [
+            "t-field-transform",
+            "t-amplitude",
+            "t-pulse-volume",
+            "t-light-energy"
+          ]
+        },
+        {
+          "text": {
+            "zh": "第 8 节最后写出的能量比，正是短文开头调用的公式。因此这条引用不仅能定位到同一公式，还能顺着原文看清它由哪两个计算组成。",
+            "en": "The energy ratio at the end of section 8 is precisely the formula used at the beginning of the note. The citation therefore locates both the matching result and the two calculations that produce it."
+          },
+          "evidence_ids": [
+            "t-light-energy",
+            "t-provenance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c06",
+      "title": {
+        "zh": "平面波与传播角",
+        "en": "Plane waves and propagation angle"
+      },
+      "kind": "setup",
+      "assessment": "conditional",
+      "summary": {
+        "zh": "平面波、能量 l 和传播角 φ 规定了本文要计算的光束；φ 是在原坐标系中量出的。",
+        "en": "The plane wave, its energy l, and its propagation angle φ specify the light being studied; φ is measured in the original frame."
+      },
+      "reasoning": [
+        {
+          "zh": "这些条件定义要解决的思想实验，不是测量得到的样品事实；Lorentz变换取|v|<c。",
+          "en": "These define the thought experiment rather than measured sample properties; the Lorentz transformation requires |v|<c."
+        }
+      ],
+      "limits": [],
+      "segment_ids": [
+        "s007"
+      ],
+      "evidence_ids": [
+        "t-geometry"
+      ],
+      "why": {
+        "zh": "能量变换取决于光的方向与两系相对运动方向的夹角，先固定这套几何描述，公式中的方向因素才有明确含义。",
+        "en": "The energy transformation depends on the angle between light propagation and relative frame motion. Fixing that geometry gives the directional factor in the formula an unambiguous meaning."
+      },
+      "story": [
+        {
+          "text": {
+            "zh": "作者先选定一组朝同一方向传播的平面光波，并把原坐标系中测得的总能量记为 l。光的传播方向用波面法线表示，再用它与 x 轴的夹角 φ 来描述。这些规定把要比较的光束和角度都固定下来。",
+            "en": "The author chooses plane light waves propagating in one direction and labels their total energy in the original frame l. The wave normal gives the propagation direction, and its angle to the x axis is called φ. These choices fix both the light under comparison and the meaning of its angle."
+          },
+          "evidence_ids": [
+            "t-geometry"
+          ]
+        },
+        {
+          "text": {
+            "zh": "随后让另一个坐标系沿 x 方向匀速运动。因为运动方向已经选作 x 轴，光沿这个方向的投影就由 cos φ 给出；它随即进入场强和总光能的变换。因此，φ 始终要和原系中的光线方向配套使用。",
+            "en": "The second frame is then made to move uniformly along x. With that motion defining the x direction, cos φ gives the light’s directional projection along it. This enters the transformations of field strength and total light energy, so φ must retain its meaning as the original-frame angle."
+          },
+          "evidence_ids": [
+            "t-geometry",
+            "t-amplitude",
+            "t-light-energy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c07",
+      "title": {
+        "zh": "以速度v运动的坐标系",
+        "en": "A coordinate frame moving at v"
+      },
+      "kind": "setup",
+      "assessment": "conditional",
+      "summary": {
+        "zh": "第二坐标系沿原系的 x 轴以速度 v 匀速运动，本文在 |v| < c 的范围内比较两系的能量读数。",
+        "en": "The second frame moves uniformly at speed v along the original frame’s x axis. The paper compares their energy readings for |v| < c."
+      },
+      "reasoning": [
+        {
+          "zh": "这些条件定义要解决的思想实验，不是测量得到的样品事实；Lorentz变换取|v|<c。",
+          "en": "These define the thought experiment rather than measured sample properties; the Lorentz transformation requires |v|<c."
+        }
+      ],
+      "limits": [],
+      "segment_ids": [
+        "s008"
+      ],
+      "evidence_ids": [
+        "t-geometry"
+      ],
+      "why": {
+        "zh": "这一设定固定了相对运动方向和速度，使同一事件的坐标、时间、电磁场与能量都能通过同一套变换联系起来。",
+        "en": "This fixes the direction and speed of relative motion, allowing coordinates, times, fields, and energies for the same events to be related consistently."
+      },
+      "story": [
+        {
+          "text": {
+            "zh": "要比较两位观察者的读数，先要说明他们怎样运动。本文把两系的相对运动规定为沿 x 轴的匀速平移，速度记为 v。于是，只要原系中的位置和时间已知，就可以用对应的坐标变换得到另一系的描述。",
+            "en": "To compare two observers’ readings, their relative motion must first be specified. The paper chooses uniform translation along x at speed v. With an event’s original position and time given, the corresponding coordinate transformation supplies its description in the second frame."
+          },
+          "evidence_ids": [
+            "t-geometry",
+            "t-lorentz"
+          ]
+        },
+        {
+          "text": {
+            "zh": "这套变换来自光信号同步、光速公设、相对性以及时空的均匀性和对称性。它包含因子 γ = 1/√(1 − v²/c²)，适用于 |v| < c。把同一变换继续用于电磁场，便能比较两系测得的光能量；这里改变的是描述同一过程的观察系。",
+            "en": "The transformation follows from light-signal synchronization, the light postulate, relativity, and spacetime homogeneity and symmetry. It contains γ = 1/√(1 − v²/c²), with |v| < c. Applying this same transformation to the electromagnetic fields then relates the measured light energies: both frames describe the same physical process."
+          },
+          "evidence_ids": [
+            "t-lorentz",
+            "t-field-transform",
+            "t-light-energy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c08",
+      "title": {
+        "zh": "同一束光，能量如何变换",
+        "en": "Transforming the same light packet"
+      },
+      "kind": "quantitative_relation",
+      "assessment": "supported",
+      "summary": {
+        "zh": "同一光包在运动系中的总能量为 l* = lγ(1 − β cos φ)，其中 β = v/c，γ = 1/√(1 − β²)。",
+        "en": "The same packet has total energy l* = lγ(1 − β cos φ) in the moving frame, with β = v/c and γ = 1/√(1 − β²)."
+      },
+      "reasoning": [
+        {
+          "zh": "总能量 l=uS，而 l*=u′S′。",
+          "en": "Total energies are l=uS and l*=u′S′."
+        },
+        {
+          "zh": "合并 u′/u=D² 和 S′/S=1/D，得 l*/l=D。",
+          "en": "Combine u′/u=D² with S′/S=1/D to obtain l*/l=D."
+        },
+        {
+          "zh": "全程使用经典电磁平面波；不需要引入光子或 E=hν。",
+          "en": "This uses classical electromagnetic plane waves throughout; photons or E=hν are not required."
+        }
+      ],
+      "limits": [
+        {
+          "zh": "φ 在发射体静止系测量；|v|<c。式中的 l* 是另一参考系测得的能量。",
+          "en": "The angle φ is measured in the emitter-rest frame and |v|<c. The starred energy is the other frame’s measurement."
+        }
+      ],
+      "segment_ids": [
+        "s009",
+        "s010"
+      ],
+      "evidence_ids": [
+        "t-light-energy"
+      ],
+      "why": {
+        "zh": "换一个运动观察系，测得的场能密度和同一光包的体积都会改变；两者分别带来 D² 和 1/D 的因子，合起来就是 D = γ(1 − β cos φ)。",
+        "en": "Changing to a moving frame changes both the field-energy density and the volume of the same packet. Their factors D² and 1/D combine to give D = γ(1 − β cos φ)."
+      },
+      "story": [
+        {
+          "text": {
+            "zh": "从一包确定的光出发，它的总能量是每单位体积的场能乘以所占体积。场能来自电场和磁场，对本文的平面波与振幅平方成正比。因此，另一位观察者要给同一光包计算能量，既要测它的场强，也要确定这包光在自己同一时刻占据多大空间。",
+            "en": "Start with a definite packet of light. Its total energy is field energy per unit volume multiplied by its volume. That field energy comes from the electric and magnetic fields and, for this plane wave, is proportional to amplitude squared. The other observer must therefore determine both field strength and the space occupied by the packet at one time in their frame."
+          },
+          "evidence_ids": [
+            "t-field-energy",
+            "t-light-energy"
+          ]
+        },
+        {
+          "text": {
+            "zh": "相对性原理要求双方使用同样的真空电磁定律。将两系的坐标变换代入这些定律，便得到场的变换；作用于传播角为 φ 的平面波后，能量密度变成原来的 D² 倍。这里 D = γ(1 − β cos φ)，φ 在原系中测量，方向和相对速度都进入了这一因子。",
+            "en": "Relativity requires both observers to use the same vacuum electromagnetic laws. Substituting the coordinate transformation into those laws gives the field transformations. Applied to a plane wave at angle φ, they multiply the energy density by D², where D = γ(1 − β cos φ). The angle is measured in the original frame, so both direction and relative speed enter this factor."
+          },
+          "evidence_ids": [
+            "t-relativity",
+            "t-field-transform",
+            "t-amplitude"
+          ]
+        },
+        {
+          "text": {
+            "zh": "体积也必须跟着同一包光来算。前文用一个随光移动的球形包络圈住它，再看这个包络在新系同一时刻的形状；得到的椭球体积是原体积的 1/D。这一步把光包的运动和两系各自的“同一时刻”一起纳入了计算。",
+            "en": "The volume calculation must follow that same packet. The earlier paper encloses it in a spherical envelope moving with the light, then examines the envelope at a single time in the new frame. The resulting ellipsoid has 1/D of the original volume. This accounts jointly for the packet’s motion and each frame’s own simultaneous slice."
+          },
+          "evidence_ids": [
+            "t-pulse-volume",
+            "t-lorentz"
+          ]
+        },
+        {
+          "text": {
+            "zh": "现在把能量密度和体积相乘：D² × 1/D = D，所以 l*/l = γ(1 − β cos φ)。这就得到短文所用的公式。整个推导采用经典电磁平面波、真空定律和两个匀速运动参考系，能量变化由场与时空描述的共同变化算出。",
+            "en": "Multiply density by volume: D² × 1/D = D. Hence l*/l = γ(1 − β cos φ), the formula used in the note. The derivation uses classical electromagnetic plane waves, vacuum laws, and two uniformly moving frames; the energy change follows from transforming the fields together with their spacetime description."
+          },
+          "evidence_ids": [
+            "t-light-energy",
+            "t-geometry"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c09",
+      "title": {
+        "zh": "四个能量符号的含义",
+        "en": "Four energy labels"
+      },
+      "kind": "definition",
+      "assessment": "supported",
+      "summary": {
+        "zh": "E 与 H 是同一物体在两个参考系中的能量；下标 0、1 分别表示发光前和发光后。",
+        "en": "E and H are the same body’s energies in two reference frames; subscripts 0 and 1 mean before and after emission."
+      },
+      "reasoning": [
+        {
+          "zh": "定义只规定符号和测量参考系。L是静止系发出的总光能，v是两系相对速度。",
+          "en": "These define notation and frames. L is total light energy emitted in the rest frame; v is relative frame speed."
+        }
+      ],
+      "limits": [],
+      "segment_ids": [
+        "s012",
+        "s013",
+        "s017",
+        "s023"
+      ],
+      "evidence_ids": [
+        "t-definitions"
+      ],
+      "why": {
+        "zh": "本文同时比较两个内部状态和两个观察系，四个符号分别记录这两种区别，后续相减才能对应同一个物理过程。",
+        "en": "The paper compares two internal states and two observing frames. Four labels keep those distinctions separate so that later subtractions refer to the same physical process."
+      },
+      "story": [
+        {
+          "text": {
+            "zh": "先固定物体发光前的状态。和物体一起静止的观察者把它的能量记为 E₀；相对于这个观察者匀速运动的另一位观察者，则把同一状态的物体能量记为 H₀。字母区别的是能量测量所采用的参考系。",
+            "en": "First fix the body’s state before emission. The observer at rest with it calls its energy E₀; the observer moving uniformly relative to that frame calls the same body’s energy H₀. The letters distinguish the reference frames used to assign the energy."
+          },
+          "evidence_ids": [
+            "t-definitions"
+          ]
+        },
+        {
+          "text": {
+            "zh": "物体发光后，在相同的两个系中重新记账，能量便分别记为 E₁ 和 H₁。因此 E₀ − E₁ 比较静止系看到的发光前后，H₀ − H₁ 比较运动系看到的发光前后；而 H − E 比较的是同一状态在两系中的能量。",
+            "en": "After emission, the energies are recorded again in those same frames as E₁ and H₁. Thus E₀ − E₁ compares before and after in the rest frame, while H₀ − H₁ does so in the moving frame. By contrast, H − E compares the energies of one state across the two frames."
+          },
+          "evidence_ids": [
+            "t-definitions",
+            "t-energy-balance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c10",
+      "title": {
+        "zh": "同时发出两束相反的光",
+        "en": "Two equal, opposite light pulses"
+      },
+      "kind": "setup",
+      "assessment": "conditional",
+      "summary": {
+        "zh": "作者规定物体同时向相反方向各发出 L/2 的光，总辐射能量在静止系中为 L。",
+        "en": "The author specifies simultaneous emissions of L/2 in opposite directions, totaling L in the body’s rest frame."
+      },
+      "reasoning": [
+        {
+          "zh": "在原系，两束各有 L/2；总能量为 L。",
+          "en": "Each beam has L/2 in the original frame, for total L."
+        },
+        {
+          "zh": "新系中分别为 (L/2)γ(1−β cosφ) 与 (L/2)γ(1+β cosφ)。",
+          "en": "The new-frame beam energies are (L/2)γ(1−β cosφ) and (L/2)γ(1+β cosφ)."
+        },
+        {
+          "zh": "相加消去角度项，得到总辐射能量 γL。",
+          "en": "Adding cancels the angular terms, yielding total radiated energy γL."
+        }
+      ],
+      "limits": [
+        {
+          "zh": "这是对称且无反冲的规定情形。单向发光会有反冲，不能原样套用同一个速度 v 的前后比较。",
+          "en": "This is the stipulated symmetric no-recoil case. One-direction emission produces recoil and cannot use the same before/after speed comparison unchanged."
+        }
+      ],
+      "segment_ids": [
+        "s014"
+      ],
+      "evidence_ids": [
+        "t-emission-setup"
+      ],
+      "why": {
+        "zh": "两束光的对称安排既允许物体保持静止，也使运动系中两束光的方向项在相加时消去。",
+        "en": "The symmetric arrangement allows the body to remain at rest and makes the directional terms cancel when the two moving-frame light energies are added."
+      },
+      "story": [
+        {
+          "text": {
+            "zh": "为了比较发光前后，作者选定一个明确的过程：物体原先静止，同时向两个相反方向发光，每束在这个静止系中都带走 L/2。这样，L 的含义完全确定，就是原系中两束光的能量之和。",
+            "en": "The author chooses a definite before-and-after process: an initially stationary body emits simultaneously in two opposite directions, each beam carrying L/2 in that rest frame. This fixes the meaning of L as the sum of the two original-frame light energies."
+          },
+          "evidence_ids": [
+            "t-emission-setup",
+            "t-definitions"
+          ]
+        },
+        {
+          "text": {
+            "zh": "换到运动系以后，两束光需要分别套用光能量变换。一束的方向因素是 1 − (v/c) cos φ，反向那束就是 1 + (v/c) cos φ。两者相加，方向造成的一减一加恰好抵消，剩下共同的因子 γ，于是两束光合计 γL。这个对称过程让后面的能量比较变得直接。",
+            "en": "In the moving frame, each beam must be transformed separately. One has the directional factor 1 − (v/c) cos φ; the opposite beam has 1 + (v/c) cos φ. Their directional contributions cancel on addition, leaving the common factor γ and a total of γL. This symmetry makes the later energy comparison straightforward."
+          },
+          "evidence_ids": [
+            "t-light-energy",
+            "t-emission-setup",
+            "t-moving-balance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c11",
+      "title": {
+        "zh": "为什么物体仍然静止？",
+        "en": "Why the body stays at rest"
+      },
+      "kind": "assumption",
+      "assessment": "conditional",
+      "summary": {
+        "zh": "同时向相反方向发出等能量的光，辐射的总动量相互抵消，因此物体可以在原系中保持静止。",
+        "en": "Equal-energy light emitted simultaneously in opposite directions has cancelling total momentum, allowing the body to remain at rest in the original frame."
+      },
+      "reasoning": [
+        {
+          "zh": "原文明确说物体在原系仍静止；这是整个前后同速度比较的关键条件。",
+          "en": "The note explicitly keeps the body at rest in the original frame, enabling a same-speed before/after comparison."
+        },
+        {
+          "zh": "以p=E/c描述每束光，两个动量大小相同、方向相反，总和为零。该动量解释属于本例补充，原短文未逐式展开。",
+          "en": "Using p=E/c, the two equal and opposite momenta cancel. This momentum explanation is supplemental; the note does not spell it out."
+        }
+      ],
+      "limits": [
+        {
+          "zh": "这是对称且无反冲的规定情形。单向发光会有反冲，不能原样套用同一个速度 v 的前后比较。",
+          "en": "This is the stipulated symmetric no-recoil case. One-direction emission produces recoil and cannot use the same before/after speed comparison unchanged."
+        }
+      ],
+      "segment_ids": [
+        "s015"
+      ],
+      "evidence_ids": [
+        "t-emission-setup",
+        "t-brown-momentum"
+      ],
+      "why": {
+        "zh": "按光的 p = E/c 关系，两束光的动量等大反向，没有净动量需要物体用反冲来补偿。",
+        "en": "With the light-momentum relation p = E/c, the two momenta are equal and opposite, leaving no net momentum for a recoil of the body to balance."
+      },
+      "story": [
+        {
+          "text": {
+            "zh": "光除了携带能量，也携带动量。采用 p = E/c，每束能量为 L/2 的光都有大小 L/(2c) 的动量，方向沿着各自的传播方向。本文两束光朝相反方向发出，所以把它们的动量相加，结果为零。",
+            "en": "Light carries momentum as well as energy. Using p = E/c, each beam of energy L/2 has momentum magnitude L/(2c) along its propagation direction. The two beams here travel in opposite directions, so their momenta sum to zero."
+          },
+          "evidence_ids": [
+            "t-brown-momentum",
+            "t-emission-setup"
+          ]
+        },
+        {
+          "text": {
+            "zh": "这样，对称发光与物体没有反冲是相容的。原短文直接规定物体继续静止；后来的动量论证把这一对称性解释得更明确。于是，运动系观察者在发光前后看到物体具有相同的平移速度，后续比较动能时就固定住了速度这一项。",
+            "en": "This makes symmetric emission consistent with no recoil. The original note stipulates that the body remains at rest; the later momentum argument makes the symmetry explicit. Consequently, the moving-frame observer sees the same translational speed before and after emission, fixing the speed when kinetic energies are later compared."
+          },
+          "evidence_ids": [
+            "t-emission-setup",
+            "t-brown-momentum",
+            "t-definitions"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c12",
+      "title": {
+        "zh": "两系都应用能量守恒",
+        "en": "Energy conservation in both frames"
+      },
+      "kind": "assumption",
+      "assessment": "conditional",
+      "summary": {
+        "zh": "把物体和发出的两束光一起计入，能量守恒在两个参考系中都适用。",
+        "en": "Accounting for the body and both emitted beams, energy conservation applies in each of the two frames."
+      },
+      "reasoning": [
+        {
+          "zh": "取物体与发出的两束光为记账边界。若有外部做功或漏记能量流，原平衡方程须相应补项。",
+          "en": "Account for the body and both emitted beams. External work or omitted energy flux requires extra balance terms."
+        }
+      ],
+      "limits": [],
+      "segment_ids": [
+        "s016"
+      ],
+      "evidence_ids": [
+        "t-conservation"
+      ],
+      "why": {
+        "zh": "作者采用能量守恒，并由相对性原理要求双方使用同一守恒定律；每一方分别用自己测得的能量配平。",
+        "en": "The author adopts energy conservation, and relativity requires both observers to use that same law. Each balances the energies measured in their own frame."
+      },
+      "story": [
+        {
+          "text": {
+            "zh": "先把整个过程的能量去向说清楚：发光前，能量在物体中；发光后，一部分留在物体中，另一部分由两束光带走。本文把物体和两束光一起作为记账范围，因此能量守恒要求前者等于后两者之和。",
+            "en": "Begin with where the energy goes. Before emission it is in the body; afterward some remains in the body and some is carried by the two beams. The paper accounts for the body and both beams together, so conservation equates the initial energy to the sum of the final contributions."
+          },
+          "evidence_ids": [
+            "t-conservation",
+            "t-emission-setup"
+          ]
+        },
+        {
+          "text": {
+            "zh": "再让两个匀速运动的观察者各写一遍这笔账。相对性原理要求双方采用同样的守恒定律，而光能量变换允许双方给同一束光记下不同数值。因此，两系都有各自成立的平衡式，随后可以通过变换关系将它们联系起来。",
+            "en": "Now let two uniformly moving observers write this balance separately. Relativity requires the same conservation law for both, while the light-energy transformation allows them to assign different values to the same beam. Each frame therefore has its own valid balance, and the transformation relates the two."
+          },
+          "evidence_ids": [
+            "t-relativity",
+            "t-conservation",
+            "t-light-energy",
+            "t-energy-balance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c13",
+      "title": {
+        "zh": "静止系：发光带走L",
+        "en": "Rest frame: emission removes L"
+      },
+      "kind": "quantitative_relation",
+      "assessment": "supported",
+      "summary": {
+        "zh": "在物体的静止系中，两束光总共带走 L，所以物体的能量减少 L：E₀ − E₁ = L。",
+        "en": "In the body’s rest frame, the two beams remove a total energy L, so the body loses L: E₀ − E₁ = L."
+      },
+      "reasoning": [
+        {
+          "zh": "能量相加 L/2+L/2=L，然后从发光前总能量减去发光后总能量。",
+          "en": "Add L/2+L/2=L and equate this to the body’s before-minus-after energy."
+        }
+      ],
+      "limits": [],
+      "segment_ids": [
+        "s018"
+      ],
+      "evidence_ids": [
+        "t-rest-balance"
+      ],
+      "why": {
+        "zh": "两束光各有 L/2，把它们与发光后物体的能量 E₁ 相加，必须等于发光前的 E₀。",
+        "en": "Each beam carries L/2. Their energies plus the body’s final energy E₁ must equal its initial energy E₀."
+      },
+      "story": [
+        {
+          "text": {
+            "zh": "这里始终用和物体一起静止的坐标系记账。作者已把两束光在这个系中的能量分别规定为 L/2，因此两束光离开后带走的总能量就是 L。",
+            "en": "Keep the accounting in the frame at rest with the body. The author has defined each beam’s energy in this frame as L/2, so together they carry away L."
+          },
+          "evidence_ids": [
+            "t-definitions",
+            "t-emission-setup"
+          ]
+        },
+        {
+          "text": {
+            "zh": "能量守恒把发光前后的账连接起来：E₀ = E₁ + L/2 + L/2。将物体发光后的能量移到左侧，就得到 E₀ − E₁ = L。此时已经确定了静止系中物体少掉的能量，后面再用运动系写下对应的一式。",
+            "en": "Conservation connects the before-and-after accounts: E₀ = E₁ + L/2 + L/2. Move the body’s final energy to the left to obtain E₀ − E₁ = L. This determines its rest-frame energy loss; the moving frame then supplies the corresponding second balance."
+          },
+          "evidence_ids": [
+            "t-conservation",
+            "t-rest-balance",
+            "t-moving-balance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c14",
+      "title": {
+        "zh": "运动系：两束光合计γL",
+        "en": "Moving frame: the beams total γL"
+      },
+      "kind": "quantitative_relation",
+      "assessment": "supported",
+      "summary": {
+        "zh": "在运动系中，两束光的总能量为 γL，因此物体的能量减少 γL：H₀ − H₁ = γL。",
+        "en": "In the moving frame the two beams total γL, so the body’s energy loss is γL: H₀ − H₁ = γL."
+      },
+      "reasoning": [
+        {
+          "zh": "(L/2)γ(1−βcosφ)+(L/2)γ(1+βcosφ)=γL。应用能量守恒得H₀−H₁=γL。",
+          "en": "(L/2)γ(1−βcosφ)+(L/2)γ(1+βcosφ)=γL. Conservation gives H₀−H₁=γL."
+        }
+      ],
+      "limits": [],
+      "segment_ids": [
+        "s019"
+      ],
+      "evidence_ids": [
+        "t-moving-balance"
+      ],
+      "why": {
+        "zh": "反向传播使两束光的角度项一正一负、相加抵消，留下共同的 γ = 1/√(1 − v²/c²)。",
+        "en": "Opposite propagation gives equal and opposite angular terms that cancel, leaving the common factor γ = 1/√(1 − v²/c²)."
+      },
+      "story": [
+        {
+          "text": {
+            "zh": "同一光包换到运动系后，能量会乘上 γ[1 − (v/c) cos φ]；这个因子由场能密度与光包体积的变换共同给出。这里两束光在原系中各有 L/2，所以需要把这一变换分别用于每一束。",
+            "en": "Changing to the moving frame multiplies a packet’s energy by γ[1 − (v/c) cos φ], a factor obtained by transforming its field-energy density and volume together. Each of the two beams has original-frame energy L/2, so each must be transformed separately."
+          },
+          "evidence_ids": [
+            "t-light-energy",
+            "t-emission-setup"
+          ]
+        },
+        {
+          "text": {
+            "zh": "对于第一束，得到 (L/2)γ[1 − (v/c) cos φ]；第二束朝相反方向，得到 (L/2)γ[1 + (v/c) cos φ]。相加以后，含 cos φ 的两项消去，两束合计 γL。因此这一总量只剩总光能 L 和两系相对速度的影响。",
+            "en": "The first beam gives (L/2)γ[1 − (v/c) cos φ]. The opposite beam gives (L/2)γ[1 + (v/c) cos φ]. Adding removes the cos φ terms and leaves γL, so the total depends on L and the relative frame speed."
+          },
+          "evidence_ids": [
+            "t-moving-balance"
+          ]
+        },
+        {
+          "text": {
+            "zh": "运动系也采用能量守恒：物体发光前的 H₀ 等于发光后的 H₁ 加上两束光的 γL。移项就得到 H₀ − H₁ = γL，与静止系中的能量平衡形成可直接比较的一对方程。",
+            "en": "Energy conservation also holds in this frame: the initial body energy H₀ equals the final H₁ plus γL in the light. Rearrangement gives H₀ − H₁ = γL, providing a balance that can be compared directly with the rest-frame one."
+          },
+          "evidence_ids": [
+            "t-conservation",
+            "t-moving-balance",
+            "t-rest-balance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c15",
+      "title": {
+        "zh": "两次能量平衡相减",
+        "en": "Subtracting the energy balances"
+      },
+      "kind": "derivation",
+      "assessment": "supported",
+      "summary": {
+        "zh": "比较两系的能量损失，得到 (H₀ − E₀) − (H₁ − E₁) = L(γ − 1)。",
+        "en": "Comparing the two frame-specific energy losses gives (H₀ − E₀) − (H₁ − E₁) = L(γ − 1)."
+      },
+      "reasoning": [
+        {
+          "zh": "原系：E0−E1=L。",
+          "en": "Original frame: E0−E1=L."
+        },
+        {
+          "zh": "运动系：H0−H1=γL。",
+          "en": "Moving frame: H0−H1=γL."
+        },
+        {
+          "zh": "两式相减即得 (H0−E0)−(H1−E1)=L(γ−1)。",
+          "en": "Subtract to get (H0−E0)−(H1−E1)=L(γ−1)."
+        }
+      ],
+      "limits": [
+        {
+          "zh": "能量守恒在此是原文调用的物理原则；物体加辐射的系统边界应包括过程中的全部能量交换。",
+          "en": "Energy conservation is invoked as a physical principle. The body-plus-radiation boundary must include all energy exchanges in the process."
+        }
+      ],
+      "segment_ids": [
+        "s021"
+      ],
+      "evidence_ids": [
+        "t-energy-balance"
+      ],
+      "why": {
+        "zh": "静止系中物体损失 L，运动系中损失 γL；将两式相减并重新分组，就得到两系能量差在发光前后的变化。",
+        "en": "The body loses L in the rest frame and γL in the moving frame. Subtracting and regrouping gives the change in the energy difference between frames."
+      },
+      "story": [
+        {
+          "text": {
+            "zh": "从能量守恒出发，先给同一次发光写下两套账。静止系中，两束光合计 L，物体就少了 L；运动系中，光能量变换使两束光合计 γL，物体便少了 γL。两式分别是 E₀ − E₁ = L 和 H₀ − H₁ = γL。",
+            "en": "Begin with conservation and write two accounts of the same emission. In the rest frame the beams total L, so the body loses L. In the moving frame their transformed energies total γL, so the body loses γL. Thus E₀ − E₁ = L and H₀ − H₁ = γL."
+          },
+          "evidence_ids": [
+            "t-conservation",
+            "t-rest-balance",
+            "t-moving-balance"
+          ]
+        },
+        {
+          "text": {
+            "zh": "现在把静止系的一式从运动系的一式中减去，右侧就是 γL − L。左侧重新按发光前后分组，成为 (H₀ − E₀) − (H₁ − E₁)。因此，发光使两系之间的物体能量差改变了 L(γ − 1)。",
+            "en": "Subtract the rest-frame balance from the moving-frame one. The right side is γL − L. Regroup the left side by before and after emission to obtain (H₀ − E₀) − (H₁ − E₁). Emission therefore changes the body’s energy difference between frames by L(γ − 1)."
+          },
+          "evidence_ids": [
+            "t-energy-balance"
+          ]
+        },
+        {
+          "text": {
+            "zh": "这一步把光的能量变换转成了关于物体的关系。接下来，只要说明同一状态下 H − E 与物体动能的联系，就能用这个结果讨论发光导致的动能变化；这也解释了作者为什么要把方程整理成现在的形式。",
+            "en": "This step turns the light-energy transformation into a relation about the body. The next task is to connect H − E for a given state to the body’s kinetic energy, allowing the result to describe its kinetic-energy change on emission. This gives the regrouped equation its purpose in the argument."
+          },
+          "evidence_ids": [
+            "t-energy-balance",
+            "t-additive-constant"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c16",
+      "title": {
+        "zh": "能量差为什么能看作动能？",
+        "en": "Interpreting the energy difference"
+      },
+      "kind": "interpretation",
+      "assessment": "conditional",
+      "summary": {
+        "zh": "这里的 H−E 可以理解为物体整体运动增加的能量，也就是平移动能，加上能量零点差 C。对复合物体，这种理解要把场和支撑应力等一起算入整体。",
+        "en": "Here H−E can be interpreted as the energy added by the body’s overall motion—its translational kinetic energy—plus an energy-zero offset C. For a composite body, the accounting must include fields and supporting stresses as part of the whole."
+      },
+      "reasoning": [
+        {
+          "zh": "为物体的每一个内部状态，比较它在静止系和运动系的总能量。",
+          "en": "For each internal state, compare the body’s rest-frame and moving-frame total energies."
+        },
+        {
+          "zh": "采用 H0−E0=K0+C 和 H1−E1=K1+C 的共同零点约定。",
+          "en": "Use H0−E0=K0+C and H1−E1=K1+C with a common offset."
+        },
+        {
+          "zh": "若误令 C0 与 C1 独立变化，右边会多出 C0−C1，无法直接得到原文的动能差。",
+          "en": "If C0 and C1 vary independently, an additional C0−C1 remains and the stated kinetic-energy difference does not follow."
+        }
+      ],
+      "limits": [
+        {
+          "zh": "共同常数的抵消是清楚的代数步骤；对受外力、应力遗漏或内运动显著的扩展系统，H−E 的物理解读还须补充条件。",
+          "en": "Cancellation of a common constant is elementary; extended systems with external forces, omitted stresses, or substantial internal motions require additional conditions for the physical interpretation of H−E."
+        }
+      ],
+      "segment_ids": [
+        "s024",
+        "s026",
+        "s027"
+      ],
+      "evidence_ids": [
+        "t-additive-constant"
+      ],
+      "findings": [
+        {
+          "label": {
+            "zh": "后续研究对论证范围有争论",
+            "en": "Later debate about the argument’s scope"
+          },
+          "detail": {
+            "zh": "Ohanian认为一般扩展物体的内运动与应力处理需要补充。这是已核读论文的批评；其提及的Stachel–Torretti辩护原文尚未取得，争论双方的论证读取尚不对称。",
+            "en": "Ohanian calls for additional treatment of internal motion and stresses. This is his inspected critique; the Stachel–Torretti defense he cites remains unavailable, leaving asymmetric access to the debate."
+          },
+          "evidence_ids": [
+            "t-ohanian-scope"
+          ]
+        }
+      ],
+      "why": {
+        "zh": "比较的是同一内部状态在静止系和运动系中的能量；发光前后又沿用同一零点，因此这项能量差的变化可以归到动能变化。",
+        "en": "The comparison concerns the same internal state viewed at rest and in motion. With the same energy zero before and after emission, the change in this energy difference can be attributed to a change in kinetic energy."
+      },
+      "story": [
+        {
+          "text": {
+            "zh": "先固定物体的内部状态，让一位观察者随物体静止，另一位相对它匀速运动。两人记录的是同一个物体，分别把它的能量记为 E 和 H；物体在后一位观察者看来还具有整体运动。",
+            "en": "First hold the body’s internal state fixed. One observer is at rest with it; another moves uniformly relative to it. They record energies E and H for the same body, but the second observer also sees its overall motion."
+          },
+          "evidence_ids": [
+            "t-definitions"
+          ]
+        },
+        {
+          "text": {
+            "zh": "因此，Einstein 用两种能量的差来表示整体运动带来的能量。能量的数值还取决于把哪里选作零点，所以他写成 H−E=K+C：K 是平移动能，C 记录两套能量记法的零点差。",
+            "en": "Einstein therefore uses the difference between these energies to represent the energy of overall motion. Numerical energies also depend on the chosen zero, so he writes H−E=K+C: K is translational kinetic energy, and C records the offset between the energy conventions."
+          },
+          "evidence_ids": [
+            "t-additive-constant"
+          ]
+        },
+        {
+          "text": {
+            "zh": "接着再比较发光前后两个状态。只要两次使用相同的能量记法，C 就保持不变；两式相减时它消失，剩下的正是 K₀−K₁。这才把前面由能量守恒算出的差，接到了动能变化上。",
+            "en": "Now compare the states before and after emission. Keeping the same energy conventions keeps C unchanged. It disappears on subtraction, leaving K₀−K₁ and connecting the earlier energy-conservation calculation to a kinetic-energy change."
+          },
+          "evidence_ids": [
+            "t-additive-constant",
+            "t-energy-balance"
+          ]
+        },
+        {
+          "text": {
+            "zh": "对于由许多成分组成的物体，还需要把“同一个整体”说清楚。后来的理论把物质、场和维持平衡的应力一并纳入，证明了与外界无相互作用的完整静态系统具有这种动能形式；这样，能量差的解释便有了明确的物理条件。",
+            "en": "For a body made of many parts, the meaning of “the same whole” also matters. Later theory includes matter, fields, and the stresses maintaining equilibrium, establishing this kinetic-energy form for a complete static system without external interaction. The interpretation then has explicit physical conditions."
+          },
+          "evidence_ids": [
+            "t-laue"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c17",
+      "title": {
+        "zh": "前后必须使用同一个C",
+        "en": "The same C before and after"
+      },
+      "kind": "assumption",
+      "assessment": "conditional",
+      "summary": {
+        "zh": "C 能够消去，因为发光前后沿用了同一套能量零点。原文明确要求这一点；重新给前后状态各选一个零点，就会留下额外的 C₀−C₁。",
+        "en": "C cancels because the same energy zeros are used before and after emission. The paper explicitly requires this; choosing separate offsets for the two states would leave an extra C₀−C₁."
+      },
+      "reasoning": [
+        {
+          "zh": "为物体的每一个内部状态，比较它在静止系和运动系的总能量。",
+          "en": "For each internal state, compare the body’s rest-frame and moving-frame total energies."
+        },
+        {
+          "zh": "采用 H0−E0=K0+C 和 H1−E1=K1+C 的共同零点约定。",
+          "en": "Use H0−E0=K0+C and H1−E1=K1+C with a common offset."
+        },
+        {
+          "zh": "若误令 C0 与 C1 独立变化，右边会多出 C0−C1，无法直接得到原文的动能差。",
+          "en": "If C0 and C1 vary independently, an additional C0−C1 remains and the stated kinetic-energy difference does not follow."
+        }
+      ],
+      "limits": [
+        {
+          "zh": "共同常数的抵消是清楚的代数步骤；对受外力、应力遗漏或内运动显著的扩展系统，H−E 的物理解读还须补充条件。",
+          "en": "Cancellation of a common constant is elementary; extended systems with external forces, omitted stresses, or substantial internal motions require additional conditions for the physical interpretation of H−E."
+        }
+      ],
+      "segment_ids": [
+        "s028"
+      ],
+      "evidence_ids": [
+        "t-additive-constant"
+      ],
+      "why": {
+        "zh": "改变能量数值的起点不会改变同一标尺上的能量变化；推导中的两次记账必须使用这把共同标尺。",
+        "en": "Changing the numerical origin of energy does not change differences measured on the same scale. Both accounts in the derivation must use that common scale."
+      },
+      "story": [
+        {
+          "text": {
+            "zh": "能量记账可以选择一个数值零点，而我们关心的是过程前后改变了多少。这里有静止系的 E 和运动系的 H 两套记法，它们的零点差被收进常数 C，因而写成 H−E=K+C。",
+            "en": "Energy accounting allows a choice of numerical zero, while the process concerns how much energy changes. Here E and H are the rest-frame and moving-frame accounts. Their offset is collected in C, giving H−E=K+C."
+          },
+          "evidence_ids": [
+            "t-definitions",
+            "t-additive-constant"
+          ]
+        },
+        {
+          "text": {
+            "zh": "物体发光以后，内部状态变了，但这不需要我们更换记账标尺。因此发光前写 H₀−E₀=K₀+C，发光后仍写 H₁−E₁=K₁+C。原文所说的“C 不变”，就是把同一约定贯穿这次比较。",
+            "en": "Emission changes the body’s internal state, but does not require changing the accounting scale. Thus H₀−E₀=K₀+C before emission and H₁−E₁=K₁+C afterward. Keeping C unchanged carries one convention through the comparison."
+          },
+          "evidence_ids": [
+            "t-additive-constant"
+          ]
+        },
+        {
+          "text": {
+            "zh": "将两式相减，共同的 C 正好抵消，得到动能差 K₀−K₁。若分别改成 C₀ 和 C₁，结果就还要带上 C₀−C₁；所以这里能消去的是共同的零点差，而不是任意两个常数。",
+            "en": "Subtracting the equations cancels the common C and leaves K₀−K₁. Replacing it with separate C₀ and C₁ would retain C₀−C₁. What cancels is the shared offset, rather than two arbitrarily chosen constants."
+          },
+          "evidence_ids": [
+            "t-additive-constant"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c18",
+      "title": {
+        "zh": "动能差的精确形式",
+        "en": "The exact kinetic-energy difference"
+      },
+      "kind": "derivation",
+      "assessment": "supported",
+      "summary": {
+        "zh": "在这次对称发光的设定和原文的动能解释下，动能减少量精确等于 L(γ−1)，其中 γ=1/√(1−v²/c²)。这里还没有作低速近似。",
+        "en": "For the symmetric-emission setup and the paper’s kinetic-energy interpretation, the loss is exactly L(γ−1), where γ=1/√(1−v²/c²). No low-speed approximation has yet been made."
+      },
+      "reasoning": [
+        {
+          "zh": "将 t-additive-constant 代入 t-energy-balance，共同 C 消去。",
+          "en": "Insert t-additive-constant into t-energy-balance; the common C cancels."
+        },
+        {
+          "zh": "得到 K0−K1=L[(1−v²/c²)^(−1/2)−1]。",
+          "en": "Obtain K0−K1=L[(1−v²/c²)^(−1/2)−1]."
+        },
+        {
+          "zh": "L>0 且 v≠0 时 γ>1，所以 K0>K1；v=0 时两者均无这项平移动能差。",
+          "en": "For L>0 and v≠0, γ>1 and K0>K1; at v=0 this translational kinetic-energy difference vanishes."
+        }
+      ],
+      "limits": [
+        {
+          "zh": "精确的是此动能差在给定假设下的表达式。其形式不自动完成所有扩展物体的动能理论。",
+          "en": "The difference is exact under the stated assumptions; its form alone does not supply a complete kinetic-energy theory for every extended body."
+        }
+      ],
+      "segment_ids": [
+        "s030"
+      ],
+      "evidence_ids": [
+        "t-kinetic-difference"
+      ],
+      "why": {
+        "zh": "两位观察者分别记下 L 和 γL 的能量损失；将两套守恒方程相减，再消去共同能量零点，就留下这项动能差。",
+        "en": "The two observers record energy losses of L and γL. Subtracting their conservation equations and cancelling the shared energy offset leaves this kinetic-energy difference."
+      },
+      "story": [
+        {
+          "text": {
+            "zh": "光本身带有能量，而相对运动的观察者会给同一个光包记下不同的能量。前文从光的场强和光包体积的变换推得，这个差别取决于观察者的速度和光的传播方向。",
+            "en": "Light carries energy, and observers in relative motion assign different energies to the same packet. The preceding paper derives this dependence on speed and propagation direction by transforming both the field strength and the packet’s volume."
+          },
+          "evidence_ids": [
+            "t-light-energy"
+          ]
+        },
+        {
+          "text": {
+            "zh": "现在让物体沿相反方向各发出 L/2。两束光在静止系合计为 L；换到相对速度为 v 的参考系后，方向有关的项在相加时抵消，合计成为 γL，γ=1/√(1−v²/c²)。",
+            "en": "Let the body emit L/2 in each of two opposite directions. The beams total L in its rest frame. In a frame moving at relative speed v, the directional terms cancel on addition, leaving γL, with γ=1/√(1−v²/c²)."
+          },
+          "evidence_ids": [
+            "t-emission-setup",
+            "t-moving-balance"
+          ]
+        },
+        {
+          "text": {
+            "zh": "能量守恒要求物体分别失去这些能量，所以 E₀−E₁=L，而 H₀−H₁=γL。两式相减，便得到两套能量差的变化为 L(γ−1)。",
+            "en": "Energy conservation requires the body to lose these respective amounts: E₀−E₁=L and H₀−H₁=γL. Subtraction gives a change of L(γ−1) in the difference between the two energy accounts."
+          },
+          "evidence_ids": [
+            "t-energy-balance"
+          ]
+        },
+        {
+          "text": {
+            "zh": "最后，把每个状态的 H−E 写成 K+C，并在前后使用同一个 C。常数消去后便得到 K₀−K₁=L(γ−1)。整个过程中保留了完整的 γ，因此这一步的公式仍是精确形式。",
+            "en": "Finally write H−E=K+C for each state, using the same C before and after. Cancelling it gives K₀−K₁=L(γ−1). The full γ has been retained throughout, so this step still has the exact form."
+          },
+          "evidence_ids": [
+            "t-additive-constant",
+            "t-kinetic-difference"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c19",
+      "title": {
+        "zh": "发光后，动能为什么减小？",
+        "en": "Why emission reduces kinetic energy"
+      },
+      "kind": "consequence",
+      "assessment": "supported",
+      "summary": {
+        "zh": "在运动观察者看来，物体发光后速度没变，平移动能却减少了。只要 L>0 且 0<|v|<c，减少量 L(γ−1) 就为正。",
+        "en": "To the moving observer, the body’s speed is unchanged after emission, yet its translational kinetic energy decreases. For L>0 and 0<|v|<c, the loss L(γ−1) is positive."
+      },
+      "reasoning": [
+        {
+          "zh": "将 t-additive-constant 代入 t-energy-balance，共同 C 消去。",
+          "en": "Insert t-additive-constant into t-energy-balance; the common C cancels."
+        },
+        {
+          "zh": "得到 K0−K1=L[(1−v²/c²)^(−1/2)−1]。",
+          "en": "Obtain K0−K1=L[(1−v²/c²)^(−1/2)−1]."
+        },
+        {
+          "zh": "L>0 且 v≠0 时 γ>1，所以 K0>K1；v=0 时两者均无这项平移动能差。",
+          "en": "For L>0 and v≠0, γ>1 and K0>K1; at v=0 this translational kinetic-energy difference vanishes."
+        }
+      ],
+      "limits": [
+        {
+          "zh": "精确的是此动能差在给定假设下的表达式。其形式不自动完成所有扩展物体的动能理论。",
+          "en": "The difference is exact under the stated assumptions; its form alone does not supply a complete kinetic-energy theory for every extended body."
+        }
+      ],
+      "segment_ids": [
+        "s031"
+      ],
+      "evidence_ids": [
+        "t-kinetic-difference"
+      ],
+      "why": {
+        "zh": "对称发光让物体保持原有运动状态，而两系能量守恒留下一个正的动能差；这个变化来自物体发光后的状态改变。",
+        "en": "Symmetric emission leaves the body’s motion unchanged, while conservation in the two frames yields a positive kinetic-energy difference. It reflects the body’s changed state after emission."
+      },
+      "story": [
+        {
+          "text": {
+            "zh": "这次思想实验特意让物体同时向相反方向发出相等的光能。按原文设定，物体在自身静止系中始终静止，所以运动观察者看到的物体速度在发光前后也相同。",
+            "en": "The thought experiment deliberately uses equal, simultaneous emissions in opposite directions. In the paper’s setup the body remains at rest in its own frame, so the moving observer also sees the same body speed before and after emission."
+          },
+          "evidence_ids": [
+            "t-emission-setup"
+          ]
+        },
+        {
+          "text": {
+            "zh": "同一过程在两系中的能量损失并不相同：静止观察者记下 L，运动观察者记下 γL。分别应用能量守恒，再把这两笔损失相减，并使用一致的动能解释，得到 K₀−K₁=L(γ−1)。",
+            "en": "The energy loss differs between frames: L for the rest observer and γL for the moving observer. Applying conservation separately, subtracting the losses, and using the consistent kinetic-energy interpretation gives K₀−K₁=L(γ−1)."
+          },
+          "evidence_ids": [
+            "t-energy-balance",
+            "t-kinetic-difference"
+          ]
+        },
+        {
+          "text": {
+            "zh": "对于任何非零、低于光速的相对速度，γ=1/√(1−v²/c²) 都大于 1。物体确实向外释放能量时 L>0，因此 K₀−K₁>0，也就是发光后的动能更小。",
+            "en": "At any nonzero relative speed below c, γ=1/√(1−v²/c²) exceeds 1. With a positive emitted energy L, this gives K₀−K₁>0: the final kinetic energy is smaller."
+          },
+          "evidence_ids": [
+            "t-kinetic-difference"
+          ]
+        },
+        {
+          "text": {
+            "zh": "回到与物体一起静止的观察者那里，v=0、γ=1，这项平移动能差便为零。两种结果各自对应自己的参考系；它们共同指向的问题是，同一个速度下，物体储能改变后为什么会具有不同的动能。",
+            "en": "For the observer at rest with the body, v=0 and γ=1, so this translational kinetic-energy difference is zero. Each result belongs to its own frame. Together they pose the next question: why does changed stored energy alter kinetic energy at a fixed speed?"
+          },
+          "evidence_ids": [
+            "t-kinetic-difference",
+            "t-low-speed"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c20",
+      "title": {
+        "zh": "“与物体性质无关”的范围",
+        "en": "Scope of independence from the body"
+      },
+      "kind": "scope_claim",
+      "assessment": "conditional",
+      "summary": {
+        "zh": "“与物体性质无关”说的是这次发光造成的动能减少量：给定 L 和 v，公式中不再出现材料、形状或初始质量。它的适用范围仍是这里的对称发光过程。",
+        "en": "“Independent of the body’s properties” concerns the kinetic energy lost in this emission: once L and v are fixed, no material, shape, or initial mass appears. Its scope remains the symmetric-emission process considered here."
+      },
+      "reasoning": [
+        {
+          "zh": "检查 L(γ−1) 的参数：没有形状、材料、化学组成或初始质量。",
+          "en": "Inspect the parameters in L(γ−1): no shape, material, chemical composition, or initial mass appears."
+        },
+        {
+          "zh": "给 K0 与 K1 同时加上同一个依赖 v 的函数并不改变差值，因此差值的普适形式本身不足以确定二者各自的形式。",
+          "en": "Adding the same function of v to K0 and K1 leaves their difference unchanged; a universal difference alone does not determine each function."
+        }
+      ],
+      "limits": [
+        {
+          "zh": "结论继承无反冲发射、能量守恒和 H−E 的动能解释等条件。对于一般扩展系统，须继续检查完整系统和应力条件。",
+          "en": "The conclusion inherits no-recoil emission, energy conservation, and the kinetic interpretation of H−E. General extended systems still require complete-system and stress conditions."
+        }
+      ],
+      "segment_ids": [
+        "s032"
+      ],
+      "evidence_ids": [
+        "t-body-independent"
+      ],
+      "why": {
+        "zh": "推导只用了光能变换、两系能量守恒和一致的动能记法；结果确定的是前后差值，而不是物体各个状态的全部动能。",
+        "en": "The derivation uses light-energy transformation, conservation in both frames, and a consistent kinetic-energy account. It fixes a before-and-after difference, not the body’s entire kinetic energy in each state."
+      },
+      "story": [
+        {
+          "text": {
+            "zh": "先把过程固定下来：物体沿相反方向各释放一半光能，发光前后保持同样的速度。我们只问，在相同的观察速度 v 下，释放总能量 L 会让动能改变多少。",
+            "en": "First fix the process: the body releases half the light energy in each of two opposite directions, keeping the same speed. The question is how much kinetic energy changes when it releases total energy L at the same observation speed v."
+          },
+          "evidence_ids": [
+            "t-emission-setup"
+          ]
+        },
+        {
+          "text": {
+            "zh": "光能在运动系中的变换给出总量 γL；与静止系的 L 比较，再应用能量守恒和共同的能量零点，动能减少量就成为 L(γ−1)。这几步没有用到物体由什么材料制成。",
+            "en": "Transforming the light gives total energy γL in the moving frame. Comparing it with L in the rest frame, using conservation and the shared energy zero, yields a kinetic-energy loss L(γ−1). No material property enters these steps."
+          },
+          "evidence_ids": [
+            "t-energy-balance",
+            "t-kinetic-difference"
+          ]
+        },
+        {
+          "text": {
+            "zh": "于是，只要仍满足这个发射设定，具有相同 L 和 v 的物体便有同样的减少量。公式中的 c 是光速，γ 由 v/c 决定，右边没有留下形状、化学组成或初始质量等参数；原句的依据就在这里。",
+            "en": "Thus bodies with the same L and v have the same loss within this emission setup. The c in the formula is the speed of light, and γ depends on v/c. No shape, chemical composition, or initial mass remains on the right-hand side; this is the basis of the sentence."
+          },
+          "evidence_ids": [
+            "t-body-independent"
+          ]
+        },
+        {
+          "text": {
+            "zh": "不过，一个共同的差额可以对应不同的前后总额。数学上，给 K₀ 和 K₁ 同时加上同一个速度函数，差值仍不变。因此这一句足以说明“减少多少”的普适性；若要说明任意复合物体的全部动能怎样随速度变化，还要进一步处理它的内部能量与应力。",
+            "en": "A common difference can still come from different before-and-after totals. Mathematically, adding the same function of speed to K₀ and K₁ leaves their difference unchanged. The sentence therefore establishes universality of the loss; the complete speed dependence of an arbitrary composite body requires further treatment of internal energy and stresses."
+          },
+          "evidence_ids": [
+            "t-body-independent",
+            "t-laue"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c21",
+      "title": {
+        "zh": "与电子动能的比较",
+        "en": "Comparison with electron kinetic energy"
+      },
+      "kind": "comparison",
+      "assessment": "supported",
+      "summary": {
+        "zh": "两处公式确实具有同样的速度因子 γ−1。前文第 10 节通过电场做功得到电子的 K=mc²(γ−1)，这里则得到发光前后的差 K₀−K₁=L(γ−1)。",
+        "en": "The two formulas do share the speed factor γ−1. Section 10 of the earlier paper derives the electron’s K=mc²(γ−1) from electric work; the present note gives the emission difference K₀−K₁=L(γ−1)."
+      },
+      "reasoning": [
+        {
+          "zh": "瞬时静止时取 m a=qE，并用坐标与场变换得到纵向 qE=mγ³ dv/dt。",
+          "en": "Use m a=qE at instantaneous rest and transform coordinates and fields to obtain longitudinal qE=mγ³ dv/dt."
+        },
+        {
+          "zh": "K=∫qE dx=m∫₀ᵛ γ³u du。",
+          "en": "K=∫qE dx=m∫₀ᵛ γ³u du."
+        },
+        {
+          "zh": "因为 dγ/du=γ³u/c²，积分为 mc²[γ(v)−1]。",
+          "en": "Since dγ/du=γ³u/c², the integral is mc²[γ(v)−1]."
+        }
+      ],
+      "limits": [
+        {
+          "zh": "原文对象先是慢加速的带电质点；再以附加任意小电荷的论述推广到可称量质点。此段没有展开任意扩展物体的内部应力积分。",
+          "en": "The initial object is a slowly accelerated charged point particle, extended to ponderable points by adding arbitrarily small charge. This section does not evaluate all internal stresses of arbitrary extended bodies."
+        }
+      ],
+      "segment_ids": [
+        "s033"
+      ],
+      "evidence_ids": [
+        "t-electron-kinetic"
+      ],
+      "why": {
+        "zh": "前文的速度函数来自明确的运动方程和做功积分，所以这次比较有可倒查的推导依据。它也提示了能量 L 与质量乘以 c² 之间的对应。",
+        "en": "The earlier speed dependence comes from an explicit equation of motion and work integral. The comparison thus has a traceable derivation and points toward a correspondence between L and mass multiplied by c²."
+      },
+      "story": [
+        {
+          "text": {
+            "zh": "从一个带电质点出发，先在它瞬时静止的参考系中采用低速力学：电场力等于质量乘加速度。再把坐标和电磁场变换到运动参考系，沿运动方向的关系变成 F=mγ³dv/dt。",
+            "en": "Start with a charged point particle and use low-speed mechanics in its instantaneous rest frame: electric force equals mass times acceleration. Transforming coordinates and fields gives the longitudinal relation F=mγ³dv/dt in the moving frame."
+          },
+          "evidence_ids": [
+            "t-electron-kinetic",
+            "t-field-transform"
+          ]
+        },
+        {
+          "text": {
+            "zh": "让加速足够缓慢，使向外辐射的能量可以忽略，外电场所做的功就转化为质点的动能。于是从静止加速到 v 所需的能量是 K=∫F dx=m∫₀ᵛγ³u du。",
+            "en": "Make the acceleration sufficiently gradual that radiated energy can be neglected. The external field’s work then becomes kinetic energy. Accelerating from rest to v requires K=∫F dx=m∫₀ᵛγ³u du."
+          },
+          "evidence_ids": [
+            "t-electron-kinetic"
+          ]
+        },
+        {
+          "text": {
+            "zh": "这个积分可以直接算出：γ 对速度 u 的导数是 γ³u/c²，因此 K=mc²[γ(v)−1]。这就是前文第 10 节被引用的电子动能结果，式中的 m 由低速力学确定。",
+            "en": "The integral is explicit: the derivative of γ with respect to speed u is γ³u/c², so K=mc²[γ(v)−1]. This is the electron kinetic-energy result cited from section 10, with m determined by low-speed mechanics."
+          },
+          "evidence_ids": [
+            "t-electron-kinetic"
+          ]
+        },
+        {
+          "text": {
+            "zh": "再看这篇短文，光能变换与守恒给出了 K₀−K₁=L(γ−1)。把两式放在一起，就能看出它们随速度改变的方式相同，区别落在前面的系数；接下来比较低速时的质量系数，便成为自然的一步。这里引用的做功推导从质点模型出发。",
+            "en": "The inertia note instead obtains K₀−K₁=L(γ−1) from transformed light energy and conservation. The speed dependence matches, with different coefficients in front. Comparing those coefficients with low-speed mass is the natural next step. The cited work derivation starts from a point-particle model."
+          },
+          "evidence_ids": [
+            "t-kinetic-difference",
+            "t-electron-kinetic"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c22",
+      "title": {
+        "zh": "低速展开留下什么？",
+        "en": "What the low-speed expansion retains"
+      },
+      "kind": "approximation",
+      "assessment": "supported",
+      "summary": {
+        "zh": "低速展开保留下来的首项是 Lv²/(2c²)，它正好具有经典动能 ½mv² 的形式。比较 v² 的系数，就得到质量减少 L/c²。",
+        "en": "The leading low-speed term is Lv²/(2c²), matching the form of classical kinetic energy ½mv². Comparing the v² coefficients gives a mass loss L/c²."
+      },
+      "reasoning": [
+        {
+          "zh": "展开 (1−x)^(−1/2)=1+x/2+3x²/8+…，取 x=v²/c²。",
+          "en": "Expand (1−x)^(−1/2)=1+x/2+3x²/8+… with x=v²/c²."
+        },
+        {
+          "zh": "于是 K0−K1=Lv²/(2c²)+O(v⁴)。",
+          "en": "Hence K0−K1=Lv²/(2c²)+O(v⁴)."
+        },
+        {
+          "zh": "与 ½(m0−m1)v² 的二阶系数比较，得到 m0−m1=L/c²。",
+          "en": "Match the v² coefficient of ½(m0−m1)v² to obtain m0−m1=L/c²."
+        }
+      ],
+      "limits": [
+        {
+          "zh": "小的是比较参考系的相对速度。对一般复合物体仍要说明上述低速动能系数为何是其惯性质量，不能只因 v 小就忽略内部相对论运动。",
+          "en": "The expansion concerns relative frame speed. For a composite body, one must still establish that this low-speed coefficient is its inertial mass; low translational speed alone does not remove relativistic internal motion."
+        }
+      ],
+      "segment_ids": [
+        "s034",
+        "s035"
+      ],
+      "evidence_ids": [
+        "t-low-speed"
+      ],
+      "why": {
+        "zh": "在同一个速度下，前后动能差的二阶系数衡量惯性质量的变化；这里将精确式中的 γ 展开，正是为了读出这个系数。",
+        "en": "At a fixed speed, the second-order coefficient of the kinetic-energy difference measures the change in inertial mass. Expanding γ in the exact expression isolates that coefficient."
+      },
+      "story": [
+        {
+          "text": {
+            "zh": "在低速力学中，一个质量为 m 的物体具有动能 ½mv²。因此，如果同一物体在保持相同速度时改变了状态，前后动能差中的 v² 系数就能告诉我们惯性质量改变了多少。",
+            "en": "In low-speed mechanics, a body of mass m has kinetic energy ½mv². If it changes state while keeping the same speed, the v² coefficient of the kinetic-energy difference tells us how much its inertial mass has changed."
+          },
+          "evidence_ids": [
+            "t-low-speed",
+            "t-electron-kinetic"
+          ]
+        },
+        {
+          "text": {
+            "zh": "前面的发光计算已经得到 K₀−K₁=L(γ−1)，但 γ 包含所有速度阶次。我们可以选择一位相对物体运动很慢的观察者，使 v/c 很小，再把 γ 写成 1+v²/(2c²)+3v⁴/(8c⁴)+……。",
+            "en": "The emission calculation has already given K₀−K₁=L(γ−1), but γ contains all orders of speed. Choose an observer moving slowly relative to the body, so v/c is small, and expand γ as 1+v²/(2c²)+3v⁴/(8c⁴)+…."
+          },
+          "evidence_ids": [
+            "t-kinetic-difference",
+            "t-low-speed"
+          ]
+        },
+        {
+          "text": {
+            "zh": "原文舍去四阶及更高阶项，留下 K₀−K₁≈Lv²/(2c²)。同一差值在低速惯性质量的记法中是 ½(m₀−m₁)v²；两边描述同一过程，因此二阶系数必须相同。",
+            "en": "Dropping fourth and higher orders leaves K₀−K₁≈Lv²/(2c²). In terms of low-speed inertial mass, the same difference is ½(m₀−m₁)v². Since both describe the same process, their second-order coefficients must agree."
+          },
+          "evidence_ids": [
+            "t-low-speed"
+          ]
+        },
+        {
+          "text": {
+            "zh": "由此便读出 m₀−m₁=L/c²。小速度在这里是识别质量的办法；对于复杂物体，还要把内部能量和维持它的应力纳入整体，才能说明这个系数为何就是整个物体的惯性质量，后来的完整系统理论处理了这一步。",
+            "en": "This identifies m₀−m₁=L/c². Low speed is the means of identifying mass here. For a complex body, internal energy and supporting stresses must be included to establish that the coefficient is the inertia of the whole; later complete-system theory addresses that step."
+          },
+          "evidence_ids": [
+            "t-low-speed",
+            "t-laue"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c23",
+      "title": {
+        "zh": "发出能量，质量减少多少？",
+        "en": "How much mass does emission remove?"
+      },
+      "kind": "main_conclusion",
+      "assessment": "supported",
+      "summary": {
+        "zh": "对这篇文章的对称、无反冲发光过程，发射体失去静止系测得的能量 L，质量就减少 L/c²。后来独立测量质量差与释放能量的核反应实验，也在其测量精度内支持这一关系。",
+        "en": "For the paper’s symmetric, no-recoil emission, losing energy L measured in the emitter’s rest frame reduces its mass by L/c². Later nuclear-reaction experiments independently measuring mass differences and released energy support this relation within their precision."
+      },
+      "reasoning": [
+        {
+          "zh": "由 t-low-speed 得 m0−m1=L/c²。",
+          "en": "Use t-low-speed to obtain m0−m1=L/c²."
+        },
+        {
+          "zh": "按发射后减发射前定义变化，得到 Δm=(E1−E0)/c²。",
+          "en": "Define the change as final minus initial, giving Δm=(E1−E0)/c²."
+        }
+      ],
+      "limits": [
+        {
+          "zh": "这里的 L 在发射体静止系测量。有限运动参考系的总能量含有动能，不能直接与同一个静止质量写成 E=mc²。",
+          "en": "L is measured in the emitter-rest frame. Total energy in a moving frame includes kinetic energy and cannot be equated to the same rest mass times c² without the Lorentz factor."
+        },
+        {
+          "zh": "仅由差值关系得到 Erest=mc²+常数；绝对零点及一般闭合系统的关系要另行处理。",
+          "en": "A differences-only relation gives Erest=mc² plus a constant; the absolute zero and the relation for general closed systems need separate treatment."
+        }
+      ],
+      "segment_ids": [
+        "s037"
+      ],
+      "evidence_ids": [
+        "t-mass-loss",
+        "later-direct-mass-energy-test"
+      ],
+      "quantities": [
+        {
+          "label": {
+            "zh": "2005年独立测量的合并结果",
+            "en": "Combined result of the independent 2005 test"
+          },
+          "value": "1 − Δmc²/E = (−1.4 ± 4.4) × 10⁻⁷",
+          "calculation": "S: +2.1(5.2) × 10⁻⁷\nSi: −9.7(8.0) × 10⁻⁷\nInverse-variance mean ≈ −1.405 × 10⁻⁷",
+          "interpretation": {
+            "zh": "最终Nature文的报告值；在其不确定度内与零相容。具体核反应、常数及仪器条件见实验支链。",
+            "en": "The final Nature value is compatible with zero within its uncertainty. Reactions, constants and instrument conditions are specified in the experimental branch."
+          }
+        }
+      ],
+      "findings": [
+        {
+          "label": {
+            "zh": "同一研究线的版本数字略有不同",
+            "en": "Different numbers in successive versions"
+          },
+          "detail": {
+            "zh": "Dewey方法预印本Table IX为−1.21(4.33)×10⁻⁷；Nature最终论文为−1.4(4.4)×10⁻⁷。本例按版本分别记录，最终检验采用后者。",
+            "en": "Dewey preprint Table IX reports −1.21(4.33)×10⁻⁷; final Nature reports −1.4(4.4)×10⁻⁷. They remain versioned; the final test uses the latter."
+          },
+          "evidence_ids": [
+            "gamma-measurement-terminal"
+          ]
+        }
+      ],
+      "why": {
+        "zh": "同一束光在两系中的能量差，经过守恒记账转化为物体的动能差；低速时，这个差的 v² 系数恰好对应 L/c² 的惯性质量。",
+        "en": "The difference in light energy between frames becomes a difference in the body’s kinetic energy through conservation. At low speed, its v² coefficient corresponds to an inertial mass L/c²."
+      },
+      "story": [
+        {
+          "text": {
+            "zh": "故事从光携带能量开始。电磁场的储能给出光的能量密度；换到运动观察者那里，场强和同一光包所占体积都会改变。把两项合在一起，前文得到光能变换 l*=lγ(1−v cosφ/c)，其中 γ=1/√(1−v²/c²)，φ 是光在原系中的传播角度。",
+            "en": "The argument begins with light carrying energy. Electromagnetic field energy supplies its energy density. For a moving observer, both field strength and the volume occupied by the same packet change. Combining them gives the earlier paper’s transformation l*=lγ(1−v cosφ/c), where γ=1/√(1−v²/c²) and φ is the propagation angle in the original frame."
+          },
+          "evidence_ids": [
+            "t-field-energy",
+            "t-light-energy"
+          ]
+        },
+        {
+          "text": {
+            "zh": "然后安排一次没有反冲的发光：物体同时向相反方向各发出 L/2，并保持静止。运动观察者给两束光记下的方向项一正一负，相加后恰好抵消；于是静止系的总光能是 L，运动系的是 γL。",
+            "en": "Next arrange emission without recoil: the body simultaneously sends L/2 in each of two opposite directions and stays at rest. The moving observer’s directional terms have opposite signs and cancel. Total light energy is therefore L in the rest frame and γL in the moving frame."
+          },
+          "evidence_ids": [
+            "t-emission-setup",
+            "t-moving-balance"
+          ]
+        },
+        {
+          "text": {
+            "zh": "现在给同一过程开两份能量账本。能量守恒要求静止系中的物体失去 L，即 E₀−E₁=L；运动系中则失去 γL，即 H₀−H₁=γL。将两份账本相减，得到 (H₀−E₀)−(H₁−E₁)=L(γ−1)。",
+            "en": "Now keep two energy accounts for the same process. Conservation requires the body to lose L in its rest frame, E₀−E₁=L, and γL in the moving frame, H₀−H₁=γL. Subtracting gives (H₀−E₀)−(H₁−E₁)=L(γ−1)."
+          },
+          "evidence_ids": [
+            "t-conservation",
+            "t-energy-balance"
+          ]
+        },
+        {
+          "text": {
+            "zh": "要把这个差读成动能变化，就比较同一个内部状态在静止和运动时的能量，写成 H−E=K+C。发光前后保持相同的能量零点，让 C 消去，便得到 K₀−K₁=L(γ−1)。对复合物体，后来的理论进一步说明了把场和应力等纳入完整系统的重要性。",
+            "en": "To read this as a kinetic-energy change, compare the same internal state at rest and in motion and write H−E=K+C. Keeping the energy zero fixed through emission cancels C, giving K₀−K₁=L(γ−1). Later theory makes explicit how fields and stresses enter this accounting for a complete composite system."
+          },
+          "evidence_ids": [
+            "t-additive-constant",
+            "t-kinetic-difference",
+            "t-laue"
+          ]
+        },
+        {
+          "text": {
+            "zh": "最后选择相对速度很小的观察者。此时 γ−1≈v²/(2c²)，所以动能减少量约为 Lv²/(2c²)。它与低速动能差 ½(m₀−m₁)v² 描述同一过程，比较系数便得到 m₀−m₁=L/c²：物体失去能量，也失去相应的惯性质量。",
+            "en": "Finally choose a slowly moving observer. Then γ−1≈v²/(2c²), so the kinetic-energy loss is approximately Lv²/(2c²). This describes the same process as the low-speed difference ½(m₀−m₁)v². Matching coefficients gives m₀−m₁=L/c²: the body loses energy and the corresponding inertial mass."
+          },
+          "evidence_ids": [
+            "t-low-speed",
+            "t-mass-loss"
+          ]
+        },
+        {
+          "text": {
+            "zh": "这条理论推导后来还有独立的实验检验。2005 年，研究者在硅、硫中子俘获反应中，分别由离子回旋频率求质量差、由 γ 射线波长求释放能量，并计入所需修正。最终论文合并得到 1−Δmc²/E=(−1.4±4.4)×10⁻⁷，在不确定度内与零相容，为所测核反应中的这条关系提供了定量支持。",
+            "en": "An independent experimental test followed much later. In 2005, silicon and sulphur neutron-capture measurements determined mass differences from ion cyclotron frequencies and released energy from gamma-ray wavelengths, with the required corrections. The final paper combined them as 1−Δmc²/E=(−1.4±4.4)×10⁻⁷, compatible with zero within uncertainty and quantitatively supporting the relation for those reactions."
+          },
+          "evidence_ids": [
+            "later-direct-mass-energy-test",
+            "gamma-measurement-terminal"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c24",
+      "title": {
+        "zh": "从发光推广到各种能量变化",
+        "en": "Generalizing beyond radiation"
+      },
+      "kind": "generalization",
+      "assessment": "conditional",
+      "summary": {
+        "zh": "从发光推广到各种能量变化，需要把储能及维持物体的约束一起纳入完整系统。后续理论为完整静态系统给出了明确支撑；1905 年短文本身展示的计算仍是对称发光。",
+        "en": "Extending the result to other energy changes requires including energy stores and the constraints sustaining the body within a complete system. Later theory provides explicit support for complete static systems; the 1905 note’s displayed calculation concerns symmetric emission."
+      },
+      "reasoning": [
+        {
+          "zh": "原文计算给出一种能量移出方式的 Δm=ΔErest/c²。",
+          "en": "The displayed calculation gives Δm=ΔErest/c² for one mode of energy removal."
+        },
+        {
+          "zh": "推广要求各种储能及约束装置属于同一完整系统；不能只选其中的辐射、气体或电场而漏掉支撑应力。",
+          "en": "Extension requires all energy stores and constraints to belong to the complete system; radiation, gas, or field subsystems must not omit supporting stresses."
+        },
+        {
+          "zh": "Laue §5 的能量—动量积分在完整静态系统上给出 E=γErest 与 p=γErest v/c²，支持 m=Erest/c²。",
+          "en": "Laue §5 integrates energy and momentum for a complete static system to give E=γErest and p=γErest v/c², supporting m=Erest/c²."
+        }
+      ],
+      "limits": [
+        {
+          "zh": "原文的一般结论、原文实际展示的过程、后续理论证明是三个不同证据层级。Laue 1911 不可能是 1905 原文引用。",
+          "en": "The general assertion, the displayed process, and the later proof are distinct evidence layers. Laue 1911 cannot be a citation in the 1905 note."
+        }
+      ],
+      "segment_ids": [
+        "s038"
+      ],
+      "evidence_ids": [
+        "t-generalization"
+      ],
+      "findings": [
+        {
+          "label": {
+            "zh": "后续研究对论证范围有争论",
+            "en": "Later debate about the argument’s scope"
+          },
+          "detail": {
+            "zh": "Ohanian认为一般扩展物体的内运动与应力处理需要补充。这是已核读论文的批评；其提及的Stachel–Torretti辩护原文尚未取得，争论双方的论证读取尚不对称。",
+            "en": "Ohanian calls for additional treatment of internal motion and stresses. This is his inspected critique; the Stachel–Torretti defense he cites remains unavailable, leaving asymmetric access to the debate."
+          },
+          "evidence_ids": [
+            "t-ohanian-scope"
+          ]
+        }
+      ],
+      "why": {
+        "zh": "发光结果只含 L、v、c，给出了推广的线索；但复合物体的内部应力也参与总能量和动量，这正是一般化时需要补上的物理步骤。",
+        "en": "The emission result contains only L, v, and c, suggesting a wider relation. Internal stresses also contribute to a composite body’s total energy and momentum, supplying the physical step needed for the generalization."
+      },
+      "story": [
+        {
+          "text": {
+            "zh": "先看已经算出的那个过程。物体沿相反方向发出相等光能，两个参考系分别使用能量守恒，再在低速极限识别惯性质量，得到 Δm=ΔErest/c²；这里明确处理的是通过辐射移出能量。",
+            "en": "Begin with the process actually calculated. The body emits equal energies in opposite directions. Conservation in two frames and identification of low-speed inertial mass give Δm=ΔErest/c². This explicitly treats energy removal by radiation."
+          },
+          "evidence_ids": [
+            "t-emission-setup",
+            "t-mass-loss"
+          ]
+        },
+        {
+          "text": {
+            "zh": "这个答案没有留下材料或发射方向的参数，只保留了能量变化和 c²。Einstein 因而提出，更换能量转移的方式也不会改变质量关系。这是从已算出的特殊过程走向一般规律的一步，短文用一句话完成了这个推广。",
+            "en": "The answer retains no material or emission-angle parameter, only the energy change and c². Einstein therefore proposes that changing the mode of energy transfer would not change the mass relation. This moves from the calculated special process toward a general law, an extension made in a single sentence."
+          },
+          "evidence_ids": [
+            "t-body-independent",
+            "t-generalization"
+          ]
+        },
+        {
+          "text": {
+            "zh": "要把这一步讲完整，可以想象一个由物质、场和约束装置共同组成的物体。计算它的总体运动时，储存的能量与维持平衡的应力都要一起记入；选定这样的完整系统，才有条件讨论各种能量是否都以同样方式贡献惯性。",
+            "en": "To fill in that step, consider a body composed of matter, fields, and constraints. Its overall motion must account for stored energy together with the stresses maintaining equilibrium. Defining that complete system makes it possible to ask whether its different energy forms contribute to inertia in the same way."
+          },
+          "evidence_ids": [
+            "t-generalization",
+            "t-laue"
+          ]
+        },
+        {
+          "text": {
+            "zh": "后来的完整静态系统推导正是这样做的：把全部应力纳入，利用平衡与边界条件使其相关积分消去，得到 E=γErest、p=γErest v/c²。低速时由动量识别质量，就得到 m=Erest/c²。这给出了比单次发光更宽的支持，同时清楚说明了完整性和静态平衡条件。",
+            "en": "The later proof for complete static systems does just this. It includes all stresses and uses equilibrium and boundary conditions to eliminate their relevant integrals, obtaining E=γErest and p=γErest v/c². Identifying mass from low-speed momentum gives m=Erest/c², supporting a wider class than one emission process while stating completeness and static equilibrium explicitly."
+          },
+          "evidence_ids": [
+            "t-laue"
+          ]
+        },
+        {
+          "text": {
+            "zh": "对于 1905 年原推导是否已足够一般，后来的研究存在争论。已读的 Ohanian 论文把内部运动与应力的处理视为需要补充之处；他提及的 Stachel–Torretti 辩护原文尚未取得，因此此次调查对双方论证的读取并不对称。可以确定的是，后续完整系统理论把推广需要处理的问题写得更明确了。",
+            "en": "Later researchers debate whether the 1905 argument was already general enough. The inspected Ohanian paper identifies internal motion and stresses as requiring further treatment. The Stachel–Torretti defense it cites was not obtained, so access to the two arguments is uneven. The later complete-system treatment does make the physical requirements of the extension explicit."
+          },
+          "evidence_ids": [
+            "t-ohanian-scope",
+            "t-opposing-source-gap",
+            "t-laue"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c25",
+      "title": {
+        "zh": "质量度量哪一种能量？",
+        "en": "Which energy does mass measure?"
+      },
+      "kind": "general_conclusion",
+      "assessment": "conditional",
+      "summary": {
+        "zh": "质量在这里对应的是物体的静止能量。1905 年的演算先联系了二者的变化量；后来的完整静态系统理论进一步给出 m=Erest/c²。",
+        "en": "Mass here corresponds to the body’s rest energy. The 1905 calculation first relates their changes; later theory for complete static systems gives m=Erest/c²."
+      },
+      "reasoning": [
+        {
+          "zh": "原文计算给出一种能量移出方式的 Δm=ΔErest/c²。",
+          "en": "The displayed calculation gives Δm=ΔErest/c² for one mode of energy removal."
+        },
+        {
+          "zh": "推广要求各种储能及约束装置属于同一完整系统；不能只选其中的辐射、气体或电场而漏掉支撑应力。",
+          "en": "Extension requires all energy stores and constraints to belong to the complete system; radiation, gas, or field subsystems must not omit supporting stresses."
+        },
+        {
+          "zh": "Laue §5 的能量—动量积分在完整静态系统上给出 E=γErest 与 p=γErest v/c²，支持 m=Erest/c²。",
+          "en": "Laue §5 integrates energy and momentum for a complete static system to give E=γErest and p=γErest v/c², supporting m=Erest/c²."
+        }
+      ],
+      "limits": [
+        {
+          "zh": "原文的一般结论、原文实际展示的过程、后续理论证明是三个不同证据层级。Laue 1911 不可能是 1905 原文引用。",
+          "en": "The general assertion, the displayed process, and the later proof are distinct evidence layers. Laue 1911 cannot be a citation in the 1905 note."
+        }
+      ],
+      "segment_ids": [
+        "s039"
+      ],
+      "evidence_ids": [
+        "t-generalization",
+        "later-direct-mass-energy-test"
+      ],
+      "why": {
+        "zh": "运动观察者测到的总能量还包含整体运动的贡献，而原文用于计算质量变化的 L 是在发射体静止系测得的。",
+        "en": "A moving observer’s total energy also includes overall motion, whereas the L used to calculate the mass change is measured in the emitter’s rest frame."
+      },
+      "story": [
+        {
+          "text": {
+            "zh": "让观察者与物体一起静止时，物体仍然可以具有能量，例如原文发光前的 E₀。这里首先把这种能量与整体平移带来的动能区分开；换到运动观察者那里，同一物体的总能量记为 H。",
+            "en": "An observer at rest with the body can still assign it energy, such as E₀ before emission in the paper. This energy is first distinguished from the kinetic energy of overall translation. A moving observer assigns the same body total energy H."
+          },
+          "evidence_ids": [
+            "t-definitions",
+            "t-additive-constant"
+          ]
+        },
+        {
+          "text": {
+            "zh": "物体向相反方向发光后，静止系能量减少 L。把两系的能量守恒联系起来，再比较低速动能的质量系数，得到质量也相应减少 L/c²。因此，这次演算首先告诉我们的是静止能量改变多少，质量就按什么比例改变。",
+            "en": "After opposite-direction emission, rest-frame energy decreases by L. Combining conservation in the two frames and comparing low-speed kinetic-energy coefficients gives a mass loss L/c². The calculation therefore first establishes how a change in rest energy corresponds to a change in mass."
+          },
+          "evidence_ids": [
+            "t-mass-loss",
+            "t-low-speed"
+          ]
+        },
+        {
+          "text": {
+            "zh": "只知道变化量的比例，还留有能量零点的问题：由差值关系可写成 Erest=mc² 加一个常数。要进一步说明完整物体的能量与质量怎样对应，需要把它所有相关的能量、动量和应力一并处理。",
+            "en": "A proportionality between changes still leaves the energy zero to address: the difference relation allows Erest=mc² plus a constant. Relating the energy and mass of a complete body requires treating all its relevant energy, momentum, and stresses together."
+          },
+          "evidence_ids": [
+            "t-mass-loss",
+            "t-generalization"
+          ]
+        },
+        {
+          "text": {
+            "zh": "后来的完整静态系统分析得到，总能量在运动系中为 E=γErest，总动量为 p=γErest v/c²。低速时识别出的惯性质量正是 Erest/c²。这样，“质量度量能量内容”便有了明确含义：质量对应静止能量，而运动系总能量还带有 γ 这个速度因子。",
+            "en": "Later analysis of complete static systems gives moving-frame total energy E=γErest and momentum p=γErest v/c². The low-speed inertial mass is Erest/c². This makes the meaning precise: mass corresponds to rest energy, while moving-frame total energy also carries the speed factor γ."
+          },
+          "evidence_ids": [
+            "t-laue"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c26",
+      "title": {
+        "zh": "9×10²⁰这个数字从何而来？",
+        "en": "Where does 9×10²⁰ come from?"
+      },
+      "kind": "numerical_claim",
+      "assessment": "supported",
+      "summary": {
+        "zh": "9×10²⁰ 是近似光速的平方，用的是厘米、克、秒单位。把以 erg 为单位的能量数值 L 除以整个 9×10²⁰，结果就是以克计的质量变化。",
+        "en": "9×10²⁰ is the square of the rounded speed of light in centimetre–gram–second units. Dividing the energy’s numerical value L in ergs by the whole 9×10²⁰ gives the mass change in grams."
+      },
+      "reasoning": [
+        {
+          "zh": "原文先给Δm=L/c²，再说L用erg、质量用克。1 erg=1 g·cm²/s²。",
+          "en": "The note first gives Δm=L/c², then specifies ergs and grams. One erg is one g·cm²/s²."
+        },
+        {
+          "zh": "由9×10²⁰还原出所用近似c≈3×10¹⁰ cm/s，再平方得到分母。这个光速数值并未在短文中单独列出。",
+          "en": "The denominator implies the rounded c≈3×10¹⁰ cm/s. Squaring it gives 9×10²⁰; the speed itself is not separately stated."
+        },
+        {
+          "zh": "历史光学测量支持这一数量级；现代SI定义可用于精确换算，两者的角色不同。",
+          "en": "Historical optical measurements support the rounded scale; modern SI supplies an exact conversion, a different evidential role."
+        }
+      ],
+      "limits": [
+        {
+          "zh": "数字換算核查的是单位和算术；质量与能量之间的物理关系仍由理论推导及实验支持。",
+          "en": "This check establishes units and arithmetic; the physical mass–energy relation needs theoretical and experimental support."
+        }
+      ],
+      "segment_ids": [
+        "s040"
+      ],
+      "evidence_ids": [
+        "numerical-cgs-coefficient"
+      ],
+      "quantities": [
+        {
+          "label": {
+            "zh": "原文cgs换算",
+            "en": "Original cgs conversion"
+          },
+          "value": "Δm = L/(9 × 10²⁰) g",
+          "calculation": "1 erg = 1 g·cm²/s²\n(3 × 10¹⁰ cm/s)² = 9 × 10²⁰ cm²/s²",
+          "interpretation": {
+            "zh": "英文保留历史排法L/9 × 10²⁰；中文按L/c²显式补出整个分母的括号。",
+            "en": "The English retains the historical typography L/9 × 10²⁰; Chinese makes the denominator explicit using L/c²."
+          }
+        },
+        {
+          "label": {
+            "zh": "与现代精确c比较",
+            "en": "Comparison with exact modern c"
+          },
+          "value": "1 erg/c² = 1.1126500560536184 × 10⁻²¹ g",
+          "calculation": "c = 29979245800 cm/s\nc² = 8.9875517873681764 × 10²⁰ cm²/s²\n(c² / (9×10²⁰) − 1) × 100% = −0.1383134737%",
+          "interpretation": {
+            "zh": "1905取整所得质量变化比现代换算小约0.1383%，是取整差异。",
+            "en": "The historical rounded mass conversion is about 0.1383% smaller than the modern one."
+          }
+        }
+      ],
+      "why": {
+        "zh": "1 erg=1 g·cm²/s²，而 c≈3×10¹⁰ cm/s；能量除以 c² 后，cm²/s² 抵消，剩下质量单位 g。",
+        "en": "One erg is one g·cm²/s², and c≈3×10¹⁰ cm/s. Dividing energy by c² cancels cm²/s² and leaves grams."
+      },
+      "story": [
+        {
+          "text": {
+            "zh": "这一步先有物理关系 Δm=ΔErest/c²，再把它写成便于使用的数值形式。原文指定能量以 erg 计、质量以克计，因此光速也要用厘米每秒表示，单位才能配套。",
+            "en": "The physical relation Δm=ΔErest/c² comes first; this step writes it as a practical numerical conversion. The paper specifies energy in ergs and mass in grams, so light speed must be expressed in centimetres per second."
+          },
+          "evidence_ids": [
+            "t-mass-loss",
+            "numerical-cgs-coefficient"
+          ]
+        },
+        {
+          "text": {
+            "zh": "一个 erg 等于 1 g·cm²/s²。用它除以单位为 cm²/s² 的 c²，长度和时间单位恰好抵消，留下 g。这说明 L/c² 为什么会给出质量，而不是另一个能量数值。",
+            "en": "One erg equals 1 g·cm²/s². Dividing by c², measured in cm²/s², cancels the length and time units and leaves g. This is why L/c² has the units of mass."
+          },
+          "evidence_ids": [
+            "numerical-cgs-coefficient"
+          ]
+        },
+        {
+          "text": {
+            "zh": "分母 9×10²⁰ 对应 c≈3×10¹⁰ cm/s，因为 (3×10¹⁰)²=9×10²⁰。这个近似光速是由原文分母还原出来的，短文没有另外单列它。公式应读作 L/(9×10²⁰)，括号包含整个分母。",
+            "en": "The denominator corresponds to c≈3×10¹⁰ cm/s because (3×10¹⁰)²=9×10²⁰. That rounded speed is inferred from the denominator; the short paper does not separately state it. The expression means L/(9×10²⁰), with the whole denominator inside the brackets."
+          },
+          "evidence_ids": [
+            "numerical-cgs-coefficient"
+          ]
+        },
+        {
+          "text": {
+            "zh": "这一取整有当时测量背景：1905 年以前，旋转镜等直接光学实验已经把光速测到约每秒三十万千米，也就是每秒三百亿厘米的量级。这些历史测量支持该近似尺度，是此次倒查补充的背景。",
+            "en": "The rounding has a contemporary measurement context. Before 1905, direct optical experiments such as rotating-mirror measurements had established a speed near 300,000 kilometres per second, or 30 billion centimetres per second. These historical measurements support the approximate scale as background added in this investigation."
+          },
+          "evidence_ids": [
+            "historical-light-speed"
+          ]
+        },
+        {
+          "text": {
+            "zh": "现代 SI 把 c 精确定义为 299792458 m/s，换成厘米每秒再平方得到 8.9875517873681764×10²⁰ cm²/s²。按此换算，1 erg 对应约 1.11265×10⁻²¹ g；原文取整算出的质量约小 0.1383%。这个小差别来自光速取整。",
+            "en": "Modern SI fixes c at exactly 299792458 m/s. Converting to centimetres per second and squaring gives 8.9875517873681764×10²⁰ cm²/s². Thus 1 erg corresponds to approximately 1.11265×10⁻²¹ g; the paper’s rounded conversion gives about 0.1383% less mass. This small difference comes from rounding c."
+          },
+          "evidence_ids": [
+            "m-modern-c",
+            "numerical-cgs-coefficient"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c27",
+      "title": {
+        "zh": "镭盐的能量变化，有什么证据？",
+        "en": "What was known about radium salts?"
+      },
+      "kind": "empirical_premise",
+      "assessment": "conditional",
+      "summary": {
+        "zh": "镭盐持续放热有直接量热证据。这组早期实验还没有把热量来源解释清楚，也没有测量质量亏损。",
+        "en": "Direct calorimetry supports continuous heating by radium salts. These early experiments had not resolved the energy source and did not measure mass loss."
+      },
+      "reasoning": [
+        {
+          "zh": "等形安瓿中的含镭盐与纯氯化钡用铁—康铜热电偶比较：含镭盐高约1.5°C；两份纯氯化钡对照仅约0.01°C。\n用已知电流和电阻的加热丝复现相同稳态温差来定量热功率；另以Bunsen量热计复核，加入样品后汞柱匀速移动，移除后停止。\n1克混盐约14小卡/小时，估计约1/6质量为氯化镭，另测0.08克纯氯化镭。两法同量级而非精确一致；每克镭约100小卡/小时是量级估计。\n原文没有统计误差条；混盐成分不精确。末页仍讨论未知外部能量这一替代解释，因此此文支持持续放热及量级，尚未完成质能关系检验。",
+          "en": "Iron–constantan thermocouples compared matching ampoules: radium-containing salt was about 1.5°C warmer; two inactive controls differed by only about 0.01°C.\nA heater of known current and resistance reproduced the steady temperature difference. Independent Bunsen calorimetry showed steady mercury motion with the sample, stopping on removal.\nOne gram of mixed salt gave about 14 cal/hour, with roughly one-sixth radium chloride; 0.08 g of pure chloride was also tested. Methods agreed in scale, not exactly.\nComposition was approximate and no statistical error bar was supplied. The authors still entertained unknown external energy, so this establishes heating and scale, not mass–energy equivalence."
+        }
+      ],
+      "limits": [
+        {
+          "zh": "原文没有统计误差条；混盐成分不精确。末页仍讨论未知外部能量这一替代解释，因此此文支持持续放热及量级，尚未完成质能关系检验。",
+          "en": "Composition was approximate and no statistical error bar was supplied. The authors still entertained unknown external energy, so this establishes heating and scale, not mass–energy equivalence."
+        }
+      ],
+      "segment_ids": [
+        "s041"
+      ],
+      "evidence_ids": [
+        "radium-heat-primary"
+      ],
+      "findings": [
+        {
+          "label": {
+            "zh": "支持了观测，尚未完成能量来源解释",
+            "en": "Observed heating, with an unresolved source interpretation"
+          },
+          "detail": {
+            "zh": "不能把“镭盐持续放热”直接改写成“该量热实验已验证质能关系”。这一步正是被引用背景与主张之间需要留下的差距。",
+            "en": "Continuous heating must not be rewritten as a calorimetric verification of mass–energy equivalence. This is the gap between the observed background and the stronger claim."
+          },
+          "evidence_ids": [
+            "radium-heat-primary"
+          ]
+        }
+      ],
+      "quantities": [
+        {
+          "label": {
+            "zh": "1903年报告的放热量级",
+            "en": "Reported 1903 heating scale"
+          },
+          "value": "≈ 100 small cal / (g radium · hour)",
+          "calculation": "Mixed sample: ≈ 14 small cal/hour for 1 g\nRadium chloride fraction: ≈ 1/6 by mass",
+          "interpretation": {
+            "zh": "原作者给出量级，没有统计误差条；混盐、氯化镭与每克镭不能混成同一个归一化单位。",
+            "en": "This is an estimated scale without statistical error bars. Mixed salt, radium chloride and elemental-radium normalization are distinct."
+          }
+        }
+      ],
+      "why": {
+        "zh": "含镭样品与对照的温差、已知电加热功率的替代标定，以及另一种量热法的响应共同支持了放热观测；能量来源则仍是原作者讨论中的问题。",
+        "en": "Sample–control temperature differences, calibration against known electrical heating, and a second calorimetric response jointly support the heating observation. The source of that energy remained under discussion by the authors."
+      },
+      "story": [
+        {
+          "text": {
+            "zh": "1903 年的研究把含镭盐和纯氯化钡分别装入等形安瓿，用热电偶比较温度。含镭样品高约 1.5°C；两份纯氯化钡相互比较时，温差只有约 0.01°C。这个对照把持续温差与含镭样品联系起来。",
+            "en": "The 1903 study placed radium-containing salt and pure barium chloride in matching ampoules and compared their temperatures with thermocouples. The radium-containing sample was about 1.5°C warmer; two pure-barium-chloride controls differed by only about 0.01°C. The control connected the sustained difference to the radium-containing sample."
+          },
+          "evidence_ids": [
+            "radium-heat-primary"
+          ]
+        },
+        {
+          "text": {
+            "zh": "为了从“更热”走到“每小时放出多少热”，研究者用电流和电阻已知的加热丝复现同样的稳态温差，再由电加热功率估算放热功率。他们还用 Bunsen 量热计复核：放入样品后汞柱匀速移动，移走样品后停止。",
+            "en": "To move from “warmer” to a rate of heat release, the researchers reproduced the same steady temperature difference with a heater of known current and resistance. Its electrical power provided a heat-rate calibration. A Bunsen calorimeter supplied a further check: the mercury moved steadily with the sample present and stopped when it was removed."
+          },
+          "evidence_ids": [
+            "radium-heat-primary"
+          ]
+        },
+        {
+          "text": {
+            "zh": "结合混盐和少量纯氯化镭的测量，原作者估计每克镭每小时释放约 100 小卡。这里按“镭的质量”归一化，不能把它当成每克任意镭盐的数值；混盐组成是估计的，两种量热法也只是量级相符，原文没有给出统计误差条。",
+            "en": "Measurements of mixed salt and a small amount of pure radium chloride led to an estimate of about 100 small calories per gram of radium per hour. The normalization is to radium mass, not to one gram of an arbitrary radium salt. Composition was estimated, the two methods agreed in scale, and no statistical error bar was reported."
+          },
+          "evidence_ids": [
+            "radium-heat-primary"
+          ]
+        },
+        {
+          "text": {
+            "zh": "因此，倒查到这里能够扎实说明镭盐确实在持续放热，以及放热的大致尺度。能量究竟从哪里来，当时仍未解决：论文末页还考虑了未知外部能量的可能。它给出了后来挑选实验材料的动机，但没有把放热量与质量减少作直接比较。",
+            "en": "This establishes sustained heating and its approximate scale. Where the energy came from remained unresolved at the time: the paper’s final page also considered an unknown external supply. The result helps explain the later choice of an experimental candidate, but did not directly compare heat release with a reduction in mass."
+          },
+          "evidence_ids": [
+            "radium-heat-primary",
+            "radium-experimental-proposal"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c28",
+      "title": {
+        "zh": "实验建议与实验结果",
+        "en": "A proposed test versus a result"
+      },
+      "kind": "experimental_proposal",
+      "assessment": "proposal",
+      "summary": {
+        "zh": "这句话提出的是实验建议：能量释放明显的镭盐可能适合检验预测。1905 年短文没有报告这项检验的实施结果。",
+        "en": "This sentence proposes an experiment: radium salts, with their pronounced energy release, might be suitable for testing the prediction. The 1905 note does not report an outcome from that proposed test."
+      },
+      "reasoning": [
+        {
+          "zh": "原句用“可能”提出材料选择与检验方向。",
+          "en": "The sentence proposes a material and possible experimental direction."
+        },
+        {
+          "zh": "已有的放热量热测量可以解释该建议的动机；短文中没有称量数据或误差预算。",
+          "en": "Existing heating measurements motivate it; the note supplies neither weighing data nor an uncertainty budget."
+        }
+      ],
+      "limits": [
+        {
+          "zh": "后来的核反应检验可检验质能关系，但它不是这里所建议的镭盐称量实验。",
+          "en": "Later nuclear-reaction tests probe the relation but are not the proposed radium-salt weighing experiment."
+        }
+      ],
+      "segment_ids": [
+        "s041"
+      ],
+      "evidence_ids": [
+        "radium-experimental-proposal"
+      ],
+      "why": {
+        "zh": "既有放热观测解释了材料选择的动机，而原文的措辞仍是“可能”；文中没有相应的称量数据或测量精度方案。",
+        "en": "Existing heating observations explain the material choice, while the original wording remains a possibility. The note contains no corresponding mass measurements or measurement-precision plan."
+      },
+      "story": [
+        {
+          "text": {
+            "zh": "前面的推导预测，物体失去能量 L 时应减少 L/c² 的质量。若要把这句话交给实验，就需要找到能量变化足够明显、值得同时追踪能量与质量的对象。",
+            "en": "The preceding derivation predicts that losing energy L reduces a body’s mass by L/c². An experimental test therefore needs an object with a substantial enough energy change to make tracking both energy and mass worthwhile."
+          },
+          "evidence_ids": [
+            "t-mass-loss",
+            "radium-experimental-proposal"
+          ]
+        },
+        {
+          "text": {
+            "zh": "镭盐成为候选者有实际背景：在这篇短文之前，量热研究已经观察到它持续放热。这个现象说明为什么会想到用它来试，却还没有提供能量释放与质量亏损的配对测量。",
+            "en": "There was a practical reason to consider radium salts: calorimetry had observed continuous heating before this note was written. That explains why the material suggested itself, while leaving paired measurements of released energy and mass loss still to be made."
+          },
+          "evidence_ids": [
+            "radium-heat-primary"
+          ]
+        },
+        {
+          "text": {
+            "zh": "因此，Einstein 在这里说的是这种材料“可能”让理论接受检验。短文没有给出称量装置、实测质量差或误差预算；这句话在论证中的作用，是提出一个接下来可以尝试的实验方向。",
+            "en": "Einstein therefore says that such a material might allow the theory to be tested. The note supplies no weighing apparatus, measured mass difference, or uncertainty budget. The sentence’s role is to identify an experimental direction that could be tried next."
+          },
+          "evidence_ids": [
+            "radium-experimental-proposal"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c29",
+      "title": {
+        "zh": "“辐射传递惯性”是什么意思？",
+        "en": "What does radiation conveying inertia mean?"
+      },
+      "kind": "conditional_consequence",
+      "assessment": "conditional",
+      "summary": {
+        "zh": "按文中得到的关系，辐射转移能量，也会改变发射体与吸收体相应的惯性。质量增减应以各自静止能量的变化计算。",
+        "en": "Under the relation developed in the note, radiation transfers energy and correspondingly changes the inertia of the emitting and absorbing bodies. Their mass changes are determined by their changes in rest energy."
+      },
+      "reasoning": [
+        {
+          "zh": "发射过程使用 Δm=ΔErest/c²。",
+          "en": "Apply Δm=ΔErest/c² to emission."
+        },
+        {
+          "zh": "吸收过程把进入系统的能量纳入最终静止能量；若发生反冲，还须把动能和动量一并核算。",
+          "en": "For absorption, account for incoming energy in the final rest energy; recoil requires including kinetic energy and momentum."
+        }
+      ],
+      "limits": [
+        {
+          "zh": "原短文未列出吸收实验数据，也未逐式推导一个有反冲的吸收过程。这里的“转移惯性”不等于宣称单个光子的静止质量非零。",
+          "en": "The note supplies no absorption data and no stepwise recoiling-absorber calculation. Transfer of inertia does not assert nonzero photon rest mass."
+        }
+      ],
+      "segment_ids": [
+        "s042"
+      ],
+      "evidence_ids": [
+        "t-radiation-inertia"
+      ],
+      "why": {
+        "zh": "发射体失去能量时已得到质量减少的关系；把同样的能量—质量联系应用到吸收体，就得到能量转移伴随惯性变化的解释。",
+        "en": "Emission has already yielded a relation between energy loss and mass loss. Applying the same energy–mass connection to an absorber gives the interpretation that transferring energy also changes inertia."
+      },
+      "story": [
+        {
+          "text": {
+            "zh": "光可以从物体带走能量。本文先用一次对称、无反冲的发光过程说明：物体在静止系失去 L 的能量后，相同速度下的动能也会改变。",
+            "en": "Light can carry energy away from a body. The note first considers symmetric emission without recoil: after the body loses rest-frame energy L, its kinetic energy at the same speed also changes."
+          },
+          "evidence_ids": [
+            "t-emission-setup",
+            "t-kinetic-difference"
+          ]
+        },
+        {
+          "text": {
+            "zh": "在低速极限，这个动能变化对应质量减少 L/c²。这里的质量表征物体的惯性，因此失去储能不仅改变能量账本，也改变物体整体运动所对应的惯性。",
+            "en": "In the low-speed limit, this kinetic-energy change corresponds to a mass reduction L/c². Since mass characterizes inertia, losing stored energy changes both the energy account and the inertia associated with the body’s overall motion."
+          },
+          "evidence_ids": [
+            "t-low-speed",
+            "t-mass-loss"
+          ]
+        },
+        {
+          "text": {
+            "zh": "再考虑能量被另一物体吸收的情形。进入的能量要记入吸收体及其运动；如果发生反冲，一部分记在整体动能中，最终留在静止能量中的变化才决定它增加多少质量。这样，发射端和吸收端就可以用同一关系贯通起来。",
+            "en": "Now consider another body absorbing the energy. The incoming energy must be accounted for in the absorber and its motion. If it recoils, part belongs to overall kinetic energy; the final change in rest energy determines the mass increase. The same relation thus connects emission and absorption."
+          },
+          "evidence_ids": [
+            "t-radiation-inertia"
+          ]
+        },
+        {
+          "text": {
+            "zh": "这就是末句“辐射在发射体与吸收体之间传递惯性”的含义：它描述能量转移怎样改变两端物体的惯性。原文用“如果理论符合事实”引出这句话，给出的是整个推导的物理解释；具体吸收过程的计算和测量还要针对相应过程展开。",
+            "en": "This is the meaning of radiation “conveying inertia” between emitter and absorber: energy transfer changes the inertia of the bodies at the two ends. The original introduces it conditionally, as a physical interpretation of the derivation. Calculations and measurements for a particular absorption process must address that process itself."
+          },
+          "evidence_ids": [
+            "t-radiation-inertia"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c30",
+      "title": {
+        "zh": "Maxwell方程能说明多少？",
+        "en": "What Maxwell’s equations establish"
+      },
+      "kind": "footnote_claim",
+      "assessment": "conditional",
+      "summary": {
+        "zh": "Maxwell 真空方程确实给出固定的波速；让所有惯性系都使用同一个光速，还要连同正文的相对性原理一起使用。",
+        "en": "Vacuum Maxwell equations do yield a fixed wave speed. Applying the same speed in every inertial frame also uses the relativity principle stated in the text."
+      },
+      "reasoning": [
+        {
+          "zh": "用现代 Gaussian 记号写作 ∂E/∂t = c∇×B，∂B/∂t = −c∇×E，真空中 ∇·E = ∇·B = 0。",
+          "en": "In modern Gaussian notation: ∂E/∂t = c∇×B, ∂B/∂t = −c∇×E, and in vacuum ∇·E = ∇·B = 0."
+        },
+        {
+          "zh": "再对时间微分并用 ∇×(∇×E)=∇(∇·E)−∇²E，得 ∂²E/∂t²=c²∇²E；B 同理。",
+          "en": "Differentiate once more in time and use the curl-of-curl identity to obtain ∂²E/∂t²=c²∇²E, and similarly for B."
+        },
+        {
+          "zh": "Maxwell 1865 自己的单位下得到 V=√(k/(4πμ))；与上式是单位和记号不同的表达。",
+          "en": "In Maxwell’s 1865 units the result is V=√(k/(4πμ)); this is a different units-and-notation expression."
+        }
+      ],
+      "limits": [
+        {
+          "zh": "Maxwell 方程在一个系中给出传播速度；每个惯性系都采用同一形式，还用到了相对性原理。这里只处理真空，不套用于介质中的相速度。",
+          "en": "Maxwell equations specify propagation speed in a frame; using the same form in every inertial frame also requires relativity. This branch concerns vacuum, not a material medium’s phase velocity."
+        }
+      ],
+      "segment_ids": [
+        "s043"
+      ],
+      "evidence_ids": [
+        "t-maxwell-vacuum"
+      ],
+      "why": {
+        "zh": "波速由波动方程中的常数 c 决定，而定律跨惯性系保持同一形式这一要求来自相对性原理。",
+        "en": "The constant c in the wave equation determines its propagation speed; relativity requires the same form of the laws across inertial frames."
+      },
+      "story": [
+        {
+          "text": {
+            "zh": "先从真空中的电磁场方程开始。它们把电场和磁场的时间变化联系起来：变化的电场和磁场共同形成可以传播的扰动。这正是正文列出的物理出发点之一。",
+            "en": "Start with the vacuum electromagnetic field equations. They connect changes in the electric and magnetic fields, allowing a propagating disturbance. These equations are one of the physical starting points listed in the text."
+          },
+          "evidence_ids": [
+            "t-maxwell-vacuum"
+          ]
+        },
+        {
+          "text": {
+            "zh": "把两组方程合并，可以得到 ∂²E/∂t²=c²∇²E，磁场也有相同形式。这是速度为 c 的波动方程，所以在采用这套真空方程的参考系中，电磁波的传播速度已经由方程确定。",
+            "en": "Combining the two sets gives ∂²E/∂t²=c²∇²E, with the same form for the magnetic field. This is a wave equation with speed c. The vacuum equations therefore already determine electromagnetic propagation speed in the frame where they are used."
+          },
+          "evidence_ids": [
+            "t-maxwell-vacuum"
+          ]
+        },
+        {
+          "text": {
+            "zh": "接下来换到另一位匀速运动的观察者。正文还采用相对性原理，要求同样的物理定律在这个惯性系中成立；于是它也使用同一形式的真空方程和同一个 c。这个跨参考系的要求，把“方程有一个固定波速”接到了“各惯性系使用同一光速”。",
+            "en": "Now move to another uniformly moving observer. The text also adopts relativity, requiring the same physical laws in that inertial frame. It therefore uses the same vacuum equations and the same c. This cross-frame requirement connects a fixed wave speed in the equations with the same light speed in different inertial frames."
+          },
+          "evidence_ids": [
+            "t-relativity",
+            "t-maxwell-vacuum"
+          ]
+        },
+        {
+          "text": {
+            "zh": "因此，脚注可以理解为提醒读者：光速已经出现在正文所采用的电磁理论中。把脚注与相对性原理放在一起，所需的理论理由就完整了；这里讨论的传播也是前提中明确指定的真空传播。",
+            "en": "The footnote can thus be read as a reminder that light speed is already present in the adopted electromagnetic theory. Read together with the relativity principle, the theoretical reasoning is complete. The propagation being discussed is the vacuum propagation explicitly specified in those premises."
+          },
+          "evidence_ids": [
+            "t-maxwell-vacuum",
+            "t-relativity"
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "t-relativity",
+      "source_id": "einstein1905-sr",
+      "locator": "§2, first postulate",
+      "role": "backtrace",
+      "relation": "supports",
+      "finding": {
+        "zh": "定律在彼此匀速平移的惯性系中保持同一形式，是这条推导链的出发前提；它让能量守恒与真空电磁定律可在两个参考系中同时使用。",
+        "en": "The same laws apply in inertial frames related by uniform translation. This premise permits energy conservation and vacuum electromagnetism to be used in both frames."
+      },
+      "method": {
+        "zh": "选取相对速度为 v 的两个惯性系。\n要求描述同一过程的物理定律形式一致。\n1905 短文没有在此用实验重新证明相对性原理；物理前提应与代数推论分开显示。",
+        "en": "Choose two inertial frames with relative velocity v.\nRequire the laws describing the same process to have the same form.\nThe 1905 note does not experimentally re-establish the relativity principle; physical premises must be displayed separately from algebraic consequences."
+      },
+      "depends_on": [],
+      "terminal": {
+        "kind": "postulate",
+        "reason": {
+          "zh": "停在原文明确提出的物理原理。其经验检验属于独立实验证据线。",
+          "en": "Stop at an explicitly stated physical principle; empirical tests belong to a separate experimental evidence branch."
+        }
+      }
+    },
+    {
+      "id": "t-maxwell-vacuum",
+      "source_id": "einstein1905-sr",
+      "locator": "§6, initial Maxwell-Hertz equations",
+      "role": "backtrace",
+      "relation": "supports",
+      "finding": {
+        "zh": "在已采用的真空场论中，两个旋度方程合成波动方程；传播速度由方程中的常数确定。结合相对性原理，两个惯性系使用同一个 c。",
+        "en": "Within the adopted vacuum theory, the two curl equations imply a wave equation with the speed specified by their constant. With relativity, both inertial frames use the same c."
+      },
+      "method": {
+        "zh": "用现代 Gaussian 记号写作 ∂E/∂t = c∇×B，∂B/∂t = −c∇×E，真空中 ∇·E = ∇·B = 0。\n再对时间微分并用 ∇×(∇×E)=∇(∇·E)−∇²E，得 ∂²E/∂t²=c²∇²E；B 同理。\nMaxwell 1865 自己的单位下得到 V=√(k/(4πμ))；与上式是单位和记号不同的表达。\nMaxwell 方程在一个系中给出传播速度；每个惯性系都采用同一形式，还用到了相对性原理。这里只处理真空，不套用于介质中的相速度。",
+        "en": "In modern Gaussian notation: ∂E/∂t = c∇×B, ∂B/∂t = −c∇×E, and in vacuum ∇·E = ∇·B = 0.\nDifferentiate once more in time and use the curl-of-curl identity to obtain ∂²E/∂t²=c²∇²E, and similarly for B.\nIn Maxwell’s 1865 units the result is V=√(k/(4πμ)); this is a different units-and-notation expression.\nMaxwell equations specify propagation speed in a frame; using the same form in every inertial frame also requires relativity. This branch concerns vacuum, not a material medium’s phase velocity."
+      },
+      "depends_on": [
+        {
+          "evidence_id": "t-relativity",
+          "relation": "derives_from"
+        },
+        {
+          "evidence_id": "t-maxwell-original",
+          "relation": "derives_from"
+        }
+      ],
+      "terminal": {
+        "kind": "postulate",
+        "reason": {
+          "zh": "已追到明确场方程及可复算的微分运算；场方程作为物理定律保留为前提。",
+          "en": "Stop at explicit field equations and reproducible differentiation; retain the field equations as physical premises."
+        }
+      }
+    },
+    {
+      "id": "t-field-energy",
+      "source_id": "maxwell1865-energy",
+      "locator": "§71, equations (37)–(38); §72, total field energy equation (I)",
+      "role": "backtrace",
+      "relation": "supports",
+      "finding": {
+        "zh": "光束的总能量由能量密度乘其所占体积得到。Einstein 使用 A²/(8π) 的平面波能量密度约定，其基础是电场与磁场的储能。",
+        "en": "A light packet’s energy is energy density times its occupied volume. Einstein uses the plane-wave density convention A²/(8π), based on electric and magnetic field energy."
+      },
+      "method": {
+        "zh": "Maxwell §71 把电流与势的能量写成体积分，分部积分后得到磁场能量 μI²/(8π)。\n§72 从做功 ∫P df 及线性关系 P=kf 得 ½Pf，三方向相加得电储能。\n采用现代真空 Gaussian 单位，瞬时总场能密度为 (|E|²+|B|²)/(8π)；平面简谐波满足 |E|=|B|，周期平均得到 A²/(8π)。\n振幅 A、瞬时量和周期平均量应采用一致约定。Maxwell 的机械介质解释不是本数据额外采纳的前提。",
+        "en": "Maxwell §71 writes the current-potential energy as a volume integral; integration by parts gives magnetic energy density μI²/(8π).\nSection 72 uses work ∫P df and P=kf to obtain ½Pf, then adds the three directions for electric storage.\nIn modern vacuum Gaussian units the instantaneous total density is (|E|²+|B|²)/(8π). A sinusoidal plane wave has |E|=|B|, giving cycle-average A²/(8π).\nAmplitude, instantaneous quantities, and cycle averages require a consistent convention. Maxwell’s mechanical-medium interpretation is not an additional premise adopted here."
+      },
+      "depends_on": [],
+      "terminal": {
+        "kind": "derivation",
+        "reason": {
+          "zh": "追到做功定义、线性场响应和磁感应方程；这些是储能公式使用的明确物理输入。",
+          "en": "Stop at work, linear field response, and magnetic induction equations: the explicit physical inputs to the storage formula."
+        }
+      }
+    },
+    {
+      "id": "t-lorentz",
+      "source_id": "einstein1905-sr",
+      "locator": "§1 synchronization; §3 transformation derivation",
+      "role": "backtrace",
+      "relation": "supports",
+      "finding": {
+        "zh": "光钟同步、光速公设、相对性以及时空均匀性和对称性共同给出这里使用的 Lorentz 变换。",
+        "en": "Light-signal synchronization, the light postulate, relativity, and spacetime homogeneity and symmetry yield the Lorentz transformation used here."
+      },
+      "method": {
+        "zh": "规定同步时间，令坐标变换线性，并要求光线在两系中均以 c 传播。\n用逆变换与空间对称性固定剩余比例因子，得到 t′=γ(t−vx/c²)，x′=γ(x−vt)，y′=y，z′=z。\nγ=(1−v²/c²)^(−1/2)，要求 |v|<c。\n这里的均匀性、同步约定与空间对称性均应显示为运动学输入，不能把变换视为无前提的恒等式。",
+        "en": "Define synchronized time, require linear coordinate transformations, and require light to propagate at c in both frames.\nUse the inverse transformation and spatial symmetry to fix the remaining factor: t′=γ(t−vx/c²), x′=γ(x−vt), y′=y, z′=z.\nγ=(1−v²/c²)^(−1/2), with |v|<c.\nHomogeneity, synchronization, and spatial symmetry are kinematic inputs, not premise-free identities."
+      },
+      "depends_on": [
+        {
+          "evidence_id": "t-relativity",
+          "relation": "derives_from"
+        },
+        {
+          "evidence_id": "t-maxwell-vacuum",
+          "relation": "derives_from"
+        }
+      ],
+      "terminal": {
+        "kind": "derivation",
+        "reason": {
+          "zh": "已定位到 §1–§3 的定义、公设和对称性条件；这些作为运动学根节点停止。",
+          "en": "Stop at the definitions, postulates, and symmetry conditions located in §§1–3."
+        }
+      }
+    },
+    {
+      "id": "t-field-transform",
+      "source_id": "einstein1905-sr",
+      "locator": "§6, final transformation equations",
+      "role": "backtrace",
+      "relation": "supports",
+      "finding": {
+        "zh": "§6 将 Lorentz 变换代入真空 Maxwell-Hertz 方程，并要求同一场方程在新系成立，得到电场与磁场的变换。",
+        "en": "Section 6 substitutes the Lorentz transformation into the vacuum Maxwell-Hertz equations and imposes the same equations in the new frame to obtain the field transformations."
+      },
+      "method": {
+        "zh": "取 β=v/c，γ=(1−β²)^(−1/2)。\n用原文 (X,Y,Z) 表示电场，(L,M,N) 表示磁场：X′=X，Y′=γ(Y−βN)，Z′=γ(Z+βM)。\n磁场变换为 L′=L，M′=γ(M+βZ)，N′=γ(N−βY)。逆变换与对称性把共同归一化因子定为 1。\n这些 L、M、N 是磁场分量；主短文的 L 是辐射能量，不能混为一个变量。",
+        "en": "Set β=v/c and γ=(1−β²)^(−1/2).\nIn the paper’s field notation: X′=X, Y′=γ(Y−βN), Z′=γ(Z+βM).\nThe magnetic transformation is L′=L, M′=γ(M+βZ), N′=γ(N−βY). The inverse transformation and symmetry set the common normalization factor to 1.\nHere L, M, N are magnetic components; L in the short inertia paper is radiated energy."
+      },
+      "depends_on": [
+        {
+          "evidence_id": "t-lorentz",
+          "relation": "derives_from"
+        },
+        {
+          "evidence_id": "t-maxwell-vacuum",
+          "relation": "derives_from"
+        }
+      ],
+      "terminal": {
+        "kind": "derivation",
+        "reason": {
+          "zh": "已展开到 Lorentz 变换和真空场方程。",
+          "en": "Resolved to the Lorentz transformation and the vacuum field equations."
+        }
+      }
+    },
+    {
+      "id": "t-amplitude",
+      "source_id": "einstein1905-sr",
+      "locator": "§7, last amplitude-squared equations",
+      "role": "backtrace",
+      "relation": "supports",
+      "finding": {
+        "zh": "把 §6 场变换作用于 §7 平面波，可得 A′²/A²=γ²(1−β cosφ)²。这是总光能变换的一部分。",
+        "en": "Applying §6 to the §7 plane wave gives A′²/A²=γ²(1−β cosφ)². This supplies one part of the packet-energy transformation."
+      },
+      "method": {
+        "zh": "用平面波相位 ω[t−(lx+my+nz)/c]，其中 l=cosφ。\n代入场与坐标变换，得到 A′²=A²(1−β cosφ)²/(1−β²)。\n定义 D=γ(1−β cosφ)，故 u′/u=D²。\n仅有能量密度因子 D² 还不能给出同一光包的总能量；还须计算体积。",
+        "en": "Use plane-wave phase ω[t−(lx+my+nz)/c], where l=cosφ.\nSubstitute the field and coordinate transformations to get A′²=A²(1−β cosφ)²/(1−β²).\nDefine D=γ(1−β cosφ), giving u′/u=D².\nThe density factor D² alone is insufficient for the same packet’s total energy; its volume must also be transformed."
+      },
+      "depends_on": [
+        {
+          "evidence_id": "t-field-transform",
+          "relation": "derives_from"
+        },
+        {
+          "evidence_id": "t-lorentz",
+          "relation": "derives_from"
+        }
+      ],
+      "terminal": {
+        "kind": "derivation",
+        "reason": {
+          "zh": "已追至 §6 场变换、§3 坐标变换及平面波假设。",
+          "en": "Resolved to §6 field transformations, §3 coordinates, and the plane-wave assumption."
+        }
+      }
+    },
+    {
+      "id": "t-pulse-volume",
+      "source_id": "einstein1905-sr",
+      "locator": "§8, moving spherical surface and ellipsoid-volume ratio",
+      "role": "backtrace",
+      "relation": "supports",
+      "finding": {
+        "zh": "随光移动的包络球面在新参考系同一时刻成为椭球；体积比 S′/S=1/[γ(1−β cosφ)]。",
+        "en": "The envelope moving with the light becomes an ellipsoid on a simultaneous slice in the new frame, with S′/S=1/[γ(1−β cosφ)]."
+      },
+      "method": {
+        "zh": "原系包络写作 (x−lct)²+(y−mct)²+(z−nct)²=R²。\n在 t′=0 切片用逆变换 x=γx′，t=γvx′/c²。原球内向量由新坐标经线性矩阵 A 得到。\n矩阵第一列为 [γ(1−lβ),−γmβ,−γnβ]，其余两列为 y、z 单位向量，所以 det A=γ(1−lβ)=D。\n相同包络区域的体积因子为 1/D，因此 S′/S=1/D。\n这是随光运动包络的体积，不能替换成静止刚体的普通长度收缩因子。",
+        "en": "Write the original envelope as (x−lct)²+(y−mct)²+(z−nct)²=R².\nOn t′=0 use x=γx′ and t=γvx′/c². A linear matrix A maps the new coordinates to the vector inside the original sphere.\nThe first column is [γ(1−lβ),−γmβ,−γnβ], with unit y and z columns. Hence det A=γ(1−lβ)=D.\nThe enclosed volume therefore scales by 1/D, so S′/S=1/D.\nThis is the volume of a light-following envelope, not the ordinary contraction factor for a stationary solid."
+      },
+      "depends_on": [
+        {
+          "evidence_id": "t-lorentz",
+          "relation": "derives_from"
+        }
+      ],
+      "terminal": {
+        "kind": "derivation",
+        "reason": {
+          "zh": "给出椭球的显式行列式计算，停止于线性代数恒等式。",
+          "en": "An explicit ellipsoid determinant calculation resolves this branch to a linear-algebra identity."
+        }
+      }
+    },
+    {
+      "id": "t-light-energy",
+      "source_id": "einstein1905-sr",
+      "locator": "§8, E′/E equation",
+      "role": "original_citation",
+      "relation": "supports",
+      "finding": {
+        "zh": "同一束光在相对运动参考系中具有 l*=lγ(1−β cosφ) 的能量；这正是主短文从前文 §8 引用的结果。",
+        "en": "The same light packet has energy l*=lγ(1−β cosφ) in the moving frame. This is the result explicitly imported from §8 by the inertia note."
+      },
+      "method": {
+        "zh": "总能量 l=uS，而 l*=u′S′。\n合并 u′/u=D² 和 S′/S=1/D，得 l*/l=D。\n全程使用经典电磁平面波；不需要引入光子或 E=hν。\nφ 在发射体静止系测量；|v|<c。式中的 l* 是另一参考系测得的能量。",
+        "en": "Total energies are l=uS and l*=u′S′.\nCombine u′/u=D² with S′/S=1/D to obtain l*/l=D.\nThis uses classical electromagnetic plane waves throughout; photons or E=hν are not required.\nThe angle φ is measured in the emitter-rest frame and |v|<c. The starred energy is the other frame’s measurement."
+      },
+      "depends_on": [
+        {
+          "evidence_id": "t-amplitude",
+          "relation": "derives_from"
+        },
+        {
+          "evidence_id": "t-pulse-volume",
+          "relation": "derives_from"
+        },
+        {
+          "evidence_id": "t-field-energy",
+          "relation": "derives_from"
+        }
+      ],
+      "terminal": {
+        "kind": "derivation",
+        "reason": {
+          "zh": "完整分解为振幅与体积两个已定位、可复算的支链。",
+          "en": "Resolved into two located, reproducible amplitude and volume branches."
+        }
+      }
+    },
+    {
+      "id": "t-emission-setup",
+      "source_id": "einstein1905-inertia",
+      "locator": "Paragraph beginning “Let this body send out”",
+      "role": "main_text",
+      "relation": "supports",
+      "finding": {
+        "zh": "原文设定物体同时沿相反方向各发出 L/2，发射前后在原系保持静止。L 是原系测得的总辐射能量。",
+        "en": "The paper stipulates simultaneous opposite emissions of L/2 each, leaving the body at rest in the original frame. L is the total radiated energy in that frame."
+      },
+      "method": {
+        "zh": "在原系，两束各有 L/2；总能量为 L。\n新系中分别为 (L/2)γ(1−β cosφ) 与 (L/2)γ(1+β cosφ)。\n相加消去角度项，得到总辐射能量 γL。\n这是对称且无反冲的规定情形。单向发光会有反冲，不能原样套用同一个速度 v 的前后比较。",
+        "en": "Each beam has L/2 in the original frame, for total L.\nThe new-frame beam energies are (L/2)γ(1−β cosφ) and (L/2)γ(1+β cosφ).\nAdding cancels the angular terms, yielding total radiated energy γL.\nThis is the stipulated symmetric no-recoil case. One-direction emission produces recoil and cannot use the same before/after speed comparison unchanged."
+      },
+      "depends_on": [
+        {
+          "evidence_id": "t-light-energy",
+          "relation": "derives_from"
+        }
+      ],
+      "terminal": {
+        "kind": "postulate",
+        "reason": {
+          "zh": "几何与发射方式是思想实验设定；能量变换已由 t-light-energy 展开。",
+          "en": "Geometry and emission are thought-experiment conditions; the transformation is resolved in t-light-energy."
+        }
+      }
+    },
+    {
+      "id": "t-energy-balance",
+      "source_id": "einstein1905-inertia",
+      "locator": "The two energy-balance equations and their subtraction",
+      "role": "main_text",
+      "relation": "supports",
+      "finding": {
+        "zh": "两系分别应用能量守恒，得到 (H0−E0)−(H1−E1)=L(γ−1)。该式首先是总能量的代数关系。",
+        "en": "Applying energy conservation in both frames gives (H0−E0)−(H1−E1)=L(γ−1). It is initially an algebraic relation between total energies."
+      },
+      "method": {
+        "zh": "原系：E0−E1=L。\n运动系：H0−H1=γL。\n两式相减即得 (H0−E0)−(H1−E1)=L(γ−1)。\n能量守恒在此是原文调用的物理原则；物体加辐射的系统边界应包括过程中的全部能量交换。",
+        "en": "Original frame: E0−E1=L.\nMoving frame: H0−H1=γL.\nSubtract to get (H0−E0)−(H1−E1)=L(γ−1).\nEnergy conservation is invoked as a physical principle. The body-plus-radiation boundary must include all energy exchanges in the process."
+      },
+      "depends_on": [
+        {
+          "evidence_id": "t-emission-setup",
+          "relation": "derives_from"
+        },
+        {
+          "evidence_id": "t-relativity",
+          "relation": "derives_from"
+        },
+        {
+          "evidence_id": "t-conservation",
+          "relation": "uses"
+        }
+      ],
+      "terminal": {
+        "kind": "derivation",
+        "reason": {
+          "zh": "代数已展开；叶节点是能量守恒及已声明的过程边界。",
+          "en": "Algebra is explicit; leaves are energy conservation and the stated process boundary."
+        }
+      }
+    },
+    {
+      "id": "t-additive-constant",
+      "source_id": "einstein1905-inertia",
+      "locator": "Paragraph and displayed equations H0−E0=K0+C; H1−E1=K1+C",
+      "role": "main_text",
+      "relation": "qualifies",
+      "finding": {
+        "zh": "原文把 H−E 写成 K+C，并要求发光前后 C 相同。共同的能量零点才能在相减时抵消；这一步需要明确的动能定义和一致系统边界。",
+        "en": "The paper writes H−E=K+C with the same C before and after emission. A common energy offset then cancels; this requires a defined kinetic energy and a consistent system boundary."
+      },
+      "method": {
+        "zh": "为物体的每一个内部状态，比较它在静止系和运动系的总能量。\n采用 H0−E0=K0+C 和 H1−E1=K1+C 的共同零点约定。\n若误令 C0 与 C1 独立变化，右边会多出 C0−C1，无法直接得到原文的动能差。\n共同常数的抵消是清楚的代数步骤；对受外力、应力遗漏或内运动显著的扩展系统，H−E 的物理解读还须补充条件。",
+        "en": "For each internal state, compare the body’s rest-frame and moving-frame total energies.\nUse H0−E0=K0+C and H1−E1=K1+C with a common offset.\nIf C0 and C1 vary independently, an additional C0−C1 remains and the stated kinetic-energy difference does not follow.\nCancellation of a common constant is elementary; extended systems with external forces, omitted stresses, or substantial internal motions require additional conditions for the physical interpretation of H−E."
+      },
+      "depends_on": [
+        {
+          "evidence_id": "t-laue",
+          "relation": "qualifies"
+        },
+        {
+          "evidence_id": "t-ohanian-scope",
+          "relation": "qualifies"
+        }
+      ],
+      "terminal": {
+        "kind": "derivation",
+        "reason": {
+          "zh": "原文明确声明共同 C；一般扩展系统的物理充分性转接 t-laue。",
+          "en": "The common C is explicitly asserted in the paper; physical sufficiency for extended systems is linked to t-laue."
+        }
+      }
+    },
+    {
+      "id": "t-kinetic-difference",
+      "source_id": "einstein1905-inertia",
+      "locator": "Displayed K0−K1 equation and following sentence",
+      "role": "main_text",
+      "relation": "supports",
+      "finding": {
+        "zh": "在原文采用的动能定义下，K0−K1=L(γ−1)。发射体在两次比较中的速度相同，动能之差因此来自其状态变化。",
+        "en": "With the paper’s kinetic-energy identification, K0−K1=L(γ−1). The emitter has the same comparison speed before and after, so the kinetic-energy difference comes from its changed state."
+      },
+      "method": {
+        "zh": "将 t-additive-constant 代入 t-energy-balance，共同 C 消去。\n得到 K0−K1=L[(1−v²/c²)^(−1/2)−1]。\nL>0 且 v≠0 时 γ>1，所以 K0>K1；v=0 时两者均无这项平移动能差。\n精确的是此动能差在给定假设下的表达式。其形式不自动完成所有扩展物体的动能理论。",
+        "en": "Insert t-additive-constant into t-energy-balance; the common C cancels.\nObtain K0−K1=L[(1−v²/c²)^(−1/2)−1].\nFor L>0 and v≠0, γ>1 and K0>K1; at v=0 this translational kinetic-energy difference vanishes.\nThe difference is exact under the stated assumptions; its form alone does not supply a complete kinetic-energy theory for every extended body."
+      },
+      "depends_on": [
+        {
+          "evidence_id": "t-energy-balance",
+          "relation": "derives_from"
+        },
+        {
+          "evidence_id": "t-additive-constant",
+          "relation": "derives_from"
+        }
+      ],
+      "terminal": {
+        "kind": "derivation",
+        "reason": {
+          "zh": "直接代入和相减；其物理前提已单列。",
+          "en": "Resolved by substitution and subtraction, with physical premises separately listed."
+        }
+      }
+    },
+    {
+      "id": "t-electron-kinetic",
+      "source_id": "einstein1905-sr",
+      "locator": "§10, initial force law; equation (A); work integral W",
+      "role": "original_citation",
+      "relation": "supports",
+      "finding": {
+        "zh": "前文 §10 假定电子在瞬时静止系服从慢速力学，并以足够缓慢的加速忽略辐射损耗，积分外场做功得到 K=mc²(γ−1)。",
+        "en": "Section 10 assumes slow-speed mechanics in the instantaneous rest frame and sufficiently gradual acceleration to neglect radiation loss. Integrating field work gives K=mc²(γ−1)."
+      },
+      "method": {
+        "zh": "瞬时静止时取 m a=qE，并用坐标与场变换得到纵向 qE=mγ³ dv/dt。\nK=∫qE dx=m∫₀ᵛ γ³u du。\n因为 dγ/du=γ³u/c²，积分为 mc²[γ(v)−1]。\n原文对象先是慢加速的带电质点；再以附加任意小电荷的论述推广到可称量质点。此段没有展开任意扩展物体的内部应力积分。",
+        "en": "Use m a=qE at instantaneous rest and transform coordinates and fields to obtain longitudinal qE=mγ³ dv/dt.\nK=∫qE dx=m∫₀ᵛ γ³u du.\nSince dγ/du=γ³u/c², the integral is mc²[γ(v)−1].\nThe initial object is a slowly accelerated charged point particle, extended to ponderable points by adding arbitrarily small charge. This section does not evaluate all internal stresses of arbitrary extended bodies."
+      },
+      "depends_on": [
+        {
+          "evidence_id": "t-field-transform",
+          "relation": "derives_from"
+        },
+        {
+          "evidence_id": "t-lorentz",
+          "relation": "derives_from"
+        }
+      ],
+      "terminal": {
+        "kind": "derivation",
+        "reason": {
+          "zh": "已追到力学低速极限、场变换与显式积分。",
+          "en": "Resolved to the slow-speed force law, field transformations, and an explicit integral."
+        }
+      }
+    },
+    {
+      "id": "t-low-speed",
+      "source_id": "einstein1905-inertia",
+      "locator": "Paragraph neglecting fourth and higher orders; displayed second-order equation",
+      "role": "main_text",
+      "relation": "supports",
+      "finding": {
+        "zh": "当 |v|≪c 时，γ−1=v²/(2c²)+O(v⁴/c⁴)。以 K=½mv²+O(v⁴) 的低速惯性质量定义比较系数，可得 m0−m1=L/c²。",
+        "en": "For |v|≪c, γ−1=v²/(2c²)+O(v⁴/c⁴). Comparing the coefficient with the low-speed inertial-mass definition K=½mv²+O(v⁴) gives m0−m1=L/c²."
+      },
+      "method": {
+        "zh": "展开 (1−x)^(−1/2)=1+x/2+3x²/8+…，取 x=v²/c²。\n于是 K0−K1=Lv²/(2c²)+O(v⁴)。\n与 ½(m0−m1)v² 的二阶系数比较，得到 m0−m1=L/c²。\n小的是比较参考系的相对速度。对一般复合物体仍要说明上述低速动能系数为何是其惯性质量，不能只因 v 小就忽略内部相对论运动。",
+        "en": "Expand (1−x)^(−1/2)=1+x/2+3x²/8+… with x=v²/c².\nHence K0−K1=Lv²/(2c²)+O(v⁴).\nMatch the v² coefficient of ½(m0−m1)v² to obtain m0−m1=L/c².\nThe expansion concerns relative frame speed. For a composite body, one must still establish that this low-speed coefficient is its inertial mass; low translational speed alone does not remove relativistic internal motion."
+      },
+      "depends_on": [
+        {
+          "evidence_id": "t-kinetic-difference",
+          "relation": "derives_from"
+        },
+        {
+          "evidence_id": "t-electron-kinetic",
+          "relation": "derives_from"
+        },
+        {
+          "evidence_id": "t-laue",
+          "relation": "qualifies"
+        }
+      ],
+      "terminal": {
+        "kind": "derivation",
+        "reason": {
+          "zh": "Taylor 展开与系数比较可直接复算；惯性质量的物理解读接到力学输入和 t-laue。",
+          "en": "The Taylor expansion and coefficient comparison are reproducible; the physical mass interpretation links to mechanics and t-laue."
+        }
+      }
+    },
+    {
+      "id": "t-mass-loss",
+      "source_id": "einstein1905-inertia",
+      "locator": "Paragraph “If a body gives off the energy L…”",
+      "role": "main_text",
+      "relation": "supports",
+      "finding": {
+        "zh": "对原文对称发光过程，物体静止能量减少 L，惯性质量减少 L/c²。写成有符号变化是 ΔErest=−L、Δm=−L/c²。",
+        "en": "For the symmetric emission process, the body loses rest-frame energy L and inertial mass L/c²: ΔErest=−L and Δm=−L/c²."
+      },
+      "method": {
+        "zh": "由 t-low-speed 得 m0−m1=L/c²。\n按发射后减发射前定义变化，得到 Δm=(E1−E0)/c²。\n这里的 L 在发射体静止系测量。有限运动参考系的总能量含有动能，不能直接与同一个静止质量写成 E=mc²。\n仅由差值关系得到 Erest=mc²+常数；绝对零点及一般闭合系统的关系要另行处理。",
+        "en": "Use t-low-speed to obtain m0−m1=L/c².\nDefine the change as final minus initial, giving Δm=(E1−E0)/c².\nL is measured in the emitter-rest frame. Total energy in a moving frame includes kinetic energy and cannot be equated to the same rest mass times c² without the Lorentz factor.\nA differences-only relation gives Erest=mc² plus a constant; the absolute zero and the relation for general closed systems need separate treatment."
+      },
+      "depends_on": [
+        {
+          "evidence_id": "t-low-speed",
+          "relation": "derives_from"
+        },
+        {
+          "evidence_id": "t-brown-momentum",
+          "relation": "alternative"
+        }
+      ],
+      "terminal": {
+        "kind": "derivation",
+        "reason": {
+          "zh": "主文的差值结果已经展开；绝对关系与广泛推广接到 t-generalization 和 t-laue。",
+          "en": "The note’s difference result is resolved; the absolute relation and wider extension link to t-generalization and t-laue."
+        }
+      }
+    },
+    {
+      "id": "t-generalization",
+      "source_id": "einstein1905-inertia",
+      "locator": "Sentence after the mass-loss result; italicized general conclusion",
+      "role": "main_text",
+      "relation": "qualifies",
+      "finding": {
+        "zh": "主文断言能量转成辐射这一细节不影响质量关系，因此推广到一般能量变化。短文展示的计算是双向发光；一般复合系统的后续支持来自完整能量—动量与应力的处理。",
+        "en": "The note asserts that the conversion into radiation does not affect the mass relation and extends it to energy changes generally. Its displayed calculation is symmetric emission; later support for composite systems includes total energy, momentum, and stresses."
+      },
+      "method": {
+        "zh": "原文计算给出一种能量移出方式的 Δm=ΔErest/c²。\n推广要求各种储能及约束装置属于同一完整系统；不能只选其中的辐射、气体或电场而漏掉支撑应力。\nLaue §5 的能量—动量积分在完整静态系统上给出 E=γErest 与 p=γErest v/c²，支持 m=Erest/c²。\n原文的一般结论、原文实际展示的过程、后续理论证明是三个不同证据层级。Laue 1911 不可能是 1905 原文引用。",
+        "en": "The displayed calculation gives Δm=ΔErest/c² for one mode of energy removal.\nExtension requires all energy stores and constraints to belong to the complete system; radiation, gas, or field subsystems must not omit supporting stresses.\nLaue §5 integrates energy and momentum for a complete static system to give E=γErest and p=γErest v/c², supporting m=Erest/c².\nThe general assertion, the displayed process, and the later proof are distinct evidence layers. Laue 1911 cannot be a citation in the 1905 note."
+      },
+      "depends_on": [
+        {
+          "evidence_id": "t-mass-loss",
+          "relation": "derives_from"
+        },
+        {
+          "evidence_id": "t-laue",
+          "relation": "supports"
+        },
+        {
+          "evidence_id": "t-ohanian-scope",
+          "relation": "qualifies"
+        }
+      ],
+      "terminal": {
+        "kind": "derivation",
+        "reason": {
+          "zh": "主文推广的缺失范围已显式标出，并接入条件明确的后续理论证明。",
+          "en": "The scope beyond the displayed argument is identified and linked to a later proof with explicit conditions."
+        }
+      }
+    },
+    {
+      "id": "t-laue",
+      "source_id": "laue1911",
+      "locator": "§5, definitions and equations (20a), (20b), (21), (22); §1 tensor assumption",
+      "role": "later_theory",
+      "relation": "supports",
+      "finding": {
+        "zh": "Laue 对与外界无相互作用的完整静态系统，将机械和电磁应力一并积分；其总体能量与动量按质点规律变换，静止质量等于静止能量除以 c²。",
+        "en": "Laue integrates mechanical and electromagnetic stresses for a complete static system without external interaction. Its total energy and momentum transform like a point particle’s, with rest mass equal to rest energy divided by c²."
+      },
+      "method": {
+        "zh": "将所有相关能量、动量与应力纳入同一个能量—动量张量；在静止系内满足静态平衡，并在外部边界没有相互作用。\n由应力平衡和边界条件，先有每个截面的总牵引为零，再体积分得 ∫Tij d³x=0。\n将该结果代入 Lorentz 变换后的总能量和动量，式 (22) 给出 E=γErest，p=γErest v/c²。\nv→0 时 p/v→Erest/c²；按惯性质量识别得到 m=Erest/c²，且 K=E−Erest=(γ−1)Erest。\n此处核读的是完整静态系统的 1911 证明。一般随时间变化的系统需要更一般的守恒张量积分定理；本节点没有把那个扩展伪装成已经核读的 Laue 原文结论。",
+        "en": "Include all relevant energy, momentum, and stresses in one energy-momentum tensor; require rest-frame static equilibrium and no interaction at the outer boundary.\nStress equilibrium and the boundary conditions give zero integrated traction on each section and then ∫Tij d³x=0.\nInsert this into the transformed total energy and momentum: equation (22) gives E=γErest and p=γErest v/c².\nAs v→0, p/v→Erest/c². Identifying inertial mass yields m=Erest/c² and K=E−Erest=(γ−1)Erest.\nThe inspected 1911 proof concerns complete static systems. General time-dependent systems require a broader conserved-tensor integral theorem, which is not presented here as an inspected Laue result."
+      },
+      "depends_on": [],
+      "terminal": {
+        "kind": "derivation",
+        "reason": {
+          "zh": "停在张量变换律、局部守恒/静态平衡、完整系统边界及积分恒等式；这些条件已全部列明。",
+          "en": "Stop at tensor transformation, local conservation/static balance, the complete-system boundary, and integral identities, all stated explicitly."
+        }
+      }
+    },
+    {
+      "id": "t-ohanian-scope",
+      "source_id": "ohanian2008v2",
+      "locator": "§2, pp. 2–5",
+      "role": "later_theory",
+      "relation": "qualifies",
+      "finding": {
+        "zh": "Ohanian 区分循环论证指控与推广缺口：他接受对 Ives 指控的反驳，但认为扩展物体的内运动和应力需要补证。此处呈现作者的批评，不把它写成学界一致裁决。",
+        "en": "Ohanian separates circularity from a scope gap: he accepts the rebuttal of Ives but argues that internal motion and stresses in extended bodies require further proof. This records his critique, not a consensus verdict."
+      },
+      "method": {
+        "zh": "核对关注对象：扩展系统的平移动能是否具有质点形式。\n本文未核读 Stachel 与 Torretti 1982 全文；相反立场在这里仅通过 Ohanian 的转述登记。",
+        "en": "The disputed step is whether an extended system has particle-like translational kinetic energy.\nStachel and Torretti’s 1982 full text was not inspected; its opposing stance is registered only through Ohanian’s report."
+      },
+      "depends_on": [
+        {
+          "evidence_id": "t-opposing-source-gap",
+          "relation": "unverified_dependency"
+        }
+      ],
+      "terminal": {
+        "kind": "unresolved",
+        "reason": {
+          "zh": "已获得直接批评论文，并把争论与补强定理分开。",
+          "en": "A direct critical paper is available; the debate is separated from the supporting theorem."
+        }
+      }
+    },
+    {
+      "id": "t-brown-momentum",
+      "source_id": "brown2003",
+      "locator": "§II, equations (1)–(13)",
+      "role": "later_theory",
+      "relation": "supports",
+      "finding": {
+        "zh": "Brown 使用同样的双向发射，结合光能变换、光行差与光的 p=E/c，将动量守恒写成质量变化关系，再取静止极限。",
+        "en": "Brown combines the same opposite emissions with light-energy transformation, aberration, and p=E/c to obtain a mass-change relation from momentum conservation, then takes the rest limit."
+      },
+      "method": {
+        "zh": "光在运动系的两个纵向动量相加，角度项抵消。\n总光动量为 −γLv/c²；与发射体前后动量比较，再取 v→0。\n这是现代教学性替代论证；有限速度的质量按 p/v 定义，须与静止质量区分。它增加了动量守恒与光动量关系这些输入。",
+        "en": "Add the two longitudinal light momenta in the moving frame; the angular terms cancel.\nThe net light momentum is −γLv/c²; compare the body’s before/after momentum and take v→0.\nThis pedagogical alternative defines finite-speed mass through p/v, distinct from rest mass, and adds momentum conservation and the light momentum relation as inputs."
+      },
+      "depends_on": [
+        {
+          "evidence_id": "t-light-energy",
+          "relation": "derives_from"
+        }
+      ],
+      "terminal": {
+        "kind": "derivation",
+        "reason": {
+          "zh": "明确登记新增假设；此节点用作交叉解释。",
+          "en": "Additional assumptions are explicit; this node is an explanatory cross-check."
+        }
+      }
+    },
+    {
+      "id": "t-radiation-inertia",
+      "source_id": "einstein1905-inertia",
+      "locator": "Final sentence beginning “If the theory corresponds to the facts”",
+      "role": "main_text",
+      "relation": "qualifies",
+      "finding": {
+        "zh": "主文末句是有条件的物理解释：若上述能量—质量关系适用于实际过程，辐射带走发射体的能量并能把能量交给吸收体，其质量效应随相应静止能量变化而转移。",
+        "en": "The final sentence is a conditional physical interpretation: if the energy–mass relation applies to real processes, radiation removes energy from an emitter and can deliver energy to an absorber, transferring the associated mass effect."
+      },
+      "method": {
+        "zh": "发射过程使用 Δm=ΔErest/c²。\n吸收过程把进入系统的能量纳入最终静止能量；若发生反冲，还须把动能和动量一并核算。\n原短文未列出吸收实验数据，也未逐式推导一个有反冲的吸收过程。这里的“转移惯性”不等于宣称单个光子的静止质量非零。",
+        "en": "Apply Δm=ΔErest/c² to emission.\nFor absorption, account for incoming energy in the final rest energy; recoil requires including kinetic energy and momentum.\nThe note supplies no absorption data and no stepwise recoiling-absorber calculation. Transfer of inertia does not assert nonzero photon rest mass."
+      },
+      "depends_on": [
+        {
+          "evidence_id": "t-generalization",
+          "relation": "derives_from"
+        }
+      ],
+      "terminal": {
+        "kind": "derivation",
+        "reason": {
+          "zh": "作为原文条件性解释结束；具体实验证据由独立实验支链承接。",
+          "en": "End as the note’s conditional interpretation; concrete experiments belong to the separate empirical branch."
+        }
+      }
+    },
+    {
+      "id": "t-body-independent",
+      "source_id": "einstein1905-inertia",
+      "locator": "Sentence immediately after the exact K0−K1 equation",
+      "role": "main_text",
+      "relation": "supports",
+      "finding": {
+        "zh": "在同样的对称发射设定下，K0−K1 只包含 L、v、c；原文据此说减少量与物体性质无关。它没有因此单独确定发射前或发射后的全部动能函数。",
+        "en": "For the same symmetric-emission setup, K0−K1 contains only L, v, and c, motivating the stated independence from body properties. This does not independently determine either complete before-or-after kinetic-energy function."
+      },
+      "method": {
+        "zh": "检查 L(γ−1) 的参数：没有形状、材料、化学组成或初始质量。\n给 K0 与 K1 同时加上同一个依赖 v 的函数并不改变差值，因此差值的普适形式本身不足以确定二者各自的形式。\n结论继承无反冲发射、能量守恒和 H−E 的动能解释等条件。对于一般扩展系统，须继续检查完整系统和应力条件。",
+        "en": "Inspect the parameters in L(γ−1): no shape, material, chemical composition, or initial mass appears.\nAdding the same function of v to K0 and K1 leaves their difference unchanged; a universal difference alone does not determine each function.\nThe conclusion inherits no-recoil emission, energy conservation, and the kinetic interpretation of H−E. General extended systems still require complete-system and stress conditions."
+      },
+      "depends_on": [
+        {
+          "evidence_id": "t-kinetic-difference",
+          "relation": "derives_from"
+        }
+      ],
+      "terminal": {
+        "kind": "derivation",
+        "reason": {
+          "zh": "通过直接检查公式和差值的代数自由度，确定原句能够支持的精确范围。",
+          "en": "Direct inspection of the formula and the algebraic freedom of a difference establishes the precise scope of the statement."
+        }
+      }
+    },
+    {
+      "id": "t-provenance",
+      "source_id": "einstein1905-original",
+      "locator": "p. 639, footnote 1; English opening hyperlink",
+      "role": "original_citation",
+      "relation": "supports",
+      "finding": {
+        "zh": "原刊脚注确实指向 Einstein 1905 年《动体电动力学》；正文明确提到其中第8和第10节。",
+        "en": "The original footnote identifies Einstein’s 1905 electrodynamics paper; the text explicitly points to its sections 8 and 10."
+      },
+      "method": {
+        "zh": "德文脚注为 Ann. d. Phys. 17, p. 891 (1905)。Fourmilab 把该书目脚注转为开头的链接。",
+        "en": "The German footnote gives Ann. d. Phys. 17, p. 891 (1905). Fourmilab renders it as the opening hyperlink."
+      },
+      "depends_on": [],
+      "terminal": {
+        "kind": "bibliographic",
+        "reason": {
+          "zh": "核对到原刊脚注与被引论文，不需要把书目事实继续追成物理证明。",
+          "en": "The original footnote and cited paper settle this bibliographic claim."
+        }
+      }
+    },
+    {
+      "id": "t-definitions",
+      "source_id": "einstein1905-inertia",
+      "locator": "Body at rest paragraph; definitions before the energy equations",
+      "role": "main_text",
+      "relation": "supports",
+      "finding": {
+        "zh": "E和H是同一物体分别在静止系与运动系的能量；下标0、1分别标记发光前后。",
+        "en": "E and H denote the same body’s rest-frame and moving-frame energy; subscripts 0 and 1 denote before and after emission."
+      },
+      "method": {
+        "zh": "定义只规定符号和测量参考系。L是静止系发出的总光能，v是两系相对速度。",
+        "en": "These define notation and frames. L is total light energy emitted in the rest frame; v is relative frame speed."
+      },
+      "depends_on": [],
+      "terminal": {
+        "kind": "definition",
+        "reason": {
+          "zh": "符号定义已在原文定位。",
+          "en": "Definitions are located in the original text."
+        }
+      }
+    },
+    {
+      "id": "t-geometry",
+      "source_id": "einstein1905-inertia",
+      "locator": "Plane-wave and moving-coordinate paragraphs, p. 639",
+      "role": "main_text",
+      "relation": "qualifies",
+      "finding": {
+        "zh": "这里采用平面波、惯性坐标系及沿x方向的匀速运动设定。角φ在原系中测量。",
+        "en": "The setup specifies plane waves, inertial frames, and uniform relative motion along x. Angle φ is measured in the original frame."
+      },
+      "method": {
+        "zh": "这些条件定义要解决的思想实验，不是测量得到的样品事实；Lorentz变换取|v|<c。",
+        "en": "These define the thought experiment rather than measured sample properties; the Lorentz transformation requires |v|<c."
+      },
+      "depends_on": [],
+      "terminal": {
+        "kind": "postulate",
+        "reason": {
+          "zh": "这是作者明确规定的研究情形。",
+          "en": "These are explicitly stipulated conditions."
+        }
+      }
+    },
+    {
+      "id": "t-conservation",
+      "source_id": "einstein1905-inertia",
+      "locator": "Emission paragraph: energy principle in both coordinate systems",
+      "role": "assumption",
+      "relation": "qualifies",
+      "finding": {
+        "zh": "作者调用能量守恒，并用相对性原理要求它在两个惯性系中都适用。",
+        "en": "The author invokes conservation of energy and requires it in both inertial frames through relativity."
+      },
+      "method": {
+        "zh": "取物体与发出的两束光为记账边界。若有外部做功或漏记能量流，原平衡方程须相应补项。",
+        "en": "Account for the body and both emitted beams. External work or omitted energy flux requires extra balance terms."
+      },
+      "depends_on": [
+        {
+          "evidence_id": "t-relativity",
+          "relation": "derives_from"
+        }
+      ],
+      "terminal": {
+        "kind": "postulate",
+        "reason": {
+          "zh": "守恒定律在此作为物理前提；短文未提供独立实验来重新证明它。",
+          "en": "Conservation is a physical premise here; the note supplies no independent experiment re-establishing it."
+        }
+      }
+    },
+    {
+      "id": "t-rest-balance",
+      "source_id": "einstein1905-inertia",
+      "locator": "First energy-balance equation, p. 640",
+      "role": "main_text",
+      "relation": "supports",
+      "finding": {
+        "zh": "两束光在静止系各带走L/2，总共L，因此E₀−E₁=L。",
+        "en": "The two beams each remove L/2 in the rest frame, totaling L; hence E₀−E₁=L."
+      },
+      "method": {
+        "zh": "能量相加 L/2+L/2=L，然后从发光前总能量减去发光后总能量。",
+        "en": "Add L/2+L/2=L and equate this to the body’s before-minus-after energy."
+      },
+      "depends_on": [
+        {
+          "evidence_id": "t-conservation",
+          "relation": "derives_from"
+        },
+        {
+          "evidence_id": "t-geometry",
+          "relation": "derives_from"
+        }
+      ]
+    },
+    {
+      "id": "t-moving-balance",
+      "source_id": "einstein1905-inertia",
+      "locator": "Second energy-balance equation, p. 640",
+      "role": "main_text",
+      "relation": "supports",
+      "finding": {
+        "zh": "两束光的变换因子中角度项互相抵消，运动系总辐射能量为γL。",
+        "en": "The angular terms in the two transformed beam energies cancel, leaving total radiated energy γL in the moving frame."
+      },
+      "method": {
+        "zh": "(L/2)γ(1−βcosφ)+(L/2)γ(1+βcosφ)=γL。应用能量守恒得H₀−H₁=γL。",
+        "en": "(L/2)γ(1−βcosφ)+(L/2)γ(1+βcosφ)=γL. Conservation gives H₀−H₁=γL."
+      },
+      "depends_on": [
+        {
+          "evidence_id": "t-emission-setup",
+          "relation": "derives_from"
+        },
+        {
+          "evidence_id": "t-conservation",
+          "relation": "derives_from"
+        }
+      ]
+    },
+    {
+      "id": "t-maxwell-original",
+      "source_id": "maxwell1865-wave",
+      "locator": "Part VI, §§93–95; equations (69)–(71)",
+      "role": "backtrace",
+      "relation": "supports",
+      "finding": {
+        "zh": "Maxwell将电磁场方程合成为横波方程，传播速度由电磁常数决定。",
+        "en": "Maxwell combines the field equations into transverse wave equations with speed determined by electromagnetic constants."
+      },
+      "method": {
+        "zh": "在其单位下V=√(k/(4πμ))。该式说明一套场方程中的波速；跨惯性系的同一形式仍需相对性假设。",
+        "en": "In his units V=√(k/(4πμ)). This fixes speed within the field theory; invariant form across inertial frames still requires relativity."
+      },
+      "depends_on": [],
+      "terminal": {
+        "kind": "postulate",
+        "reason": {
+          "zh": "追到原始波动方程及场论输入。",
+          "en": "The branch reaches the original wave equations and field-theory inputs."
+        }
+      }
+    },
+    {
+      "id": "t-opposing-source-gap",
+      "source_id": "stachel-torretti1982-unread",
+      "locator": "Bibliography located in Ohanian; full text not obtained",
+      "role": "backtrace",
+      "relation": "unverified_dependency",
+      "finding": {
+        "zh": "Ohanian提及Stachel与Torretti对早期推导的辩护。本次仅核对到书目及该转述，未取得这篇1982论文全文。",
+        "en": "Ohanian refers to Stachel and Torretti’s defense. Only the bibliography and his account were inspected; the 1982 full text was not obtained."
+      },
+      "method": {
+        "zh": "无法据转述独立裁决双方论证。此节点记录访问缺口，不充当对任何一方的证明。",
+        "en": "A secondary account cannot independently adjudicate both arguments. This records the access gap, not support for either side."
+      },
+      "depends_on": [],
+      "terminal": {
+        "kind": "access_gap",
+        "reason": {
+          "zh": "待取得原文后，可在同一证据链上继续补充或修正。",
+          "en": "The same chain can be extended or corrected when the original is obtained."
+        }
+      }
+    },
+    {
+      "id": "numerical-cgs-coefficient",
+      "source_id": "einstein1905-inertia",
+      "locator": "Concluding numerical sentence following the derivation of L/c²",
+      "role": "calculation",
+      "relation": "supports",
+      "finding": {
+        "zh": "L/(9×10²⁰) 克来自 Δm=L/c² 的厘米—克—秒单位换算，分母采用光速约 3×10¹⁰ cm/s。3×10¹⁰ 是由分母还原的近似值，正文没有单列这个数字。",
+        "en": "L/(9×10²⁰) grams is Δm=L/c² in cgs units with c approximately 3×10¹⁰ cm/s. That speed is inferred from the denominator, not separately stated in the seed paper."
+      },
+      "method": {
+        "zh": "原文先给质量变化 L/c²，再指定能量以 erg、质量以克计的数值形式。\n能量单位除以速度平方恰好得到质量单位；括号覆盖整个分母。\n现代 SI 固定 c=299792458 m/s，即 29979245800 cm/s；它用于说明现代换算，不能充当1905年的实验依据。\n数字換算核查的是单位和算术；质量与能量之间的物理关系仍由理论推导及实验支持。",
+        "en": "The numerical statement follows the derived mass change L/c² and specifies ergs and grams.\nDividing energy by speed squared gives mass; the entire 9×10²⁰ belongs in the denominator.\nModern SI fixes c at 299792458 m/s, or 29979245800 cm/s; this is modern unit context, not historical experimental evidence.\nThis check establishes units and arithmetic; the physical mass–energy relation needs theoretical and experimental support."
+      },
+      "depends_on": [
+        {
+          "evidence_id": "t-mass-loss",
+          "relation": "uses"
+        },
+        {
+          "evidence_id": "m-modern-c",
+          "relation": "context",
+          "label": {
+            "zh": "现代换算比较",
+            "en": "Modern conversion comparison"
+          }
+        },
+        {
+          "evidence_id": "historical-light-speed",
+          "relation": "supports",
+          "label": {
+            "zh": "同时代数量级背景（非原文引用）",
+            "en": "Contemporary scale context (not originally cited)"
+          }
+        }
+      ],
+      "terminal": {
+        "kind": "definition",
+        "reason": {
+          "zh": "已到达单位定义和可直接复算的平方运算；继续追引文不会增强这一步换算。",
+          "en": "The chain reaches unit definitions and directly reproducible arithmetic."
+        }
+      }
+    },
+    {
+      "id": "historical-light-speed",
+      "source_id": "michelson-1880",
+      "locator": "Theory of New Method; Measurement of Speed of Rotation; Determination of the Constants; Discussion of Errors, final two paragraphs; Final Result",
+      "role": "backtrace",
+      "relation": "supports",
+      "finding": {
+        "zh": "1905年前，直接光学实验已经把真空光速测到约3×10¹⁰ cm/s的数量级。Michelson 1880年原始报告给出299944±51 km/s。",
+        "en": "Direct optical measurements before 1905 established a speed close to 3×10¹⁰ cm/s. Michelson's 1880 report gives 299944±51 km/s."
+      },
+      "method": {
+        "zh": "用旋转镜在光线往返期间的角度变化推算飞行时间；测量镜间距离、像位移和转速。音叉标定转速，尺与测微器比对长度标准。\n表中均值299852 km/s，经温度修正+12、空气到真空修正+80，得到299944 km/s。±51是作者合计的误差限，不能改写为现代1σ。\n这是为近似数值补充的历史实验链。Einstein短文没有引用这次测量，其中心值与现代精确值有约152 km/s差别。",
+        "en": "A rotating mirror turns during the light's round trip. Distance, image displacement and rotation rate give travel time; tuning forks and length standards calibrate these measurements.\nThe tabulated mean 299852 km/s receives +12 temperature and +80 air-to-vacuum corrections. The reported ±51 is the author's error limit, not a modern 1σ uncertainty.\nThis supplies historical support for the approximation. Einstein did not cite this experiment; its central value differs from modern c by about 152 km/s."
+      },
+      "depends_on": [],
+      "terminal": {
+        "kind": "measurement",
+        "reason": {
+          "zh": "已到达测量装置、校准、观测表和误差估计，足以支持3×10¹⁰ cm/s的取整数量级。",
+          "en": "The primary report supplies apparatus, calibration, observation tables and error analysis sufficient for the rounded scale."
+        }
+      }
+    },
+    {
+      "id": "radium-heat-primary",
+      "source_id": "curie-laborde-1903",
+      "locator": "Reprint image pages 478–479, thermocouple experiment and blank control; Reprint page 479, electrical substitution; pages 479–480, Bunsen calorimetry; Reprint page 480, quantitative estimates and stated concordance",
+      "role": "backtrace",
+      "relation": "supports",
+      "finding": {
+        "zh": "镭盐在1905年前已有持续放热的直接量热证据。Curie与Laborde给出每克镭每小时约100小卡的量级；他们当时没有由此测出质量亏损。",
+        "en": "Calorimetry had already established continuous heating by radium salts. Curie and Laborde estimated about 100 small calories per gram of radium per hour; this experiment measured heat, not a mass deficit."
+      },
+      "method": {
+        "zh": "等形安瓿中的含镭盐与纯氯化钡用铁—康铜热电偶比较：含镭盐高约1.5°C；两份纯氯化钡对照仅约0.01°C。\n用已知电流和电阻的加热丝复现相同稳态温差来定量热功率；另以Bunsen量热计复核，加入样品后汞柱匀速移动，移除后停止。\n1克混盐约14小卡/小时，估计约1/6质量为氯化镭，另测0.08克纯氯化镭。两法同量级而非精确一致；每克镭约100小卡/小时是量级估计。\n原文没有统计误差条；混盐成分不精确。末页仍讨论未知外部能量这一替代解释，因此此文支持持续放热及量级，尚未完成质能关系检验。",
+        "en": "Iron–constantan thermocouples compared matching ampoules: radium-containing salt was about 1.5°C warmer; two inactive controls differed by only about 0.01°C.\nA heater of known current and resistance reproduced the steady temperature difference. Independent Bunsen calorimetry showed steady mercury motion with the sample, stopping on removal.\nOne gram of mixed salt gave about 14 cal/hour, with roughly one-sixth radium chloride; 0.08 g of pure chloride was also tested. Methods agreed in scale, not exactly.\nComposition was approximate and no statistical error bar was supplied. The authors still entertained unknown external energy, so this establishes heating and scale, not mass–energy equivalence."
+      },
+      "depends_on": [],
+      "terminal": {
+        "kind": "measurement",
+        "reason": {
+          "zh": "已到达原始测量、空白对照和两种量热法；质量亏损不是该研究的测量量。",
+          "en": "The chain reaches original measurements, controls and two calorimetric methods; mass loss was outside their measured observables."
+        }
+      }
+    },
+    {
+      "id": "radium-experimental-proposal",
+      "source_id": "einstein1905-inertia",
+      "locator": "Penultimate prose paragraph mentioning radium salts",
+      "role": "main_text",
+      "relation": "qualifies",
+      "finding": {
+        "zh": "Einstein在这里提出的是实验方向：能量释放明显的镭盐或许可用于检验预测。该句的逻辑身份是建议，文中没有配套的称量数据或可行性误差预算。",
+        "en": "Einstein proposes radium salts as a possible experimental route. This sentence is a proposal; the paper provides no associated weighing data or feasibility error budget."
+      },
+      "method": {
+        "zh": "预测可检验这一建议可以由原文直接定位。\n1903年的量热研究解释了镭盐为何成为值得考虑的材料；它提供背景动机。\n建议是否成功须由后来具体实验回答，不能把建议句标成已获验证的实验结果。",
+        "en": "The proposed experimental direction is directly located in the original text.\nThe 1903 calorimetry provides contemporary motivation for considering radium salts.\nWhether the proposal succeeds requires a later concrete experiment; its status remains a proposal."
+      },
+      "depends_on": [
+        {
+          "evidence_id": "radium-heat-primary",
+          "relation": "context"
+        }
+      ],
+      "terminal": {
+        "kind": "proposal",
+        "reason": {
+          "zh": "追溯到提出建议的原始段落及材料背景即完成这类语句的证据分类。",
+          "en": "The original proposal and its material context establish the statement's evidential status."
+        }
+      }
+    },
+    {
+      "id": "later-direct-mass-energy-test",
+      "source_id": "rainville-2005",
+      "locator": "p. 1096, Eq. (1); p. 1097, Penning trap paragraph and Fig. 1b; p. 1097, final comparison paragraph",
+      "role": "later_test",
+      "relation": "supports",
+      "finding": {
+        "zh": "2005年的硅、硫中子俘获实验分别测量质量差和γ射线波长，合并得到1−Δmc²/E=(−1.4±4.4)×10⁻⁷，与零相容。这是后来对质能关系的定量检验。",
+        "en": "Independent mass and gamma-wavelength measurements for silicon and sulphur neutron capture gave 1−Δmc²/E=(−1.4±4.4)×10⁻⁷ in 2005, compatible with zero."
+      },
+      "method": {
+        "zh": "同一Penning阱中同时比较离子回旋频率，推得质量比；计入电子、化学结合能和极化修正。用氢/氘质量与氘俘获频率消去中子质量。\nGAMS4以已标定晶格和角度测量γ波长。按λ=2d sinθ、E=hc/λ并加反冲修正求各跃迁能，再对俘获态至基态的级联求和。\n最终偏差主要受γ射线测量误差限制；比较对象是上述核反应的能量与质量差。\n适用范围是所测核反应及其误差水平。检验还使用光子能量关系、仪器模型和常数；1905年尚无这项证据。",
+        "en": "Simultaneous Penning-trap cyclotron comparisons determine mass ratios, with electronic, chemical and polarization corrections. Hydrogen/deuterium differences eliminate neutron mass.\nCalibrated GAMS4 lattice spacing and angles determine wavelengths. Bragg's law, E=hc/λ and recoil corrections convert a complete cascade into binding energy.\nGamma-ray measurement uncertainty dominates the final comparison for these nuclear reactions.\nThe test concerns these reactions and precision, using photon-energy relations, instrument models and constants. It was unavailable in 1905."
+      },
+      "depends_on": [
+        {
+          "evidence_id": "gamma-measurement-terminal",
+          "relation": "derives_from"
+        },
+        {
+          "evidence_id": "penning-mass-method-terminal",
+          "relation": "uses",
+          "label": {
+            "zh": "所用质量测量方法的原始示范",
+            "en": "Original demonstration of the mass-measurement method"
+          }
+        }
+      ],
+      "terminal": {
+        "kind": "measurement",
+        "reason": {
+          "zh": "已核读最终论文的测量量、修正及误差，并追到光谱方法与数据表；本次验收依据为公开论文数据。",
+          "en": "The audit reaches measured quantities, corrections and errors in the final paper, plus spectroscopy methods and published data tables."
+        }
+      }
+    },
+    {
+      "id": "gamma-measurement-terminal",
+      "source_id": "dewey-2005-methods",
+      "locator": "§IV–V; Table VII (PDF p. 10); Eq. (9); Tables VII–VIII (PDF pp. 9–10)",
+      "role": "later_test",
+      "relation": "supports",
+      "finding": {
+        "zh": "γ射线支链能够追到观测波长、反冲修正以及分项误差，足以看出核结合能数字如何形成。",
+        "en": "The gamma-ray branch reaches observed wavelengths, recoil corrections and itemized uncertainties, making the binding-energy determination inspectable."
+      },
+      "method": {
+        "zh": "误差包括角度标定、计数统计、晶体温度、光束垂直发散和晶格间距；标定的相对误差项为0.4×10⁻⁶。\n硅两级跃迁反冲修正后为3539198.3(1.6)与4934397.4(4.0) eV；总结合能为8473595.7(5.0) eV。总误差需处理共享标定项。\n该预印本Table IX的合并偏差为−1.21(4.33)×10⁻⁷；Nature最终文为−1.4(4.4)×10⁻⁷，两版本须分别保留。",
+        "en": "Uncertainty includes calibration, statistics, crystal temperature, vertical divergence and lattice spacing; the calibration term is 0.4×10⁻⁶.\nSilicon's recoil-corrected cascade is 3539198.3(1.6)+4934397.4(4.0) eV; total binding energy is 8473595.7(5.0) eV, retaining shared calibration uncertainty.\nPreprint Table IX gives −1.21(4.33)×10⁻⁷; final Nature gives −1.4(4.4)×10⁻⁷. These are distinct versioned results."
+      },
+      "depends_on": [],
+      "terminal": {
+        "kind": "measurement",
+        "reason": {
+          "zh": "已到达原始研究报告中的可定位观测量与误差表；没有取得仪器底层事件文件。",
+          "en": "The chain reaches identifiable observations and uncertainty tables in the primary report; instrument event files were not obtained."
+        }
+      }
+    },
+    {
+      "id": "m-modern-c",
+      "source_id": "bipm-metre",
+      "locator": "SI base unit: metre, definition of c",
+      "role": "backtrace",
+      "relation": "context",
+      "finding": {
+        "zh": "现代SI把真空光速精确定义为299792458 m/s；换成cgs为29979245800 cm/s。",
+        "en": "Modern SI fixes vacuum c at exactly 299792458 m/s, or 29979245800 cm/s."
+      },
+      "method": {
+        "zh": "它是现代单位定义；1905原文的9×10²⁰来自取整，不能用现代定义冒充当年的光速测量。",
+        "en": "This is a modern unit definition. The 1905 denominator is rounded; modern definition is not historical measurement."
+      },
+      "depends_on": [],
+      "terminal": {
+        "kind": "definition",
+        "reason": {
+          "zh": "常数与单位关系由BIPM定义页面给出。",
+          "en": "The BIPM definition supplies the exact constant and units."
+        }
+      }
+    },
+    {
+      "id": "penning-mass-method-terminal",
+      "source_id": "rainville-2004-ion-balance",
+      "locator": "p. 334, Measuring mass; pp. 336–337, Sources of error and limitations; p. 337, Eq. (2) and Fig. 4",
+      "role": "backtrace",
+      "relation": "supports",
+      "finding": {
+        "zh": "双离子同时测频抑制磁场漂移；该文提供方法示范。",
+        "en": "Simultaneous two-ion frequencies suppress magnetic drift; this is a method demonstration."
+      },
+      "method": {
+        "zh": "共轨约1毫米间隔；测场不均匀性并调C₄抵消频移。\n改变离子间距检验系统误差。\n这些是2004年分子离子数据；硅硫核反应质量数据见2005年论文。",
+        "en": "Shared orbit, approximately 1 mm separation; field imperfections are measured and C₄ tuned to suppress shifts.\nVarying separation probes systematic errors.\nThese 2004 molecular-ion data are distinct from the 2005 silicon/sulphur reaction measurements."
+      },
+      "depends_on": [],
+      "terminal": {
+        "kind": "measurement",
+        "reason": {
+          "zh": "已到原方法、观测图及误差分项。",
+          "en": "Reached the original method, observation figure and uncertainty budget."
+        }
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "einstein1905-inertia",
+      "title": "Does the Inertia of a Body Depend upon its Energy-Content?",
+      "authors": "Albert Einstein",
+      "year": 1905,
+      "url": "https://fourmilab.ch/etexts/einstein/E_mc2/www/",
+      "doi": "10.1002/andp.19053231314",
+      "type": "theoretical_paper",
+      "access": "full_text",
+      "retrieved_at": "2026-09-12",
+      "note": {
+        "zh": "1905 德文原文用 V 表示光速；本数据沿用已读 1923 英译本的 c。",
+        "en": "The 1905 German paper uses V for the speed of light; this dataset follows c in the inspected 1923 English translation."
+      },
+      "local_path": "sources/einstein-1905-english.pdf"
+    },
+    {
+      "id": "einstein1905-sr",
+      "title": "On the Electrodynamics of Moving Bodies",
+      "authors": "Albert Einstein",
+      "year": 1905,
+      "url": "https://fourmilab.ch/etexts/einstein/specrel/www/",
+      "doi": "10.1002/andp.19053221004",
+      "type": "theoretical_paper",
+      "access": "full_text",
+      "retrieved_at": "2026-09-12",
+      "note": {
+        "zh": "原文把 Lorentz 因子记作 β；本数据统一记作 γ，并把 v/c 记作 β，避免混淆。",
+        "en": "Einstein denotes the Lorentz factor by beta. Here gamma denotes that factor and beta denotes v/c."
+      }
+    },
+    {
+      "id": "maxwell1865-energy",
+      "title": "A Dynamical Theory of the Electromagnetic Field — Part III",
+      "authors": "James Clerk Maxwell",
+      "year": 1865,
+      "url": "https://en.wikisource.org/wiki/A_Dynamical_Theory_of_the_Electromagnetic_Field/Part_III",
+      "type": "foundational_theory",
+      "access": "full_text",
+      "retrieved_at": "2026-09-12",
+      "note": {
+        "zh": "这是追溯补充。1905 质能短文提到 Maxwell 理论，但没有给出这篇 1865 论文的书目引用。",
+        "en": "This is a tracing supplement. The 1905 inertia paper names Maxwell theory but does not bibliographically cite this 1865 article."
+      }
+    },
+    {
+      "id": "maxwell1865-wave",
+      "title": "A Dynamical Theory of the Electromagnetic Field — Part VI",
+      "authors": "James Clerk Maxwell",
+      "year": 1865,
+      "url": "https://en.wikisource.org/wiki/A_Dynamical_Theory_of_the_Electromagnetic_Field/Part_VI",
+      "type": "foundational_theory",
+      "access": "full_text",
+      "retrieved_at": "2026-09-12",
+      "note": {
+        "zh": "保留 Maxwell 自己的单位和 k、μ 定义；不把旧记号直接当成现代 SI 常数。",
+        "en": "Maxwell uses his own units and definitions of k and mu; these must not be silently identified with SI constants."
+      }
+    },
+    {
+      "id": "laue1911",
+      "title": "On the Dynamics of the Theory of Relativity [Zur Dynamik der Relativitätstheorie]",
+      "authors": "Max von Laue",
+      "year": 1911,
+      "url": "https://en.wikisource.org/wiki/Translation:On_the_Dynamics_of_the_Theory_of_Relativity",
+      "doi": "10.1002/andp.19113400808",
+      "type": "theoretical_paper",
+      "access": "full_text",
+      "retrieved_at": "2026-09-12",
+      "note": {
+        "zh": "已读 Wikisource 英译文本及公式；未用出版商德文扫描校对。网站列有译本独立版权及无原文来源的维护标签。",
+        "en": "The Wikisource English translation and formulas were inspected; the publisher German scan was not used for collation. Wikisource marks separate translation rights and a no-original-source maintenance category."
+      }
+    },
+    {
+      "id": "ohanian2008v2",
+      "title": "Einstein’s E = mc² mistakes",
+      "authors": "Hans C. Ohanian",
+      "year": 2008,
+      "url": "https://arxiv.org/abs/0805.1400v2",
+      "type": "theoretical_paper",
+      "access": "full_text",
+      "retrieved_at": "2026-09-12",
+      "note": {
+        "zh": "实际核读的是 2008 年 v2 预印本。2009 年期刊页返回 403，本数据的页码和措辞判断均指预印本。",
+        "en": "The inspected version is the 2008 v2 preprint. The 2009 journal page returned 403; page references and wording assessments here refer to the preprint."
+      }
+    },
+    {
+      "id": "brown2003",
+      "title": "A simple derivation of E = mc²",
+      "authors": "Peter M. Brown",
+      "year": 2003,
+      "url": "https://arxiv.org/abs/physics/0308039",
+      "type": "theoretical_paper",
+      "access": "full_text",
+      "retrieved_at": "2026-09-12",
+      "note": {
+        "zh": "教学性替代推导；用动量守恒，并在有限速度使用 p/v 的质量定义。它不属于 1905 原文证据。",
+        "en": "A pedagogical alternative using momentum conservation and a p/v mass definition at finite speed; it is not evidence cited in the 1905 paper."
+      }
+    },
+    {
+      "id": "stachel-torretti1982-unread",
+      "title": "Einstein’s first derivation of mass-energy equivalence",
+      "authors": "John Stachel, Roberto Torretti",
+      "year": 1982,
+      "url": "https://doi.org/10.1119/1.12764",
+      "doi": "10.1119/1.12764",
+      "type": "research_article",
+      "access": "unavailable",
+      "retrieved_at": "2026-09-12",
+      "note": {
+        "zh": "DOI请求失败；另找到作者上传页，但预览不可用、下载返回403。书目及Ohanian转述已查，1982原文论证尚未核读。",
+        "en": "The DOI request failed. An author-upload page was found, but preview was unavailable and downloading returned 403. Bibliography and Ohanian’s account were inspected; the 1982 argument was not."
+      }
+    },
+    {
+      "id": "bipm-metre",
+      "title": "SI base unit: metre (m)",
+      "authors": "Bureau International des Poids et Mesures",
+      "year": null,
+      "url": "https://www.bipm.org/en/si-base-units/metre",
+      "type": "definitional_primary_authority",
+      "access": "full_text",
+      "retrieved_at": "2026-09-12",
+      "note": {
+        "zh": "现代 SI 定义页面；网页未标出版日期。c 的精确值属于单位定义，供现代换算比较使用。",
+        "en": "Modern SI definition page, without a publication date. The exact c is a unit definition used for modern conversion context."
+      }
+    },
+    {
+      "id": "michelson-1880",
+      "title": "Experimental Determination of the Velocity of Light",
+      "authors": "Albert A. Michelson",
+      "year": 1880,
+      "url": "https://www.gutenberg.org/files/11753/11753-h/11753-h.htm",
+      "type": "primary_experimental_monograph_transcription",
+      "access": "full_text",
+      "retrieved_at": "2026-09-12",
+      "note": {
+        "zh": "核读公开原始报告的转录全文；本例倒查补充，1905短文未明确引用该测量。",
+        "en": "Full transcription of the original report inspected. Added for historical context; not cited by the 1905 note."
+      }
+    },
+    {
+      "id": "curie-laborde-1903",
+      "title": "Sur la chaleur dégagée spontanément par les sels de radium",
+      "authors": "Pierre Curie, Albert Laborde",
+      "year": 1903,
+      "url": "https://fr.wikisource.org/wiki/Page:Curie_-_%C5%92uvres_de_Pierre_Curie,_1908.djvu/478",
+      "type": "primary_experimental_paper_reprint_transcription",
+      "access": "full_text",
+      "retrieved_at": "2026-09-12",
+      "note": {
+        "zh": "核读1908文集重印的四个转录页（478–481）。原文发表于1903年《Comptes rendus》136卷673–675页。本例补充的同时代材料背景。",
+        "en": "All four transcribed reprint pages (478–481) inspected. Originally Comptes rendus 136, 673–675 (1903). Added contemporary material context."
+      }
+    },
+    {
+      "id": "rainville-2005",
+      "title": "World Year of Physics: A direct test of E=mc²",
+      "authors": "Simon Rainville, James K. Thompson, Edmund G. Myers, John M. Brown, Maynard S. Dewey, Ernest G. Kessler Jr, Richard D. Deslattes, Hans G. Börner, Michael Jentschel, Paolo Mutti, David E. Pritchard",
+      "year": 2005,
+      "url": "https://www.ill.eu/media/old_files/user_upload/ILL/3_Users/Scientific_groups/Nuclear___Particle_Physics/Highlights/e_mc2.pdf",
+      "doi": "10.1038/4381096a",
+      "type": "primary_experimental_paper",
+      "access": "full_text",
+      "retrieved_at": "2026-09-12",
+      "note": {
+        "zh": "核读 ILL 托管的 Nature 最终论文两页，采用最终合并值。属于后验验证，并非1905年证据。",
+        "en": "Both pages of the final Nature article, hosted by ILL, inspected. Uses the final combined value. Later corroboration, not evidence available in 1905."
+      }
+    },
+    {
+      "id": "dewey-2005-methods",
+      "title": "Precision Measurement of the 29Si, 33S, and 36Cl Binding Energies",
+      "authors": "M. S. Dewey, E. G. Kessler Jr, R. D. Deslattes, H. G. Börner, M. Jentschel, C. Doll, P. Mutti",
+      "year": 2005,
+      "url": "https://arxiv.org/pdf/nucl-ex/0507011",
+      "doi": "10.48550/arXiv.nucl-ex/0507011",
+      "type": "primary_experimental_methods_preprint",
+      "access": "full_text",
+      "retrieved_at": "2026-09-12",
+      "note": {
+        "zh": "核读2005年13页预印本的方法与表格；其Table IX与Nature最终论文的合并数字分别保留。",
+        "en": "Methods and tables in the 13-page 2005 preprint inspected. Its Table IX and the final Nature result are kept as separate versions."
+      }
+    },
+    {
+      "id": "einstein1905-original",
+      "title": "Ist die Trägheit eines Körpers von seinem Energieinhalt abhängig?",
+      "authors": "Albert Einstein",
+      "year": 1905,
+      "url": "https://zenodo.org/records/1424057/files/article.pdf?download=1",
+      "doi": "10.1002/andp.19053231314",
+      "type": "original_paper_scan",
+      "access": "full_text",
+      "retrieved_at": "2026-09-12",
+      "note": {
+        "zh": "德文原刊639–641页已逐页核对。光速记作V；末页标“伯尔尼，1905年9月”与1905年9月27日收稿。",
+        "en": "Original German pages 639–641 inspected. Light speed is V. The final page gives Bern, September 1905 and receipt on 27 September 1905."
+      },
+      "local_path": "sources/einstein-1905-original.pdf"
+    },
+    {
+      "id": "rainville-2004-ion-balance",
+      "title": "An Ion Balance for Ultra-High-Precision Atomic Mass Measurements",
+      "authors": "Simon Rainville, James K. Thompson, David E. Pritchard",
+      "year": 2004,
+      "doi": "10.1126/science.1092320",
+      "url": "https://www.researchgate.net/publication/8963694_An_Ion_Balance_for_Ultra-High-Precision_Atomic_Mass_Measurements",
+      "type": "primary_experimental_methods_author_copy",
+      "access": "full_text",
+      "retrieved_at": "2026-09-12",
+      "note": {
+        "zh": "已读Simon Rainville于2017年上传的出版社版式全文转录334–338页。它展示2004年的方法性能，不能代替2005年硅硫反应的特定质量数据。",
+        "en": "Publisher-layout transcription, pages 334–338, uploaded by Simon Rainville in 2017, inspected. It demonstrates the 2004 method, not the specific 2005 silicon/sulphur mass data."
+      }
+    }
+  ]
+}

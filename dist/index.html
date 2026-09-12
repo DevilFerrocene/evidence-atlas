@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="逐句阅读论文，追溯观点、数字与原始证据。">
+  <meta name="color-scheme" content="light">
+  <title>循证 · Evidence Atlas</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="/vendor/katex/katex.min.css">
+  <link rel="stylesheet" href="/style.css">
+  <script defer src="/vendor/katex/katex.min.js"></script>
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#paper">跳至文献 / Skip to paper</a>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="Evidence Atlas"><span class="brand-mark">循</span><span id="brand-name">循证<span class="brand-en">EVIDENCE ATLAS</span></span></a>
+    <div class="toolbar">
+      <label for="paper-select" class="sr-only" id="select-label">选择文献</label><select id="paper-select" hidden></select>
+      <span class="local-tag" id="local-label">本地文献库</span>
+      <div class="language" role="group" aria-label="Language"><button id="lang-zh" lang="zh-CN" aria-pressed="true">中文</button><button id="lang-en" lang="en" aria-pressed="false">English</button></div>
+    </div>
+  </header>
+  <div id="notice" class="notice" role="status" hidden></div>
+  <main id="workspace" class="workspace">
+    <nav class="outline" id="outline" aria-label="文献导航"></nav>
+    <article id="paper" class="paper" tabindex="-1"><p class="loading">正在读取文献…</p></article>
+    <aside id="evidence-panel" class="evidence-panel" aria-label="观点详情"></aside>
+  </main>
+  <footer id="footer"></footer>
+</body>
+</html>

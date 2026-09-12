@@ -6,7 +6,7 @@ import { ROOT, DATA_DIR, SOURCE_DIR, schema, loadLibrary, coverage, getClaimDeta
 const port = Number(process.env.PORT || 4317);
 if (!Number.isInteger(port) || port < 1 || port > 65535) throw new Error('PORT must be an integer between 1 and 65535');
 const library = await loadLibrary(DATA_DIR);
-const mime = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.json': 'application/json; charset=utf-8', '.woff2': 'font/woff2', '.woff': 'font/woff', '.ttf': 'font/ttf', '.pdf': 'application/pdf', '.txt': 'text/plain; charset=utf-8' };
+const mime = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.mjs': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.json': 'application/json; charset=utf-8', '.woff2': 'font/woff2', '.woff': 'font/woff', '.ttf': 'font/ttf', '.pdf': 'application/pdf', '.txt': 'text/plain; charset=utf-8' };
 const securityHeaders = {
   'X-Content-Type-Options': 'nosniff',
   'Referrer-Policy': 'no-referrer',
@@ -52,7 +52,7 @@ const server = http.createServer(async (req, res) => {
     if (path.startsWith('/api/')) return json(res, 404, { error: 'Route not found' });
     if (path === '/') return asset(res, resolve(ROOT, 'dist/index.html'));
     if (['/app.js', '/style.css'].includes(path)) return asset(res, resolve(ROOT, `dist${path}`));
-    if (/^\/vendor\/katex\/(katex\.min\.(js|css)|fonts\/[A-Za-z0-9_.-]+\.(woff2?|ttf))$/.test(path)) return asset(res, resolve(ROOT, 'node_modules/katex/dist', path.slice('/vendor/katex/'.length)));
+    if (/^\/vendor\/katex\/(katex\.mjs|katex\.min\.css|contrib\/auto-render\.mjs|fonts\/[A-Za-z0-9_.-]+\.(woff2?|ttf))$/.test(path)) return asset(res, resolve(ROOT, 'node_modules/katex/dist', path.slice('/vendor/katex/'.length)));
     if (/^\/sources\/[A-Za-z0-9_.-]+$/.test(path)) {
       const relative = path.slice(1);
       if ([...library.values()].some(d => d.sources.some(s => s.local_path === relative))) return asset(res, resolve(SOURCE_DIR, path.slice('/sources/'.length)));

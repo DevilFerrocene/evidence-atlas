@@ -57,7 +57,7 @@
       "type": "array", "minItems": 1,
       "items": {
         "type": "object", "additionalProperties": false,
-        "required": ["id", "title", "kind", "assessment", "summary", "why", "story", "reasoning", "limits", "segment_ids", "evidence_ids"],
+        "required": ["id", "title", "kind", "assessment", "summary", "limits", "segment_ids", "evidence_ids"],
         "properties": {
           "id": { "$ref": "#/definitions/id" },
           "title": { "$ref": "#/definitions/bi" },
@@ -65,7 +65,7 @@
           "assessment": { "enum": ["supported", "conditional", "open", "proposal", "mixed", "unsupported", "miscited", "outdated"] },
           "summary": { "$ref": "#/definitions/bi" },
           "why": { "$ref": "#/definitions/bi" },
-          "story": { "type": "array", "minItems": 1, "items": { "type": "object", "required": ["text", "evidence_ids"], "additionalProperties": false, "properties": { "text": { "$ref": "#/definitions/bi" }, "evidence_ids": { "$ref": "#/definitions/nonemptyIds" } } } },
+          "story": { "type": "array", "items": { "type": "object", "required": ["text", "evidence_ids"], "additionalProperties": false, "properties": { "heading": { "$ref": "#/definitions/bi" }, "text": { "$ref": "#/definitions/bi" }, "evidence_ids": { "$ref": "#/definitions/nonemptyIds" } } } },
           "reasoning": { "type": "array", "items": { "$ref": "#/definitions/bi" } },
           "limits": { "type": "array", "items": { "$ref": "#/definitions/bi" } },
           "segment_ids": { "$ref": "#/definitions/nonemptyIds" },

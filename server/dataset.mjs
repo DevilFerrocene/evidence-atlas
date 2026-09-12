@@ -40,7 +40,7 @@ export function validateDataset(data) {
       if (segments.has(id) && !segments.get(id).claim_ids.includes(c.id)) errors.push(`${c.id}: ${id} lacks reverse claim`);
     }
     for (const id of c.evidence_ids) requireRef(evidence, id, c.id);
-    for (const paragraph of c.story) for (const id of paragraph.evidence_ids) requireRef(evidence, id, c.id);
+    for (const paragraph of c.story || []) for (const id of paragraph.evidence_ids) requireRef(evidence, id, c.id);
     for (const f of c.findings || []) for (const id of f.evidence_ids) requireRef(evidence, id, c.id);
   }
   for (const e of evidence.values()) {
@@ -101,7 +101,7 @@ export function getClaimDetail(data, id) {
     reached.add(eid);
     for (const edge of map.get(eid).depends_on) walk(edge.evidence_id);
   }
-  for (const eid of [...claim.evidence_ids, ...claim.story.flatMap(p => p.evidence_ids), ...(claim.findings || []).flatMap(f => f.evidence_ids)]) walk(eid);
+  for (const eid of [...claim.evidence_ids, ...(claim.story || []).flatMap(p => p.evidence_ids), ...(claim.findings || []).flatMap(f => f.evidence_ids)]) walk(eid);
   const evidence = [...reached].map(eid => map.get(eid));
   const sourceIds = new Set(evidence.map(e => e.source_id));
   return { claim, evidence, sources: data.sources.filter(s => sourceIds.has(s.id)) };

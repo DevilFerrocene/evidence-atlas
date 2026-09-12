@@ -1,25 +1,46 @@
 {
   "name": "evidence-atlas",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "type": "module",
-  "description": "Local bilingual paper reader with claim-level evidence graphs",
+  "description": "Local paper reader, MCP tools and a standalone agent for structured evidence bundles",
   "engines": {
-    "node": ">=22"
+    "node": ">=22.13.0"
   },
   "scripts": {
-    "start": "node server/index.mjs",
+    "start": "node apps/reader/server.mjs",
+    "init": "node scripts/cli.mjs init",
+    "mcp": "node agent/mcp.mjs",
+    "agent": "node agent/loop.mjs",
     "validate": "node scripts/cli.mjs validate",
     "import": "node scripts/cli.mjs import",
     "export": "node scripts/cli.mjs export"
   },
   "dependencies": {
+    "@modelcontextprotocol/sdk": "1.30.0",
+    "@napi-rs/canvas": "1.0.9",
     "ajv": "8.20.0",
-    "katex": "0.18.7"
+    "katex": "0.18.7",
+    "pdfjs-dist": "6.3.289",
+    "zod": "4.6.2"
   },
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DevilFerrocene/evidence-atlas.git"
-  }
+  },
+  "bin": {
+    "evidence-atlas": "scripts/cli.mjs"
+  },
+  "files": [
+    "apps/reader/",
+    "agent/",
+    "packages/core/",
+    "schemas/",
+    "scripts/",
+    "examples/",
+    "SKILL.md",
+    "README.md",
+    "LICENSE"
+  ]
 }

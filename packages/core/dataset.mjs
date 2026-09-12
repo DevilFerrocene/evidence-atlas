@@ -1,11 +1,9 @@
-import { readFile, readdir, stat } from 'node:fs/promises';
-import { resolve, basename } from 'node:path';
-import { fileURLToPath } from 'node:url';
+import { readFile, readdir, stat, realpath } from 'node:fs/promises';
+import { resolve, basename, relative, isAbsolute } from 'node:path';
+import { ROOT, DATA_DIR, SOURCE_DIR } from './paths.mjs';
+export { ROOT, DATA_DIR, SOURCE_DIR } from './paths.mjs';
 import Ajv from 'ajv';
 
-export const ROOT = fileURLToPath(new URL('../', import.meta.url));
-export const DATA_DIR = process.env.EVIDENCE_DATA_DIR ? resolve(process.env.EVIDENCE_DATA_DIR) : resolve(ROOT, 'data/papers');
-export const SOURCE_DIR = resolve(DATA_DIR, '../sources');
 export const schema = JSON.parse(await readFile(resolve(ROOT, 'schemas/paper.schema.json'), 'utf8'));
 const checkShape = new Ajv({ allErrors: true, strict: true }).compile(schema);
 
@@ -25,6 +23,7 @@ export function validateDataset(data) {
   const claims = index(data.claims, 'claim');
   const evidence = index(data.evidence, 'evidence');
   const sources = index(data.sources, 'source');
+  const figures = index(data.figures || [], 'figure');
   const requireRef = (map, id, from) => { if (!map.has(id)) errors.push(`${from}: missing reference ${id}`); };
   for (const p of data.paper.sections || []) requireRef(paragraphs, p.paragraph_id, 'section');
   for (const s of segments.values()) {
@@ -48,6 +47,50 @@ export function validateDataset(data) {
     if (!e.depends_on.length && !e.terminal) errors.push(`${e.id}: leaf must explain where the investigation stops`);
     for (const edge of e.depends_on) requireRef(evidence, edge.evidence_id, e.id);
   }
+  for (const figure of figures.values()) {
+    requireRef(sources, figure.source_id, figure.id);
+    requireRef(paragraphs, figure.placement.paragraph_id, figure.id);
+    requireRef(segments, figure.placement.after_segment_id, figure.id);
+    const placementParagraph = paragraphs.get(figure.placement.paragraph_id);
+    if (placementParagraph && !placementParagraph.segments.some(s => s.id === figure.placement.after_segment_id)) errors.push(`${figure.id}: placement segment must belong to its placement paragraph`);
+    if (sources.has(figure.source_id) && sources.get(figure.source_id).local_path !== figure.original_path) errors.push(`${figure.id}: original_path must be the local asset of its source`);
+    const featureMap = index(figure.features, `${figure.id} feature`);
+    const featureIds = new Set();
+    const rect = (r, label) => {
+      if (r.x + r.width > 1.000001 || r.y + r.height > 1.000001) errors.push(`${label}: rectangle exceeds image bounds`);
+    };
+    rect(figure.crop, `${figure.id} crop`);
+    if (figure.page_crop) rect(figure.page_crop, `${figure.id} page crop`);
+    for (const feature of figure.features) {
+      if (featureIds.has(feature.id)) errors.push(`${figure.id}: duplicate feature id ${feature.id}`);
+      featureIds.add(feature.id);
+      for (const id of feature.evidence_ids || []) requireRef(evidence, id, `${figure.id}/${feature.id}`);
+      if (feature.geometry.width === undefined || feature.geometry.height === undefined) errors.push(`${figure.id}/${feature.id}: reading-aid rectangle needs width and height`);
+      for (const region of feature.regions || [feature.geometry]) {
+        if (region.width === undefined || region.height === undefined) errors.push(`${figure.id}/${feature.id}: each reading-aid region needs width and height`);
+        rect(region, `${figure.id}/${feature.id}`);
+      }
+      const regionIds = (feature.regions || []).map(r => r.id);
+      if (new Set(regionIds).size !== regionIds.length) errors.push(`${figure.id}/${feature.id}: duplicate region id`);
+      for (const child of feature.children || []) {
+        const childId = typeof child === 'string' ? child : child.id;
+        requireRef(featureMap, childId, `${figure.id}/${feature.id}`);
+        const childRegions = new Set((featureMap.get(childId)?.regions || []).map(r => r.id));
+        for (const regionId of typeof child === 'object' ? child.region_ids || [] : []) {
+          if (!childRegions.has(regionId)) errors.push(`${figure.id}/${feature.id}: missing child region ${regionId}`);
+        }
+      }
+    }
+    const visiting = new Set(), done = new Set();
+    function visitFeature(id) {
+      if (visiting.has(id)) { errors.push(`${figure.id}: feature hierarchy cycle at ${id}`); return; }
+      if (done.has(id) || !featureMap.has(id)) return;
+      visiting.add(id);
+      for (const child of featureMap.get(id).children || []) visitFeature(typeof child === 'string' ? child : child.id);
+      visiting.delete(id); done.add(id);
+    }
+    for (const id of featureMap.keys()) visitFeature(id);
+  }
   const active = new Set(), visited = new Set();
   function visit(id) {
     if (active.has(id)) { errors.push(`Evidence dependency cycle at ${id}; represent a circular citation as a finding, not a circular derivation`); return; }
@@ -66,7 +109,7 @@ export function coverage(data) {
   const excluded = segments.length - annotated;
   const statuses = {};
   for (const c of data.claims) statuses[c.assessment] = (statuses[c.assessment] || 0) + 1;
-  return { paragraphs: data.paragraphs.length, segments: segments.length, annotated_segments: annotated, excluded_context_segments: excluded, claims: data.claims.length, sources: data.sources.length, evidence_nodes: data.evidence.length, statuses };
+  return { paragraphs: data.paragraphs.length, segments: segments.length, annotated_segments: annotated, excluded_context_segments: excluded, claims: data.claims.length, sources: data.sources.length, figures: (data.figures || []).length, evidence_nodes: data.evidence.length, statuses };
 }
 
 export async function readDataset(path) {
@@ -77,13 +120,21 @@ export async function readDataset(path) {
 }
 
 export async function loadLibrary(directory = DATA_DIR) {
-  const files = (await readdir(directory)).filter(name => name.endsWith('.json')).sort();
+  let files;
+  try { files = (await readdir(directory)).filter(name => name.endsWith('.json')).sort(); }
+  catch (error) { if (error.code === 'ENOENT') return new Map(); throw error; }
   const library = new Map();
+  const base = await realpath(resolve(directory, '..'));
   for (const file of files) {
-    const data = await readDataset(resolve(directory, file));
+    const paperPath = await realpath(resolve(directory, file));
+    const paperRelative = relative(base, paperPath);
+    if (paperRelative.startsWith('..') || isAbsolute(paperRelative)) throw new Error(`Paper is outside the library: ${file}`);
+    const data = await readDataset(paperPath);
     if (library.has(data.paper.id)) throw new Error(`Duplicate paper id: ${data.paper.id}`);
     for (const source of data.sources.filter(s => s.local_path)) {
-      const location = resolve(directory, '..', source.local_path);
+      const location = await realpath(resolve(directory, '..', source.local_path));
+      const rel = relative(base, location);
+      if (rel.startsWith('..') || isAbsolute(rel)) throw new Error(`Local source is outside the library: ${source.local_path}`);
       if (!(await stat(location)).isFile()) throw new Error(`Local source is not a file: ${source.local_path}`);
     }
     library.set(data.paper.id, data);

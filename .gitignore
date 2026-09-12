@@ -5,3 +5,8 @@ node_modules/
 deliverables/
 
 cases/
+
+.env.*
+!.env.example
+workspace/
+*.tgz

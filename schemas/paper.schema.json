@@ -4,49 +4,171 @@
   "title": "Evidence Atlas paper bundle v1",
   "type": "object",
   "additionalProperties": false,
-  "required": ["schema_version", "paper", "paragraphs", "claims", "evidence", "sources"],
+  "required": [
+    "schema_version",
+    "paper",
+    "paragraphs",
+    "claims",
+    "evidence",
+    "sources"
+  ],
   "properties": {
-    "schema_version": { "const": "1.0" },
+    "schema_version": {
+      "const": "1.0"
+    },
     "paper": {
-      "type": "object", "additionalProperties": false,
-      "required": ["id", "title", "authors", "year", "citation", "source_url", "rights", "edition", "scope", "audited_at"],
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "title",
+        "authors",
+        "year",
+        "citation",
+        "source_url",
+        "rights",
+        "edition",
+        "scope",
+        "audited_at"
+      ],
       "properties": {
-        "id": { "$ref": "#/definitions/id" },
-        "title": { "$ref": "#/definitions/bi" },
-        "authors": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
-        "year": { "type": "integer" },
-        "citation": { "type": "string", "minLength": 1 },
-        "doi": { "type": "string" },
-        "source_url": { "$ref": "#/definitions/url" },
-        "original_url": { "$ref": "#/definitions/url" },
-        "rights": { "$ref": "#/definitions/bi" },
-        "edition": { "$ref": "#/definitions/bi" },
-        "scope": { "$ref": "#/definitions/bi" },
-        "audited_at": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" },
-        "sections": { "type": "array", "items": { "type": "object", "required": ["id", "label", "paragraph_id"], "properties": { "id": { "$ref": "#/definitions/id" }, "label": { "$ref": "#/definitions/bi" }, "paragraph_id": { "$ref": "#/definitions/id" } }, "additionalProperties": false } }
+        "id": {
+          "$ref": "#/definitions/id"
+        },
+        "title": {
+          "$ref": "#/definitions/bi"
+        },
+        "authors": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "year": {
+          "type": "integer"
+        },
+        "citation": {
+          "type": "string",
+          "minLength": 1
+        },
+        "doi": {
+          "type": "string"
+        },
+        "source_url": {
+          "$ref": "#/definitions/url"
+        },
+        "original_url": {
+          "$ref": "#/definitions/url"
+        },
+        "rights": {
+          "$ref": "#/definitions/bi"
+        },
+        "edition": {
+          "$ref": "#/definitions/bi"
+        },
+        "scope": {
+          "$ref": "#/definitions/bi"
+        },
+        "audited_at": {
+          "type": "string",
+          "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+        },
+        "sections": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "label",
+              "paragraph_id"
+            ],
+            "properties": {
+              "id": {
+                "$ref": "#/definitions/id"
+              },
+              "label": {
+                "$ref": "#/definitions/bi"
+              },
+              "paragraph_id": {
+                "$ref": "#/definitions/id"
+              }
+            },
+            "additionalProperties": false
+          }
+        }
       }
     },
     "paragraphs": {
-      "type": "array", "minItems": 1,
+      "type": "array",
+      "minItems": 1,
       "items": {
-        "type": "object", "additionalProperties": false, "required": ["id", "type", "segments"],
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "type",
+          "segments"
+        ],
         "properties": {
-          "id": { "$ref": "#/definitions/id" },
-          "type": { "enum": ["body", "equation", "footnote", "caption", "table", "heading"] },
-          "locator": { "type": "string" },
+          "id": {
+            "$ref": "#/definitions/id"
+          },
+          "type": {
+            "enum": [
+              "body",
+              "equation",
+              "footnote",
+              "caption",
+              "table",
+              "heading"
+            ]
+          },
+          "locator": {
+            "type": "string"
+          },
           "segments": {
-            "type": "array", "minItems": 1,
+            "type": "array",
+            "minItems": 1,
             "items": {
-              "type": "object", "additionalProperties": false,
-              "required": ["id", "en", "zh", "kind", "claim_ids"],
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "id",
+                "en",
+                "zh",
+                "kind",
+                "claim_ids"
+              ],
               "properties": {
-                "id": { "$ref": "#/definitions/id" },
-                "en": { "type": "string", "minLength": 1 },
-                "zh": { "type": "string", "minLength": 1 },
-                "kind": { "enum": ["claim", "equation", "context"] },
-                "latex": { "type": "string" },
-                "claim_ids": { "$ref": "#/definitions/ids" },
-                "exclusion_reason": { "$ref": "#/definitions/bi" }
+                "id": {
+                  "$ref": "#/definitions/id"
+                },
+                "en": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "zh": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "kind": {
+                  "enum": [
+                    "claim",
+                    "equation",
+                    "context"
+                  ]
+                },
+                "latex": {
+                  "type": "string"
+                },
+                "claim_ids": {
+                  "$ref": "#/definitions/ids"
+                },
+                "exclusion_reason": {
+                  "$ref": "#/definitions/bi"
+                }
               }
             }
           }
@@ -54,71 +176,680 @@
       }
     },
     "claims": {
-      "type": "array", "minItems": 1,
+      "type": "array",
+      "minItems": 1,
       "items": {
-        "type": "object", "additionalProperties": false,
-        "required": ["id", "title", "kind", "assessment", "summary", "limits", "segment_ids", "evidence_ids"],
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "title",
+          "kind",
+          "assessment",
+          "summary",
+          "limits",
+          "segment_ids",
+          "evidence_ids"
+        ],
         "properties": {
-          "id": { "$ref": "#/definitions/id" },
-          "title": { "$ref": "#/definitions/bi" },
-          "kind": { "type": "string", "minLength": 1 },
-          "assessment": { "enum": ["supported", "conditional", "open", "proposal", "mixed", "unsupported", "miscited", "outdated"] },
-          "summary": { "$ref": "#/definitions/bi" },
-          "why": { "$ref": "#/definitions/bi" },
-          "story": { "type": "array", "items": { "type": "object", "required": ["text", "evidence_ids"], "additionalProperties": false, "properties": { "heading": { "$ref": "#/definitions/bi" }, "text": { "$ref": "#/definitions/bi" }, "evidence_ids": { "$ref": "#/definitions/nonemptyIds" } } } },
-          "reasoning": { "type": "array", "items": { "$ref": "#/definitions/bi" } },
-          "limits": { "type": "array", "items": { "$ref": "#/definitions/bi" } },
-          "segment_ids": { "$ref": "#/definitions/nonemptyIds" },
-          "evidence_ids": { "$ref": "#/definitions/nonemptyIds" },
-          "quantities": { "type": "array", "items": { "type": "object", "additionalProperties": false, "required": ["label", "value", "calculation", "interpretation"], "properties": { "label": { "$ref": "#/definitions/bi" }, "value": { "type": "string" }, "calculation": { "type": "string" }, "interpretation": { "$ref": "#/definitions/bi" } } } },
-          "findings": { "type": "array", "items": { "type": "object", "required": ["label", "detail", "evidence_ids"], "additionalProperties": false, "properties": { "label": { "$ref": "#/definitions/bi" }, "detail": { "$ref": "#/definitions/bi" }, "evidence_ids": { "$ref": "#/definitions/ids" } } } }
+          "id": {
+            "$ref": "#/definitions/id"
+          },
+          "title": {
+            "$ref": "#/definitions/bi"
+          },
+          "kind": {
+            "type": "string",
+            "minLength": 1
+          },
+          "assessment": {
+            "enum": [
+              "supported",
+              "conditional",
+              "open",
+              "proposal",
+              "mixed",
+              "unsupported",
+              "miscited",
+              "outdated"
+            ]
+          },
+          "summary": {
+            "$ref": "#/definitions/bi"
+          },
+          "why": {
+            "$ref": "#/definitions/bi"
+          },
+          "story": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "text",
+                "evidence_ids"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "heading": {
+                  "$ref": "#/definitions/bi"
+                },
+                "text": {
+                  "$ref": "#/definitions/bi"
+                },
+                "evidence_ids": {
+                  "$ref": "#/definitions/nonemptyIds"
+                },
+                "anchors": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "id",
+                      "role",
+                      "x",
+                      "y"
+                    ],
+                    "properties": {
+                      "id": {
+                        "$ref": "#/definitions/id"
+                      },
+                      "role": {
+                        "enum": [
+                          "top_spectrum",
+                          "deconvolution"
+                        ]
+                      },
+                      "x": {
+                        "$ref": "#/definitions/normalizedCoordinate"
+                      },
+                      "y": {
+                        "$ref": "#/definitions/normalizedCoordinate"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "reasoning": {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/bi"
+            }
+          },
+          "limits": {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/bi"
+            }
+          },
+          "segment_ids": {
+            "$ref": "#/definitions/nonemptyIds"
+          },
+          "evidence_ids": {
+            "$ref": "#/definitions/nonemptyIds"
+          },
+          "quantities": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "label",
+                "value",
+                "calculation",
+                "interpretation"
+              ],
+              "properties": {
+                "label": {
+                  "$ref": "#/definitions/bi"
+                },
+                "value": {
+                  "type": "string"
+                },
+                "calculation": {
+                  "type": "string"
+                },
+                "interpretation": {
+                  "$ref": "#/definitions/bi"
+                }
+              }
+            }
+          },
+          "findings": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "label",
+                "detail",
+                "evidence_ids"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "label": {
+                  "$ref": "#/definitions/bi"
+                },
+                "detail": {
+                  "$ref": "#/definitions/bi"
+                },
+                "evidence_ids": {
+                  "$ref": "#/definitions/ids"
+                }
+              }
+            }
+          }
         }
       }
     },
     "evidence": {
-      "type": "array", "minItems": 1,
+      "type": "array",
+      "minItems": 1,
       "items": {
-        "type": "object", "additionalProperties": false,
-        "required": ["id", "source_id", "locator", "role", "relation", "finding", "method", "depends_on"],
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "source_id",
+          "locator",
+          "role",
+          "relation",
+          "finding",
+          "method",
+          "depends_on"
+        ],
         "properties": {
-          "id": { "$ref": "#/definitions/id" },
-          "source_id": { "anyOf": [{ "$ref": "#/definitions/id" }, { "type": "null" }] },
-          "locator": { "type": "string", "minLength": 1 },
-          "role": { "type": "string", "minLength": 1 },
-          "relation": { "type": "string", "minLength": 1 },
-          "finding": { "$ref": "#/definitions/bi" },
-          "method": { "$ref": "#/definitions/bi" },
-          "depends_on": { "type": "array", "items": { "type": "object", "additionalProperties": false, "required": ["evidence_id", "relation"], "properties": { "evidence_id": { "$ref": "#/definitions/id" }, "relation": { "type": "string", "minLength": 1 }, "label": { "$ref": "#/definitions/bi" } } } },
-          "terminal": { "type": "object", "additionalProperties": false, "required": ["kind", "reason"], "properties": { "kind": { "type": "string", "minLength": 1 }, "reason": { "$ref": "#/definitions/bi" } } }
+          "id": {
+            "$ref": "#/definitions/id"
+          },
+          "source_id": {
+            "anyOf": [
+              {
+                "$ref": "#/definitions/id"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "locator": {
+            "type": "string",
+            "minLength": 1
+          },
+          "role": {
+            "type": "string",
+            "minLength": 1
+          },
+          "relation": {
+            "type": "string",
+            "minLength": 1
+          },
+          "finding": {
+            "$ref": "#/definitions/bi"
+          },
+          "method": {
+            "$ref": "#/definitions/bi"
+          },
+          "depends_on": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "evidence_id",
+                "relation"
+              ],
+              "properties": {
+                "evidence_id": {
+                  "$ref": "#/definitions/id"
+                },
+                "relation": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "label": {
+                  "$ref": "#/definitions/bi"
+                }
+              }
+            }
+          },
+          "terminal": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "kind",
+              "reason"
+            ],
+            "properties": {
+              "kind": {
+                "type": "string",
+                "minLength": 1
+              },
+              "reason": {
+                "$ref": "#/definitions/bi"
+              }
+            }
+          }
         }
       }
     },
     "sources": {
-      "type": "array", "minItems": 1,
+      "type": "array",
+      "minItems": 1,
       "items": {
-        "type": "object", "additionalProperties": false,
-        "required": ["id", "title", "authors", "year", "url", "type", "access", "retrieved_at", "note"],
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "title",
+          "authors",
+          "year",
+          "url",
+          "type",
+          "access",
+          "retrieved_at",
+          "note"
+        ],
         "properties": {
-          "id": { "$ref": "#/definitions/id" },
-          "title": { "type": "string", "minLength": 1 },
-          "authors": { "type": "string", "minLength": 1 },
-          "year": { "type": ["integer", "null"] },
-          "url": { "$ref": "#/definitions/url" },
-          "doi": { "type": "string" },
-          "type": { "type": "string", "minLength": 1 },
-          "access": { "enum": ["full_text", "provided_full_text", "provided_excerpt", "abstract_only", "metadata_only", "unavailable"] },
-          "retrieved_at": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" },
-          "note": { "$ref": "#/definitions/bi" },
-          "local_path": { "type": "string", "pattern": "^sources/[a-zA-Z0-9_.-]+$" }
+          "id": {
+            "$ref": "#/definitions/id"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "authors": {
+            "type": "string",
+            "minLength": 1
+          },
+          "year": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "url": {
+            "$ref": "#/definitions/url"
+          },
+          "doi": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string",
+            "minLength": 1
+          },
+          "access": {
+            "enum": [
+              "full_text",
+              "provided_full_text",
+              "provided_excerpt",
+              "abstract_only",
+              "metadata_only",
+              "unavailable"
+            ]
+          },
+          "retrieved_at": {
+            "type": "string",
+            "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+          },
+          "note": {
+            "$ref": "#/definitions/bi"
+          },
+          "local_path": {
+            "type": "string",
+            "pattern": "^sources/[a-zA-Z0-9_.-]+$"
+          }
+        }
+      }
+    },
+    "figures": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "number",
+          "source_id",
+          "page",
+          "pdf_figure_number",
+          "page_crop",
+          "original_path",
+          "image_size",
+          "caption",
+          "full_caption",
+          "source_note",
+          "placement",
+          "crop",
+          "features"
+        ],
+        "properties": {
+          "id": {
+            "$ref": "#/definitions/id"
+          },
+          "number": {
+            "$ref": "#/definitions/bi"
+          },
+          "source_id": {
+            "$ref": "#/definitions/id"
+          },
+          "page": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "pdf_figure_number": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "page_crop": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "x",
+              "y",
+              "width",
+              "height"
+            ],
+            "properties": {
+              "x": {
+                "$ref": "#/definitions/normalizedCoordinate"
+              },
+              "y": {
+                "$ref": "#/definitions/normalizedCoordinate"
+              },
+              "width": {
+                "$ref": "#/definitions/normalizedSize"
+              },
+              "height": {
+                "$ref": "#/definitions/normalizedSize"
+              }
+            }
+          },
+          "original_path": {
+            "type": "string",
+            "pattern": "^sources/[a-zA-Z0-9_.-]+$"
+          },
+          "image_size": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "width",
+              "height"
+            ],
+            "properties": {
+              "width": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "height": {
+                "type": "integer",
+                "minimum": 1
+              }
+            }
+          },
+          "caption": {
+            "$ref": "#/definitions/bi"
+          },
+          "full_caption": {
+            "$ref": "#/definitions/bi"
+          },
+          "source_note": {
+            "$ref": "#/definitions/bi"
+          },
+          "placement": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "paragraph_id",
+              "after_segment_id"
+            ],
+            "properties": {
+              "paragraph_id": {
+                "$ref": "#/definitions/id"
+              },
+              "after_segment_id": {
+                "$ref": "#/definitions/id"
+              }
+            }
+          },
+          "crop": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "x",
+              "y",
+              "width",
+              "height"
+            ],
+            "properties": {
+              "x": {
+                "$ref": "#/definitions/normalizedCoordinate"
+              },
+              "y": {
+                "$ref": "#/definitions/normalizedCoordinate"
+              },
+              "width": {
+                "$ref": "#/definitions/normalizedSize"
+              },
+              "height": {
+                "$ref": "#/definitions/normalizedSize"
+              }
+            }
+          },
+          "features": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "id",
+                "type",
+                "geometry",
+                "observation",
+                "reading"
+              ],
+              "properties": {
+                "id": {
+                  "$ref": "#/definitions/id"
+                },
+                "type": {
+                  "enum": [
+                    "peak",
+                    "valley",
+                    "shoulder",
+                    "region",
+                    "marker",
+                    "curve",
+                    "structure",
+                    "panel",
+                    "spectrum"
+                  ]
+                },
+                "geometry": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "shape",
+                    "x",
+                    "y"
+                  ],
+                  "properties": {
+                    "shape": {
+                      "enum": [
+                        "rect"
+                      ]
+                    },
+                    "x": {
+                      "$ref": "#/definitions/normalizedCoordinate"
+                    },
+                    "y": {
+                      "$ref": "#/definitions/normalizedCoordinate"
+                    },
+                    "width": {
+                      "$ref": "#/definitions/normalizedSize"
+                    },
+                    "height": {
+                      "$ref": "#/definitions/normalizedSize"
+                    }
+                  }
+                },
+                "observation": {
+                  "$ref": "#/definitions/bi"
+                },
+                "author_attribution": {
+                  "$ref": "#/definitions/bi"
+                },
+                "audit": {
+                  "$ref": "#/definitions/bi"
+                },
+                "reading": {
+                  "$ref": "#/definitions/bi"
+                },
+                "ambiguities": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/bi"
+                  }
+                },
+                "evidence_ids": {
+                  "$ref": "#/definitions/nonemptyIds"
+                },
+                "regions": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "id",
+                      "role",
+                      "x",
+                      "y",
+                      "width",
+                      "height"
+                    ],
+                    "properties": {
+                      "id": {
+                        "$ref": "#/definitions/id"
+                      },
+                      "role": {
+                        "enum": [
+                          "spectrum",
+                          "deconvolution",
+                          "structure",
+                          "panel",
+                          "region"
+                        ]
+                      },
+                      "x": {
+                        "$ref": "#/definitions/normalizedCoordinate"
+                      },
+                      "y": {
+                        "$ref": "#/definitions/normalizedCoordinate"
+                      },
+                      "width": {
+                        "$ref": "#/definitions/normalizedSize"
+                      },
+                      "height": {
+                        "$ref": "#/definitions/normalizedSize"
+                      }
+                    }
+                  }
+                },
+                "short_label": {
+                  "$ref": "#/definitions/bi"
+                },
+                "quick_reading": {
+                  "$ref": "#/definitions/bi"
+                },
+                "children": {
+                  "type": "array",
+                  "items": {
+                    "oneOf": [
+                      {
+                        "$ref": "#/definitions/id"
+                      },
+                      {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "id"
+                        ],
+                        "properties": {
+                          "id": {
+                            "$ref": "#/definitions/id"
+                          },
+                          "region_ids": {
+                            "type": "array",
+                            "items": {
+                              "$ref": "#/definitions/id"
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
   },
   "definitions": {
-    "bi": { "type": "object", "required": ["en", "zh"], "additionalProperties": false, "properties": { "en": { "type": "string", "minLength": 1 }, "zh": { "type": "string", "minLength": 1 } } },
-    "id": { "type": "string", "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*$", "maxLength": 100 },
-    "ids": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/definitions/id" } },
-    "nonemptyIds": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "#/definitions/id" } },
-    "url": { "type": "string", "pattern": "^https?://[^\\s]+$" }
+    "bi": {
+      "type": "object",
+      "required": [
+        "en",
+        "zh"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "en": {
+          "type": "string",
+          "minLength": 1
+        },
+        "zh": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*$",
+      "maxLength": 100
+    },
+    "normalizedCoordinate": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "normalizedSize": {
+      "type": "number",
+      "exclusiveMinimum": 0,
+      "maximum": 1
+    },
+    "ids": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/definitions/id"
+      }
+    },
+    "nonemptyIds": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/definitions/id"
+      }
+    },
+    "url": {
+      "type": "string",
+      "pattern": "^https?://[^\\s]+$"
+    }
   }
 }

@@ -1,0 +1,323 @@
+zoom_out_map  menu
+ 
+Search:
+Molecules
+All Article Types
+Advanced
+ 
+Journals  Molecules  Volume 25  Issue 8  10.3390/molecules25081907 
+share
+Share
+announcement
+Help
+format_quote
+Cite
+question_answer
+Discuss in SciProfiles
+settings
+Order Article Reprints
+Open AccessArticle
+H/D Isotope Effects on 1H-NMR Chemical Shifts in Cyclic Heterodimers and Heterotrimers of Phosphinic and Phosphoric Acids
+by Valeriia V. Mulloyarova 1,Daria O. Ustimchuk 1,Aleksander Filarowski 2 andPeter M. Tolstoy 1,*
+1
+Institute of Chemistry, St. Petersburg State University, Universitetskij pr. 26, 198504 St. Petersburg, Russia
+2
+Faculty of Chemistry, University of Wrocław, 14 F. Joliot-Curie str., 50-383 Wrocław, Poland
+*
+Author to whom correspondence should be addressed.
+Molecules 2020, 25(8), 1907; https://doi.org/10.3390/molecules25081907
+Submission received: 27 March 2020 / Revised: 15 April 2020 / Accepted: 19 April 2020 / Published: 20 April 2020
+(This article belongs to the Special Issue Isotope Effects 2019)
+
+Download
+keyboard_arrow_down
+ Browse Figures Versions Notes
+
+Abstract
+Hydrogen-bonded heterocomplexes formed by POOH-containing acids (diphenylphosphoric 1, dimethylphosphoric 2, diphenylphosphinic 3, and dimethylphosphinic 4) are studied by the low-temperature (100 K) 1H-NMR and 31P-NMR using liquefied gases CDF3/CDF2Cl as a solvent. Formation of cyclic dimers and cyclic trimers consisting of molecules of two different acids is confirmed by the analysis of vicinal H/D isotope effects (changes in the bridging proton chemical shift, δH, after the deuteration of a neighboring H-bond). Acids 1 and 4 (or 1 and 3) form heterotrimers with very strong (short) H-bonds (δH ca. 17 ppm). While in the case of all heterotrimers the H-bonds are cyclically arranged head-to-tail, ···O=P–O–H···O=P–O–H···, and thus their cooperative coupling is expected, the signs of vicinal H/D isotope effects indicate an effective anticooperativity, presumably due to steric factors: when one of the H-bonds is elongated upon deuteration, the structure of the heterotrimer adjusts by shortening the neighboring hydrogen bonds. We also demonstrate the formation of cyclic tetramers: in the case of acids 1 and 4 the structure has alternating molecules of 1 and 4 in the cycle, while in case of acids 1 and 3 the cycle has two molecules of 1 followed by two molecules of 3.
+Keywords: phosphinic acids; phosphoric acids; hydrogen bond; heterodimers; heterotrimers; heterotetramers; H/D isotope effects; NMR
+
+Graphical Abstract
+1. Introduction
+The compounds that have both proton-donating and proton-accepting groups are prone to self-association via hydrogen bonds, depending on the spatial orientation of interacting groups and various steric factors. Perhaps the most classical and well-studied example of such complexation is provided by carboxylic acids, which form cyclic dimers in the gas phase [1], in dilute aprotic solutions [2] and in crystals [3,4], except for formic [5] and acetic [6] acids that crystallize as infinite chains. A somewhat different situation is observed for POOH-containing acids, namely, phosphinic (R2POOH) and phosphoric acids ((RO)2POOH), which also crystallize as cyclic dimers [7] or infinite chains [8] and form cyclic dimers in the gas phase [9,10,11,12,13], though in some polar aprotic solutions the dominant self-associates are cyclic trimers [14,15]. In our previous works the stoichiometry of the phosphinic and phosphoric acid cyclic trimers has been established by the use of H/D isotope effects on 1H-NMR chemical shifts: three hydrogen bonds are mutually coupled and deuteration in one of them changes the geometry and, thus, the NMR parameters of the remaining ones. This phenomenon has been previously called “vicinal H/D isotope effects” [16]. The number of such H/D isotope effects allows one to enumerate the coupled hydrogen bonds in a complex; the signs of the H/D isotope effects enable one to distinguish between cooperative and anticooperative coupling schemes [17]. It has been demonstrated that in the cyclic trimeric self-associates of the phosphinic and phosphoric acids hydrogen bonds are cooperative (mutually strengthening each other), which one would expect for the head-to-tail linking motif [14,15]. While the fact of trimerization is well grounded, the reasons for it are less clear. It has been speculated that the trimers are formed because the OPOH group is not planar and the lone pairs of the P=O group lie out of the OPO plane, thus making the formation of a planar dimer less preferable. In turn, the formation of a cyclic trimer allows molecules to better align their proton-donating and proton-accepting groups to form a non-planar ring of three almost linear hydrogen bonds, in which each OH group points along one of the P=O lone pairs [18]. The non-planarity of the ring of three hydrogen bonds leads to various possible puckering motions in the complex. We also note that the cyclic trimerization of small molecules via hydrogen bonds is rather a rare phenomenon in nature; only pyrazoles [19], 1-amino-3-iminopropenes [20], and possible imidazoles [21] can be mentioned as examples (again, in these cases the structures are governed by the relative orientations of proton-donating NH groups and lone pairs on proton-accepting N atoms). Another distinctive feature of the phosphinic and phosphoric acids self-associates is the unusually high stability: in the gas phase the energies up to 60 kcal/mol per dimethylphosphinic acid self-associate (presumably, cyclic dimer) have been reported previously [9,22]. The complexation constants of phosphinic acids, which are an order of magnitude higher than those typical for carboxylic acids, have been reported [23]. The high stability might be linked to the following: (i) phosphinic acids are reasonably strong proton donors (the pKa value is 3.08 for Me2POOH [24], 2.32 for Ph2POOH [25], 1.85 for (PhO)2POOH [25], and 1.25 for (MeO)2POOH [25]); (ii) the semipolar P=O group also makes phosphinic acids reasonably strong proton acceptors; and (iii) the internal mobility within a self-associate reduces the entropic penalty upon complexation, which is also another possible reason for the trimerization in solution.
+The formation of cyclic heteroassociates, i.e., complexes involving molecules of different acids has been poorly studied. There are a number of publications on the topic of heterodimers of carboxylic acids, studied both experimentally and computationally [26,27,28]. However, we were unable to find any information about the heteroassociates of POOH-containing acids (with one possible exception of the reported mixed carboxylic-phosphoric acid dimer [29]). Therefore, driven by the fundamental interest and curiosity, in this work we investigate the structural and spectroscopic features of hydrogen-bonded complexes that are formed in polar aprotic solution containing two POOH-containing acids.
+The main molecular objects are shown in Figure 1a: the diphenylphosphoric 1, dimethylphosphoric 2, diphenylphosphinic 3, and dimethylphosphinic 4 acids. The binary mixtures of these acids were investigated by the low-temperature 1H-NMR and 31P-NMR spectroscopy (down to 100 K) in solution in the liquefied deuterated freonic gases (CDClF2/CDF3). Under these conditions the proton and molecular exchange processes slowdown in the NMR time scale, resulting in the observation of resolved signals from complexes of different stoichiometry. Previously it has been shown that in freonic solutions acids 1–4 self-associate into cyclic dimers and cyclic trimers (Figure 1b) [14,15]. Meanwhile, the stoichiometry, structure, and properties of the mixed complexes—heterodimers and heterotrimers (Figure 1c)—are unknown. Here we report the results of our study of heteroassociates with the help of H/D isotopic effects on 1H chemical shifts of bridging protons in the partially deuterated samples (see L = H, D in Figure 1c). Figure 2 shows the schematic structures of all possible cyclic heterodimers (Figure 2a) and cyclic heterotrimers (Figure 2b) of acids 1–4 along with the nomenclature referring to these complexes for example heterotrimer, which has acids 1, 1, and 2 in the cycle, is denoted as 1-2-1, etc. For visual clarity the varying substituents attached to the POOH groups are color-coded. For self-associates we use nomenclature such as 1-1 for homodimers and 1-1-1 for homotrimers. Within the framework of this study the main question is how the heterocomplexation affects (a) hydrogen bond geometries and (b) hydrogen bond mutual coupling.
+Figure 1. Schematic structures of molecules and their complexes, studied in this work. (a) diphenylphosphoric 1, dimethylphosphoric 2, diphenylphosphinic 3, and dimethylphosphinic 4 acids. (b) Self-associates of phosphinic and phosphoric acids. (c) Heteroassociates of phosphinic and phosphoric acids.
+Figure 2. Cyclic heterodimers (a) and heterotrimers (b) of acids 1–4, studied in this work.
+2. Results
+2.1. Non-Deuterated Complexes
+In this section we considered the low-temperature 1H-NMR and 31P-NMR spectra of samples containing non-deuterated species dissolved in CDF3/CDF2Cl. The NMR spectra of mixtures of 1 with 2, 1 with 3, and 1 with 4 will be presented and assigned. For brevity, we have analyzed step-by-step only the spectra of the mixture of 1 with 2. The 1H-NMR and 31P-NMR spectra of combinations of acids 2 with 3, 2 with 4, and 3 with 4 are presented in Supporting Information (Figures S1–S6).
+Figure 3 shows the low-field part of 1H-NMR spectrum measured at 100 K of the sample containing diphenylphosphoric acid 1 and dimethylphosphoric acid 2 in the ratio 1:1. In total, nine signals of bridging OH protons are visible in the 13–15 ppm region. Four of these signals were previously assigned to self-associates of acids 1 [15] and 2 [14]: cyclic dimers (marked with grey diamond symbols) and cyclic trimers (grey asterisks). These signals could be subtracted from the spectrum prior to its further deconvolution; the example of such deconvolution is shown in Figure 3 below the experimental spectrum. The experimental spectrum (black curve) and the trace of the sum of all deconvoluted signals (brown curve) match quite well. The remaining five low-field signals belong to heterodimer 1-2 and two heterotrimers, 1-2-1 and 2-1-2 (the structures are added to Figure 3). The 1-2 heterodimer gives rise to one bridging proton signal from two equivalent hydrogen bonds (they become equivalent due to the fast double proton transfer).
+Figure 3. The low-field part of the 1H-NMR spectrum of the sample containing acids 1 and 2 (1:1) in CDF3/CDF2Cl at 100 K. The experimental spectrum is deconvoluted into the sub-spectra arising from self-associated of 1 or 2, heterodimer 1-2, and two heterotrimers, 1-2-1 and 2-1-2. For visual clarification the signals in the experimental spectrum and the computed sub-spectra are color coded. Trimers and dimers are marked by asterisks and diamonds, respectively.
+Each heterotrimer gives rise to a pair of signals with relative integrated intensities 2:1. For the heterotrimer 1-2-1 the more intensive of the signals comes from two protons linking molecules of different acids (1 and 2), which indicates the fast triple proton transfer process in the heterotrimer. The less intensive signal comes from one proton linking two molecules of 1. For the 2-1-2 heterotrimer the intensities of the signals are reversed. The concentrations of the 1-2, 1-2-1, and 2-1-2 complexes in the sample and the corresponding relative integrated intensities of their signals are not the same, which facilitates assignment. These considerations are almost sufficient for the complete assignment of the spectrum: two pairs of signals with a 2:1 ratio are clearly identifiable, thus the remaining singlet (the most intensive signal in Figure 3) belongs to the 1-2 complex. The question remains which pair of signals belongs to 1-2-1 and which one to 2-1-2. The answer could be found in the 31P-NMR spectra, shown in Figure 4. Here, after the subtraction of the signals of self-associates (grey symbols), six signals remain: three in the region characteristic for 1 (Figure 4, right; blue symbols) and three signals in the region characteristic for 2 (Figure 4, left; red symbols). Next to the most intensive signals there is also a “hump” stretching to lower chemical shift values; this temperature-dependent feature (visible in a rather narrow temperature range) has been previously observed for self-associates of the phosphinic and phosphoric acids and it was attributed to the slowing of the internal dynamics within the fluxional cycle of hydrogen bonds [15]. Coming back to the assignment at hand, the overall 31P-NMR spectrum could be deconvoluted as shown in the bottom part of Figure 4 and the resulting relative integrated intensities of the signals match those in 1H-NMR spectrum. Thus, it is possible to assign signals of 1-2-1 and 2-1-2 in 1H-NMR spectrum: from the 31P-NMR spectrum it follows that the concentration of 2-1-2 is slightly higher than that of 1-2-1, i.e., the more intensive pair of signals in 1H-NMR spectrum belongs to 2-1-2. The complete set of 1H-NMR and 31P-NMR chemical shifts for 1-2, 1-2-1, and 2-1-2 is listed in Table 1 and Table 2. Similarly, one can assign signals in the 1H-NMR and 31P-NMR spectra of the samples containing other combinations of acids. The 1H-NMR and 31P-NMR spectra for a mixture of 1 with 3 are shown in Figure 5 and Figure 6, respectively and for a mixture of 1 with 4 in Figure 7 and Figure 8, respectively. The 1H-NMR chemical shifts of all non-deuterated species are collected in Table 1 and Table 2. Three 1H-NMR signals in Figure 5 and one of the signals in Figure 7 are marked by a black square; these signals belong neither to self-associates of acids, nor to their heterodimers or heterotrimers. In the next section and in the Discussion we argued that these signals most probably belong to heterotetramers: a cyclic structure of type 1-3-3-1 (two molecules of 1 and then two molecules of 3 in the cycle) in Figure 5 and a cyclic structure of type 1-4-1-4 (alternating molecules of 1 and 4) in Figure 7.
+Figure 4. The parts of 31P-NMR spectrum of the sample containing acids 1 and 2 (1:1) in CDF3/CDF2Cl at 100 K. The experimental spectrum is deconvoluted into the sub-spectra arising from self-associated of 1 or 2, heterodimer 1-2, and two heterotrimers, 1-2-1 and 2-1-2. For visual clarify the signals in the experimental spectrum and the computed sub-spectra are color coded. Trimers and dimers are marked by asterisks and diamonds, respectively.
+Figure 5. The low-field part of 1H-NMR spectrum of the sample containing acids 1 and 3 (1.2:1) in CDF3/CDF2Cl at 100 K. The experimental spectrum is deconvoluted into the sub-spectra arising from self-associated of 1 or 3, heterodimer 1-3, two heterotrimers, 1-3-1 and 3-1-3, and a tetramer, consisting of two molecules of 1 and two molecules of 3 in a cyclic 1-3-3-1 configuration. For visual clarification the signals in the experimental spectrum and the computed sub-spectra are color coded. Trimers and tetramers are marked by asterisks and squares, respectively.
+Figure 6. The parts of 31P NMR spectrum of the sample containing acids 1 and 3 (1.2:1) in CDF3/CDF2Cl at 100 K. The experimental spectrum is deconvoluted into the sub-spectra arising from self-associated of 1 or 3, heterodimer 1-3, two heterotrimers, 1-3-1 and 3-1-3, and a tetramer, consisting of two molecules of 1 and two molecules of 3 in a cyclic 1-3-3-1 configuration. For visual clarification the signals in the experimental spectrum and the computed sub-spectra are color coded. Trimers and tetramers are marked by asterisks and squares, respectively.
+Figure 7. The low-field part of the 1H NMR spectrum of the sample containing acids 1 and 4 (1.2:1) in CDF3/CDF2Cl at 100 K. The experimental spectrum is deconvoluted into the sub-spectra arising from self-associated of 1 or 4, heterodimer 1-4, two heterotrimers, 1-4-1 and 4-1-4, and a tetramer, consisting of two molecules of 1 and two molecules of 4 in an alternating fashion 1-4-1-4. For visual clarification the signals in the experimental spectrum and the computed sub-spectra are color coded. Trimers, dimers, and tetramers are marked by asterisks, diamonds, and squares, respectively.
+Figure 8. The parts of 31P NMR spectrum of the sample containing acids 1 and 4 (1.2:1) in CDF3/CDF2Cl at 100 K. The experimental spectrum is deconvoluted into the sub-spectra arising from self-associated of 1 or 4, heterodimer 1-4, two heterotrimers, 1-4-1 and 4-1-4, and a tetramer, consisting of two molecules of 1 and two molecules of 4 in an alternating fashion 1-4-1-4. For visual clarification the signals in the experimental spectrum and the computed sub-spectra are color coded. Trimers, dimers, and tetramers are marked by asterisks, diamonds, and squares, respectively.
+Table 1. The 1H-NMR chemical shifts of bridging proton in various isotopologs of homodimers and heterodimers of POOH-containing acids 1–4 in CDF3/CDF2Cl at 100 K. The corresponding spectra are shown in Figure 3, Figure 5, Figure 7, Figure 9 and Figure 10 and Figures S1, S3, S5, S8, and S9.
+Table 2. The 1H-NMR chemical shifts of bridging protons in various isotopologs of homotrimers and heterotrimers of POOH-containing acids 1–4 in CDF3/CDF2Cl at 100 K. The corresponding spectra are shown in Figure 3, Figure 5, Figure 7, Figure 9 and Figure 10 and Figures S1, S3, S5, S8, and S9.
+Figure 9. The low-field part of the 1H-NMR spectrum of the sample containing partially deuterated (OH/OD, 57% D) acids 1 and 2 (1:1) in solution in CDF3/CDF2Cl at 100 K. The experimental spectrum is deconvoluted into the sub-spectra arising from various isotopologs of self-associates, heterodimer and heterotrimers. For visual clarification the signals in the experimental spectrum and the computed sub-spectra are color coded. Trimers and dimers are marked by asterisks and diamonds, respectively.
+Figure 10. The low-field part of the 1H-NMR spectrum of the sample containing partially deuterated (OH/OD, 67% D) acids 1 and 4 (1.2:1) in solution in CDF3/CDF2Cl at 100 K. The experimental spectrum is deconvoluted into the sub-spectra arising from various isotopologs of self-associates, heterodimer, heterotrimers, and a heterotetramer. For visual clarification the signals in the experimental spectrum and the computed sub-spectra are color coded.
+2.2. Partially Deuterated Complexes
+The number of signals in the 1H-NMR spectra increased upon deuteration. Deuteration in one of the hydrogen bonds causes its geometry to change due to zero-point vibration of the proton/deuteron in the anharmonic bridging particle stretching potential. The geometric H/D isotope effect leads to the changes of the electronic structures of proton-donating and proton-accepting moieties and as a result the effect propagates further to a neighboring hydrogen bond, causing its geometry to change as well. The geometric changes manifest themselves as the change in its 1H-NMR chemical shift, a phenomenon that previously was called “vicinal H/D isotope effect” [16]. After the partial deuteration of the sample the deuterons are distributed among all hydroxyl groups, which results in the coexistence of a number of isotopologs. At low temperature the proton/deuteron exchange processes are slowed down in the NMR time scale and the signals of all chemically non-equivalent isotopologs are resolved. The number of new signals appearing for a given complex after its partial deuteration is indicative of the number of mutually interacting hydrogen bonds. For example, a cyclic dimer would have isotopologs HH (two equivalent protons), HD (one proton but a double-degenerated form), and DD; the first two isotopologs would contribute to the 1H-NMR spectrum. The relative intensities of the signals of isotopologs are determined mostly by the statistics (i.e., by the random distribution of deuterons) with some corrections due to fractionation factors [30]. The latter means that in most cases the weaker hydrogen bonds are slightly enriched in deuterons and the stronger hydrogen bonds are enriched in protons to the same extent. An example of H/D fractionation and its dependence on the hydrogen bond strength is given in Figure S10 and Table S3 for the mixture of acids 2 and 3 (for this analysis the hydrogen bond strength was assumed to grow monotonously with δH). The observed trend is typical for hydrogen bonded systems, the deuterium enriched weaker hydrogen bonds: for the mixture of acids 2 and 3 the deuteration ratios xD of individual complexes fell from 0.67 to 0.54 when the δH values grew from ca. 13 to ca. 15 ppm (see Table S3).
+Figure 9 shows the low-field part of the 1H-NMR spectrum of the sample containing partially deuterated acids 1 and 2. Comparing with the spectrum shown in Figure 3, one can see that the number of signals had increased from 9 to 26 (some of the signals overlap, so that the number 26 might not be immediately apparent). Again, using the previously published results [14,15] it is possible to identify signals of self-associates of 1 and 2: isotopologs HH and HD for cyclic dimers as well as isotopologs HHH, HHD, and HDD for cyclic trimers (in total, this accounted for 10 signals). Here and below we would use the nomenclature of isotopologs as depicted in Figure 1c. Among the remaining sixteen signals five were assigned to non-deuterated complexes 1-2, 1-2-1, and 2-1-2 (i.e., the HH and HHH forms). Thus, only 11 new signals had to be assigned to isotopologs of heterodimers and heterotrimers. One of the signals belonged to the HD isotopolog of 1-2. Two signals come from the HDH and DDH isotopologs of 1-2-1; the underlining means that the observed proton was located between molecules of acid 1, while the deuteration occurred in hydrogen bonds between molecules of acids 1 and 2. Three more signals come from the HHD, HDH, and HDD isotopologs of 1-2-1; here the observed proton was in one of the hydrogen bonds between molecules of acids 1 and 2, while the deuteration occurred in either one (or both) of the remaining hydrogen bonds. Finally, for the second heterotrimer, 2-1-2, there were also five new signals (HDH, DDH, HHD, HDH, and HDD). In this case the 31P NMR spectra were not helping the assignment, because within the precision of the measurements the chemical shifts of phosphorous nuclei appeared to be insensitive to deuteration, i.e., the 31P-NMR spectra remained virtually unchanged upon deuteration. However, the relative integrated intensities of the 1H-NMR signals could be used for assignment: in case of random distribution of deuterons among hydrogen bonds, the proportions between various isotopologs are governed by simple equations as a function of the overall sample deuteration ratio xD. These equations are given in the Supporting Information below Figure S7. In turn, the xD value could be determined from the signal intensities of H/D isotopologs of previously studied homocomplexes or in several cases from the total intensity of the low-field NMR signals in relation to the intensity of the signals of non-exchangeable CH protons. For the spectrum shown in Figure 9 the xD value was estimated to be 0.57 (57% D, 43% H). Under these conditions the intensities of the HH and HD signals of heterodimer 1-2 were in the 0.43:0.57 ratio. Only one signal fit this ratio and, thus, it could be assigned to the HD isotopolog (signals of 1-2 are marked by purple diamonds in Figure 9). Similar logic allowed us to assign signals of heterotrimers as well. Note that the assignment was somewhat facilitated by using the following observations: i) vicinal H/D isotope effects tended to be a few tenths of a ppm in magnitude and also ii) vicinal H/D isotope effects tended to be roughly additive (for example, the shift of the HDD signal from the HHH one is close to the sum of the shifts of the HHD and HDH signals). Using this approach we deconvoluted the experimental spectrum into a series of sub-spectra from the set of isotopologs of each complex (see the bottom part of Figure 9). The sum of sub-spectra matched the experimental spectrum quite well (black and brown traces in Figure 9).
+The low-temperature 1H-NMR spectrum of samples containing a partially deuterated mixture of acids 1 with 4 is shown in Figure 10. At the very bottom of Figure 10 the deconvolution of the experimental spectrum gives seven extra signals, which are addressed in the Discussion. The 1H-NMR spectra of some other mixtures of the partially deuterated acids (2 with 3 and 3 with 4) are shown in Supporting Information in Figures S8 and S9. The resulting list of chemical shifts is given in Table 1 and Table 2. We did not manage to obtain the resolved spectra of mixtures of partially deuterated acids 1 with 3 and 2 with 4, so this information is missing in Table 1 and Table 2.
+3. Discussion
+In this section we focused on heterocomplexes. For the analysis of the signals of homocomplexes see references [14,15], where the spectral patterns for homodimers and homotrimers are presented for the acids studied in this work, as well as for the non-symmetrically substituted phosphinic acid PhHPOOH and the enantiomers of bis(2,4,4-trimethylpentyl)phosphinic acid (in the latter two cases the loss of symmetry of the trimer leads to the coexistence of its chemically non-equivalent isomers and more complicated spectral patterns).
+Here we will discuss three specific features that seem to be unique for the heterocomplexes of phosphinic and phosphoric acids: (i) the unusual hydrogen bond strength, (ii) the effective hydrogen bond anticooperativity despite the cyclic structure of heterocomplexes, and (iii) the evidence for the tetramer formation.
+3.1. Hydrogen Bond Strength
+The relative strengths of hydrogen bonds in heterocomplexes of acids 1–4 could be assessed on the basis of the absolute values of the 1H-NMR chemicals shifts, δH. There is a number of publications where linear correlations between hydrogen bond strength and the shift of the bridging proton signal upon complexation, ΔδH = δH − δHfree were proposed [31,32,33,34,35,36]. The coefficients of proportionality differ for various types of complexes but the relations tend to remain linear within a given homologous series. Assuming that the chemical shifts of the hypothetical free OH groups for acids 1–4 are roughly the same, we take the δH value as a measure of the hydrogen bond strength: the further the signal is shifted to low-field, the stronger is the corresponding hydrogen bond. It was shown previously that δH values in OHO hydrogen bonds monotonously increase with the shortening of the O...O distance (and concurrent hydrogen bond symmetrization) [37], therefore, we used the terms “elongation” and “weakening” interchangeably. From Table 1 and Table 2 it follows that the δH values of self-associates did not correlate with the pKa values of acid molecules (see Introduction for the list of pKa values of 1–4). However, there is a tendency within the set: the molecule that formed weaker cyclic homodimers also formed weaker cyclic homotrimers. When it comes to heterodimers, the strongest hydrogen bonds are formed when two interacting molecules belong to different “types”: one is phosphinic acid and the other is phosphoric acid, as in complexes 1-3 and 1-4. For heterotrimers there is a variety of cases and it is hard to make out an overall trend. However, the strongest hydrogen bonds in heterotrimers with δH values close to 17 ppm were formed between two molecules of phosphoric acid 1 when the third molecule was a phosphinic acid, either 3 or 4 (see HHH forms of complexes 1-3-1 and 1-4-1 in Table 2). In contrast, the smallest values of δH around 14.5 ppm were observed mostly for heterotrimers formed either by phosphoric acids exclusively (1-2-1 and 2-1-2) or by phosphinic acids exclusively (3-4-3 and 4-3-4). There were exceptions to these rules, though, so it is still hard to generalize. The δH values for heterocomplexes were larger in average than those for homocomplexes; from this observation one could conclude that the hydrogen bonds were stronger and it would be interesting to check if the equilibrium between homo- and heterocomplexes would be shifted towards the latter in the gas phase as well. To our knowledge, the value of 17 ppm is the largest chemical shift value for an intermolecular hydrogen bond in neutral self-associate of an acid, including the POOH- and COOH-containing ones (an intramolecular bonding [38] or strong steric hindrance [39] might lead to larger values still).
+3.2. Cooperativity And Anticooperativity
+In the crystal structures of phosphinic and phosphoric acids the POOH groups are always linked in such a way that each POOH group serves as a proton donor to the neighboring POOH group and at the same time it serves as a proton acceptor to the same or a different POOH group (depending on whether cyclic dimers or infinite chains are formed in the crystal state). For example, acid 4 crystallizes as an infinite chain [8], while larger substituents in the case of acid 3 lead to the formation of cyclic dimers [7]. The crystal structures of acids 1 and 2 are unknown, though a similar bis(p-methylphenyl)-phosphoric acid, (4-Me-PhO)2POOH, forms cyclic dimers [40]. In any case, the principal motifs are invariably of the type ⋅⋅⋅O=P–O–H⋅⋅⋅O=P–O–H⋅⋅⋅, either in a chain or in a cycle, which is also true for the homo- or heterodimers and trimers studied in this work. For such head-to-tail configurations one would expect a cooperative coupling of hydrogen bonds [41,42], which means that if one of the bonds elongates, then the neighboring bonds elongate as well, due to the electronic coupling of the proton-donating and proton-accepting moieties within the POOH group. The opposite case—geometric anticooperativity—would be expected if two proton donors compete for the same proton acceptor, as in case of some homoconjugated anions [17]. In our studies the weakening (elongation) of the hydrogen bond was caused by the H/D substitution. The effect of deuteration on the neighboring bonds was monitored by the changes of the 1H-NMR chemical shifts of the remaining bridging protons. The hydrogen bond elongation manifested itself as a high-field shift (cooperativity, negative vicinal H/D isotope effect), while the hydrogen bond contraction led to the low-field shift (anticooperativity, positive vicinal H/D isotope effect). All self-associates (homodimers and homotrimers) featured cooperativity, namely, isotopologs HD (for dimers), HHD, and HDD (for trimers) gave rise to the signals in higher fields than the signals of corresponding non-deuterated species. Such cooperativity was reported previously for self-associates of phosphinic and phosphoric acids [14,15] and for carboxylic acids [17,39]. However, the situation was different for some heterocomplexes. For example, the hydrogen bonds in heterodimer 1-4 (which includes one phosphinic and one phosphoric acid) were effectively anticooperatively coupled: deuteration of one of the hydrogen bonds led to the low-field shift of the signal of the remaining bridging proton, δ(HD) – δ(HH) > 0 ppm. This means that the electronic coupling within the POO group was dominated by a different effect. Presumably, it might be a geometric feature: the elongation of one hydrogen bond changed the “packing” of acid’s molecules in the heterodimer in such a way that the other bond contracted, showing an effective anticooperativity. Moreover, for each heterotrimer for which the set of H/D isotope effects was measured there was at least one hydrogen bond that was effectively anticooperatively coupled to the other: the signals of some isotopologs were shifted to lower fields, as compared to the non-deuterated form HHH. For example, for heterotrimers 1-2-1 and 2-1-2 (Figure 9) the vicinal H/D isotope effect δ(HHD) – δ(HHH) was positive, while the other vicinal H/D isotope effect, δ(HDH) – δ(HHH), was negative. This means that hydrogen bonds linking two molecules of the same acid were cooperative coupled to each other and anticooperatively coupled to the hydrogen bond linking molecules of two different acids.
+The phenomenon of effective anticooperativity of hydrogen bonds involving POOH groups in a head-to-tail configuration and the hypothesis of the “packing” origins of this phenomenon, however, require a further theoretical investigation, which was beyond the scope of this paper.
+3.3. A case for the Tetramer
+The spectra shown in Figure 5, Figure 6, Figure 7 and Figure 8 contain NMR signals of hydrogen bonded species that were tentatively assigned to heterotetramers (see the square markers in the Figures). In this subsection we summarized the evidence for the tetramerization and proposed the structures of these tetramers.
+(1) Above we successfully identified signals belonging to homodimers, homotrimers, heterodimers, and two types of heterotrimers, thus the next possible simplest complex involves four acid molecules. Under the experimental conditions used, homotetramers are not formed [14,15], so the signals marked with squares in Figure 5, Figure 6, Figure 7 and Figure 8 belong to heterotetramers. Moreover, these heterotetramers are likely to be cyclic structures, because all OH groups in this complex resonate at low field, i.e., all OH groups are involved in hydrogen bonds of a similar strength.
+(2) If we labeled two acids as X and Y, the four possible cyclic tetramer structures would have the motifs X-Y-Y-Y, X-Y-X-Y, Y-X-X-Y, and Y-X-X-X (the ends of these sequences are linked to each other). These motifs have different numbers of non-equivalent bridging protons and phosphorous nuclei, i.e., different numbers of the 1H-NMR and 31P-NMR signals, as schematically depicted in Figure 11a (in each case we have assumed the average symmetry of the complex, which is achieved after a quadruple proton transfer, fast in the NMR time scale).
+Figure 11. (a) The schematic representation of four possible structures of cyclic heterotetramers, formed by two different molecules (blue and red in this case); letters a, b and c indicate chemically non-equivalent bridging protons. (b) The proposed structure of heterotetramer of acids 1 and 4 (matches the spectral pattern seen in Figure 7 and Figure 8). (c) The proposed structure of heterotetramer of acids 1 and 3 (matches the spectral pattern seen in Figure 5 and Figure 6).
+In our NMR spectra (see Figure 7 and Figure 8), the heterotetramer of acids 1 and 4 features one 1H-NMR signal and two 31P-NMR signals of equal intensities (one in the spectral range characteristic for acid 1 and the other characteristic for acid 4). Thus, acids 1 and 4 form heterotetramer with the alternating pattern 1-4-1-4, as shown in Figure 11b. The heterotetramer of acids 1 and 3 (Figure 5 and Figure 6) has three 1H NMR signals (relative intensities 2:1:1) and two 31P-NMR signals with equal intensities. The only structure that fits this spectral pattern is 1-3-3-1, as shown in Figure 11c.
+(3) After the partial deuteration, the heterotetramer 1-4-1-4 gave rise to seven signals in the 1H-NMR spectrum (Figure 10): One from the non-deuterated species HHHH (at 15.35 ppm) and six signals from partially deuterated isotopologs (at 15.52, 15.77, 15.83, 15.92, 16.02, and 16.19 ppm). The number of signals matched the expected one: HHHH, HHHD and HHHD, HDHD, HDDH, HHDD, and HDDD. The assignment of the signals could be done on the basis of their relative integrated intensities and assumption of the statistical distribution of deuterons, in a way very much the same as for heterotrimers (see Figure S7 for the more details).
+We believed that the combination of the three abovementioned arguments builds a strong case for the formation of heterotetramers of acids 1 and 4 (1-4-1-4) as well as acids 1 and 3 (1-3-3-1). Such tetramerization, being an even more rare type of complexation of small molecules than trimerization, most likely is governed by the same factors as trimerization: the non-planarity of the ring of hydrogen bonds (the directions of proton-accepting and proton-donating abilities lie out of the POO plane) and the high residual mobility of the tetramer due to various possible puckering motions [18]. Finally, there might be two reasons why homotetramers are not formed, while heterotetramers are: the larger dipole moment of heterotetramers could stabilize them in the polar aprotic medium and the molecules of phosphinic and phosphoric acids might be packing more conveniently in the mixed complex than in a self-associate, due to steric effects.
+4. Materials and Methods
+4.1. Sample Preparation
+The required weights of acids 1–4 were dissolved in deuterated chloroform (CDCl3, 99.8% D, Eurisotop) to prepare the 0.01 M solutions. Then equimolar amounts of acids were transferred into a thick-walled NMR sample tube with a J. Young valve (Wilmad 522-LPV-7) and CDCl3 was removed in vacuo. After that, the mixture of deuterated freonic gases CDF3/CDF2Cl, synthesized by a modified method of [43] was added by vacuum transfer (at ca. 10−6 mbar). Prior to the addition to the sample the CDF3/CDF2Cl mixture was additionally dried over alumina in a cold isopropanol bath under vacuum. Due to the lower solubility of phosphinic/phosphoric acids in the CDF3/CDF2Cl mixture than in CDCl3 the resulting ratios of acids in many samples (measured as NMR signal intensities at low temperature) were slightly different than 1:1 (ranging from 1:1.3 to 1:1.8). The absolute concentrations of acids in the samples were 0.004–0.01 M. As diphenylphosphinic acid 3 is poorly soluble both in CDCl3 and in CDF3/CDF2Cl mixture, in some cases the starting solution of 3 in CDCl3 was heated to ca. 50 °C to increase the solubility. In one of the samples containing acids 3 and 4 the acids were taken in ratio 1:22 in order to facilitate the spectral assignment by shifting the equilibrium towards the 4-3-4 heterotrimer (see also Figure S10).
+The preparation procedure for partially deuterated samples differed from that for non-deuterated ones in the following: after the transfer of acids to a sample tube and before the addition of the freonic solvent, CH3OD (about 20–80 μl; 99.0% D, Eurisotop) was added to the sample tube and subsequently removed in vacuo. The degrees of deuteration were estimated from NMR spectra at low temperature (100 K) based on the relative signal intensities of the remaining OH groups and non-exchangeable CH groups; for individual complexes the degrees of deuteration were determined based on the relative integrated signal intensities of various complex’s isotopologs.
+4.2. NMR Measurements
+The low-temperature (100 ± 1 K) liquid-state 1H-NMR and 31P-NMR spectra were recorded at the Center of Magnetic Resonance in Saint-Petersburg State University Research Park on Bruker (Germany) Avance III 500 MHz spectrometer (11.74 T, 500.03 MHz for 1H, 202.42 MHz for 31P). Acquisition parameters for 1H: 30°-pulses, acquisition time of 2.6 s, the relaxation delay 6.5 s, 64 scans, no 31P decoupling. Acquisition parameters for 31P: 1H decoupling, 30°-pulses, acquisition time of 0.8 s, the relaxation delay 6.5 s, number of scans ranging from 128 to 512, depending on the sample. No detectable J(P,H) couplings were observed with bridging protons, so turning off 1H decoupling for 31P NMR spectra or turning on 31P decoupling for 1H-NMR spectra did not affect the appearance of the signals. The 1H-NMR spectra were calibrated to TMS scale using the central signal of CHClF2 triplet as an internal secondary standard set to 7.21 ppm. The 31P-NMR spectra were referenced to H3PO4 (85% in H2O) using the unified Ξ scale, according to IUPAC recommendations [44].
+The sample compositions given in the figure’s captions were estimated from the integral intensities of CH proton signals at room temperature. At low temperature sample compositions might change due to different solubilities of acids in the mixture. However, for the samples involving acids 1 and 3 it is difficult to estimate the new composition because at low temperature the aromatic CH signals are significantly broadened and overlap with the solvent peaks.
+4.3. NMR Spectra Deconvolution
+The spectral deconvolution was done by least-square fitting the experimental NMR spectra to a sum of several Lorentzian line shapes. For the spectra of non-deuterated species all the parameters of individual Lorentzians were fitted: position, peak intensity, and linewidth. The positions of the resulting Lorentzians were fixed during the fitting of the spectra of partially deuterated species (the line widths were slightly corrected in some cases). In other words, only the signals of partially deuterated isotopologs were fully fitted. No signal normalization was required during the fitting. The overall set of fitted signals was then split into several groups, each belonging to a particular homo- or heterocomplex. This splitting was based on three features: (i) the previously published vicinal isotope effect values for homocomplexes [14,15]; (ii) the similarity of the line widths within the group for heterocomplexes and (iii) the distribution of integrated intensities within the group that matched both the statistical probabilities of isotopologs and the overall deuteration ratio of the sample (it works for dimer, dimer, and tetramers alike, see Figure S7 for the corresponding statistical equations and plots; in several cases for additional certainty spectra of the samples with different deuteration ratios were compared as well). This procedure usually resulted in a unique way of signal assignment, meaning that alternative assignment patterns had internal contradictions.
+5. Conclusions
+In this work we considered POOH-containing acids 1–4, in particular, the mixed hydrogen bonded complexes formed by molecules of two different acids in the polar aprotic solution. In the majority of cases cyclic heterodimers and cyclic heterotrimers were formed. The stoichiometry of these heterocomplexes was established by counting the number of vicinal H/D isotope effects on the 1H-NMR chemical shifts and by analyzing the signal intensities in the 1H and 31P NMR spectra. It is shown that the heterotrimers containing a mixture of phosphinic and phosphoric acids (as in 1-4-1 or 1-3-1) contain probably the strongest hydrogen bond among the previously reported ones for neutral self-associates: bridging proton chemical shift is ca. 17 ppm. Another interesting feature of heterotrimers is associated with the mutual influence of hydrogen bonds. In all cases hydrogen bonds in the cycle are arranged in a head-to-tail motif, ⋅⋅⋅O=P–O–H⋅⋅⋅O=P–O–H⋅⋅⋅ and thus one could expect a cooperative coupling of these bonds (similar to the case of cyclic dimers of carboxylic acids [17,39] or self-associates of phosphinic and phosphoric acids [14,15]). However, the signs of vicinal H/D isotope effects are evidence of an effective anticooperativity: deuteration (lengthening) of one of the hydrogen bonds leads to the shortening of the neighboring ones. We tentatively attribute this phenomenon to steric factors: apparently when one of the H-bond is elongated upon deuteration, the optimal “packing” of molecules in a non-planar cyclic trimer requires neighboring bonds to slightly contract—an effect that overcomes the expected electronic cooperativity. Finally, the evidence of the formation of cyclic tetramers of the type 1-4-1-4 (alternating molecules of 1 and 4 in a cycle) and 1-3-3-1 (two molecules of 1 followed by two molecules of 3 in a cycle) was presented.
+Supplementary Materials
+The following are available online at, Figure S1: 1H-NMR spectrum of a mixture of acids 2 and 3, Figure S2: 31P-NMR spectrum of a mixture of acids 2 and 3, Figure S3: 1H-NMR spectrum of a mixture of acids 2 and 4, Figure S4: 31P-NMR spectrum of a mixture of acids 2 and 4, Figure S5: 1H-NMR spectrum of a mixture of acids 3 and 4, Figure S6: 31P-NMR spectrum of a mixture of acids 3 and 4, Figure S7: probabilities of various isotopologs and relative intensities of their signals as a function of deuteration ratio xD, Figure S8: 1H-NMR spectrum of a mixture of partially deuterated acids 2 and 3, Figure S9: 1H-NMR spectra of a mixture of partially deuterated acids 3 and 4 at various degrees of deuteration, Table S1: 31P-NMR chemical shifts of homodimers and heterodimers of acids 1–4, Table S2: 31P-NMR chemical shifts of homotrimers and heterotrimers of acids 1–4.
+Author Contributions
+Conceptualization, P.M.T.; Funding acquisition, P.M.T. and A.F.; Investigation, V.V.M. and D.O.U.; Methodology, V.V.M. and P.M.T.; Writing—Original draft, P.M.T., V.V.M. and A.F. All authors have read and agreed to the published version of the manuscript.
+Funding
+This research was funded by RSF grant 18-13-00050.
+Acknowledgments
+NMR measurements were performed at the Center for Magnetic Resonance of St. Petersburg State University Research Park; authors are grateful to Mikhail Vovk for conducing the low-temperature measurements. Quantum-chemical calculations were performed at the Computing Center of St. Petersburg State University Research Park.
+Conflicts of Interest
+The authors declare no conflict of interest
+References
+Shipman, S.T.; Douglass, P.C.; Yoo, H.S.; Hinkle, C.E.; Mierzejewski, E.L.; Pate, B.H. Vibrational dynamics of carboxylic acid dimers in gas and dilute solution. Phys. Chem. Chem. Phys. 2007, 9, 4572–4586. [Google Scholar] [CrossRef] [Scilit] [PubMed]
+Seifert, G.; Patzlaff, T.; Graener, H. Picosecond vibrational energy transfer observed in the CH and OH stretching region of stearic acid dimers in liquid solution. J. Mol. Liquids 2003, 102, 227–240. [Google Scholar] [CrossRef] [Scilit]
+Gaywood, A.; Wood, P.A.; McNab, H. Cambridge Structural Database entry BENZAC20, CCDC 1412517: Experimental Crystal Structure Determination. 2015. Available online: https://search.datacite.org/works/10.5517/CC1JDV2V (accessed on 19 April 2020).
+Steiner, T. Six-fold phenyl embrace in crystalline 3,3,3-triphenylpropionic acid. J. Chem. Cryst. 1999, 29, 1235–1237. [Google Scholar] [CrossRef] [Scilit]
+Allan, D.R.; Clark, S.J. Impeded dimer formation in the high-pressure crystal structure of formic acid. Phys. Rev. Lett. 1999, 82, 3464–3467. [Google Scholar] [CrossRef] [Scilit]
+Nahringbauer, I. Hydrogen bond studies. 39. Reinvestigation of the crystal structure of acetic acid (at +5 degrees C and -190 degrees C). Acta Chem. Scand. 1970, 24, 453–462. [Google Scholar] [CrossRef] [Scilit]
+Fenske, D.; Mattes, R.; Lons, J.; Tebbe, K.F. Die Kristallstruktur von Diphenylphosphinsaure. Chem. Ber. 1973, 106, 1139–1144. [Google Scholar] [CrossRef] [Scilit]
+Ioannou, V. Dimethylphosphinato and dimethylarsinato complexes of Sb(III) and Bi(III) and their chemistry. Monatsh. Chem. 2012, 143, 1349–1356. [Google Scholar] [CrossRef] [Scilit]
+Denisov, G.S.; Tokhadze, K.G. Ultrastrong hydrogen bond in gas phase. Dimer of dimethylphosphinic acid. Dokl. Phys. Chem. 1994, 337, 117–119. [Google Scholar]
+Asfin, R.E.; Denisov, G.S.; Tokhadze, K.G. The infrared spectra and enthalpies of strongly bound dimers of phosphinic acids in the gas phase. (CH2Cl)2POOH and (C6H5)2POOH. J. Mol. Struct. 2002, 608, 161–168. [Google Scholar] [CrossRef] [Scilit]
+Asfin, R.E.; Denisov, G.S.; Poplevchenkov, D.N.; Tokhadze, K.G.; Velikanova, T.V. IR ν(OH) band and dimerization of phosphorous acids in the gas phase and solid state. Pol. J. Chem. 2002, 76, 1223–1231. [Google Scholar]
+Khaikin, L.S.; Grikina, O.E.; Vilkov, L.V.; Golubinskii, A.V.; Atavin, E.G.; Asfin, R.E.; Denisov, G.S. Gas-phase electron diffraction study of cyclic dimer of dimethylphosphinic acid (Me2P(O)OH)2 using quantum-chemical data and a priori force field. J. Mol. Struct. 2003, 658, 153–170. [Google Scholar] [CrossRef] [Scilit]
+Khaikin, L.S.; Grikina, O.E.; Golubinskii, A.V.; Vilkov, L.V.; Atavin, E.G.; Asfin, R.E.; Denisov, G.S. Geometry of a strong hydrogen bond as determined by gas-phase electron diffraction: The cyclic dimer of di-methylphosphinic acid. Dokl. Phys. Chem. 2003, 390, 158–162. [Google Scholar] [CrossRef] [Scilit]
+Detering, C.; Tolstoy, P.M.; Golubev, N.S.; Denisov, G.S.; Limbach, H.H. Vicinal H/D isotope effects in NMR spectra of complexes with coupled hydrogen bonds: Phosphoric acids. Dokl. Phys. Chem. 2001, 379, 191–193. [Google Scholar] [CrossRef] [Scilit]
+Mulloyarova, V.V.; Giba, I.S.; Kostin, M.A.; Denisov, G.S.; Shenderovich, I.G.; Tolstoy, P.M. Cyclic trimers of phosphinic acids in polar aprotic solvent: Symmetry, chirality and H/D isotope effects on NMR chemical shifts. Phys. Chem. Chem. Phys. 2018, 20, 4901–4910. [Google Scholar] [CrossRef] [Scilit]
+Saur, W.; Crespi, H.L.; Katz, J.J. Vicinal deuterium isotope effects on proton chemical shifts. J. Magn. Reson. 1970, 2, 47–49. [Google Scholar] [CrossRef] [Scilit]
+Tolstoy, P.M.; Schah-Mohammedi, P.; Smirnov, S.N.; Golubev, N.S.; Denisov, G.S.; Limbach, H.-H. Characterization of fluxional hydrogen-bonded complexes of acetic acid and acetate by NMR: Geometries and isotope and solvent effects. J. Am. Chem. Soc. 2004, 126, 5621–5634. [Google Scholar] [CrossRef] [Scilit]
+Mulloyarova, V.V.; Giba, I.S.; Denisov, G.S.; Tolstoy, P.M. Conformational mobility and proton transfer in hydrogen-bonded dimers and trimers of phosphinic and phosphoric acids. J. Phys. Chem. A 2019, 123, 6761–6771. [Google Scholar] [CrossRef] [Scilit]
+Klein, O.; Aguilar–Parrilla, F.; Lopez del Amo, J.M.; Jagerovic, N.; Elguero, J.; Limbach, H.H. Dynamic NMR study of the mechanisms of double, triple and quadruple proton and deuteron transfer in cyclic hydrogen bonded solids of pyrazole derivatives. J. Am. Chem. Soc. 2004, 126, 11718–11732. [Google Scholar] [CrossRef] [Scilit]
+Limbach, H.H.; Seiffert, W. Dynamic processes in systems with hydrogen bonds. I. 1H–NMR spectroscopic study of the cis–trans equilibrium and the hydrogen bond association of N,N’-bis(pentadeuterophenyl)-1-amino-3-iminopropene in carbon disulfide. Ber. Bunsen Ges. Phys. Chem. 1974, 78, 532–537. [Google Scholar]
+Forsting, T.; Zischang, J.; Suhm, M.A.; Eckhoff, M.; Schröder, B.; Mata, R.A. Strained hydrogen bonding in imidazole trimer: A combined infrared, Raman, and theory study. Phys. Chem. Chem. Phys. 2019, 21, 5989–5998. [Google Scholar] [CrossRef] [Scilit]
+Gonzalez, L.; Mó, O.; Yáñez, M.; Elguero, J. Very strong hydrogen bonds in neutral molecules: The phosphinic acid dimers. J. Chem. Phys. 1998, 109, 2685–2693. [Google Scholar] [CrossRef] [Scilit]
+DeFord, J.; Chu, F.; Anslyn, E.V. Dimertzation constants for phosphoric acid diesters. Tetrahedron Lett. 1996, 37, 1925–1928. [Google Scholar] [CrossRef] [Scilit]
+Crofts, P.C.; Kosolapoff, G.M. Preparation and determination of apparent dissociation constants of some alkylphosphonic and dialkylphosphinic acids. J. Am. Chem. Soc. 1953, 75, 3379–3383. [Google Scholar] [CrossRef] [Scilit]
+Edmundson, R.S. Dictionary of Organophosphorus Compounds; Chapman and Hall Ltd.: London, UK, 1988. [Google Scholar]
+Evangelisti, L.; Écija, P.; Cocinero, E.J.; Castaño, F.; Lesarri, A.; Caminati, W.; Meyer, R. Proton tunneling in heterodimers of carboxylic acids: A rotational study of the benzoic acid–formic acid bimolecule. J. Phys. Chem. Lett. 2012, 3, 3770–3775. [Google Scholar] [CrossRef] [Scilit] [PubMed]
+Meyer, K.A.E.; Suhm, M.A. Vibrational exciton coupling in homo and hetero dimers of carboxylic acids studied by linear infrared and Raman jet spectroscopy. J. Chem. Phys. 2018, 149, 104307. [Google Scholar] [CrossRef] [Scilit] [PubMed]
+Tzeli, D.; Petsalakis, I.D.; Theodorakopoulos, G.; Rebek, J., Jr. Encapsulation of monomers, homodimers and heterodimers of amides and carboxylic acids in three non-covalent assemblies. Struct. Chem. 2015, 26, 1585–1601. [Google Scholar] [CrossRef] [Scilit]
+Riccardo Monaco, R.; Poladura, B.; Diaz de Los Bernardos, M.; Leutzsch, M.; Goddard, R.; List, B. Activation of carboxylic acids in asymmetric organocatalysis. Angew. Chem. Int. Ed. 2014, 53, 7063–7067. [Google Scholar] [CrossRef] [Scilit]
+Sharif, S.; Denisov, G.S.; Toney, M.D.; Limbach, H.H. NMR studies of solvent-assisted proton transfer in a biologically relevant Schiff base: Toward a distinction of geometric and equilibrium H-bond isotope effects. J. Am. Chem. Soc. 2006, 128, 3375–3387. [Google Scholar] [CrossRef] [Scilit]
+Kumar, G.A.; McAllister, M.A. Theoretical investigation of the relationship between proton NMR chemical shift and hydrogen bond strength. J. Org. Chem. 1998, 63, 6968–6972. [Google Scholar] [CrossRef] [Scilit]
+Gorobets, N.Y.; Yermolayev, S.A.; Gurley, T.; Gurinov, A.A.; Tolstoy, P.M.; Shenderovich, I.G.; Leadbeater, N.E. Difference between 1H NMR signals of primary amide protons as a simple spectral index of the amide intramolecular hydrogen bond strength. J. Phys. Org. Chem. 2012, 25, 287–295. [Google Scholar] [CrossRef] [Scilit]
+Dohnal, V.; Tkadlecova, M. A simple relation between 1H NMR data and mixing enthalpy for systems with complex formation by hydrogen bonding. J. Phys. Chem. B 2002, 106, 12307–12310. [Google Scholar] [CrossRef] [Scilit]
+Weinhold, F.; Klein, R.A. What is a hydrogen bond? Mutually consistent theoretical and experimental criteria for characterizing H-bonding interactions. Mol. Phys. 2012, 110, 565–579. [Google Scholar] [CrossRef] [Scilit]
+Del Bene, J.E.; Perera, S.A.; Bartlett, R.J. Hydrogen bond types, binding energies, and 1H NMR chemical shifts. J. Phys. Chem. A 1999, 103, 8121–8124. [Google Scholar] [CrossRef] [Scilit]
+Tupikina, E.Y.; Sigalov, M.; Shenderovich, I.G.; Mulloyarova, V.V.; Denisov, G.S.; Tolstoy, P.M. Correlations of NHN hydrogen bond energy with geometry and 1H NMR chemical shift difference of NH protons for aniline complexes. J. Chem. Phys. 2019, 150, 114305. [Google Scholar] [CrossRef] [Scilit] [PubMed]
+Limbach, H.-H.; Tolstoy, P.M.; Perez-Hernandez, N.; Guo, J.; Shenderovich, I.G.; Denisov, G.S. OHO hydrogen bond geometries and NMR chemical shifts: From equilibrium structures to geometric H/D isotope effects with applications for water, protonated water and compressed ice. Israel J. Chem. 2009, 49, 199–216. [Google Scholar] [CrossRef] [Scilit]
+Hansen, P.E.; Spanget-Larsen, J. NMR and IR investigations of strong intramolecular hydrogen bonds. Molecules 2017, 22, 552. [Google Scholar] [CrossRef] [Scilit]
+Ajami, D.; Tolstoy, P.M.; Dube, H.; Odermatt, S.; Koeppe, B.; Guo, J.; Limbach, H.-H.; Rebek Jr., J. Compressed hydrogen bonds isolated in encapsulation complexes. Angew. Chem. Int. Ed. 2011, 50, 528–531. [Google Scholar] [CrossRef] [Scilit]
+Solka, J.L.; Reis, A.H., Jr.; Mason, G.W.; Lewey, S.M.; Peppard, D.F. Di-ϱ-methylphenylphosphoric acid – the solid state structure of a unique dimeric hydrogen bonded phosphoric acid. J. Inorg.Nucl. Chem. 1981, 43, 1451–1464. [Google Scholar]
+Wieczorek, R.; Dannenberg, J.J. H-bonding cooperativity and energetics of α-helix formation of five 17-amino acid peptides. J. Am. Chem. Soc. 2003, 125, 8124–8129. [Google Scholar] [CrossRef] [Scilit]
+Wieczorek, R.; Dannenberg, J.J. Hydrogen-bond cooperativity, vibrational coupling, and dependence of helix stability on changes in amino acid sequence in small 310-helical peptides. A Density Funct. Theory Study. J. Am. Chem. Soc. 2003, 125, 14065–14071. [Google Scholar] [CrossRef] [Scilit]
+Siegel, J.S.; Anet, F.A.I. Dichlorofluoromethane-d: A versatile solvent for VT-NMR experiments. J. Org. Chem. 1988, 53, 2629–2630. [Google Scholar] [CrossRef] [Scilit]
+Harris, R.K.; Becker, E.D.; Cabral de Menezes, S.M.; Goodfellow, R.; Granger, P. NMR nomenclature. Nuclear spin properties and conventions for chemical shifts (IUPAC recommendations 2001). Pure Appl. Chem. 2001, 73, 1795–1818. [Google Scholar] [CrossRef] [Scilit]
+	
+Sample Availability: not available.
+
+© 2020 by the authors. Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (http://creativecommons.org/licenses/by/4.0/).
+Share and Cite
+      
+MDPI and ACS Style
+
+Mulloyarova, V.V.; Ustimchuk, D.O.; Filarowski, A.; Tolstoy, P.M. H/D Isotope Effects on 1H-NMR Chemical Shifts in Cyclic Heterodimers and Heterotrimers of Phosphinic and Phosphoric Acids. Molecules 2020, 25, 1907. https://doi.org/10.3390/molecules25081907
+
+AMA Style
+
+Mulloyarova VV, Ustimchuk DO, Filarowski A, Tolstoy PM. H/D Isotope Effects on 1H-NMR Chemical Shifts in Cyclic Heterodimers and Heterotrimers of Phosphinic and Phosphoric Acids. Molecules. 2020; 25(8):1907. https://doi.org/10.3390/molecules25081907
+
+Chicago/Turabian Style
+
+Mulloyarova, Valeriia V., Daria O. Ustimchuk, Aleksander Filarowski, and Peter M. Tolstoy. 2020. "H/D Isotope Effects on 1H-NMR Chemical Shifts in Cyclic Heterodimers and Heterotrimers of Phosphinic and Phosphoric Acids" Molecules 25, no. 8: 1907. https://doi.org/10.3390/molecules25081907
+
+APA Style
+
+Mulloyarova, V. V., Ustimchuk, D. O., Filarowski, A., & Tolstoy, P. M. (2020). H/D Isotope Effects on 1H-NMR Chemical Shifts in Cyclic Heterodimers and Heterotrimers of Phosphinic and Phosphoric Acids. Molecules, 25(8), 1907. https://doi.org/10.3390/molecules25081907
+
+Article Metrics
+Citations
+Crossref
+ 
+20
+Scopus
+ 
+22
+Web of Science
+ 
+20
+PubMed
+ 
+6
+PMC
+ 
+5
+Google Scholar
+ 
+[click to view]
+Article Access Statistics
+Article access statistics
+Article Views
+15. Jun
+16. Jun
+17. Jun
+18. Jun
+19. Jun
+20. Jun
+21. Jun
+22. Jun
+23. Jun
+24. Jun
+25. Jun
+26. Jun
+27. Jun
+28. Jun
+29. Jun
+30. Jun
+1. Jul
+2. Jul
+3. Jul
+4. Jul
+5. Jul
+6. Jul
+7. Jul
+8. Jul
+9. Jul
+10. Jul
+11. Jul
+12. Jul
+13. Jul
+14. Jul
+15. Jul
+16. Jul
+17. Jul
+18. Jul
+19. Jul
+20. Jul
+21. Jul
+22. Jul
+23. Jul
+24. Jul
+25. Jul
+26. Jul
+27. Jul
+28. Jul
+29. Jul
+30. Jul
+31. Jul
+1. Aug
+2. Aug
+3. Aug
+4. Aug
+5. Aug
+6. Aug
+7. Aug
+8. Aug
+9. Aug
+10. Aug
+11. Aug
+12. Aug
+13. Aug
+14. Aug
+15. Aug
+16. Aug
+17. Aug
+18. Aug
+19. Aug
+20. Aug
+21. Aug
+22. Aug
+23. Aug
+24. Aug
+25. Aug
+26. Aug
+27. Aug
+28. Aug
+29. Aug
+30. Aug
+31. Aug
+1. Sep
+2. Sep
+3. Sep
+4. Sep
+5. Sep
+6. Sep
+7. Sep
+8. Sep
+9. Sep
+10. Sep
+11. Sep
+12. Sep
+0k
+2k
+4k
+6k
+For more information on the journal statistics, click here.
+Multiple requests from the same IP address are counted as one view.
+Molecules, EISSN 1420-3049, Published by MDPI RSS Content Alert
+Further Information
+Article Processing Charge
+Pay an Invoice
+Open Access Policy
+Contact MDPI
+Jobs at MDPI
+Guidelines
+For Authors
+For Reviewers
+For Editors
+For Librarians
+For Publishers
+For Societies
+For Conference Organizers
+MDPI Initiatives
+Sciforum
+MDPI Books
+Preprints.org
+Scilit
+SciProfiles
+Encyclopedia
+JAMS
+Proceedings Series
+Follow MDPI
+LinkedIn
+Facebook
+X
+
+Subscribe to receive issue release notifications and newsletters from MDPI journals
+
+Select options
+ Subscribe
+© 1996-2026 MDPI (Basel, Switzerland) unless otherwise stated
+Disclaimer Legal Notice Terms and Conditions Privacy Policy Privacy Settings Accessibility

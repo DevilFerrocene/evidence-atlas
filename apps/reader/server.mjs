@@ -1,12 +1,10 @@
 import http from 'node:http';
 import { readFile } from 'node:fs/promises';
 import { resolve, extname } from 'node:path';
-import { ROOT, DATA_DIR, SOURCE_DIR, schema, loadLibrary, coverage, getClaimDetail } from './dataset.mjs';
+import { pathToFileURL } from 'node:url';
+import { ROOT, DATA_DIR, SOURCE_DIR, schema, loadLibrary, coverage, getClaimDetail } from '../../packages/core/dataset.mjs';
 
-const port = Number(process.env.PORT || 4317);
-if (!Number.isInteger(port) || port < 1 || port > 65535) throw new Error('PORT must be an integer between 1 and 65535');
-const library = await loadLibrary(DATA_DIR);
-const mime = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.mjs': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.json': 'application/json; charset=utf-8', '.woff2': 'font/woff2', '.woff': 'font/woff', '.ttf': 'font/ttf', '.pdf': 'application/pdf', '.txt': 'text/plain; charset=utf-8' };
+const mime = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.mjs': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.json': 'application/json; charset=utf-8', '.png': 'image/png', '.woff2': 'font/woff2', '.woff': 'font/woff', '.ttf': 'font/ttf', '.pdf': 'application/pdf', '.txt': 'text/plain; charset=utf-8' };
 const securityHeaders = {
   'X-Content-Type-Options': 'nosniff',
   'Referrer-Policy': 'no-referrer',
@@ -27,12 +25,15 @@ async function asset(res, file) {
     else throw e;
   }
 }
+export function createReaderServer({ port = 4317, dataDir = DATA_DIR } = {}) {
+const sourceDir = resolve(dataDir, '../sources');
 const server = http.createServer(async (req, res) => {
   try {
     const validHosts = new Set([`127.0.0.1:${port}`, `localhost:${port}`, `[::1]:${port}`]);
     if (!validHosts.has(req.headers.host)) return json(res, 403, { error: 'Local host required' });
-    if (req.method !== 'GET' && req.method !== 'HEAD') return json(res, 405, { error: 'Read-only API; use the import CLI to add papers' }, { Allow: 'GET, HEAD' });
+    if (req.method !== 'GET' && req.method !== 'HEAD') return json(res, 405, { error: 'Read-only reader; publish a bundle through the CLI or MCP' }, { Allow: 'GET, HEAD' });
     const path = decodeURIComponent(new URL(req.url, `http://127.0.0.1:${port}`).pathname);
+    const library = path.startsWith('/api/') || path.startsWith('/sources/') ? await loadLibrary(dataDir) : new Map();
     if (path === '/api/health') return json(res, 200, { status: 'ok', schema_version: '1.0', papers: library.size });
     if (path === '/api/schema') return json(res, 200, schema);
     if (path === '/api/papers') return json(res, 200, [...library.values()].map(d => ({ ...d.paper, stats: coverage(d) })));
@@ -50,12 +51,12 @@ const server = http.createServer(async (req, res) => {
       return json(res, source ? 200 : 404, source || { error: 'Source not found' });
     }
     if (path.startsWith('/api/')) return json(res, 404, { error: 'Route not found' });
-    if (path === '/') return asset(res, resolve(ROOT, 'dist/index.html'));
-    if (['/app.js', '/style.css'].includes(path)) return asset(res, resolve(ROOT, `dist${path}`));
+    if (path === '/') return asset(res, resolve(ROOT, 'apps/reader/public/index.html'));
+    if (['/app.js', '/style.css'].includes(path)) return asset(res, resolve(ROOT, `apps/reader/public${path}`));
     if (/^\/vendor\/katex\/(katex\.mjs|katex\.min\.css|contrib\/auto-render\.mjs|fonts\/[A-Za-z0-9_.-]+\.(woff2?|ttf))$/.test(path)) return asset(res, resolve(ROOT, 'node_modules/katex/dist', path.slice('/vendor/katex/'.length)));
     if (/^\/sources\/[A-Za-z0-9_.-]+$/.test(path)) {
       const relative = path.slice(1);
-      if ([...library.values()].some(d => d.sources.some(s => s.local_path === relative))) return asset(res, resolve(SOURCE_DIR, path.slice('/sources/'.length)));
+      if ([...library.values()].some(d => d.sources.some(s => s.local_path === relative))) return asset(res, resolve(sourceDir, path.slice('/sources/'.length)));
     }
     return json(res, 404, { error: 'Not found' });
   } catch (error) {
@@ -64,6 +65,19 @@ const server = http.createServer(async (req, res) => {
     else res.end();
   }
 });
-server.listen(port, '127.0.0.1', () => console.log(`Evidence Atlas: http://127.0.0.1:${port} (${library.size} papers)`));
-server.on('error', error => { console.error(error.message); process.exitCode = 1; });
-for (const signal of ['SIGINT', 'SIGTERM']) process.on(signal, () => server.close(() => process.exit(0)));
+return server;
+}
+
+export async function startReader({ port = Number(process.env.PORT || 4317), dataDir = DATA_DIR } = {}) {
+  if (!Number.isInteger(port) || port < 1 || port > 65535) throw new Error('PORT must be an integer between 1 and 65535');
+  const library = await loadLibrary(dataDir);
+  const server = createReaderServer({ port, dataDir });
+  await new Promise((resolve, reject) => { server.once('error', reject); server.listen(port, '127.0.0.1', resolve); });
+  console.log(`Evidence Atlas: http://127.0.0.1:${port} (${library.size} papers)`);
+  for (const signal of ['SIGINT', 'SIGTERM']) process.once(signal, () => server.close(() => process.exit(0)));
+  return server;
+}
+
+if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {
+  startReader().catch(error => { console.error(error.message); process.exitCode = 1; });
+}

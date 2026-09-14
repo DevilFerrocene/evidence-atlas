@@ -1,0 +1,23 @@
+Hermann Weyl, The Theory of Groups and Quantum Mechanics
+
+Schwarz inequality (Chapter I, printed p. 30 in the English edition)
+
+It follows from the well-known Schwarz inequality
+\[
+|a_1b_1+a_2b_2+\cdots+a_nb_n|^2
+\leq (|a_1|^2+\cdots+|a_n|^2)(|b_1|^2+\cdots+|b_n|^2).
+\]
+
+Coordinate and momentum uncertainties (printed pp. 76–77 in the English edition)
+
+We have already seen, toward the beginning of this chapter, that a coordinate \(x\) and its associated momentum \(p\) stand in a peculiar relationship to one another: the precise determination of either one of these quantities precludes the precise determination of the other. In the state represented by the wave function \(\psi(x)\), the mean values \(x_0=\langle x\rangle\) and \(p_0=\langle p\rangle\) are given by the corresponding expectation-value integrals. No loss of generality is incurred by taking these mean values as zero. The mean values \((\Delta x)^2,(\Delta p)^2\) are then given by the second-moment integrals. From these expressions the general inequality
+\[
+\Delta p\,\Delta x\geq \frac{1}{2}\hbar
+\]
+can readily be obtained (I am indebted to W. Pauli for this remark); the less the uncertainty in \(x\), the greater the uncertainty in \(p\), and conversely. [Weyl refers here to Appendix 1.]
+
+Appendix 1: Proof of an Inequality (printed pp. 393–394 in the English edition)
+
+In order to prove the inequality stated on page 77 we must show that any continuous and differentiable function \(\psi\), which is defined for all values of the real variable \(x\), satisfies the corresponding product bound, provided, of course, that the integrals involved actually exist. The Schwarz inequality employed in Chapter I becomes, on replacing the sums by integrals, an integral inequality. Applying this inequality to the functions built from \(x\psi\) and \(d\psi/dx\), and transforming the cross integral by partial integration over the range \(-\infty,+\infty\), we obtain the desired relation provided the boundary term \(x\bar\psi\psi\) approaches zero as \(x\to\pm\infty\). Weyl then proves that this boundary behavior follows from convergence of the two second-moment integrals.
+
+Source read from the complete OCR text of the 1931 English edition, translated from Weyl's revised German edition by H. P. Robertson, Internet Archive item `ost-chemistry-quantumtheoryofa029235mbp`. Robertson's 1929 footnotes cite the 1928 first German edition at pp. 66 and 272; pagination differs between editions.

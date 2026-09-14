@@ -1,0 +1,1239 @@
+{
+  "schema_version": "1.0",
+  "paper": {
+    "id": "robertson-1929-uncertainty-corrected",
+    "title": {
+      "en": "The Uncertainty Principle",
+      "zh": "不确定性原理"
+    },
+    "authors": [
+      "H. P. Robertson"
+    ],
+    "year": 1929,
+    "citation": "H. P. Robertson, “The Uncertainty Principle,” Physical Review 34 (1), 163–164 (1929). DOI: 10.1103/PhysRev.34.163.",
+    "source_url": "https://doi.org/10.1103/PhysRev.34.163",
+    "rights": {
+      "en": "Original Physical Review article, © 1929 American Physical Society; transcription made from the original journal pages.",
+      "zh": "《物理评论》原刊论文，© 1929 American Physical Society；转录依据原刊页面制作。"
+    },
+    "edition": {
+      "en": "Corrected transcription from original journal pages 163–164, published 1 July 1929; received 18 June 1929.",
+      "zh": "依据1929年7月1日原刊第163–164页校正转录；1929年6月18日收稿。"
+    },
+    "scope": {
+      "en": "Full bilingual article with annotations at the selected passages.",
+      "zh": "完整双语论文，在所选段落附有解读。"
+    },
+    "audited_at": "2026-09-14",
+    "full_text": {
+      "source_id": "source-main",
+      "language": "en"
+    },
+    "sections": [
+      {
+        "id": "section-b1",
+        "label": {
+          "en": "The Uncertainty Principle",
+          "zh": "不确定性原理"
+        },
+        "paragraph_id": "b1"
+      }
+    ]
+  },
+  "paragraphs": [
+    {
+      "id": "b1",
+      "type": "heading",
+      "locator": "The Uncertainty Principle",
+      "segments": [
+        {
+          "id": "s-b1-1",
+          "en": "The Uncertainty Principle",
+          "zh": "不确定性原理",
+          "kind": "context",
+          "claim_ids": []
+        }
+      ]
+    },
+    {
+      "id": "b2",
+      "type": "body",
+      "locator": "The Uncertainty Principle; paragraph 1",
+      "segments": [
+        {
+          "id": "s-b2-1",
+          "en": "The uncertainty principle is one of the most characteristic and important consequences of the new quantum mechanics.",
+          "zh": "不确定性原理是新量子力学最具特征、也最重要的后果之一。",
+          "kind": "claim",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "id": "s-b2-2",
+          "en": " ",
+          "zh": "",
+          "kind": "context",
+          "claim_ids": []
+        },
+        {
+          "id": "s-b2-3",
+          "en": "This principle, as formulated by Heisenberg for two conjugate quantum-mechanical variables, states that the accuracy with which two such variables can be measured simultaneously is subject to the restriction that the product of the uncertainties in the two measurements is at least of order \\(h\\) (Planck’s constant).",
+          "zh": "按照海森堡对两个正则共轭量子力学变量的表述，同时测量这两个变量时，测量精度受到如下限制：两次测量的不确定度之积至少为普朗克常数 \\(h\\) 的量级。",
+          "kind": "claim",
+          "claim_ids": [
+            "c2"
+          ]
+        },
+        {
+          "id": "s-b2-4",
+          "en": " ",
+          "zh": "",
+          "kind": "context",
+          "claim_ids": []
+        },
+        {
+          "id": "s-b2-5",
+          "en": "Condon* has remarked that an uncertainty relation of this type can not hold in the general case where the two variables under consideration are not conjugate, and has stressed the desirability of obtaining a general formulation of the principle.",
+          "zh": "Condon* 指出，当所考察的两个变量并非共轭变量时，这种形式的不确定关系一般不能成立，并强调有必要取得这一原理的一般表述。",
+          "kind": "claim",
+          "claim_ids": [
+            "c3"
+          ]
+        },
+        {
+          "id": "s-b2-6",
+          "en": " ",
+          "zh": "",
+          "kind": "context",
+          "claim_ids": []
+        },
+        {
+          "id": "s-b2-7",
+          "en": "It is the purpose of the present letter to give such a general formulation, and to apply it in particular to the case of angular momentum.",
+          "zh": "本文这封短信的目的，就是给出这种一般表述，并特别把它应用于角动量情形。",
+          "kind": "claim",
+          "claim_ids": [
+            "c4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b3",
+      "type": "body",
+      "locator": "The Uncertainty Principle; paragraph 2",
+      "segments": [
+        {
+          "id": "s-b3-1",
+          "en": "* E. U. Condon “Remarks on Uncertainty Principles” Science LXIX, p. 573 (May 31, 1929), and in conversations with the writer on this topic.",
+          "zh": "* E. U. Condon：《关于不确定性原理的评述》，Science LXIX，第573页（1929年5月31日）；另包括作者与他围绕这一主题的交谈。",
+          "kind": "claim",
+          "claim_ids": [
+            "c21"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b4",
+      "type": "body",
+      "locator": "The Uncertainty Principle; paragraph 3",
+      "segments": [
+        {
+          "id": "s-b4-1",
+          "en": "We define the “mean value” \\(A_0\\) of an (Hermitean) operator \\(A\\) in a system whose state is described by the (normal) function \\(\\psi\\) as\n\\[\nA_0=\\int \\bar\\psi A\\psi\\,d\\tau\n\\]",
+          "zh": "设体系的状态由（归一化）函数 \\(\\psi\\) 描述，我们把（厄米）算符 \\(A\\) 的“平均值” \\(A_0\\) 定义为\n\\[\nA_0=\\int \\bar\\psi A\\psi\\,d\\tau,\n\\]",
+          "kind": "claim",
+          "claim_ids": [
+            "c5"
+          ]
+        },
+        {
+          "id": "s-b4-2",
+          "en": "\nwhere the integral is extended over the entire coordinate space. ",
+          "zh": "\n其中积分遍及整个坐标空间。",
+          "kind": "context",
+          "claim_ids": []
+        },
+        {
+          "id": "s-b4-3",
+          "en": "The Hermitean character of \\(A\\) (i.e.\n\\[\n\\int \\bar\\phi A\\psi\\,d\\tau=\\int \\psi\\,\\overline{A\\phi}\\,d\\tau\n\\]\nfor arbitrary \\(\\phi,\\psi\\)) insures the reality of \\(A_0\\).",
+          "zh": "\\(A\\) 的厄米性质（即对于任意 \\(\\phi,\\psi\\)，\n\\[\n\\int \\bar\\phi A\\psi\\,d\\tau=\\int \\psi\\,\\overline{A\\phi}\\,d\\tau\n\\]\n）保证 \\(A_0\\) 为实数。",
+          "kind": "claim",
+          "claim_ids": [
+            "c6"
+          ]
+        },
+        {
+          "id": "s-b4-4",
+          "en": " ",
+          "zh": "",
+          "kind": "context",
+          "claim_ids": []
+        },
+        {
+          "id": "s-b4-5",
+          "en": "The “uncertainty” \\(\\Delta A\\) in the value of \\(A\\) is then defined, in accordance with statistical usage, as the root mean square of the deviation of \\(A\\) from this mean",
+          "zh": "于是，按照统计学惯例，把 \\(A\\) 的取值中的“不确定度” \\(\\Delta A\\) 定义为它相对于该平均值的偏差的均方根",
+          "kind": "claim",
+          "claim_ids": [
+            "c7"
+          ]
+        },
+        {
+          "id": "s-b4-6",
+          "en": ", i.e.\n",
+          "zh": "，即\n",
+          "kind": "context",
+          "claim_ids": []
+        },
+        {
+          "id": "s-b4-7",
+          "en": "\\[\n(\\Delta A)^2=\\int \\bar\\psi(A-A_0)^2\\psi\\,d\\tau.\n\\]",
+          "zh": "\\[\n(\\Delta A)^2=\\int \\bar\\psi(A-A_0)^2\\psi\\,d\\tau.\n\\]",
+          "kind": "claim",
+          "claim_ids": [
+            "c8"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b5",
+      "type": "body",
+      "locator": "The Uncertainty Principle; paragraph 4",
+      "segments": [
+        {
+          "id": "s-b5-1",
+          "en": "The uncertainty principle for two such variables \\(A,B\\), whose commutator \\(AB-BA=hC/2\\pi i\\), is expressed by\n\\[\n\\Delta A\\cdot\\Delta B\\geq \\frac{h|C_0|}{4\\pi},\n\\]",
+          "zh": "对于两个这样的变量 \\(A,B\\)，若它们的对易子满足 \\(AB-BA=hC/2\\pi i\\)，则不确定性原理表示为\n\\[\n\\Delta A\\cdot\\Delta B\\geq \\frac{h|C_0|}{4\\pi},\n\\]",
+          "kind": "claim",
+          "claim_ids": [
+            "c9"
+          ]
+        },
+        {
+          "id": "s-b5-2",
+          "en": "\n",
+          "zh": "\n",
+          "kind": "context",
+          "claim_ids": []
+        },
+        {
+          "id": "s-b5-3",
+          "en": "i.e. the product of the uncertainties in \\(A,B\\) is not less than half the absolute value of the mean of their commutator.",
+          "zh": "也就是说，\\(A,B\\) 的不确定度之积，不小于它们对易子平均值绝对值的一半。",
+          "kind": "claim",
+          "claim_ids": [
+            "c10"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b6",
+      "type": "body",
+      "locator": "The Uncertainty Principle; paragraph 5",
+      "segments": [
+        {
+          "id": "s-b6-1",
+          "en": "We here confine ourselves to sketching the proof of this principle for a one-particle system and for quantum mechanical variables \\(A(q,p), B(q,p)\\) which are linear in the momenta \\((p_x,p_y,p_z)\\).¹ (The proof for the general case in which the operators can be expanded in powers of the momenta can be made along exactly the same lines.)",
+          "zh": "这里我们只简述这一原理在单粒子体系中的证明，并把量子力学变量 \\(A(q,p),B(q,p)\\) 限于动量 \\((p_x,p_y,p_z)\\) 的线性函数。¹（对于算符可展开为动量幂级数的一般情形，证明可以完全沿同样路线完成。）",
+          "kind": "claim",
+          "claim_ids": [
+            "c11"
+          ]
+        },
+        {
+          "id": "s-b6-2",
+          "en": " ",
+          "zh": "",
+          "kind": "context",
+          "claim_ids": []
+        },
+        {
+          "id": "s-b6-3",
+          "en": "Writing\n\\[\nA=a+a_xp_x+a_yp_y+a_zp_z,\n\\]\nwhere \\(p_x=(h/2\\pi i)\\partial/\\partial x\\), etc. and the \\(a\\)’s are functions of position, the Hermitean character of \\(A\\) requires that these functions be real and that \\(\\operatorname{div}(a_x,a_y,a_z)=0\\).",
+          "zh": "写成\n\\[\nA=a+a_xp_x+a_yp_y+a_zp_z,\n\\]\n其中 \\(p_x=(h/2\\pi i)\\partial/\\partial x\\) 等，而各个 \\(a\\) 是位置的函数。\\(A\\) 的厄米性质要求这些函数为实函数，并且 \\(\\operatorname{div}(a_x,a_y,a_z)=0\\)。",
+          "kind": "claim",
+          "claim_ids": [
+            "c12"
+          ]
+        },
+        {
+          "id": "s-b6-4",
+          "en": " ",
+          "zh": "",
+          "kind": "context",
+          "claim_ids": []
+        },
+        {
+          "id": "s-b6-5",
+          "en": "The expression for \\((\\Delta A)^2\\) may be written, on integrating once by parts, using the fact that \\(\\operatorname{div}(a)=0\\) and discarding the resulting surface integral, in the form\n\\[\n(\\Delta A)^2=\\int |(A-A_0)\\psi|^2\\,d\\tau.\n\\]",
+          "zh": "利用 \\(\\operatorname{div}(a)=0\\)，分部积分一次并舍去所得表面积分，可以把 \\((\\Delta A)^2\\) 写成\n\\[\n(\\Delta A)^2=\\int |(A-A_0)\\psi|^2\\,d\\tau.\n\\]",
+          "kind": "claim",
+          "claim_ids": [
+            "c13"
+          ]
+        },
+        {
+          "id": "s-b6-6",
+          "en": "\n",
+          "zh": "\n",
+          "kind": "context",
+          "claim_ids": []
+        },
+        {
+          "id": "s-b6-7",
+          "en": "We are now in a position to apply the Schwarzian inequality²\n\\[\n\\left[\\int(f_1\\bar f_1+f_2\\bar f_2)d\\tau\\right]\n\\left[\\int(g_1\\bar g_1+g_2\\bar g_2)d\\tau\\right]\n\\geq \\left|\\int(f_1\\bar g_1+f_2\\bar g_2)d\\tau\\right|^2.\n\\]",
+          "zh": "现在可以应用Schwarz不等式²\n\\[\n\\left[\\int(f_1\\bar f_1+f_2\\bar f_2)d\\tau\\right]\n\\left[\\int(g_1\\bar g_1+g_2\\bar g_2)d\\tau\\right]\n\\geq \\left|\\int(f_1\\bar g_1+f_2\\bar g_2)d\\tau\\right|^2.\n\\]",
+          "kind": "claim",
+          "claim_ids": [
+            "c14"
+          ]
+        },
+        {
+          "id": "s-b6-8",
+          "en": "\n",
+          "zh": "\n",
+          "kind": "context",
+          "claim_ids": []
+        },
+        {
+          "id": "s-b6-9",
+          "en": "Taking\n\\[\nf_1=(A-A_0)\\psi=\\bar f_2,\\qquad g_1=(B-B_0)\\psi=-\\bar g_2\n\\]\nand reducing the integral on the right hand side by integration by parts we find\n\\[\n\\Delta A\\cdot\\Delta B\\geq \\frac12\\left|\\int\\bar\\psi(AB-BA)\\psi\\,d\\tau\\right|,\n\\]\nthe required result.",
+          "zh": "取\n\\[\nf_1=(A-A_0)\\psi=\\bar f_2,\\qquad g_1=(B-B_0)\\psi=-\\bar g_2,\n\\]\n并在右端积分中作分部积分，便得到\n\\[\n\\Delta A\\cdot\\Delta B\\geq \\frac12\\left|\\int\\bar\\psi(AB-BA)\\psi\\,d\\tau\\right|,\n\\]\n即所需结果。",
+          "kind": "claim",
+          "claim_ids": [
+            "c15"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b7",
+      "type": "body",
+      "locator": "The Uncertainty Principle; paragraph 6",
+      "segments": [
+        {
+          "id": "s-b7-1",
+          "en": "¹ Cf. proof of special case \\(A=p,B=q\\) in H. Weyl “Gruppentheorie und Quantenmechanik” pp. 66, 272.",
+          "zh": "¹ 可参见 H. Weyl《群论与量子力学》第66、272页中 \\(A=p,B=q\\) 这一特殊情形的证明。",
+          "kind": "claim",
+          "claim_ids": [
+            "c22"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b8",
+      "type": "body",
+      "locator": "The Uncertainty Principle; paragraph 7",
+      "segments": [
+        {
+          "id": "s-b8-1",
+          "en": "² Weyl, l.c. p. 272.",
+          "zh": "² Weyl，同上引书，第272页。",
+          "kind": "claim",
+          "claim_ids": [
+            "c22"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b9",
+      "type": "body",
+      "locator": "The Uncertainty Principle; paragraph 8",
+      "segments": [
+        {
+          "id": "s-b9-1",
+          "en": "We obviously obtain Heisenberg’s result if the two variables are conjugate, for then \\(C\\), and consequently \\(C_0\\), are \\(\\pm1\\).",
+          "zh": "当两个变量正则共轭时，我们显然得到海森堡的结果，因为此时 \\(C\\)，从而 \\(C_0\\)，等于 \\(\\pm1\\)。",
+          "kind": "claim",
+          "claim_ids": [
+            "c16"
+          ]
+        },
+        {
+          "id": "s-b9-2",
+          "en": " As a further illustration of the principle, we apply it to the case of angular momentum. ",
+          "zh": "作为本原理的另一个例子，我们把它应用于角动量。",
+          "kind": "context",
+          "claim_ids": []
+        },
+        {
+          "id": "s-b9-3",
+          "en": "Here we have\n\\[\nM_x=yp_z-zp_y,\\qquad M_xM_y-M_yM_x=-\\frac{hM_z}{2\\pi i},\n\\]\nso the product of the uncertainties in two of the components of angular momentum is not less than \\(h/4\\pi\\) times the mean value of the third component in the state under consideration.",
+          "zh": "这里有\n\\[\nM_x=yp_z-zp_y,\\qquad M_xM_y-M_yM_x=-\\frac{hM_z}{2\\pi i},\n\\]\n所以两个角动量分量的不确定度之积，不小于 \\(h/4\\pi\\) 乘以所考察状态中第三个分量的平均值。",
+          "kind": "claim",
+          "claim_ids": [
+            "c17"
+          ]
+        },
+        {
+          "id": "s-b9-4",
+          "en": " ",
+          "zh": "",
+          "kind": "context",
+          "claim_ids": []
+        },
+        {
+          "id": "s-b9-5",
+          "en": "Consider in particular the state, treated by Condon, defined by\n\\[\n\\psi=f(r)e^{im\\phi}P_l^m(\\cos\\theta)\n\\]\nwhere the pole of the spherical coordinates lies on the \\(z\\)-axis.",
+          "zh": "特别考虑Condon研究过的状态\n\\[\n\\psi=f(r)e^{im\\phi}P_l^m(\\cos\\theta),\n\\]\n其中球坐标的极轴位于 \\(z\\) 轴。",
+          "kind": "claim",
+          "claim_ids": [
+            "c18"
+          ]
+        },
+        {
+          "id": "s-b9-6",
+          "en": " ",
+          "zh": "",
+          "kind": "context",
+          "claim_ids": []
+        },
+        {
+          "id": "s-b9-7",
+          "en": "Then \\(M_z,M^2(=M_x^2+M_y^2+M_z^2)\\) have the definite values\n\\[\nM_z=M_{z0}=\\frac{mh}{2\\pi},\\qquad M^2=l(l+1)\\left(\\frac{h}{2\\pi}\\right)^2,\n\\]\nthe mean values of \\(M_x,M_y\\) are zero and the uncertainties are given by\n\\[\n(\\Delta M_x)^2=(\\Delta M_y)^2=\\frac12[l(l+1)-m^2]\\left(\\frac{h}{2\\pi}\\right)^2,\\qquad \\Delta M_z=0.\n\\]",
+          "zh": "于是 \\(M_z\\) 和 \\(M^2(=M_x^2+M_y^2+M_z^2)\\) 具有确定值\n\\[\nM_z=M_{z0}=\\frac{mh}{2\\pi},\\qquad M^2=l(l+1)\\left(\\frac{h}{2\\pi}\\right)^2,\n\\]\n\\(M_x,M_y\\) 的平均值为零，而不确定度为\n\\[\n(\\Delta M_x)^2=(\\Delta M_y)^2=\\frac12[l(l+1)-m^2]\\left(\\frac{h}{2\\pi}\\right)^2,\\qquad \\Delta M_z=0.\n\\]",
+          "kind": "claim",
+          "claim_ids": [
+            "c19"
+          ]
+        },
+        {
+          "id": "s-b9-8",
+          "en": "\n",
+          "zh": "\n",
+          "kind": "context",
+          "claim_ids": []
+        },
+        {
+          "id": "s-b9-9",
+          "en": "Now from the uncertainty principle for \\(M_x,M_y\\) we find\n\\[\nl(l+1)\\geq m(m+1),\n\\]\nwhich is in fact the case. This example shows that for \\(m=l\\) the equality holds; the inequality is consequently the most restrictive one that can be deduced for angular momenta, for we have here a case in which the ultimate limit has (in principle) been reached.",
+          "zh": "现在把不确定性原理用于 \\(M_x,M_y\\)，得到\n\\[\nl(l+1)\\geq m(m+1),\n\\]\n而事实确实如此。这个例子表明，当 \\(m=l\\) 时等号成立；因此，对于角动量而言，该不等式已经是能够导出的最严格形式，因为这里存在一种（原则上）达到最终界限的情形。",
+          "kind": "claim",
+          "claim_ids": [
+            "c20"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b10",
+      "type": "body",
+      "locator": "The Uncertainty Principle; paragraph 9",
+      "segments": [
+        {
+          "id": "s-b10-1",
+          "en": "H. P. ROBERTSON  \nPalmer Physical Laboratory,  \nPrinceton, N. J.,  \nJune 18, 1929.",
+          "zh": "H. P. ROBERTSON  \nPalmer物理实验室  \n新泽西州普林斯顿  \n1929年6月18日",
+          "kind": "context",
+          "claim_ids": []
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "c1",
+      "evidence_ids": [
+        "e6"
+      ],
+      "explanation": {
+        "zh": "这里的“后果”指的是量子态的数学结构会限制同一状态中某些物理量的统计散布。Robertson随后把“不确定度”精确定义成标准差，并从算符代数推出下界；因此这封短信的核心是制备同一量子态时的散布关系，而不是把显微镜分辨率或仪器误差直接当成定理本身。",
+        "en": "Here “consequence” means that the mathematical structure of a quantum state constrains the statistical spreads of certain observables in that state. Robertson will define uncertainty precisely as a standard deviation and derive a lower bound from operator algebra. The letter therefore establishes a preparation-spread relation, rather than identifying the theorem itself with microscope resolution or ordinary instrumental error."
+      },
+      "assessment": "supported",
+      "limits": [],
+      "kind": "interpretation",
+      "segment_ids": [
+        "s-b2-1"
+      ]
+    },
+    {
+      "id": "c2",
+      "evidence_ids": [
+        "e1",
+        "e3",
+        "e6"
+      ],
+      "explanation": {
+        "zh": "正则共轭量的典型例子是位置 \\(q\\) 与动量 \\(p\\)，它们满足 \\([q,p]=h/(2\\pi i)=i\\hbar\\)。两者乘积的量纲是作用量，恰与 \\(h\\) 相同。海森堡1927年的原文把位置—动量限制与非对易关系直接联系起来 [1](evidence:e1)；Weyl随后用均方根散布给出精确的 \\(\\Delta p\\Delta q\\geq\\hbar/2\\) [2](evidence:e3)。Robertson此处说“\\(h\\) 的量级”，是在概括早期表述；他后面导出的公式会把常数精确到 \\(h/4\\pi=\\hbar/2\\)。",
+        "en": "The standard canonical pair is position \\(q\\) and momentum \\(p\\), with \\([q,p]=h/(2\\pi i)=i\\hbar\\). Their product has the dimensions of action, just like \\(h\\). Heisenberg's 1927 paper explicitly connects the position–momentum limitation with noncommutation [1](evidence:e1), while Weyl gives the precise root-mean-square form \\(\\Delta p\\Delta q\\geq\\hbar/2\\) [2](evidence:e3). Robertson's phrase “of order \\(h\\)” summarizes the early formulation; his own formula below fixes the coefficient as \\(h/4\\pi=\\hbar/2\\)."
+      },
+      "assessment": "supported",
+      "limits": [],
+      "kind": "interpretation",
+      "segment_ids": [
+        "s-b2-3"
+      ]
+    },
+    {
+      "id": "c3",
+      "evidence_ids": [
+        "e5",
+        "e6"
+      ],
+      "explanation": {
+        "zh": "问题在于：任意两个量之间不能都有一个与状态无关、固定为 \\(h\\) 量级的乘积下界。若两个算符对易，甚至可以有共同本征态，使两种标准差同时为零；即使不对易，交换子的期望值也可能在某些状态中为零。因此真正的一般式必须让下界随算符对易子及所处状态变化。Condon原文全文本轮未取得；已得摘要只覆盖他从海森堡位置—动量关系出发的部分 [3](evidence:e5)，关于非共轭变量的具体反例这里只按Robertson的明确转述来归属。",
+        "en": "An arbitrary pair of quantities cannot possess a universal, state-independent product bound of order \\(h\\). Commuting operators can have a common eigenstate in which both standard deviations vanish; even for noncommuting operators, the expectation value of their commutator can vanish in particular states. A genuinely general formula must therefore allow the lower bound to depend on both the commutator and the state. The accessible Condon abstract covers only his starting point in Heisenberg's position–momentum relation [3](evidence:e5); the claim about nonconjugate variables is attributed here to Robertson's explicit report because Condon's full text was not obtained."
+      },
+      "assessment": "conditional",
+      "limits": [],
+      "kind": "interpretation",
+      "segment_ids": [
+        "s-b2-5"
+      ]
+    },
+    {
+      "id": "c4",
+      "evidence_ids": [
+        "e6",
+        "e8",
+        "e10"
+      ],
+      "explanation": {
+        "zh": "全文的路线很紧凑：先把平均值和不确定度写成态 \\(\\psi\\) 上的积分；再用Schwarz不等式把两个偏差向量的范数乘积约束住；交叉项的反对称部分恰给出对易子；最后把一般式代入 \\([M_x,M_y]=i\\hbar M_z\\) 检验角动量。一般化的关键不是换一对变量重算，而是把下界写成 \\(|\\langle[A,B]\\rangle|/2\\)，从而对任意算符对都能按实际对易结构给出界。",
+        "en": "The letter follows a compact route: it writes means and uncertainties as integrals over the state \\(\\psi\\), bounds the product of two deviation-vector norms by Schwarz's inequality, identifies the antisymmetric cross term with the commutator, and finally inserts \\([M_x,M_y]=i\\hbar M_z\\). The generalization does not merely repeat the position–momentum calculation for another pair; it replaces a fixed lower bound by \\(|\\langle[A,B]\\rangle|/2\\), so each operator pair is governed by its actual commutator."
+      },
+      "assessment": "supported",
+      "limits": [],
+      "kind": "interpretation",
+      "segment_ids": [
+        "s-b2-7"
+      ]
+    },
+    {
+      "id": "c5",
+      "evidence_ids": [
+        "e7"
+      ],
+      "explanation": {
+        "zh": "归一化意味着 \\(\\int|\\psi|^2d\\tau=1\\)，所以 \\(|\\psi|^2d\\tau\\) 可以充当位置空间中的概率权重。算符 \\(A\\) 先作用在右侧的 \\(\\psi\\) 上，再与 \\(\\bar\\psi\\) 相乘并积分；现代记号写作 \\(A_0=\\langle\\psi|A|\\psi\\rangle\\)。这里的“平均”是大量同样制备的体系上测量 \\(A\\) 所得结果的期望值，不是说单次测量读数通常等于 \\(A_0\\)。",
+        "en": "Normalization means \\(\\int|\\psi|^2d\\tau=1\\), so \\(|\\psi|^2d\\tau\\) supplies the probability weight in coordinate space. The operator \\(A\\) acts first on the \\(\\psi\\) to its right, after which the result is multiplied by \\(\\bar\\psi\\) and integrated. In modern notation this is \\(A_0=\\langle\\psi|A|\\psi\\rangle\\). The mean is the expectation of outcomes over many identically prepared systems, not a claim that a typical single measurement equals \\(A_0\\)."
+      },
+      "assessment": "supported",
+      "limits": [],
+      "kind": "interpretation",
+      "segment_ids": [
+        "s-b4-1"
+      ]
+    },
+    {
+      "id": "c6",
+      "evidence_ids": [
+        "e7"
+      ],
+      "explanation": {
+        "zh": "把厄米关系中的 \\(\\phi\\) 取成 \\(\\psi\\)，左边就是 \\(A_0\\)。右边是 \\(\\int\\psi\\,\\overline{A\\psi} d\\tau\\)，恰等于左边的复共轭。因此 \\(A_0=\\overline{A_0}\\)，只有实数满足这一条件。这个步骤说明可观测量的平均值为何不会带有虚部；它并没有要求 \\(A\\psi\\) 必须与 \\(\\psi\\) 成正比，那是本征态才具有的更强条件。",
+        "en": "Set \\(\\phi=\\psi\\) in the Hermitian identity. The left side is \\(A_0\\), while the right side, \\(\\int\\psi\\,\\overline{A\\psi} d\\tau\\), is precisely its complex conjugate. Hence \\(A_0=\\overline{A_0}\\), which makes the expectation real. This explains why an observable has no imaginary mean. It does not require \\(A\\psi\\) to be proportional to \\(\\psi\\); that stronger condition holds only in an eigenstate."
+      },
+      "assessment": "supported",
+      "limits": [],
+      "kind": "interpretation",
+      "segment_ids": [
+        "s-b4-3"
+      ]
+    },
+    {
+      "id": "c7",
+      "evidence_ids": [
+        "e7"
+      ],
+      "explanation": {
+        "zh": "定义偏差算符 \\(\\widetilde A=A-A_0\\)。它从每个可能测量值中减去平均值，因此 \\(\\langle\\widetilde A\\rangle=0\\)；平方后再取平均，正负偏差不再相消。于是 \\((\\Delta A)^2=\\langle\\widetilde A^2\\rangle=\\langle A^2\\rangle-\\langle A\\rangle^2\\)。若 \\(\\Delta A=0\\)，则偏差向量 \\((A-A_0)\\psi\\) 的范数为零，说明该态是 \\(A\\) 的本征态，测量结果确定为 \\(A_0\\)。",
+        "en": "Define the centered operator \\(\\widetilde A=A-A_0\\). It subtracts the mean from every possible outcome, so \\(\\langle\\widetilde A\\rangle=0\\); squaring before averaging prevents positive and negative deviations from cancelling. Thus \\((\\Delta A)^2=\\langle\\widetilde A^2\\rangle=\\langle A^2\\rangle-\\langle A\\rangle^2\\). If \\(\\Delta A=0\\), the deviation vector \\((A-A_0)\\psi\\) has zero norm, so the state is an eigenstate of \\(A\\) with definite value \\(A_0\\)."
+      },
+      "assessment": "supported",
+      "limits": [],
+      "kind": "interpretation",
+      "segment_ids": [
+        "s-b4-5"
+      ]
+    },
+    {
+      "id": "c8",
+      "evidence_ids": [
+        "e7"
+      ],
+      "explanation": {
+        "zh": "这个式子成立时隐含了定义域条件：\\(\\psi\\) 必须属于使 \\(A\\psi\\) 以及所需二阶矩有意义的函数空间。对无界算符，形式上写出积分并不足以保证方差有限。利用厄米性可把它改写成 \\(\\int|(A-A_0)\\psi|^2d\\tau\\ge0\\)；Robertson下一段正需要这种“范数平方”形式，才能把两个不确定度放进Schwarz不等式。",
+        "en": "The formula carries a domain condition: \\(\\psi\\) must lie in a space where \\(A\\psi\\) and the required second moment are defined. For unbounded operators, merely writing the formal integral does not guarantee a finite variance. Hermiticity rewrites it as \\(\\int|(A-A_0)\\psi|^2d\\tau\\ge0\\). Robertson needs exactly this squared-norm form in the next paragraph to insert both uncertainties into Schwarz's inequality."
+      },
+      "assessment": "conditional",
+      "limits": [],
+      "kind": "interpretation",
+      "segment_ids": [
+        "s-b4-7"
+      ]
+    },
+    {
+      "id": "c9",
+      "evidence_ids": [
+        "e8",
+        "e1"
+      ],
+      "explanation": {
+        "zh": "令 \\(\\hbar=h/2\\pi\\)，Robertson的定义是 \\([A,B]=-i\\hbar C\\)，所以 \\(|\\langle[A,B]\\rangle|=\\hbar|C_0|\\)。公式等价于现代写法\n\\[\n\\Delta A\\Delta B\\ge\\frac12|\\langle[A,B]\\rangle|.\n\\]\n绝对值不可省略，因为交换 \\(A,B\\) 的顺序会使对易子变号，而不确定度乘积不应随书写顺序改变。下界还依赖状态：\\(C_0=\\langle C\\rangle\\) 可能随 \\(\\psi\\) 变化，这正是一般式与固定“\\(h\\)量级”说法的区别。",
+        "en": "With \\(\\hbar=h/2\\pi\\), Robertson defines \\([A,B]=-i\\hbar C\\), so \\(|\\langle[A,B]\\rangle|=\\hbar|C_0|\\). His formula is therefore the modern relation\n\\[\n\\Delta A\\Delta B\\ge\\frac12|\\langle[A,B]\\rangle|.\n\\]\nThe absolute value is essential: interchanging \\(A\\) and \\(B\\) reverses the sign of the commutator but cannot change the product of their spreads. The bound is also state dependent because \\(C_0=\\langle C\\rangle\\) may vary with \\(\\psi\\); this is what replaces the fixed “order-\\(h\\)” claim."
+      },
+      "assessment": "supported",
+      "limits": [],
+      "kind": "interpretation",
+      "segment_ids": [
+        "s-b5-1"
+      ]
+    },
+    {
+      "id": "c10",
+      "evidence_ids": [
+        "e8"
+      ],
+      "explanation": {
+        "zh": "这句话中的“一半”是指 \\(\\tfrac12|\\langle[A,B]\\rangle|\\)，不是把Robertson定义的 \\(C_0\\) 本身再任意减半。若 \\([A,B]=0\\)，公式只给出 \\(\\Delta A\\Delta B\\ge0\\)，允许共同本征态；若对易子是常数 \\(i\\hbar\\)，则恢复状态无关的 \\(\\hbar/2\\) 下界。若对易子期望恰为零，右端也为零，但这只说明这个下界在该态中不给出正限制，并不自动说明两个算符对易或两种散布都能为零。",
+        "en": "The “half” means \\(\\tfrac12|\\langle[A,B]\\rangle|\\); it is not an extra arbitrary halving of Robertson's \\(C_0\\). If \\([A,B]=0\\), the formula yields only \\(\\Delta A\\Delta B\\ge0\\), allowing a common eigenstate. If the commutator is the constant \\(i\\hbar\\), it recovers the state-independent bound \\(\\hbar/2\\). If the commutator expectation happens to vanish, the right side is zero, but that only means this bound is uninformative in that state; it does not by itself make the operators commute or make both spreads vanish."
+      },
+      "assessment": "supported",
+      "limits": [],
+      "kind": "interpretation",
+      "segment_ids": [
+        "s-b5-3"
+      ]
+    },
+    {
+      "id": "c11",
+      "evidence_ids": [
+        "e9",
+        "e3"
+      ],
+      "explanation": {
+        "zh": "Robertson在坐标表象中工作：\\(q\\) 由乘法表示，\\(p_j=-i\\hbar\\partial_j\\) 由微分表示。把 \\(A,B\\) 限成动量的一次式，是为了让厄米条件和分部积分能够在两页篇幅内显式写出。核心不等式实际上只需要两个偏差向量 \\((A-A_0)\\psi\\)、\\((B-B_0)\\psi\\) 有定义；Weyl对 \\(p,q\\) 特例的证明展示了同一条“Schwarz不等式＋分部积分”路线 [2](evidence:e3)。Robertson声称动量高次幂同理，是短信中的范围说明，并未在本文逐项证明所有无界算符的定义域问题。",
+        "en": "Robertson works in the coordinate representation: \\(q\\) acts by multiplication and \\(p_j=-i\\hbar\\partial_j\\) by differentiation. Restricting \\(A\\) and \\(B\\) to first order in momentum makes the Hermiticity and integration-by-parts conditions explicit within a two-page letter. The core inequality really needs the two deviation vectors \\((A-A_0)\\psi\\) and \\((B-B_0)\\psi\\) to be defined; Weyl's special \\(p,q\\) proof exhibits the same “Schwarz plus integration by parts” route [2](evidence:e3). Robertson's extension to higher momentum powers is stated rather than accompanied by a full treatment of domains for every unbounded operator."
+      },
+      "assessment": "conditional",
+      "limits": [],
+      "kind": "interpretation",
+      "segment_ids": [
+        "s-b6-1"
+      ]
+    },
+    {
+      "id": "c12",
+      "evidence_ids": [
+        "e9"
+      ],
+      "explanation": {
+        "zh": "注意算符次序固定为 \\(a_jp_j\\)：先对波函数求导，再乘 \\(a_j(q)\\)。对单项分部积分，忽略边界项后\n\\[\n\\langle\\phi,a_jp_j\\psi\\rangle=\\langle a_jp_j\\phi,\\psi\\rangle+i\\hbar\\int\\bar\\phi(\\partial_ja_j)\\psi,d\\tau.\n\\]\n若各系数为实数，三个额外项相加正比于 \\(\\nabla\\cdot\\mathbf a\\)。因此 \\(\\nabla\\cdot\\mathbf a=0\\) 使一阶微分部分在这一算符次序下对称；标量项 \\(a\\) 也须为实数。若采用对称化的 \\((a_jp_j+p_ja_j)/2\\)，条件的写法会不同，不能把两种次序混用。",
+        "en": "The operator order is fixed as \\(a_jp_j\\): differentiate the wave function first, then multiply by \\(a_j(q)\\). Integrating one term by parts and discarding the boundary contribution gives\n\\[\n\\langle\\phi,a_jp_j\\psi\\rangle=\\langle a_jp_j\\phi,\\psi\\rangle+i\\hbar\\int\\bar\\phi(\\partial_ja_j)\\psi,d\\tau.\n\\]\nFor real coefficients the three extra terms sum to a multiple of \\(\\nabla\\cdot\\mathbf a\\). Thus \\(\\nabla\\cdot\\mathbf a=0\\) makes the first-order part symmetric in this ordering, while the scalar coefficient \\(a\\) must also be real. A symmetrized ordering \\((a_jp_j+p_ja_j)/2\\) would lead to a different condition and must not be mixed with Robertson's expression."
+      },
+      "assessment": "supported",
+      "limits": [],
+      "kind": "interpretation",
+      "segment_ids": [
+        "s-b6-3"
+      ]
+    },
+    {
+      "id": "c13",
+      "evidence_ids": [
+        "e9",
+        "e4"
+      ],
+      "explanation": {
+        "zh": "从定义出发，\\((\\Delta A)^2=\\langle\\psi,(A-A_0)^2\\psi\\rangle\\)。由于 \\(A-A_0\\) 仍为厄米算符，可以把左边的一个因子移到bra一侧：\n\\[\n\\langle\\psi,(A-A_0)^2\\psi\\rangle=\\langle(A-A_0)\\psi,(A-A_0)\\psi\\rangle.\n\\]\n坐标表象中这就是原文的模平方积分。分部积分所产生的表面项必须在无穷远消失；Weyl的附录明确把这一边界条件与有关二阶矩的收敛联系起来 [2](evidence:e4)。范数形式不仅表明方差非负，还为下一步把 \\(\\Delta A,\\Delta B\\) 当作两个向量长度铺路。",
+        "en": "Begin with \\((\\Delta A)^2=\\langle\\psi,(A-A_0)^2\\psi\\rangle\\). Because \\(A-A_0\\) is Hermitian, one factor can be moved to the bra side:\n\\[\n\\langle\\psi,(A-A_0)^2\\psi\\rangle=\\langle(A-A_0)\\psi,(A-A_0)\\psi\\rangle.\n\\]\nIn the coordinate representation this is Robertson's modulus-squared integral. The surface term created by integration by parts must vanish at infinity; Weyl's appendix explicitly links this boundary behavior to convergence of the relevant second moments [2](evidence:e4). The norm form both proves nonnegativity and prepares \\(\\Delta A\\) and \\(\\Delta B\\) to serve as vector lengths in the next step."
+      },
+      "assessment": "supported",
+      "limits": [],
+      "kind": "interpretation",
+      "segment_ids": [
+        "s-b6-5"
+      ]
+    },
+    {
+      "id": "c14",
+      "evidence_ids": [
+        "e2",
+        "e9"
+      ],
+      "explanation": {
+        "zh": "这就是Cauchy–Schwarz不等式在“每一点有两个复分量”的函数空间中的形式。把 \\(F=(f_1,f_2)\\)、\\(G=(g_1,g_2)\\) 看作向量，公式是 \\(\\|F\\|^2\\|G\\|^2\\ge|\\langle G,F\\rangle|^2\\)。Weyl先给出有限维版本 [2](evidence:e2)；把求和换成坐标积分与二分量求和便得到这里的式子。Robertson特意使用两个分量，是为了令对称的乘积部分相消，只留下反对称的对易子。",
+        "en": "This is the Cauchy–Schwarz inequality in a function space whose value at each point has two complex components. With \\(F=(f_1,f_2)\\) and \\(G=(g_1,g_2)\\), it reads \\(\\|F\\|^2\\|G\\|^2\\ge|\\langle G,F\\rangle|^2\\). Weyl states the finite-dimensional form [2](evidence:e2); replacing sums by coordinate integration plus a two-component sum yields Robertson's expression. The two components are chosen so that the symmetric product cancels and the antisymmetric commutator remains."
+      },
+      "assessment": "supported",
+      "limits": [],
+      "kind": "interpretation",
+      "segment_ids": [
+        "s-b6-7"
+      ]
+    },
+    {
+      "id": "c15",
+      "evidence_ids": [
+        "e9",
+        "e2"
+      ],
+      "explanation": {
+        "zh": "记 \\(u=(A-A_0)\\psi\\)、\\(v=(B-B_0)\\psi\\)。Robertson的选择等价于 \\(F=(u,\\bar u)\\)、\\(G=(v,-\\bar v)\\)。于是\n\\[\n\\|F\\|^2=2\\Delta A^2,qquad \\|G\\|^2=2\\Delta B^2,\n\\]\n而交叉积分为\n\\[\n\\int(u\\bar v-\\bar u v)d\\tau=langle(B-B_0)\\psi,(A-A_0)\\psi\\rangle-\\langle(A-A_0)\\psi,(B-B_0)\\psi\\rangle.\n\\]\n利用厄米性把算符移回同一侧，常数 \\(A_0,B_0\\) 的项相消，得到 \\(\\langle\\psi,(BA-AB)\\psi\\rangle\\)，绝对值使符号次序无关。Schwarz不等式因此给出 \\(4\\Delta A^2\\Delta B^2\\ge|\\langle[A,B]\\rangle|^2\\)；开平方便是原文结果。",
+        "en": "Let \\(u=(A-A_0)\\psi\\) and \\(v=(B-B_0)\\psi\\). Robertson's choice is equivalent to \\(F=(u,\\bar u)\\) and \\(G=(v,-\\bar v)\\). Hence\n\\[\n\\|F\\|^2=2\\Delta A^2,qquad \\|G\\|^2=2\\Delta B^2,\n\\]\nwhile the cross integral is\n\\[\n\\int(u\\bar v-\\bar u v)d\\tau=langle(B-B_0)\\psi,(A-A_0)\\psi\\rangle-\\langle(A-A_0)\\psi,(B-B_0)\\psi\\rangle.\n\\]\nUsing Hermiticity to move operators to the same side cancels all terms containing the constants \\(A_0,B_0\\), leaving \\(\\langle\\psi,(BA-AB)\\psi\\rangle\\); the absolute value removes the ordering sign. Schwarz therefore yields \\(4\\Delta A^2\\Delta B^2\\ge|\\langle[A,B]\\rangle|^2\\), and taking square roots gives Robertson's result."
+      },
+      "assessment": "supported",
+      "limits": [],
+      "kind": "interpretation",
+      "segment_ids": [
+        "s-b6-9"
+      ]
+    },
+    {
+      "id": "c16",
+      "evidence_ids": [
+        "e1",
+        "e8",
+        "e10"
+      ],
+      "explanation": {
+        "zh": "若 \\([A,B]=\\pm i\\hbar\\)，与Robertson的 \\([A,B]=-i\\hbar C\\) 比较便有 \\(C=\\mp1\\)。常数算符在任何归一化态中的期望仍是同一个常数，所以 \\(|C_0|=1\\)。代入一般式得到 \\(\\Delta A\\Delta B\\ge h/4\\pi=\\hbar/2\\)，这与Weyl给出的精确位置—动量结果一致。这里的“恢复”说明一般式包含正则共轭特例；海森堡原文确实已把位置—动量关系与正则对易式联系起来 [1](evidence:e1)。",
+        "en": "If \\([A,B]=\\pm i\\hbar\\), comparison with Robertson's \\([A,B]=-i\\hbar C\\) gives \\(C=\\mp1\\). A constant operator has the same expectation in every normalized state, so \\(|C_0|=1\\). Substitution yields \\(\\Delta A\\Delta B\\ge h/4\\pi=\\hbar/2\\), agreeing with Weyl's precise position–momentum result. “Obtain” here means that the general formula contains the canonical special case; Heisenberg's paper had already explicitly linked the position–momentum relation with canonical noncommutation [1](evidence:e1)."
+      },
+      "assessment": "supported",
+      "limits": [],
+      "kind": "interpretation",
+      "segment_ids": [
+        "s-b9-1"
+      ]
+    },
+    {
+      "id": "c17",
+      "evidence_ids": [
+        "e10"
+      ],
+      "explanation": {
+        "zh": "用 \\(\\hbar=h/2\\pi\\) 可把第二式写成 \\([M_x,M_y]=i\\hbar M_z\\)，因为 \\(-1/i=i\\)。与 \\([A,B]=-i\\hbar C\\) 比较，得 \\(C=-M_z\\)，所以\n\\[\n\\Delta M_x\\Delta M_y\\ge\\frac{\\hbar}{2}|\\langle M_z\\rangle|=\frac{h}{4\\pi}|M_{z0}|.\n\\]\n原文叙述省略了对第三分量平均值取绝对值，但紧接着使用的 \\(m\\) 可按轴向选择为非负；一般写法必须保留绝对值，否则 \\(\\langle M_z\\rangle<0\\) 时所谓“下界”会变成负数。",
+        "en": "Using \\(\\hbar=h/2\\pi\\), the second equation becomes \\([M_x,M_y]=i\\hbar M_z\\), since \\(-1/i=i\\). Comparison with \\([A,B]=-i\\hbar C\\) gives \\(C=-M_z\\), hence\n\\[\n\\Delta M_x\\Delta M_y\\ge\\frac{\\hbar}{2}|\\langle M_z\\rangle|=\frac{h}{4\\pi}|M_{z0}|.\n\\]\nRobertson's prose omits the absolute-value sign around the mean of the third component, while the subsequent example effectively takes nonnegative \\(m\\). The general statement must retain the absolute value; otherwise a state with \\(\\langle M_z\\rangle<0\\) would produce a negative “lower bound.”"
+      },
+      "assessment": "conditional",
+      "limits": [],
+      "kind": "interpretation",
+      "segment_ids": [
+        "s-b9-3"
+      ]
+    },
+    {
+      "id": "c18",
+      "evidence_ids": [
+        "e5",
+        "e10"
+      ],
+      "explanation": {
+        "zh": "角向部分 \\(e^{im\\phi}P_l^m(\\cos\\theta)\\) 是球谐函数的未归一化写法；径向函数 \\(f(r)\\) 不影响角动量代数。由于 \\(M_z=-i\\hbar\\partial_\\phi\\)，对 \\(e^{im\\phi}\\) 作用立即得到 \\(m\\hbar\\)，所以该态的 \\(M_z\\) 完全确定而 \\(\\Delta M_z=0\\)。Condon全文未能取得，现有摘要只证明他讨论的出发点是海森堡关系 [3](evidence:e5)；这个特定状态及其在Condon文中的用途，目前只能由Robertson的明确归属支撑。",
+        "en": "The angular factor \\(e^{im\\phi}P_l^m(\\cos\\theta)\\) is an unnormalized form of a spherical harmonic; the radial function \\(f(r)\\) does not affect angular-momentum algebra. Since \\(M_z=-i\\hbar\\partial_\\phi\\), acting on \\(e^{im\\phi}\\) immediately gives \\(m\\hbar\\), making \\(M_z\\) sharp and \\(\\Delta M_z=0\\). Condon's full text was not obtained; the available abstract establishes only his starting point in Heisenberg's relation [3](evidence:e5). The specific state and its role in Condon's article are therefore supported here by Robertson's explicit attribution."
+      },
+      "assessment": "conditional",
+      "limits": [],
+      "kind": "interpretation",
+      "segment_ids": [
+        "s-b9-5"
+      ]
+    },
+    {
+      "id": "c19",
+      "evidence_ids": [
+        "e10"
+      ],
+      "explanation": {
+        "zh": "先用 \\(\\langle M_x\\rangle=\\langle M_y\\rangle=0\\)，所以横向方差就是 \\(\\langle M_x^2\\rangle,\\langle M_y^2\\rangle\\)。绕 \\(z\\) 轴的对称性使两者相等。又由\n\\[\n\\langle M_x^2+M_y^2\\rangle=\\langle M^2-M_z^2\\rangle=[l(l+1)-m^2]\\hbar^2,\n\\]\n平均分给两个横向分量，得到各自的一半。\\(M_z\\) 已有确定本征值 \\(m\\hbar\\)，故其方差为零。量纲也一致：每个方差均为角动量平方，开平方后的 \\(\\Delta M_x\\Delta M_y\\) 同样是角动量平方。",
+        "en": "Because \\(\\langle M_x\\rangle=\\langle M_y\\rangle=0\\), the transverse variances equal \\(\\langle M_x^2\\rangle\\) and \\(\\langle M_y^2\\rangle\\). Rotational symmetry about the \\(z\\)-axis makes them equal. Moreover,\n\\[\n\\langle M_x^2+M_y^2\\rangle=\\langle M^2-M_z^2\\rangle=[l(l+1)-m^2]\\hbar^2.\n\\]\nDividing this equally between the two transverse components gives Robertson's factor of one half. Since \\(M_z\\) has the sharp eigenvalue \\(m\\hbar\\), its variance vanishes. Dimensions also agree: each variance has units of angular momentum squared, as does the product \\(\\Delta M_x\\Delta M_y\\)."
+      },
+      "assessment": "supported",
+      "limits": [],
+      "kind": "interpretation",
+      "segment_ids": [
+        "s-b9-7"
+      ]
+    },
+    {
+      "id": "c20",
+      "evidence_ids": [
+        "e10",
+        "e11",
+        "e12"
+      ],
+      "explanation": {
+        "zh": "对该态，\\(\\Delta M_x=\\Delta M_y\\)，所以左边乘积为 \\(\\tfrac12[l(l+1)-m^2]\\hbar^2\\)。右边是 \\(\\tfrac12\\hbar|m\\hbar|\\)。取 \\(m\\ge0\\)，约去 \\(\\hbar^2/2\\) 后得到\n\\[\nl(l+1)-m^2\\ge m\\quad\\Longleftrightarrow\\quad l(l+1)\\ge m(m+1).\n\\]\n允许的磁量子数满足 \\(-l\\le m\\le l\\)，故不等式成立；在 \\(m=l\\) 时两边均为 \\(l(l+1)\\)。一个状态达到等号，说明不能把对所有状态都成立的常数系数整体提高。\n\nRobertson的“最严格”应放回1929年的论证范围理解。Schrödinger次年明确引用Condon和Robertson为前作 [4](evidence:e11)，并从同一个Schwarz步骤保留复交叉项的实部，得到\n\\[\n(\\Delta A)^2(\\Delta B)^2\\ge\n\\left(\\frac12\\langle\\{\\widetilde A,\\widetilde B\\}\\rangle\\right)^2+\n\\left|\\frac12\\langle[A,B]\\rangle\\right|^2,\n\\]\n其中 \\(\\widetilde A=A-\\langle A\\rangle\\)、\\(\\widetilde B=B-\\langle B\\rangle\\) [4](evidence:e12)。Robertson式只保留第二项；当对称协方差不为零时，Schrödinger式更强。对这里的最高权态，横向对称协方差为零，所以Robertson界仍能真正饱和。",
+        "en": "For this state \\(\\Delta M_x=\\Delta M_y\\), so their product is \\(\\tfrac12[l(l+1)-m^2]\\hbar^2\\). The right side is \\(\\tfrac12\\hbar|m\\hbar|\\). Taking \\(m\\ge0\\) and cancelling \\(\\hbar^2/2\\) gives\n\\[\nl(l+1)-m^2\\ge m\\quad\\Longleftrightarrow\\quad l(l+1)\\ge m(m+1).\n\\]\nAllowed magnetic quantum numbers satisfy \\(-l\\le m\\le l\\), so the inequality holds; at \\(m=l\\), both sides equal \\(l(l+1)\\). A state attaining equality proves that the state-independent numerical coefficient cannot be increased.\n\nRobertson's “most restrictive” belongs to the scope of the 1929 argument. The next year Schrödinger explicitly cited Condon and Robertson as predecessors [4](evidence:e11) and retained the real part of the same Schwarz cross term, obtaining\n\\[\n(\\Delta A)^2(\\Delta B)^2\\ge\n\\left(\\frac12\\langle\\{\\widetilde A,\\widetilde B\\}\\rangle\\right)^2+\n\\left|\\frac12\\langle[A,B]\\rangle\\right|^2,\n\\]\nwhere \\(\\widetilde A=A-\\langle A\\rangle\\) and \\(\\widetilde B=B-\\langle B\\rangle\\) [4](evidence:e12). Robertson keeps only the second term, so Schrödinger's relation is stronger when the symmetric covariance is nonzero. For the highest-weight state used here, the transverse symmetric covariance vanishes, allowing Robertson's bound itself to be saturated."
+      },
+      "assessment": "conditional",
+      "limits": [],
+      "kind": "interpretation",
+      "segment_ids": [
+        "s-b9-9"
+      ]
+    },
+    {
+      "id": "c21",
+      "evidence_ids": [
+        "e5",
+        "e6"
+      ],
+      "explanation": {
+        "zh": "这条作者脚注包含两种不同来源：一篇可定位的Science论文，以及无法由公开文本复现的私人交谈。论文书目信息可由DOI 10.1126/science.69.1796.573锁定；已得摘要表明Condon确从海森堡的位置—动量测量限制出发 [3](evidence:e5)。但Robertson所说“非共轭变量一般不能沿用同型关系”的具体论证可能同时来自论文和交谈，现有材料不足以把每一步拆分归属。",
+        "en": "This author note combines two different sources: a locatable Science article and private conversations that cannot be reconstructed from the public record. The article is fixed by DOI 10.1126/science.69.1796.573, and its accessible abstract confirms that Condon began from Heisenberg's position–momentum measurement restriction [3](evidence:e5). Robertson's more specific report about nonconjugate variables may draw on both the paper and conversations; the available material does not permit a sentence-by-sentence allocation between them."
+      },
+      "assessment": "open",
+      "limits": [],
+      "kind": "interpretation",
+      "segment_ids": [
+        "s-b3-1"
+      ]
+    },
+    {
+      "id": "c22",
+      "evidence_ids": [
+        "e2",
+        "e3",
+        "e4"
+      ],
+      "explanation": {
+        "zh": "Weyl的相关路线已经实际读到：正文把位置与动量的标准差写成二阶矩并陈述 \\(\\Delta p\\Delta x\\ge\\hbar/2\\) [2](evidence:e3)，附录把积分型Schwarz不等式用于 \\(x\\psi\\) 与 \\(d\\psi/dx\\)，再通过分部积分产生常数项 [2](evidence:e4)；Schwarz不等式本身来自书前部的一般向量不等式 [2](evidence:e2)。本次取得的是Robertson翻译的1931年修订版英译本，印刷页码为77与393–394，和Robertson脚注引用的1928年德文初版66、272页不同，但论证内容对应。",
+        "en": "The route cited from Weyl was read directly. The main text expresses position and momentum spreads as second moments and states \\(\\Delta p\\Delta x\\ge\\hbar/2\\) [2](evidence:e3). The appendix applies the integral Schwarz inequality to \\(x\\psi\\) and \\(d\\psi/dx\\), then obtains the constant term by integration by parts [2](evidence:e4); the Schwarz inequality itself comes from the book's earlier vector inequality [2](evidence:e2). The accessible copy is Robertson's English translation of the revised 1931 edition, where the relevant printed pages are 77 and 393–394 rather than pp. 66 and 272 in the 1928 first German edition cited by Robertson, but the argument corresponds."
+      },
+      "assessment": "supported",
+      "limits": [],
+      "kind": "interpretation",
+      "segment_ids": [
+        "s-b7-1",
+        "s-b8-1"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "e1",
+      "source_id": "source-6530e4c2-16a5-4603-90ca-e9730cc05803",
+      "locator": "§1. The Concepts: Position, Path, Velocity, Energy; paragraph 12",
+      "quote": "That this relation (1) stands in direct mathematical connection with the commutation relation pq − qp = h/2πi will be shown later.10 Here let it be noted that equation (1) is the precise expression for the facts which one earlier sought to describe by dividing phase space into cells of size h.",
+      "role": "source evidence",
+      "relation": "supports the attached interpretation",
+      "finding": {
+        "en": "Heisenberg explicitly connects the position–momentum relation with the canonical commutation relation, while presenting the relation as the quantitative expression of the phase-space-cell idea.",
+        "zh": "海森堡明确把位置—动量关系与正则对易关系联系起来，并把该关系说成相空间大小为 h 的单元观念的精确定量表达。"
+      },
+      "method": {
+        "en": "Read the relevant paragraph in the complete English translation of Heisenberg's 1927 paper.",
+        "zh": "阅读海森堡1927年论文完整英译本中的相关段落。"
+      },
+      "depends_on": [],
+      "terminal": {
+        "kind": "source-observation",
+        "reason": {
+          "en": "This paragraph states the historical and mathematical connection used here; Robertson supplies the later operator proof.",
+          "zh": "该段已给出这里所需的历史与数学联系；后来的算符证明由Robertson提供。"
+        }
+      }
+    },
+    {
+      "id": "e2",
+      "source_id": "source-3a554152-bf93-4e23-b5ac-77db5b7ec154",
+      "locator": "Schwarz inequality (Chapter I, printed p. 30 in the English edition); paragraph 1",
+      "quote": "It follows from the well-known Schwarz inequality\n\\[\n|a_1b_1+a_2b_2+\\cdots+a_nb_n|^2\n\\leq (|a_1|^2+\\cdots+|a_n|^2)(|b_1|^2+\\cdots+|b_n|^2).\n\\]",
+      "role": "source evidence",
+      "relation": "supports the attached interpretation",
+      "finding": {
+        "en": "Weyl states the finite-dimensional Schwarz inequality in the form Robertson adapts to pairs of functions.",
+        "zh": "Weyl以Robertson后来推广到函数对的形式陈述有限维Schwarz不等式。"
+      },
+      "method": {
+        "en": "Read Weyl's Chapter I statement in the complete-edition OCR and checked the saved excerpt.",
+        "zh": "阅读Weyl全书OCR中第一章的陈述并核对所存节选。"
+      },
+      "depends_on": [],
+      "terminal": {
+        "kind": "source-observation",
+        "reason": {
+          "en": "The inequality is proved algebraically at this point; no experimental input is involved.",
+          "zh": "此处是不等式的代数结果，不涉及实验输入。"
+        }
+      }
+    },
+    {
+      "id": "e3",
+      "source_id": "source-3a554152-bf93-4e23-b5ac-77db5b7ec154",
+      "locator": "Coordinate and momentum uncertainties (printed pp. 76–77 in the English edition); paragraph 1",
+      "quote": "We have already seen, toward the beginning of this chapter, that a coordinate \\(x\\) and its associated momentum \\(p\\) stand in a peculiar relationship to one another: the precise determination of either one of these quantities precludes the precise determination of the other. In the state represented by the wave function \\(\\psi(x)\\), the mean values \\(x_0=\\langle x\\rangle\\) and \\(p_0=\\langle p\\rangle\\) are given by the corresponding expectation-value integrals. No loss of generality is incurred by taking these mean values as zero. The mean values \\((\\Delta x)^2,(\\Delta p)^2\\) are then given by the second-moment integrals. From these expressions the general inequality\n\\[\n\\Delta p\\,\\Delta x\\geq \\frac{1}{2}\\hbar\n\\]\ncan readily be obtained (I am indebted to W. Pauli for this remark); the less the uncertainty in \\(x\\), the greater the uncertainty in \\(p\\), and conversely. [Weyl refers here to Appendix 1.]",
+      "role": "source evidence",
+      "relation": "supports the attached interpretation",
+      "finding": {
+        "en": "Weyl gives the precise standard-deviation bound for position and momentum and attributes the observation to Pauli.",
+        "zh": "Weyl给出位置与动量标准差的精确下界，并把这一提示归于Pauli。"
+      },
+      "method": {
+        "en": "Read the uncertainty discussion on printed pp. 76–77 of the complete English edition OCR.",
+        "zh": "阅读完整英译本印刷页76–77的不确定性讨论。"
+      },
+      "depends_on": [
+        {
+          "evidence_id": "e4",
+          "relation": "depends on",
+          "label": {
+            "en": "Supporting evidence",
+            "zh": "依据"
+          }
+        }
+      ]
+    },
+    {
+      "id": "e4",
+      "source_id": "source-3a554152-bf93-4e23-b5ac-77db5b7ec154",
+      "locator": "Appendix 1: Proof of an Inequality (printed pp. 393–394 in the English edition); paragraph 1",
+      "quote": "In order to prove the inequality stated on page 77 we must show that any continuous and differentiable function \\(\\psi\\), which is defined for all values of the real variable \\(x\\), satisfies the corresponding product bound, provided, of course, that the integrals involved actually exist. The Schwarz inequality employed in Chapter I becomes, on replacing the sums by integrals, an integral inequality. Applying this inequality to the functions built from \\(x\\psi\\) and \\(d\\psi/dx\\), and transforming the cross integral by partial integration over the range \\(-\\infty,+\\infty\\), we obtain the desired relation provided the boundary term \\(x\\bar\\psi\\psi\\) approaches zero as \\(x\\to\\pm\\infty\\). Weyl then proves that this boundary behavior follows from convergence of the two second-moment integrals.",
+      "role": "source evidence",
+      "relation": "supports the attached interpretation",
+      "finding": {
+        "en": "Weyl's proof applies the integral Schwarz inequality to xψ and ψ′, integrates the cross term by parts, and states the boundary and moment-existence conditions.",
+        "zh": "Weyl的证明把积分型Schwarz不等式用于xψ与ψ′，对交叉项分部积分，并明确边界项和二阶矩存在条件。"
+      },
+      "method": {
+        "en": "Read Appendix 1, printed pp. 393–394, in the complete-edition OCR and checked the saved excerpt.",
+        "zh": "阅读完整版本OCR中的附录1印刷页393–394并核对所存节选。"
+      },
+      "depends_on": [
+        {
+          "evidence_id": "e2",
+          "relation": "depends on",
+          "label": {
+            "en": "Supporting evidence",
+            "zh": "依据"
+          }
+        }
+      ]
+    },
+    {
+      "id": "e5",
+      "source_id": "source-2e970fe5-b2a2-49c1-aa34-155f601512a6",
+      "locator": "E. U. Condon, “Remarks on Uncertainty Principles”; paragraph 2",
+      "quote": "OpenAlex abstract: Since the publication of Heisenberg’s paper on the “anschaulichen Inhalt” of quantum mechanics, discussions of the fundamental limitations on the accuracy of physical measurements have been much in the foreground. According to Heisenberg, quantum mechanics implies that it is impossible to measure simultaneous values of a coordinate and its conjugate momentum with unlimited precision. If \\(\\Delta p\\) is the estimated error or uncertainty in momentum and \\(\\Delta q\\) that in the associated coordinate, the relation is \\(\\Delta p\\Delta q>h/(2\\pi)\\); Condon says this had come to be known generally as Heisenberg’s uncertainty relation.",
+      "role": "source evidence",
+      "relation": "supports the attached interpretation",
+      "finding": {
+        "en": "The available abstract records Condon's starting point: the position–momentum error product and the measurement-language formulation inherited from Heisenberg.",
+        "zh": "现有摘要记录了Condon的出发点：位置—动量误差乘积以及继承自Heisenberg的测量语言表述。"
+      },
+      "method": {
+        "en": "Read the indexed OpenAlex abstract and cross-checked DOI, volume, issue and pages against PubMed metadata.",
+        "zh": "阅读OpenAlex收录摘要，并以PubMed元数据交叉核对DOI、卷期和页码。"
+      },
+      "depends_on": [],
+      "terminal": {
+        "kind": "source-observation",
+        "reason": {
+          "en": "Only the abstract was accessible; Condon's nonconjugate-variable examples and angular-momentum argument remain outside the saved text.",
+          "zh": "仅取得摘要；Condon关于非共轭变量的例子及角动量论证不在已存文本中。"
+        }
+      }
+    },
+    {
+      "id": "e6",
+      "source_id": "source-main",
+      "locator": "The Uncertainty Principle; paragraph 1",
+      "quote": "The uncertainty principle is one of the most characteristic and important consequences of the new quantum mechanics. This principle, as formulated by Heisenberg for two conjugate quantum-mechanical variables, states that the accuracy with which two such variables can be measured simultaneously is subject to the restriction that the product of the uncertainties in the two measurements is at least of order \\(h\\) (Planck’s constant). Condon* has remarked that an uncertainty relation of this type can not hold in the general case where the two variables under consideration are not conjugate, and has stressed the desirability of obtaining a general formulation of the principle. It is the purpose of the present letter to give such a general formulation, and to apply it in particular to the case of angular momentum.",
+      "role": "source evidence",
+      "relation": "supports the attached interpretation",
+      "finding": {
+        "en": "Robertson identifies the canonical-variable limitation, Condon's objection to a universal order-h bound, and the aim of deriving a commutator-dependent formulation.",
+        "zh": "Robertson界定正则变量的限制、Condon对普遍order-h下界的反对，以及导出依赖对易子的普遍形式这一目标。"
+      },
+      "method": {
+        "en": "Read and checked the corrected transcription against the original Physical Review page image.",
+        "zh": "阅读校正转录，并与《物理评论》原刊页图逐式核对。"
+      },
+      "depends_on": [
+        {
+          "evidence_id": "e1",
+          "relation": "depends on",
+          "label": {
+            "en": "Supporting evidence",
+            "zh": "依据"
+          }
+        },
+        {
+          "evidence_id": "e5",
+          "relation": "depends on",
+          "label": {
+            "en": "Supporting evidence",
+            "zh": "依据"
+          }
+        }
+      ]
+    },
+    {
+      "id": "e7",
+      "source_id": "source-main",
+      "locator": "The Uncertainty Principle; paragraph 3",
+      "quote": "We define the “mean value” \\(A_0\\) of an (Hermitean) operator \\(A\\) in a system whose state is described by the (normal) function \\(\\psi\\) as\n\\[\nA_0=\\int \\bar\\psi A\\psi\\,d\\tau\n\\]\nwhere the integral is extended over the entire coordinate space. The Hermitean character of \\(A\\) (i.e.\n\\[\n\\int \\bar\\phi A\\psi\\,d\\tau=\\int \\psi\\,\\overline{A\\phi}\\,d\\tau\n\\]\nfor arbitrary \\(\\phi,\\psi\\)) insures the reality of \\(A_0\\). The “uncertainty” \\(\\Delta A\\) in the value of \\(A\\) is then defined, in accordance with statistical usage, as the root mean square of the deviation of \\(A\\) from this mean, i.e.\n\\[\n(\\Delta A)^2=\\int \\bar\\psi(A-A_0)^2\\psi\\,d\\tau.\n\\]",
+      "role": "source evidence",
+      "relation": "supports the attached interpretation",
+      "finding": {
+        "en": "Robertson defines expectation value, Hermitian symmetry, reality of the expectation, and RMS uncertainty for a normalized wave function.",
+        "zh": "Robertson定义期望值、厄米对称、期望值的实数性及归一化波函数下的均方根不确定度。"
+      },
+      "method": {
+        "en": "Read and checked the corrected transcription against the original Physical Review page image.",
+        "zh": "阅读校正转录，并与《物理评论》原刊页图逐式核对。"
+      },
+      "depends_on": [],
+      "terminal": {
+        "kind": "source-observation",
+        "reason": {
+          "en": "This is Robertson's own statement or derivation; listed dependencies identify the external results he invokes.",
+          "zh": "这是Robertson本人陈述或推导；所列依赖标识其实际借用的外部结果。"
+        }
+      }
+    },
+    {
+      "id": "e8",
+      "source_id": "source-main",
+      "locator": "The Uncertainty Principle; paragraph 4",
+      "quote": "The uncertainty principle for two such variables \\(A,B\\), whose commutator \\(AB-BA=hC/2\\pi i\\), is expressed by\n\\[\n\\Delta A\\cdot\\Delta B\\geq \\frac{h|C_0|}{4\\pi},\n\\]\ni.e. the product of the uncertainties in \\(A,B\\) is not less than half the absolute value of the mean of their commutator.",
+      "role": "source evidence",
+      "relation": "supports the attached interpretation",
+      "finding": {
+        "en": "Robertson states the general commutator uncertainty relation ΔAΔB ≥ h|C0|/(4π).",
+        "zh": "Robertson陈述一般对易子不确定关系ΔAΔB ≥ h|C0|/(4π)。"
+      },
+      "method": {
+        "en": "Read and checked the corrected transcription against the original Physical Review page image.",
+        "zh": "阅读校正转录，并与《物理评论》原刊页图逐式核对。"
+      },
+      "depends_on": [
+        {
+          "evidence_id": "e9",
+          "relation": "depends on",
+          "label": {
+            "en": "Supporting evidence",
+            "zh": "依据"
+          }
+        },
+        {
+          "evidence_id": "e1",
+          "relation": "depends on",
+          "label": {
+            "en": "Supporting evidence",
+            "zh": "依据"
+          }
+        }
+      ]
+    },
+    {
+      "id": "e9",
+      "source_id": "source-main",
+      "locator": "The Uncertainty Principle; paragraph 5",
+      "quote": "We here confine ourselves to sketching the proof of this principle for a one-particle system and for quantum mechanical variables \\(A(q,p), B(q,p)\\) which are linear in the momenta \\((p_x,p_y,p_z)\\).¹ (The proof for the general case in which the operators can be expanded in powers of the momenta can be made along exactly the same lines.) Writing\n\\[\nA=a+a_xp_x+a_yp_y+a_zp_z,\n\\]\nwhere \\(p_x=(h/2\\pi i)\\partial/\\partial x\\), etc. and the \\(a\\)’s are functions of position, the Hermitean character of \\(A\\) requires that these functions be real and that \\(\\operatorname{div}(a_x,a_y,a_z)=0\\). The expression for \\((\\Delta A)^2\\) may be written, on integrating once by parts, using the fact that \\(\\operatorname{div}(a)=0\\) and discarding the resulting surface integral, in the form\n\\[\n(\\Delta A)^2=\\int |(A-A_0)\\psi|^2\\,d\\tau.\n\\]\nWe are now in a position to apply the Schwarzian inequality²\n\\[\n\\left[\\int(f_1\\bar f_1+f_2\\bar f_2)d\\tau\\right]\n\\left[\\int(g_1\\bar g_1+g_2\\bar g_2)d\\tau\\right]\n\\geq \\left|\\int(f_1\\bar g_1+f_2\\bar g_2)d\\tau\\right|^2.\n\\]\nTaking\n\\[\nf_1=(A-A_0)\\psi=\\bar f_2,\\qquad g_1=(B-B_0)\\psi=-\\bar g_2\n\\]\nand reducing the integral on the right hand side by integration by parts we find\n\\[\n\\Delta A\\cdot\\Delta B\\geq \\frac12\\left|\\int\\bar\\psi(AB-BA)\\psi\\,d\\tau\\right|,\n\\]\nthe required result.",
+      "role": "source evidence",
+      "relation": "supports the attached interpretation",
+      "finding": {
+        "en": "Robertson derives the relation for first-order momentum operators using Hermiticity, integration by parts, and a two-component Schwarz inequality.",
+        "zh": "Robertson对动量一阶算符利用厄米性、分部积分及二分量Schwarz不等式导出该关系。"
+      },
+      "method": {
+        "en": "Read and checked the corrected transcription against the original Physical Review page image.",
+        "zh": "阅读校正转录，并与《物理评论》原刊页图逐式核对。"
+      },
+      "depends_on": [
+        {
+          "evidence_id": "e2",
+          "relation": "depends on",
+          "label": {
+            "en": "Supporting evidence",
+            "zh": "依据"
+          }
+        },
+        {
+          "evidence_id": "e4",
+          "relation": "depends on",
+          "label": {
+            "en": "Supporting evidence",
+            "zh": "依据"
+          }
+        }
+      ]
+    },
+    {
+      "id": "e10",
+      "source_id": "source-main",
+      "locator": "The Uncertainty Principle; paragraph 8",
+      "quote": "We obviously obtain Heisenberg’s result if the two variables are conjugate, for then \\(C\\), and consequently \\(C_0\\), are \\(\\pm1\\). As a further illustration of the principle, we apply it to the case of angular momentum. Here we have\n\\[\nM_x=yp_z-zp_y,\\qquad M_xM_y-M_yM_x=-\\frac{hM_z}{2\\pi i},\n\\]\nso the product of the uncertainties in two of the components of angular momentum is not less than \\(h/4\\pi\\) times the mean value of the third component in the state under consideration. Consider in particular the state, treated by Condon, defined by\n\\[\n\\psi=f(r)e^{im\\phi}P_l^m(\\cos\\theta)\n\\]\nwhere the pole of the spherical coordinates lies on the \\(z\\)-axis. Then \\(M_z,M^2(=M_x^2+M_y^2+M_z^2)\\) have the definite values\n\\[\nM_z=M_{z0}=\\frac{mh}{2\\pi},\\qquad M^2=l(l+1)\\left(\\frac{h}{2\\pi}\\right)^2,\n\\]\nthe mean values of \\(M_x,M_y\\) are zero and the uncertainties are given by\n\\[\n(\\Delta M_x)^2=(\\Delta M_y)^2=\\frac12[l(l+1)-m^2]\\left(\\frac{h}{2\\pi}\\right)^2,\\qquad \\Delta M_z=0.\n\\]\nNow from the uncertainty principle for \\(M_x,M_y\\) we find\n\\[\nl(l+1)\\geq m(m+1),\n\\]\nwhich is in fact the case. This example shows that for \\(m=l\\) the equality holds; the inequality is consequently the most restrictive one that can be deduced for angular momenta, for we have here a case in which the ultimate limit has (in principle) been reached.",
+      "role": "source evidence",
+      "relation": "supports the attached interpretation",
+      "finding": {
+        "en": "Robertson specializes the relation to angular momentum and shows equality for the maximal-m state m=l.",
+        "zh": "Robertson把关系用于角动量并证明最大m态m=l达到等号。"
+      },
+      "method": {
+        "en": "Read and checked the corrected transcription against the original Physical Review page image, then independently substituted the angular-momentum moments into the bound.",
+        "zh": "阅读校正转录并与原刊页图核对，再独立把角动量矩代入下界。"
+      },
+      "depends_on": [
+        {
+          "evidence_id": "e8",
+          "relation": "depends on",
+          "label": {
+            "en": "Supporting evidence",
+            "zh": "依据"
+          }
+        },
+        {
+          "evidence_id": "e5",
+          "relation": "depends on",
+          "label": {
+            "en": "Supporting evidence",
+            "zh": "依据"
+          }
+        }
+      ]
+    },
+    {
+      "id": "e11",
+      "source_id": "source-6d04890c-8ad6-481b-abf7-0d6dd83b4b9c",
+      "locator": "Abstract; paragraph 15; References; entry 1",
+      "quote": "§1. Recently E. U. Condon and H. P. Robertson [1] took into consideration the generalization of the fundamental principle of the quantum mechanics - that of the uncertainty - over an arbitrary canonical non-conjugate couple of physical variables. Trying to reach the same, I arrived at a slightly wider generalization than the Robertson’s one, which is, in fact stronger than the original Heisenberg inequality.\n\n[1] E. U. Condon, Science, 31. Mai (1929); H. P. Robertson, Phys. Rev. 34 (1929) 163. Mr. A. Sommerfeld was so kind to point out to me these two notes, when I told him about the following considerations.",
+      "role": "source evidence",
+      "relation": "supports the attached interpretation",
+      "finding": {
+        "en": "Schrödinger explicitly identifies Condon and Robertson as the immediate predecessors and states that his result is a slightly wider, stronger generalization.",
+        "zh": "Schrödinger明确把Condon与Robertson列为直接前作，并说明自己的结果是稍宽且更强的一般化。"
+      },
+      "method": {
+        "en": "Read §1 and original reference [1] in the complete English translation of Schrödinger's 1930 paper.",
+        "zh": "阅读Schrödinger 1930论文完整英译本的§1及原始参考文献[1]。"
+      },
+      "depends_on": [
+        {
+          "evidence_id": "e8",
+          "relation": "depends on",
+          "label": {
+            "en": "Supporting evidence",
+            "zh": "依据"
+          }
+        }
+      ]
+    },
+    {
+      "id": "e12",
+      "source_id": "source-6d04890c-8ad6-481b-abf7-0d6dd83b4b9c",
+      "locator": "Abstract; paragraph 42; Abstract; paragraph 43; Abstract; paragraph 44; Abstract; paragraph 45; Abstract; paragraph 46; Abstract; paragraph 47; Abstract; paragraph 48; Abstract; paragraph 49",
+      "quote": "This is already the inequality that we need to proof, but only in the special case when \\(\\overline{A}\\) and \\(\\overline{B}\\) vanish. In order to arrive at the general case, one should apply (8) and instead of the operators \\(A\\) and \\(B\\) rather use the following\n\n| \\[A-\\alpha{\\bf 1}\\quad{\\rm{and}}\\quad B-\\beta{\\bf 1}.\\] |\n\nFirst of all \\(\\alpha\\) and \\(\\beta\\) must be arbitrary real constants, \\(\\alpha{\\bf 1}\\) is the (identity)† operator multiplied by \\(\\alpha\\). The resulting inequality is therefore valid: 1. for an arbitrary \\(\\Psi\\), 2. for every real pair of constants \\(\\alpha,\\beta\\). Therefore, there is no limitation on the \\(\\Psi\\)-function to influence the choice of the pair of constants and especially to set\n\n| \\[\\alpha=\\overline{A},\\quad\\beta=\\overline{B}.\\] |\n\nFinally, we end up with:\n\n| \\[(\\Delta A)^{2}(\\Delta B)^{2}\\geq\\left({\\overline{AB+BA}\\over 2}-\\overline{A}\\,\\overline{B}\\right)^{2}+\\left|\\overline{AB-BA}\\over 2\\right|^{2}.\\] |  | (9)\n\nThis is the final form. The first from the two addends on the right hand side is a new one (to the best of my knowledge). (Without that term the inequality stands as the one of H. P. Robertson.) So, the inequality links together three quantities: 1. the product of the mean deviations squared, 2. the absolute value squared of half of the mean value of the commutator, 3. a quantity which could be defined as a square of the mean deviations-product (the covariance)† in the condition that non-commutability is taken into account, i.e. the mean deviations-product must be define as the arithmetic mean of\n\n| \\[\\overline{(A-\\overline{A})(B-\\overline{B})}\\quad{\\rm and}\\quad\\overline{(B-\\overline{B})(A-\\overline{A})}\\] |  | (10)",
+      "role": "source evidence",
+      "relation": "supports the attached interpretation",
+      "finding": {
+        "en": "Schrödinger strengthens Robertson by retaining the squared symmetrized covariance term in addition to the squared commutator term.",
+        "zh": "Schrödinger在对易子项平方之外保留对称协方差项平方，从而加强Robertson关系。"
+      },
+      "method": {
+        "en": "Read the derivation around equations (8)–(10) in the complete English translation and checked the displayed formula.",
+        "zh": "阅读完整英译本公式(8)–(10)附近的推导并核对显示公式。"
+      },
+      "depends_on": [
+        {
+          "evidence_id": "e8",
+          "relation": "depends on",
+          "label": {
+            "en": "Supporting evidence",
+            "zh": "依据"
+          }
+        },
+        {
+          "evidence_id": "e2",
+          "relation": "depends on",
+          "label": {
+            "en": "Supporting evidence",
+            "zh": "依据"
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "source-main",
+      "title": "The Uncertainty Principle",
+      "authors": "H. P. Robertson",
+      "year": 1929,
+      "url": "https://doi.org/10.1103/PhysRev.34.163",
+      "type": "article text",
+      "access": "provided_full_text",
+      "retrieved_at": "2026-09-14",
+      "note": {
+        "en": "Corrected transcription from original journal pages 163–164, published 1 July 1929; received 18 June 1929.",
+        "zh": "依据1929年7月1日原刊第163–164页校正转录；1929年6月18日收稿。"
+      },
+      "local_path": "sources/robertson-1929-uncertainty-corrected-001ae606-8aa0-4c80-b37e-077d458dbd66-original.txt"
+    },
+    {
+      "id": "source-6530e4c2-16a5-4603-90ca-e9730cc05803",
+      "title": "On the Intuitive Content of Quantum Theoretical Kinematics and Mechanics",
+      "authors": "Werner Heisenberg",
+      "year": 1927,
+      "url": "https://chem.academy/articles/heisenberg-1927.html",
+      "type": "article text",
+      "access": "full_text",
+      "retrieved_at": "2026-09-14",
+      "note": {
+        "en": "Saved article full text",
+        "zh": "已取得的论文全文"
+      },
+      "local_path": "sources/robertson-1929-uncertainty-corrected-001ae606-8aa0-4c80-b37e-077d458dbd66-source-6530e4c2-16a5-4603-90ca-e9730cc05803.txt"
+    },
+    {
+      "id": "source-3a554152-bf93-4e23-b5ac-77db5b7ec154",
+      "title": "The Theory of Groups and Quantum Mechanics",
+      "authors": "Hermann Weyl",
+      "year": 1931,
+      "url": "https://archive.org/details/ost-chemistry-quantumtheoryofa029235mbp",
+      "type": "article text",
+      "access": "provided_excerpt",
+      "retrieved_at": "2026-09-14",
+      "note": {
+        "en": "Saved source excerpt",
+        "zh": "已取得的来源片段"
+      },
+      "local_path": "sources/robertson-1929-uncertainty-corrected-001ae606-8aa0-4c80-b37e-077d458dbd66-source-3a554152-bf93-4e23-b5ac-77db5b7ec154.txt"
+    },
+    {
+      "id": "source-2e970fe5-b2a2-49c1-aa34-155f601512a6",
+      "title": "Remarks on Uncertainty Principles",
+      "authors": "E. U. Condon",
+      "year": 1929,
+      "url": "https://doi.org/10.1126/science.69.1796.573",
+      "doi": "10.1126/science.69.1796.573",
+      "type": "article abstract",
+      "access": "abstract_only",
+      "retrieved_at": "2026-09-14",
+      "note": {
+        "en": "Saved article abstract",
+        "zh": "已取得的论文摘要"
+      },
+      "local_path": "sources/robertson-1929-uncertainty-corrected-001ae606-8aa0-4c80-b37e-077d458dbd66-source-2e970fe5-b2a2-49c1-aa34-155f601512a6.txt"
+    },
+    {
+      "id": "source-6d04890c-8ad6-481b-abf7-0d6dd83b4b9c",
+      "title": "About Heisenberg Uncertainty Relation",
+      "authors": "Erwin Schrödinger; A. Angelow; M.-C. Batoni",
+      "year": 1930,
+      "url": "https://arxiv.org/html/quant-ph/9903100v3",
+      "type": "article text",
+      "access": "full_text",
+      "retrieved_at": "2026-09-14",
+      "note": {
+        "en": "Saved article full text",
+        "zh": "已取得的论文全文"
+      },
+      "local_path": "sources/robertson-1929-uncertainty-corrected-1628e690-b324-4c56-a012-4ffdd698add0-source-6d04890c-8ad6-481b-abf7-0d6dd83b4b9c.txt"
+    }
+  ],
+  "figures": []
+}

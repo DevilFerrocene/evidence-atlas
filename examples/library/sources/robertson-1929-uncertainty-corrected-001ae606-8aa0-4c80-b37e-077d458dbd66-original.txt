@@ -1,0 +1,79 @@
+The Uncertainty Principle
+
+The uncertainty principle is one of the most characteristic and important consequences of the new quantum mechanics. This principle, as formulated by Heisenberg for two conjugate quantum-mechanical variables, states that the accuracy with which two such variables can be measured simultaneously is subject to the restriction that the product of the uncertainties in the two measurements is at least of order \(h\) (Planck’s constant). Condon* has remarked that an uncertainty relation of this type can not hold in the general case where the two variables under consideration are not conjugate, and has stressed the desirability of obtaining a general formulation of the principle. It is the purpose of the present letter to give such a general formulation, and to apply it in particular to the case of angular momentum.
+
+* E. U. Condon “Remarks on Uncertainty Principles” Science LXIX, p. 573 (May 31, 1929), and in conversations with the writer on this topic.
+
+We define the “mean value” \(A_0\) of an (Hermitean) operator \(A\) in a system whose state is described by the (normal) function \(\psi\) as
+\[
+A_0=\int \bar\psi A\psi\,d\tau
+\]
+where the integral is extended over the entire coordinate space. The Hermitean character of \(A\) (i.e.
+\[
+\int \bar\phi A\psi\,d\tau=\int \psi\,\overline{A\phi}\,d\tau
+\]
+for arbitrary \(\phi,\psi\)) insures the reality of \(A_0\). The “uncertainty” \(\Delta A\) in the value of \(A\) is then defined, in accordance with statistical usage, as the root mean square of the deviation of \(A\) from this mean, i.e.
+\[
+(\Delta A)^2=\int \bar\psi(A-A_0)^2\psi\,d\tau.
+\]
+
+The uncertainty principle for two such variables \(A,B\), whose commutator \(AB-BA=hC/2\pi i\), is expressed by
+\[
+\Delta A\cdot\Delta B\geq \frac{h|C_0|}{4\pi},
+\]
+i.e. the product of the uncertainties in \(A,B\) is not less than half the absolute value of the mean of their commutator.
+
+We here confine ourselves to sketching the proof of this principle for a one-particle system and for quantum mechanical variables \(A(q,p), B(q,p)\) which are linear in the momenta \((p_x,p_y,p_z)\).¹ (The proof for the general case in which the operators can be expanded in powers of the momenta can be made along exactly the same lines.) Writing
+\[
+A=a+a_xp_x+a_yp_y+a_zp_z,
+\]
+where \(p_x=(h/2\pi i)\partial/\partial x\), etc. and the \(a\)’s are functions of position, the Hermitean character of \(A\) requires that these functions be real and that \(\operatorname{div}(a_x,a_y,a_z)=0\). The expression for \((\Delta A)^2\) may be written, on integrating once by parts, using the fact that \(\operatorname{div}(a)=0\) and discarding the resulting surface integral, in the form
+\[
+(\Delta A)^2=\int |(A-A_0)\psi|^2\,d\tau.
+\]
+We are now in a position to apply the Schwarzian inequality²
+\[
+\left[\int(f_1\bar f_1+f_2\bar f_2)d\tau\right]
+\left[\int(g_1\bar g_1+g_2\bar g_2)d\tau\right]
+\geq \left|\int(f_1\bar g_1+f_2\bar g_2)d\tau\right|^2.
+\]
+Taking
+\[
+f_1=(A-A_0)\psi=\bar f_2,\qquad g_1=(B-B_0)\psi=-\bar g_2
+\]
+and reducing the integral on the right hand side by integration by parts we find
+\[
+\Delta A\cdot\Delta B\geq \frac12\left|\int\bar\psi(AB-BA)\psi\,d\tau\right|,
+\]
+the required result.
+
+¹ Cf. proof of special case \(A=p,B=q\) in H. Weyl “Gruppentheorie und Quantenmechanik” pp. 66, 272.
+
+² Weyl, l.c. p. 272.
+
+We obviously obtain Heisenberg’s result if the two variables are conjugate, for then \(C\), and consequently \(C_0\), are \(\pm1\). As a further illustration of the principle, we apply it to the case of angular momentum. Here we have
+\[
+M_x=yp_z-zp_y,\qquad M_xM_y-M_yM_x=-\frac{hM_z}{2\pi i},
+\]
+so the product of the uncertainties in two of the components of angular momentum is not less than \(h/4\pi\) times the mean value of the third component in the state under consideration. Consider in particular the state, treated by Condon, defined by
+\[
+\psi=f(r)e^{im\phi}P_l^m(\cos\theta)
+\]
+where the pole of the spherical coordinates lies on the \(z\)-axis. Then \(M_z,M^2(=M_x^2+M_y^2+M_z^2)\) have the definite values
+\[
+M_z=M_{z0}=\frac{mh}{2\pi},\qquad M^2=l(l+1)\left(\frac{h}{2\pi}\right)^2,
+\]
+the mean values of \(M_x,M_y\) are zero and the uncertainties are given by
+\[
+(\Delta M_x)^2=(\Delta M_y)^2=\frac12[l(l+1)-m^2]\left(\frac{h}{2\pi}\right)^2,\qquad \Delta M_z=0.
+\]
+Now from the uncertainty principle for \(M_x,M_y\) we find
+\[
+l(l+1)\geq m(m+1),
+\]
+which is in fact the case. This example shows that for \(m=l\) the equality holds; the inequality is consequently the most restrictive one that can be deduced for angular momenta, for we have here a case in which the ultimate limit has (in principle) been reached.
+
+H. P. ROBERTSON  
+Palmer Physical Laboratory,  
+Princeton, N. J.,  
+June 18, 1929.

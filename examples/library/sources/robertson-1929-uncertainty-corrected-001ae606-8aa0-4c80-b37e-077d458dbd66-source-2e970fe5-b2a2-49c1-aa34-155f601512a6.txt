@@ -1,0 +1,7 @@
+E. U. Condon, “Remarks on Uncertainty Principles”
+
+Bibliographic identity: E. U. Condon, Science 69 (1796), 573–574 (31 May 1929), DOI 10.1126/science.69.1796.573.
+
+OpenAlex abstract: Since the publication of Heisenberg’s paper on the “anschaulichen Inhalt” of quantum mechanics, discussions of the fundamental limitations on the accuracy of physical measurements have been much in the foreground. According to Heisenberg, quantum mechanics implies that it is impossible to measure simultaneous values of a coordinate and its conjugate momentum with unlimited precision. If \(\Delta p\) is the estimated error or uncertainty in momentum and \(\Delta q\) that in the associated coordinate, the relation is \(\Delta p\Delta q>h/(2\pi)\); Condon says this had come to be known generally as Heisenberg’s uncertainty relation.
+
+Access scope: bibliographic record and indexed abstract only. The Science PDF returned HTTP 403, and the Internet Archive issue files were identified but their storage hosts repeatedly failed TLS connections. Robertson's own letter supplies an indirect account that Condon objected to extending a fixed order-\(h\) product bound to arbitrary nonconjugate variables and discussed the angular-momentum state later used by Robertson; the exact argument and examples on Condon's pp. 573–574 remain unavailable here.

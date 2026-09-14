@@ -1,24 +1,45 @@
+import { createLibraryManager } from '/library.js';
 import katex from '/vendor/katex/katex.mjs';
 import renderMathInElement from '/vendor/katex/contrib/auto-render.mjs';
 
 const $ = selector => document.querySelector(selector);
 const mathOptions = { throwOnError: true, trust: false, maxExpand: 500, maxSize: 20, strict: 'ignore' };
+function displayMathWrapper(display) {
+  const parent = display.parentElement;
+  return parent?.childNodes.length === 1 && parent.firstChild === display ? parent : display;
+}
+function trimDisplayMathBoundary(display, direction) {
+  const wrapper = displayMathWrapper(display);
+  const sibling = direction === 'before' ? wrapper.previousSibling : wrapper.nextSibling;
+  if (sibling?.nodeType !== Node.TEXT_NODE) return;
+  sibling.textContent = direction === 'before'
+    ? sibling.textContent.replace(/\s+$/, '')
+    : sibling.textContent.replace(/^\s+/, '');
+}
 function typeset(root) {
-  renderMathInElement(root, {
-    ...mathOptions,
-    delimiters: [
-      { left: '$$', right: '$$', display: true },
-      { left: '\\(', right: '\\)', display: false },
-      { left: '\\[', right: '\\]', display: true }
-    ],
-    ignoredClasses: ['katex', 'katex-display']
-  });
+  try {
+    renderMathInElement(root, {
+      ...mathOptions,
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '\\(', right: '\\)', display: false },
+        { left: '\\[', right: '\\]', display: true }
+      ],
+      ignoredClasses: ['katex', 'katex-display']
+    });
+    for (const display of root.querySelectorAll('.katex-display')) {
+      trimDisplayMathBoundary(display, 'before');
+      trimDisplayMathBoundary(display, 'after');
+    }
+  } catch (error) {
+    console.warn('Could not typeset one or more explicit math expressions.', error);
+  }
 }
 const ui = {
   zh: {
     library: '本地文献库', choose: '选择文献', outline: '文献导览', read: '论文正文', sources: '参考与追溯来源', claims: '条观点', coverage: '全文逐段核对', sourceCount: '个来源', original: '所用全文 ↗', german: '原刊扫描 ↗', export: '结构化数据 ↓',
     guide: '悬停划线文字查看证据；点击固定详情。', guideTouch: '点按划线文字查看证据。', supported: '有据可循', conditional: '依赖前提', open: '尚待验证', proposal: '实验建议', mixed: '证据不一', unsupported: '支持不足', miscited: '引用有误', outdated: '已过时',
-    details: '观点详情', claim: '观点', pin: '固定', pinned: '已固定', close: '关闭', emptyTitle: '每条观点，都可以往回追。', emptyBody: '把鼠标移到正文划线处，展开结论、证据链与原始来源。点击可固定详情，方便继续阅读。', example: '从核心观点开始 →', assessment: 'AI 整理结论', reasoning: '为什么这样判断', chain: '往回追溯', limits: '适用前提与保留问题', findings: '调查中发现', quantities: '数字与计算', refs: '来源详情', method: '展开依据与方法', terminal: '追溯至此', shared: '此依据已在上方展开', sourceNone: '本例独立整理', depth: '依赖', edition: '版本、翻译与阅读范围', scope: '阅读范围', translation: '版本说明', rights: '全文使用依据', context: '处衔接文字已保留', annotations: '处片段已关联观点', coverageExplain: '覆盖表示正文已逐段标注，结论是否成立请查看各条证据。', updated: '查阅于', footer: '全文与证据均从本地数据读取 · 外部链接通往来源页面', loadError: '文献读取失败', retry: '重新读取', noPapers: '文献库中还没有论文。', sourcesTitle: '原文引用及倒查补充来源', aiNote: '原文与译文范围见版本说明；判断与证据链为 AI 整理。', copyLink: '该观点链接', loading: '正在读取证据…', related: '这段文字包含', viewSource: '打开来源 ↗', localSource: '本地原文 ↓', sectionNote: '导览分段为阅读辅助',
+    details: '观点详情', claim: '观点', pin: '固定', pinned: '已固定', close: '关闭', emptyTitle: '每条观点，都可以往回追。', emptyBody: '把鼠标移到正文划线处，展开结论、证据链与原始来源。点击可固定详情，方便继续阅读。', example: '从核心观点开始 →', assessment: 'AI 整理结论', reasoning: '为什么这样判断', chain: '依据', limits: '需要注意', findings: '调查中发现', quantities: '数字与计算', refs: '来源详情', method: '核查详情', terminal: '追溯至此', shared: '此依据已在上方展开', sourceNone: '本例独立整理', depth: '依赖', edition: '版本、翻译与阅读范围', scope: '阅读范围', translation: '版本说明', rights: '全文使用依据', context: '处衔接文字已保留', annotations: '处片段已关联观点', coverageExplain: '覆盖表示正文已逐段标注，结论是否成立请查看各条证据。', updated: '查阅于', footer: '全文与证据均从本地数据读取 · 外部链接通往来源页面', loadError: '文献读取失败', retry: '重新读取', noPapers: '文献库中还没有论文。', sourcesTitle: '原文引用及倒查补充来源', aiNote: '原文与译文范围见版本说明；判断与证据链为 AI 整理。', copyLink: '链接', loading: '正在读取证据…', related: '这段文字包含', viewSource: '打开来源 ↗', localSource: '本地原文 ↓', sectionNote: '导览分段为阅读辅助',
     full_text: '已查阅全文', abstract_only: '仅查阅摘要', metadata_only: '仅查阅书目信息', unavailable: '全文未取得', original_citation: '原文明确引用', backtrace: '倒查补充', later_test: '后验实验', calculation: '独立计算', assumption: '前提辨析', main_text: '本文论证', later_theory: '后续理论', supports: '支持', qualifies: '限定范围', contradicts: '相抵触', contextRelation: '背景', derives_from: '由此推导', uses: '采用', unverified_dependency: '依赖待验证论断', alternative: '另一路径', measurement: '原始测量', derivation: '可复核推导', postulate: '明确假设', unresolved: '未解决的问题', definition: '定义或约定', historical_proposal: '当时的建议', access_gap: '来源访问缺口', bibliographic: '原始书目',
   },
   en: {
@@ -31,13 +52,14 @@ const ui = {
 let lang = 'zh';
 try { lang = localStorage.getItem('evidence-atlas-language') === 'en' ? 'en' : 'zh'; } catch {}
 let paper, paperList = [], currentClaim = null, currentSegment = null, currentFigure = null, currentFeature = null, figurePath = [], pinned = false, detailRequestId = 0, paperLoadId = 0, loadingPaper = false, hoverTimer, restoringClaimFocus = false;
+const libraryManager = createLibraryManager({ language: () => lang, onSelect: id => loadPaper(id) });
 const detailCache = new Map();
 const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
 const scrollBehavior = () => reducedMotion.matches ? 'auto' : 'smooth';
 const narrowLayout = () => matchMedia('(max-width: 900px)').matches;
 const t = key => ui[lang][key] || key;
-Object.assign(ui.zh, { details: 'AI 解读', reasoning: '推导提要', story: '理解与推导', why: '核心理由', supporting: '查阅证据、计算与补充发现', tertiary: '参考文献与来源详情', provided_excerpt: '已读用户提供摘录', provided_full_text: '已读用户提供全文', guide: '悬停划线文字查看结论；点击固定详情。', guideTouch: '点按划线文字查看结论。', emptyTitle: '结论与依据，一处读清。', emptyBody: '正文划线处直接展示结论和关键理由，需要时展开原始证据与计算。', figure: '图像证据', originalFigure: '查看原图', fullCaption: '完整图注', featureHint: '直接点图进入概览，再点框逐层查看。', readingRegion: '图像助读区域', overview: '整图导览', structures: '结构与子谱', peaks: '逐峰', peakList: '选择峰', choosePeak: '请选择峰', previousPeak: '上一峰', nextPeak: '下一峰', moreReading: '更多解读与依据', editRegions: '调整区域', finishEditing: '完成调整', exportFigureData: '导出助读区域 ↓', tools: '工具', viewFeatureDetail: '查看详细解读', backToImage: '返回上一级', featureDetail: '图像助读', observation: '视觉观察', authorAttribution: '作者归属', audit: '审计判断', reading: '助读', ambiguities: '未解决处', figureEvidence: '关联证据', peak: '峰', shoulder: '肩部或近重叠特征', valley: '谷', region: '区域', marker: '标记', curve: '曲线', structure: '结构式', panel: '子图', spectrum: '谱图' });
-Object.assign(ui.en, { details: 'AI READING', reasoning: 'Derivation outline', story: 'Understanding the argument', why: 'The central reason', supporting: 'Evidence, calculations & additional findings', tertiary: 'References & source details', provided_excerpt: 'User-provided excerpt inspected', provided_full_text: 'User-provided full text inspected', guide: 'Hover over an underline for the conclusion. Click to pin it.', guideTouch: 'Tap an underlined passage for the conclusion.', emptyTitle: 'Conclusions with their evidence.', emptyBody: 'Underlined passages show the conclusion and its key reason. Expand sources and calculations when needed.', figure: 'FIGURE EVIDENCE', originalFigure: 'View original figure', fullCaption: 'Full caption', featureHint: 'Tap the figure for an overview, then follow the regions one level at a time.', readingRegion: 'Figure reading region', overview: 'Overview', structures: 'Structures & traces', peaks: 'Individual peaks', peakList: 'Choose peak', choosePeak: 'Select a peak', previousPeak: 'Previous peak', nextPeak: 'Next peak', moreReading: 'More reading & evidence', editRegions: 'Adjust regions', finishEditing: 'Finish adjusting', exportFigureData: 'Export reading regions ↓', tools: 'Tools', viewFeatureDetail: 'View detailed reading', backToImage: 'Back one level', featureDetail: 'FIGURE READING', observation: 'Visual observation', authorAttribution: 'Author attribution', audit: 'Audit judgment', reading: 'Reading aid', ambiguities: 'Unresolved points', figureEvidence: 'Linked evidence', peak: 'Peak', shoulder: 'Shoulder or near-overlap', valley: 'Valley', region: 'Region', marker: 'Marker', curve: 'Curve', structure: 'Structure', panel: 'Panel', spectrum: 'Spectrum' });
+Object.assign(ui.zh, { details: '解读', reasoning: '推导提要', story: '理解与推导', why: '核心理由', supporting: '查看依据', tertiary: '来源', provided_excerpt: '已读用户提供摘录', provided_full_text: '已读用户提供全文', guide: '悬停划线文字查看结论；点击固定详情。', guideTouch: '点按划线文字查看结论。', emptyTitle: '结论与依据，一处读清。', emptyBody: '正文划线处直接展示结论和关键理由，需要时展开原始证据与计算。', figure: '图像证据', originalFigure: '查看原图', fullCaption: '完整图注', featureHint: '直接点图进入概览，再点框逐层查看。', readingRegion: '图像助读区域', overview: '整图导览', structures: '结构与子谱', peaks: '逐峰', peakList: '选择峰', choosePeak: '请选择峰', previousPeak: '上一峰', nextPeak: '下一峰', moreReading: '更多解读与依据', editRegions: '调整区域', finishEditing: '完成调整', exportFigureData: '导出助读区域 ↓', tools: '工具', viewFeatureDetail: '查看详细解读', backToImage: '返回上一级', featureDetail: '图像助读', observation: '视觉观察', authorAttribution: '作者归属', audit: '审计判断', reading: '助读', ambiguities: '未解决处', figureEvidence: '关联证据', peak: '峰', shoulder: '肩部或近重叠特征', valley: '谷', region: '区域', marker: '标记', curve: '曲线', structure: '结构式', panel: '子图', spectrum: '谱图' });
+Object.assign(ui.en, { details: 'EXPLANATION', reasoning: 'Derivation outline', story: 'Understanding the argument', why: 'The central reason', supporting: 'Evidence, calculations & additional findings', tertiary: 'References & source details', provided_excerpt: 'User-provided excerpt inspected', provided_full_text: 'User-provided full text inspected', guide: 'Hover over an underline for the conclusion. Click to pin it.', guideTouch: 'Tap an underlined passage for the conclusion.', emptyTitle: 'Conclusions with their evidence.', emptyBody: 'Underlined passages show the conclusion and its key reason. Expand sources and calculations when needed.', figure: 'FIGURE EVIDENCE', originalFigure: 'View original figure', fullCaption: 'Full caption', featureHint: 'Tap the figure for an overview, then follow the regions one level at a time.', readingRegion: 'Figure reading region', overview: 'Overview', structures: 'Structures & traces', peaks: 'Individual peaks', peakList: 'Choose peak', choosePeak: 'Select a peak', previousPeak: 'Previous peak', nextPeak: 'Next peak', moreReading: 'More reading & evidence', editRegions: 'Adjust regions', finishEditing: 'Finish adjusting', exportFigureData: 'Export reading regions ↓', tools: 'Tools', viewFeatureDetail: 'View detailed reading', backToImage: 'Back one level', featureDetail: 'FIGURE READING', observation: 'Visual observation', authorAttribution: 'Author attribution', audit: 'Audit judgment', reading: 'Reading aid', ambiguities: 'Unresolved points', figureEvidence: 'Linked evidence', peak: 'Peak', shoulder: 'Shoulder or near-overlap', valley: 'Valley', region: 'Region', marker: 'Marker', curve: 'Curve', structure: 'Structure', panel: 'Panel', spectrum: 'Spectrum' });
 const bi = value => typeof value === 'string' ? value : value?.[lang] || '';
 function el(tag, className, text) {
   const node = document.createElement(tag);
@@ -67,7 +89,7 @@ function syncChrome() {
   document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
   $('#lang-zh').setAttribute('aria-pressed', String(lang === 'zh'));
   $('#lang-en').setAttribute('aria-pressed', String(lang === 'en'));
-  $('#local-label').textContent = t('library');
+  libraryManager.render();
   $('#select-label').textContent = t('choose');
   $('#footer').textContent = t('footer');
   $('#evidence-panel').setAttribute('aria-label', t('details'));
@@ -107,6 +129,19 @@ function isLeadingSectionLabel(text, section, hasBodyText) {
 function isKeywordLine(text) {
   return /^(?:关键词|Keywords)\s*[:：]/i.test(text.trim());
 }
+function articleTable(text) {
+  const wrapper = el('div', 'article-table-wrap'), table = el('table', 'article-table');
+  let rowNumber = 0;
+  for (const line of text.split('\n').filter(line => line.trim())) {
+    if (!line.includes('|')) { wrapper.append(el('p', '', line)); continue; }
+    const cells = line.replace(/^\s*\||\|\s*$/g, '').split('|').map(value => value.trim());
+    if (cells.every(value => /^:?-+:?$/.test(value))) continue;
+    const row = el('tr', '');
+    for (const cell of cells) row.append(el(rowNumber ? 'td' : 'th', '', cell));
+    table.append(row); rowNumber++;
+  }
+  wrapper.append(table); return wrapper;
+}
 function renderPaper() {
   const root = $('#paper'); root.replaceChildren();
   const header = el('header', 'paper-header');
@@ -130,15 +165,16 @@ function renderPaper() {
       const figure = figuresByPlacement.get(`${paragraph.id}/${segment.id}`), rawText = segment[lang];
       if (references) { block.append(el('p', 'reference-entry', cleanReferenceText(rawText))); continue; }
       if (rawText.trim() === '图文摘要' || rawText.trim() === 'Graphical Abstract') continue;
-      if (isLeadingSectionLabel(rawText, section, hasBodyText)) continue;
+      if (!authoredHeading && isLeadingSectionLabel(rawText, section, hasBodyText)) continue;
       if (isKeywordLine(rawText)) { block.append(el('p', 'keyword-line', rawText)); continue; }
-      const isCaptionBeforeFigure = figure && /^(图|Figure)\s*\d+[。．.]/i.test(rawText.trim());
+      const isCaptionBeforeFigure = figure && (paragraph.type === 'caption' || /^(图|Figure)\s*\d+[。．.]/i.test(rawText.trim()));
       if (!isCaptionBeforeFigure) {
         hasBodyText = true;
-        if (i > 0 && lang === 'en') block.append(document.createTextNode(' '));
-        const mark = el('span', segment.claim_ids.length ? `claim-mark ${claimClass(claimMap.get(segment.claim_ids[0]).assessment)}` : 'context-text');
+
+        const mark = el(paragraph.type === 'table' ? 'div' : 'span', segment.claim_ids.length ? `claim-mark ${claimClass(claimMap.get(segment.claim_ids[0]).assessment)}` : 'context-text');
         mark.id = segment.id;
-        if (segment.latex) { try { katex.render(segment.latex, mark, { ...mathOptions, displayMode: paragraph.type === 'equation' }); } catch { mark.textContent = rawText; } } else mark.textContent = rawText;
+        if (paragraph.type === 'table') mark.append(articleTable(rawText));
+        else if (segment.latex) { try { katex.render(segment.latex, mark, { ...mathOptions, displayMode: paragraph.type === 'equation' }); } catch { mark.textContent = rawText; } } else mark.textContent = rawText;
         if (segment.claim_ids.length) {
           mark.tabIndex = 0; mark.role = 'button'; mark.dataset.claims = segment.claim_ids.join(' '); mark.setAttribute('aria-controls', 'evidence-panel'); mark.setAttribute('aria-label', `${rawText} — ${t('details')}`);
           mark.addEventListener('pointerenter', event => { if (event.pointerType !== 'mouse' || pinned || narrowLayout()) return; clearTimeout(hoverTimer); hoverTimer = setTimeout(() => showClaim(segment.claim_ids[0], segment.id), 100); });
@@ -227,11 +263,22 @@ function closeFigureHierarchy(frame) {
 function navigateFigure(figure) { document.getElementById(figure.id)?.scrollIntoView({ block: 'start', behavior: scrollBehavior() }); }
 function renderFigure(figure) {
   const frame = el('figure', 'evidence-figure'); frame.id = figure.id;
-  const heading = el('figcaption', 'figure-head'); heading.append(el('span', 'figure-number', bi(figure.number)), el('span', 'figure-caption', bi(figure.caption)));
+  const heading = el('figcaption', 'figure-head');
+  const caption = bi(figure.caption).replace(/^(?:Figure|Fig\.?|图)\s*\d+\s*[.。．:]?\s*/i, '');
+  heading.append(el('span', 'figure-number', bi(figure.number)), el('span', 'figure-caption', caption));
   const index = paper.figures.findIndex(item => item.id === figure.id), nav = el('div', 'figure-nav');
   if (index > 0) nav.append(button(`← ${bi(paper.figures[index - 1].number)}`, () => navigateFigure(paper.figures[index - 1]), 'figure-step'));
   if (index < paper.figures.length - 1) nav.append(button(`${bi(paper.figures[index + 1].number)} →`, () => navigateFigure(paper.figures[index + 1]), 'figure-step'));
   heading.append(nav); frame.append(heading);
+  if (figure.availability === 'missing') {
+    const notice = el('p', 'figure-unavailable', lang === 'zh' ? '图像暂缺，图注保留。' : 'Image unavailable; caption preserved.');
+    if (figure.source_url) {
+      const link = el('a', '', lang === 'zh' ? '查看来源' : 'View source');
+      link.href = figure.source_url; link.target = '_blank'; link.rel = 'noopener noreferrer';
+      notice.append(' ', link);
+    }
+    frame.append(notice); return frame;
+  }
   const stage = el('div', 'figure-focus'); stage.setAttribute('aria-label', `${bi(figure.number)} · ${t('featureHint')}`); stage.style.backgroundImage = `url("/${figure.original_path}")`;
   const fullCanvas = figure.crop.x === 0 && figure.crop.y === 0 && figure.crop.width === 1 && figure.crop.height === 1; stage.style.backgroundSize = fullCanvas ? '100% auto' : `${100 / figure.crop.width}% auto`; stage.style.backgroundPosition = fullCanvas ? '0 0' : `${(figure.crop.x / (1 - figure.crop.width)) * 100}% ${(figure.crop.y / (1 - figure.crop.height)) * 100}%`; stage.style.aspectRatio = `${figure.crop.width * figure.image_size.width} / ${figure.crop.height * figure.image_size.height}`;
   stage.addEventListener('click', event => { if (event.target === stage) enterFigureRoot(frame, figure); });
@@ -242,7 +289,7 @@ function figureEvidenceLabel(item) {
     'rendered primary visual|shows marked spectral features': { zh: '保留图像中的可见谱形与标记', en: 'Visible spectrum and markers in the preserved figure' },
     'primary textual spectrum description|states region and allocation': { zh: '正文与图注中的谱图说明', en: 'Spectrum description in the text and caption' }
   };
-  return bi(labels[`${item.role}|${item.relation}`]) || `${item.role} · ${item.relation}`;
+  return bi(labels[`${item.role}|${item.relation}`]) || (lang === 'zh' ? '相关原文与证据' : 'Source text and evidence');
 }
 function renderFeatureEvidence(target, feature) {
   const section = el('section', 'detail-section'); section.append(el('h3', '', t('figureEvidence')));
@@ -319,21 +366,32 @@ function syncPinButton() {
   const pin = $('#pin-claim');
   if (!pin) return;
   pin.disabled = false;
-  pin.textContent = t(pinned ? 'pinned' : 'pin');
+  const label = pinned ? (lang === 'zh' ? '取消固定解读' : 'Unpin this explanation') : (lang === 'zh' ? '固定解读' : 'Pin this explanation');
+  pin.setAttribute('aria-label', label);
+  pin.title = label;
   pin.classList.toggle('pinned', pinned);
   pin.setAttribute('aria-pressed', String(pinned));
+}
+function panelIconButton(label, path, onClick) {
+  const control = button('', onClick, 'panel-icon-button');
+  control.setAttribute('aria-label', label); control.title = label;
+  const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+  svg.setAttribute('viewBox', '0 0 24 24'); svg.setAttribute('aria-hidden', 'true'); svg.setAttribute('focusable', 'false');
+  const shape = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+  shape.setAttribute('d', path); svg.append(shape); control.append(svg);
+  return control;
 }
 function renderDetail(detail) {
   const { claim, evidence, sources } = detail;
   const panel = $('#evidence-panel'); panel.replaceChildren();
   panel.dataset.view = JSON.stringify([paper.paper.id, claim.id, currentSegment, lang]);
   panel.removeAttribute('aria-busy');
-  const head = el('div', 'panel-head'); head.append(el('div', 'panel-eyebrow', t('details')));
+  const head = el('div', 'panel-head claim-panel-head'); head.append(el('div', 'panel-eyebrow', lang === 'zh' ? '解读' : 'Explanation'));
   const controls = el('div', 'panel-controls');
-  const pin = button(t(pinned ? 'pinned' : 'pin'), () => { pinned = !pinned; syncPinButton(); }, pinned ? 'pinned' : '');
+  const pin = panelIconButton(t('pin'), 'M8 3h8m-7 0v6l-3 4v2h12v-2l-3-4V3M12 15v6', () => { pinned = !pinned; syncPinButton(); });
   pin.id = 'pin-claim';
-  pin.setAttribute('aria-pressed', String(pinned));
-  controls.append(pin, button(t('close'), closePanel)); head.append(controls); panel.append(head);
+  controls.append(pin, panelIconButton(t('close'), 'M6 6l12 12M6 18L18 6', closePanel)); head.append(controls); panel.append(head);
+  syncPinButton();
   const body = el('div', 'panel-body is-entering');
   const segment = paper.paragraphs.flatMap(p => p.segments).find(s => s.id === currentSegment);
   if (segment?.claim_ids.length > 1) {
@@ -345,77 +403,109 @@ function renderDetail(detail) {
     }
     body.append(tabs);
   }
-  const label = el('div', 'claim-id', t('assessment')); label.append(el('span', `status ${claimClass(claim.assessment)}`, t(claim.assessment))); body.append(label);
-  body.append(el('p', 'claim-summary', bi(claim.summary)));
-  if (claim.why) {
-    body.append(el('p', 'claim-reason', bi(claim.why)));
+  const explanation = el('div', 'claim-explanation');
+  explanation.setAttribute('aria-label', lang === 'zh' ? '解读正文' : 'Explanation text');
+  const evidenceMap = new Map(evidence.map(item => [item.id, item]));
+  const sourceMap = new Map(sources.map(item => [item.id, item]));
+  const traceTargets = new Map(), inlineEvidence = new Set(), citationNumbers = new Map();
+  function evidenceLink(label, id, className = 'inline-citation') {
+    const citation = link(label, `#trace-${claim.id}-${id}`, className, false);
+    const item = evidenceMap.get(id), source = sourceMap.get(item?.source_id);
+    citation.title = [source?.title, item?.locator].filter(Boolean).join(' · ');
+    citation.addEventListener('click', event => {
+      const target = traceTargets.get(id);
+      if (!target) return;
+      event.preventDefault(); pinned = true; syncPinButton();
+      for (let node = target.parentElement; node && node !== body; node = node.parentElement) if (node.tagName === 'DETAILS') node.open = true;
+      target.focus({ preventScroll: true }); target.scrollIntoView({ block: 'nearest', behavior: scrollBehavior() });
+    });
+    return citation;
   }
-  const supplemental = el('details', 'supporting-details');
-  supplemental.append(el('summary', '', t('supporting')));
-  const supporting = el('div', 'supporting-body');
-  const explanation = claim.story?.length ? claim.story : (claim.reasoning || []).map(text => ({ text }));
-  if (explanation.length) {
-    const story = el('section', 'story-section');
-    for (const paragraph of explanation) story.append(el('p', '', bi(paragraph.text)));
-    supporting.append(story);
+  function citationLabel(source) {
+    const author = source.authors.split(';')[0].trim();
+    const name = author.includes(',') ? author.split(',')[0] : author.split(/\s+/).at(-1);
+    return `${name} (${source.year ?? 'n.d.'})`;
   }
-  if (claim.limits.length) {
-    const box = el('div', 'limit-box'); box.append(el('strong', '', t('limits'))); claim.limits.forEach(r => box.append(el('p', '', bi(r)))); supporting.append(box);
-  }
-  if (claim.findings?.length) {
-    const section = el('section', 'detail-section'); section.append(el('h3', '', t('findings')));
-    for (const f of claim.findings) {
-      section.append(el('strong', 'node-finding', bi(f.label)), el('p', 'node-finding', bi(f.detail)));
-      for (const eid of f.evidence_ids) section.append(link(eid, `#node-${eid}`, 'node-source', false));
+  function appendCitedText(target, text) {
+    let cursor = 0, explicit = false;
+    for (const match of text.matchAll(/\[([^\]\n]+)\]\(evidence:([a-zA-Z0-9_.:-]+)\)/g)) {
+      target.append(document.createTextNode(text.slice(cursor, match.index)));
+      if (evidenceMap.has(match[2])) {
+        const label = /^\d+$/.test(match[1]) ? `[${match[1]}]` : match[1];
+        if (/^\d+$/.test(match[1])) citationNumbers.set(match[2], label);
+        target.append(evidenceLink(label, match[2])); inlineEvidence.add(match[2]); explicit = true;
+      } else target.append(document.createTextNode(match[1]));
+      cursor = match.index + match[0].length;
     }
-    supporting.append(section);
+    target.append(document.createTextNode(text.slice(cursor)));
+    return explicit;
   }
-  if (claim.quantities?.length) {
-    const section = el('section', 'detail-section'); section.append(el('h3', '', t('quantities')));
-    for (const q of claim.quantities) {
-      const box = el('div', 'quantity'); box.append(el('b', '', bi(q.label)), el('div', '', q.value), el('div', 'calculation', q.calculation), el('div', '', bi(q.interpretation))); section.append(box);
+  const seenText = new Set();
+  function paragraph(value, evidenceIds = []) {
+    const text = bi(value);
+    if (!text || seenText.has(text.trim())) return;
+    seenText.add(text.trim());
+    const pieces = text.split(/\n\s*\n/);
+    let p, explicit = false;
+    for (const piece of pieces) {
+      p = el('p'); explicit = appendCitedText(p, piece) || explicit; explanation.append(p);
     }
-    supporting.append(section);
+    const cited = new Set();
+    for (const id of explicit ? [] : evidenceIds) {
+      const item = evidenceMap.get(id), source = sourceMap.get(item?.source_id);
+      if (!source || cited.has(source.id)) continue;
+      cited.add(source.id);
+      p.append(evidenceLink(` [${citationLabel(source)}]`, id, 'inline-citation citation-fallback'));
+    }
   }
-  const chain = el('section', 'detail-section'); chain.append(el('h3', '', t('chain')));
-  const map = new Map(evidence.map(e => [e.id, e])), sourceMap = new Map(sources.map(s => [s.id, s])), shown = new Set();
-  function node(eid, depth = 0, edgeLabel) {
-    if (shown.has(eid)) {
-      const shared = link(`↳ ${edgeLabel ? edgeLabel + ' · ' : ''}${t('shared')} (${eid})`, `#node-${eid}`, 'node-branch', false);
-      shared.addEventListener('click', event => { event.preventDefault(); document.getElementById(`node-${eid}`)?.scrollIntoView({ block: 'nearest', behavior: scrollBehavior() }); });
-      chain.append(shared); return;
-    }
-    shown.add(eid);
-    const e = map.get(eid), source = sourceMap.get(e.source_id);
-    const block = el('div', 'evidence-node'); block.id = `node-${eid}`;
-    block.style.marginLeft = `${5 + Math.min(depth, 3) * 10}px`;
-    if (edgeLabel) block.append(el('div', 'node-branch', `↳ ${edgeLabel}`));
-    block.append(el('p', 'node-meta', `${t(e.role)} · ${t(e.relation === 'context' ? 'contextRelation' : e.relation)}`), el('p', 'node-finding', bi(e.finding)));
-    const citation = el('div', 'node-source');
-    if (source) citation.append(link(`${source.authors} · ${source.year ?? 'n.d.'}`, source.url)); else citation.append(el('span', '', t('sourceNone')));
-    citation.append(el('span', 'locator', e.locator)); block.append(citation);
-    const method = el('details', 'node-method'); method.append(el('summary', '', t('method')), el('p', '', bi(e.method))); block.append(method);
-    if (e.terminal) {
-      const terminal = el('div', `terminal ${e.terminal.kind}`); terminal.append(el('strong', '', `${t('terminal')} · ${t(e.terminal.kind)}`), document.createTextNode(bi(e.terminal.reason))); block.append(terminal);
-    }
-    chain.append(block);
-    for (const edge of e.depends_on) node(edge.evidence_id, depth + 1, edge.label ? bi(edge.label) : t(edge.relation === 'context' ? 'contextRelation' : edge.relation));
+  if (claim.explanation) {
+    paragraph(claim.explanation, claim.evidence_ids);
+  } else if (claim.story?.length) {
+    for (const item of claim.story) paragraph(item.text, item.evidence_ids || []);
+  } else {
+    paragraph(claim.why || claim.summary, claim.evidence_ids);
+    if (!claim.why) for (const item of claim.reasoning || []) paragraph(item);
   }
-  for (const eid of [...claim.evidence_ids, ...(claim.story || []).flatMap(p => p.evidence_ids), ...(claim.findings || []).flatMap(f => f.evidence_ids)]) node(eid);
-  supporting.append(chain);
-  const refs = el('details', 'detail-section detail-sources'); refs.append(el('summary', '', `${t('tertiary')} · ${sources.length}`));
-  for (const source of sources) {
-    const item = el('details'); item.append(el('summary', '', `${source.authors} (${source.year ?? 'n.d.'}). ${source.title}`));
-    item.append(el('p', '', `${t(source.access)} · ${t('updated')} ${source.retrieved_at}`), el('p', '', bi(source.note)), link(t('viewSource'), source.url));
-    if (source.doi) item.append(el('p', '', `DOI: ${source.doi}`));
-    if (source.local_path) {
-      const local = link(t('localSource'), `/${source.local_path}`, '', false);
-      local.download = source.local_path.split('/').pop();
-      item.append(el('p', '', ''), local);
-    }
-    refs.append(item);
+  for (const item of claim.limits || []) paragraph(item);
+  for (const item of claim.findings || []) paragraph(item.detail, item.evidence_ids);
+  for (const item of claim.quantities || []) {
+    paragraph(`${bi(item.label)}：${item.value}\n${item.calculation}\n${bi(item.interpretation)}`);
   }
-  supporting.append(refs); supplemental.append(supporting); body.append(supplemental);
+  body.append(explanation);
+  const trace = el('details', 'claim-trace');
+  trace.append(el('summary', '', lang === 'zh' ? '文献倒查链' : 'Trace cited evidence'));
+  const visited = new Set();
+  function traceNode(id) {
+    const item = evidenceMap.get(id);
+    if (!item) return el('p', '', lang === 'zh' ? '来源记录缺失' : 'Missing evidence record');
+    if (visited.has(id)) return evidenceLink(lang === 'zh' ? '查看上方同一依据 ↑' : 'See this evidence above ↑', id, 'trace-repeat');
+    visited.add(id);
+    const entry = el('div', 'trace-entry'), source = sourceMap.get(item.source_id);
+    entry.id = `trace-${claim.id}-${id}`; entry.tabIndex = -1; traceTargets.set(id, entry);
+    if (source) entry.append(link([citationNumbers.get(id), citationLabel(source)].filter(Boolean).join(' '), source.url, 'trace-source'));
+    if (bi(item.finding)) entry.append(el('p', 'trace-finding', bi(item.finding)));
+    const sourceDetails = el('details', 'trace-source-details');
+    sourceDetails.append(el('summary', '', t('refs')));
+    if (source) {
+      sourceDetails.append(link(source.title, source.url, 'source-title'), el('p', 'source-authors', `${source.authors} (${source.year ?? 'n.d.'})`));
+      sourceDetails.append(el('p', 'trace-access', `${t(source.access)} · ${t('updated')} ${source.retrieved_at}`));
+      if (bi(source.note)) sourceDetails.append(el('p', '', bi(source.note)));
+      if (source.local_path) sourceDetails.append(link(t('localSource'), `/${source.local_path}`, 'trace-local-source', false));
+    }
+    sourceDetails.append(el('p', 'trace-locator', item.locator));
+    if (item.quote) sourceDetails.append(el('blockquote', '', item.quote));
+    if (bi(item.method)) sourceDetails.append(el('p', 'trace-method', bi(item.method)));
+    if (item.terminal?.reason) sourceDetails.append(el('p', 'trace-stop', bi(item.terminal.reason)));
+    entry.append(sourceDetails);
+    for (const edge of item.depends_on || []) {
+      const branch = el('div', 'trace-branch');
+      branch.append(el('span', 'trace-relation', bi(edge.label) || (lang === 'zh' ? '依据来自 ↓' : 'Based on ↓')), traceNode(edge.evidence_id));
+      entry.append(branch);
+    }
+    return entry;
+  }
+  for (const id of new Set([...(claim.evidence_ids || []), ...(claim.story || []).flatMap(p => p.evidence_ids || []), ...(claim.findings || []).flatMap(p => p.evidence_ids || []), ...inlineEvidence])) if (!visited.has(id)) trace.append(traceNode(id));
+  if (visited.size) body.append(trace);
   const foot = el('div', 'panel-foot'); foot.append(el('span', '', `${t('updated')} ${paper.paper.audited_at}`), link(t('copyLink'), `/?paper=${encodeURIComponent(paper.paper.id)}&claim=${encodeURIComponent(claim.id)}&lang=${lang}`, '', false)); body.append(foot);
   typeset(body);
   panel.append(body);

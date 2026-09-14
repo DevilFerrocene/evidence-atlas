@@ -97,6 +97,26 @@
             },
             "additionalProperties": false
           }
+        },
+        "full_text": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "source_id",
+            "language"
+          ],
+          "properties": {
+            "source_id": {
+              "$ref": "#/definitions/id"
+            },
+            "language": {
+              "enum": [
+                "en",
+                "zh"
+              ]
+            }
+          },
+          "description": "Published bilingual article: source_id identifies the complete UTF-8 article text. Its content must match all original-language paragraph segments in order, ignoring whitespace. Verify source completeness against the article before publication."
         }
       }
     },
@@ -147,11 +167,11 @@
                 },
                 "en": {
                   "type": "string",
-                  "minLength": 1
+                  "minLength": 0
                 },
                 "zh": {
                   "type": "string",
-                  "minLength": 1
+                  "minLength": 0
                 },
                 "kind": {
                   "enum": [
@@ -177,16 +197,14 @@
     },
     "claims": {
       "type": "array",
-      "minItems": 1,
+      "minItems": 0,
       "items": {
         "type": "object",
         "additionalProperties": false,
         "required": [
           "id",
-          "title",
           "kind",
           "assessment",
-          "summary",
           "limits",
           "segment_ids",
           "evidence_ids"
@@ -339,13 +357,38 @@
                 }
               }
             }
+          },
+          "explanation": {
+            "$ref": "#/definitions/bi"
           }
-        }
+        },
+        "anyOf": [
+          {
+            "properties": {
+              "explanation": {
+                "$ref": "#/definitions/bi"
+              }
+            },
+            "required": [
+              "explanation"
+            ]
+          },
+          {
+            "properties": {
+              "summary": {
+                "$ref": "#/definitions/bi"
+              }
+            },
+            "required": [
+              "summary"
+            ]
+          }
+        ]
       }
     },
     "evidence": {
       "type": "array",
-      "minItems": 1,
+      "minItems": 0,
       "items": {
         "type": "object",
         "additionalProperties": false,
@@ -355,7 +398,6 @@
           "locator",
           "role",
           "relation",
-          "finding",
           "method",
           "depends_on"
         ],
@@ -430,6 +472,10 @@
                 "$ref": "#/definitions/bi"
               }
             }
+          },
+          "quote": {
+            "type": "string",
+            "minLength": 1
           }
         }
       }
@@ -445,7 +491,6 @@
           "title",
           "authors",
           "year",
-          "url",
           "type",
           "access",
           "retrieved_at",
@@ -512,11 +557,6 @@
           "id",
           "number",
           "source_id",
-          "page",
-          "pdf_figure_number",
-          "page_crop",
-          "original_path",
-          "image_size",
           "caption",
           "full_caption",
           "source_note",
@@ -793,8 +833,58 @@
                 }
               }
             }
+          },
+          "availability": {
+            "enum": [
+              "available",
+              "missing"
+            ]
+          },
+          "source_url": {
+            "type": "string"
+          },
+          "access_detail": {
+            "type": "string"
           }
-        }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "availability": {
+                  "const": "missing"
+                }
+              },
+              "required": [
+                "availability"
+              ]
+            },
+            "then": {
+              "required": [
+                "source_url"
+              ],
+              "properties": {
+                "features": {
+                  "type": "array",
+                  "maxItems": 0
+                },
+                "source_url": {
+                  "type": "string"
+                }
+              }
+            },
+            "else": {
+              "required": [
+                "original_path",
+                "image_size"
+              ],
+              "properties": {
+                "original_path": {},
+                "image_size": {}
+              }
+            }
+          }
+        ]
       }
     }
   },

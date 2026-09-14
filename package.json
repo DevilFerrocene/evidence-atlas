@@ -14,13 +14,16 @@
     "agent": "node agent/loop.mjs",
     "validate": "node scripts/cli.mjs validate",
     "import": "node scripts/cli.mjs import",
-    "export": "node scripts/cli.mjs export"
+    "export": "node scripts/cli.mjs export",
+    "literature": "node scripts/literature.mjs",
+    "test:smoke": "node --test tests/smoke.test.mjs"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "1.30.0",
     "@napi-rs/canvas": "1.0.9",
     "ajv": "8.20.0",
     "katex": "0.18.7",
+    "linkedom": "0.18.12",
     "pdfjs-dist": "6.3.289",
     "zod": "4.6.2"
   },

@@ -131,6 +131,11 @@ export class Workspace {
   }
 
   async startRun(kind) {
+    if (kind === 'tool-call') {
+      const relativeDir = 'runs/tool-calls';
+      await this.ensureDirectory(relativeDir);
+      return new AgentRun(this, relativeDir, kind);
+    }
     const id = `${new Date().toISOString().replace(/[:.]/g, '-')}-${randomUUID().slice(0, 8)}`;
     const relativeDir = path.posix.join('runs', id);
     await this.ensureDirectory(relativeDir);
@@ -164,8 +169,7 @@ export class AgentRun {
 
   async copyBundledContract() {
     const sourceFiles = [
-      ['SKILL.md', 'contract/SKILL.md'],
-      ['schemas/paper.schema.json', 'contract/paper.schema.json']
+      ['SKILL.md', 'contract/instructions.txt']
     ];
     for (const [sourceRelative, destinationRelative] of sourceFiles) {
       const source = path.join(ROOT, sourceRelative);
@@ -185,6 +189,9 @@ export class AgentRun {
   }
 
   async event(type, data = {}) {
+    if (this.kind === 'tool-call' && ['tool_succeeded', 'tool_failed'].includes(type)) {
+      data = { name: data.name, ...(data.error ? { error: data.error } : {}) };
+    }
     const line = `${this.safeJson({ at: new Date().toISOString(), type, data })}\n`;
     const relative = path.posix.join(this.relativeDir, 'events.jsonl');
     const append = this.eventQueue.catch(() => {}).then(async () => {

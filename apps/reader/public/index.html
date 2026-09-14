@@ -17,7 +17,7 @@
     <a class="brand" href="/" aria-label="Evidence Atlas"><span class="brand-mark">循</span><span id="brand-name">循证<span class="brand-en">EVIDENCE ATLAS</span></span></a>
     <div class="toolbar">
       <label for="paper-select" class="sr-only" id="select-label">选择文献</label><select id="paper-select" hidden></select>
-      <span class="local-tag" id="local-label">本地文献库</span>
+      <button type="button" class="local-tag" id="local-label">文献库 · 分类</button>
       <div class="language" role="group" aria-label="Language"><button id="lang-zh" lang="zh-CN" aria-pressed="true">中文</button><button id="lang-en" lang="en" aria-pressed="false">English</button></div>
     </div>
   </header>
@@ -25,7 +25,7 @@
   <main id="workspace" class="workspace">
     <nav class="outline" id="outline" aria-label="文献导航"></nav>
     <article id="paper" class="paper" tabindex="-1"><p class="loading">正在读取文献…</p></article>
-    <aside id="evidence-panel" class="evidence-panel" aria-label="观点详情"></aside>
+    <aside id="evidence-panel" class="evidence-panel" aria-label="解读"></aside>
   </main>
   <footer id="footer"></footer>
 </body>

@@ -4,6 +4,9 @@ import { randomUUID } from 'node:crypto';
 import { DATA_DIR, EXAMPLE_DIR, WORKSPACE_DIR } from './paths.mjs';
 import { readDataset, loadLibrary } from './dataset.mjs';
 
+import { requireFullText } from './full-text.mjs';
+import { openResearchStore } from './research-store.mjs';
+
 export { loadLibrary } from './dataset.mjs';
 
 async function insideFile(base, localPath) {
@@ -23,15 +26,16 @@ export async function initializeLibrary({ dataDir = DATA_DIR, workspaceDir = WOR
   const imported = [];
   if (examples) {
     for (const name of (await readdir(resolve(EXAMPLE_DIR, 'papers'))).filter(n => n.endsWith('.json')).sort()) {
-      const result = await publishBundle({ file: resolve(EXAMPLE_DIR, 'papers', name), sourceDir: EXAMPLE_DIR, dataDir });
+      const result = await publishBundle({ file: resolve(EXAMPLE_DIR, 'papers', name), sourceDir: EXAMPLE_DIR, dataDir, bundledExample: true });
       imported.push(result.id);
     }
   }
   return { workspace: workspaceDir, library: dataDir, imported };
 }
 
-export async function publishBundle({ file, sourceDir = dirname(resolve(file)), replace = false, dataDir = DATA_DIR }) {
+export async function publishBundle({ file, sourceDir = dirname(resolve(file)), replace = false, dataDir = DATA_DIR, bundledExample = false }) {
   const data = await readDataset(resolve(file));
+  if (!bundledExample) await requireFullText(data, async localPath => readFile(await insideFile(sourceDir, localPath), 'utf8'));
   await mkdir(dataDir, { recursive: true });
   const libraryBase = resolve(dataDir, '..');
   const sourcesDir = resolve(libraryBase, 'sources');
@@ -48,6 +52,7 @@ export async function publishBundle({ file, sourceDir = dirname(resolve(file)), 
   try {
     const library = await loadLibrary(dataDir);
     if (library.has(data.paper.id) && !replace) throw new Error(`Paper exists: ${data.paper.id}; use replace explicitly`);
+    const previous = library.get(data.paper.id);
     const inputs = new Map();
     for (const source of data.sources.filter(s => s.local_path)) {
       if (!inputs.has(source.local_path)) inputs.set(source.local_path, await insideFile(sourceDir, source.local_path));
@@ -55,6 +60,20 @@ export async function publishBundle({ file, sourceDir = dirname(resolve(file)), 
     const revision = randomUUID();
     const paths = new Map();
     for (const [original, input] of inputs) {
+      const sourceIds = new Set(data.sources.filter(s => s.local_path === original).map(s => s.id));
+      const oldSource = previous?.sources.find(s => sourceIds.has(s.id) && s.local_path);
+      if (oldSource) {
+        try {
+          const existing = await insideFile(libraryBase, oldSource.local_path);
+          const [before, after] = await Promise.all([readFile(existing), readFile(input)]);
+          if (before.equals(after)) {
+            paths.set(original, oldSource.local_path);
+            continue;
+          }
+        } catch (error) {
+          if (error.code !== 'ENOENT') throw error;
+        }
+      }
       const localPath = `sources/${data.paper.id}-${revision}-${basename(original)}`;
       const output = resolve(libraryBase, localPath);
       await copyFile(input, output, 1);
@@ -62,11 +81,14 @@ export async function publishBundle({ file, sourceDir = dirname(resolve(file)), 
       paths.set(original, localPath);
     }
     for (const source of data.sources) if (source.local_path) source.local_path = paths.get(source.local_path);
-    for (const figure of data.figures || []) figure.original_path = paths.get(figure.original_path);
+    for (const figure of data.figures || []) if (figure.original_path) figure.original_path = paths.get(figure.original_path);
     await writeFile(temporary, JSON.stringify(data, null, 2) + '\n', { flag: 'wx' });
+    const store = await openResearchStore(process.env.EVIDENCE_RESEARCH_DIR || resolve(WORKSPACE_DIR, 'research-library'));
+    let archived;
+    try { archived = await store.ingest(data, libraryBase); } finally { store.close(); }
     await rename(temporary, destination);
     committed = true;
-    return { id: data.paper.id, path: destination };
+    return { id: data.paper.id, path: destination, ...archived };
   } finally {
     await rm(temporary, { force: true });
     if (!committed) for (const path of created) await rm(path, { force: true });

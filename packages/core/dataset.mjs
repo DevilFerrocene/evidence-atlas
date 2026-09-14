@@ -27,7 +27,7 @@ export function validateDataset(data) {
   const requireRef = (map, id, from) => { if (!map.has(id)) errors.push(`${from}: missing reference ${id}`); };
   for (const p of data.paper.sections || []) requireRef(paragraphs, p.paragraph_id, 'section');
   for (const s of segments.values()) {
-    if (!s.claim_ids.length && (s.kind !== 'context' || !s.exclusion_reason)) errors.push(`${s.id}: unannotated text needs context kind and exclusion_reason`);
+    if (!s.claim_ids.length && !['context', 'equation'].includes(s.kind)) errors.push(`${s.id}: unannotated text needs context or equation kind`);
     for (const id of s.claim_ids) {
       requireRef(claims, id, s.id);
       if (claims.has(id) && !claims.get(id).segment_ids.includes(s.id)) errors.push(`${s.id}: ${id} lacks reverse anchor`);
@@ -53,7 +53,7 @@ export function validateDataset(data) {
     requireRef(segments, figure.placement.after_segment_id, figure.id);
     const placementParagraph = paragraphs.get(figure.placement.paragraph_id);
     if (placementParagraph && !placementParagraph.segments.some(s => s.id === figure.placement.after_segment_id)) errors.push(`${figure.id}: placement segment must belong to its placement paragraph`);
-    if (sources.has(figure.source_id) && sources.get(figure.source_id).local_path !== figure.original_path) errors.push(`${figure.id}: original_path must be the local asset of its source`);
+    if (figure.availability !== 'missing' && sources.has(figure.source_id) && sources.get(figure.source_id).local_path !== figure.original_path) errors.push(`${figure.id}: original_path must be the local asset of its source`);
     const featureMap = index(figure.features, `${figure.id} feature`);
     const featureIds = new Set();
     const rect = (r, label) => {

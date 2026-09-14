@@ -4,7 +4,6 @@ import { createCanvas, loadImage } from '@napi-rs/canvas';
 import { getDocument } from 'pdfjs-dist/legacy/build/pdf.mjs';
 
 const MAX_PDF_BYTES = 50_000_000;
-const MAX_PDF_PAGES = 10;
 const MAX_TEXT_CHARS = 200_000;
 const MAX_PIXELS = 16_000_000;
 const MAX_RENDER_BYTES = 12_000_000;
@@ -32,27 +31,68 @@ function outputBase(relativePath, page) {
   return `${stem}-page-${page}.png`;
 }
 
+function textLayout(content) {
+  const lines = [];
+  let items = [];
+  const flush = () => {
+    const visible = items.filter(item => item.str?.trim());
+    if (visible.length) {
+      lines.push({ text: items.map(item => item.str).join(' ').replace(/\s+/gu, ' ').trim(),
+        x: Math.min(...visible.map(item => item.transform[4])),
+        y: visible[0].transform[5],
+        width: Math.max(...visible.map(item => item.transform[4] + item.width)) - Math.min(...visible.map(item => item.transform[4])),
+        height: Math.max(...visible.map(item => item.height || 1)) });
+    }
+    items = [];
+  };
+  for (const item of content.items) {
+    if (typeof item.str !== 'string') continue;
+    items.push(item);
+    if (item.hasEOL) flush();
+  }
+  flush();
+  const heights = lines.map(line => line.height).sort((a, b) => a - b);
+  const size = heights[Math.floor(heights.length / 2)] || 10;
+  const prose = lines.filter(line => line.text.length > 45);
+  const margin = prose.length ? Math.min(...prose.map(line => line.x)) : 0;
+  const paragraphs = [];
+  for (const [index, line] of lines.entries()) {
+    const previous = lines[index - 1];
+    const gap = previous ? previous.y - line.y : 0;
+    const separated = !previous || (!/^[.,;:!?，。；：！？]+$/u.test(line.text) &&
+      (gap > Math.max(size, line.height, previous.height) * 1.65 ||
+      (line.x > margin + size * 0.8 && line.text.length > 45 && previous.x <= margin + size * 0.5)));
+    if (separated) paragraphs.push([]);
+    paragraphs.at(-1).push(line.text);
+  }
+  return { lines, paragraphs: paragraphs.map(lines => lines.join('\n')) };
+}
+
 export async function extractPdfText(workspace, relativePath, options = {}) {
   const loaded = await loadPdf(workspace, relativePath);
   const { document, task } = loaded;
   try {
     const from = boundedInteger(options.page ?? 1, 'page', { max: document.numPages });
-    const to = boundedInteger(options.page_end ?? from, 'page_end', { min: from, max: document.numPages });
-    if (to - from + 1 > MAX_PDF_PAGES) fail(`At most ${MAX_PDF_PAGES} pages may be extracted at once.`);
-    let remaining = MAX_TEXT_CHARS;
+    const to = boundedInteger(options.page_end ?? (options.allPages ? document.numPages : from), 'page_end', { min: from, max: document.numPages });
+    let remaining = options.allPages ? Infinity : MAX_TEXT_CHARS;
     const pages = [];
     for (let pageNo = from; pageNo <= to; pageNo += 1) {
       const page = await document.getPage(pageNo);
       const content = await page.getTextContent({ includeMarkedContent: false, disableNormalization: false });
-      const raw = content.items.filter(item => typeof item.str === 'string').map(item => item.str).join(' ').replace(/\s+/g, ' ').trim();
+      const layout = textLayout(content);
+      const raw = layout.paragraphs.join('\n\n');
       const text = raw.slice(0, remaining);
       remaining -= text.length;
-      pages.push({ page: pageNo, text, text_available: Boolean(raw), truncated: raw.length > text.length });
+      pages.push({ page: pageNo, text, text_available: Boolean(raw), truncated: raw.length > text.length,
+        paragraph_count: layout.paragraphs.length,
+        layout: options.allPages && raw.length <= text.length ? layout : undefined });
       if (remaining <= 0) break;
     }
     const truncated = pages.length < to - from + 1 || pages.some(page => page.truncated);
     return {
       file: relativePath, page_count: document.numPages, requested_pages: [from, to], pages, truncated,
+      next_page: pages.at(-1)?.page < document.numPages ? pages.at(-1).page + 1 : null,
+      layout_notice: 'Line positions and suggested paragraph breaks retain PDF text order. Fractions, scripts, columns and page boundaries still require comparison with the rendered source; extraction is not mathematical transcription.',
       notice: pages.some(page => !page.text_available)
         ? 'One or more requested pages contain no extractable text. Render the page for visual inspection; this tool does not perform OCR.'
         : undefined
@@ -60,6 +100,15 @@ export async function extractPdfText(workspace, relativePath, options = {}) {
   } finally {
     await task.destroy();
   }
+}
+
+export async function extractPdfSource(workspace, relativePath) {
+  const result = await extractPdfText(workspace, relativePath, { allPages: true });
+  return { text: result.pages.map(page => page.text).join('\n\n'), pages: result.pages,
+    source_pdf: relativePath, page_count: result.page_count,
+    access_state: result.pages.every(page => page.text_available) ? 'provided_full_text' : 'provided_excerpt',
+    extraction_notice: result.layout_notice, extraction_warning: result.notice,
+    text_truncated: result.truncated };
 }
 
 export async function renderPdfPage(workspace, run, relativePath, options = {}) {

@@ -1,6 +1,7 @@
+import { logEvent } from '../packages/core/logging.mjs';
 import { randomUUID } from 'node:crypto';
 import { constants as fsConstants } from 'node:fs';
-import { access, appendFile, lstat, mkdir, open, readFile, realpath, readdir, stat, writeFile } from 'node:fs/promises';
+import { access, lstat, mkdir, open, readFile, realpath, readdir, stat, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { ROOT, WORKSPACE_DIR } from '../packages/core/paths.mjs';
 
@@ -150,6 +151,7 @@ export class AgentRun {
     this.workspace = workspace;
     this.relativeDir = relativeDir;
     this.kind = kind;
+    this.traceId = randomUUID();
     this.status = 'running';
     this.published = false;
     this.validated = false;
@@ -189,17 +191,14 @@ export class AgentRun {
   }
 
   async event(type, data = {}) {
-    if (this.kind === 'tool-call' && ['tool_succeeded', 'tool_failed'].includes(type)) {
-      data = { name: data.name, ...(data.error ? { error: data.error } : {}) };
-    }
-    const line = `${this.safeJson({ at: new Date().toISOString(), type, data })}\n`;
-    const relative = path.posix.join(this.relativeDir, 'events.jsonl');
-    const append = this.eventQueue.catch(() => {}).then(async () => {
-      const target = await this.workspace.pathFor(relative);
-      await appendFile(target, line, { encoding: 'utf8', flag: 'a' });
+    const summary = { ...data };
+    delete summary.arguments;
+    delete summary.result;
+    await logEvent('agent', {
+      event: type, level: /fail|error/.test(type) ? 'error' : 'info',
+      trace_id: this.traceId, run_id: this.relativeDir,
+      data: JSON.parse(this.safeJson(summary))
     });
-    this.eventQueue = append;
-    await append;
   }
 
   async setStatus(status, detail = {}) {

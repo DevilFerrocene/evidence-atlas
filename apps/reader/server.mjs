@@ -1,10 +1,11 @@
+import { logEvent } from '../../packages/core/logging.mjs';
 import http from 'node:http';
 import { createCatalog, CatalogError } from '../../packages/core/catalog.mjs';
 import { readFile } from 'node:fs/promises';
 import { resolve, extname } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { openResearchStore } from '../../packages/core/research-store.mjs';
-import { WORKSPACE_DIR } from '../../packages/core/paths.mjs';
+import { WORKSPACE_DIR, RESEARCH_DIR } from '../../packages/core/paths.mjs';
 import { ROOT, DATA_DIR, SOURCE_DIR, schema, loadLibrary, coverage, getClaimDetail } from '../../packages/core/dataset.mjs';
 
 const mime = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.mjs': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.json': 'application/json; charset=utf-8', '.png': 'image/png', '.woff2': 'font/woff2', '.woff': 'font/woff', '.ttf': 'font/ttf', '.pdf': 'application/pdf', '.txt': 'text/plain; charset=utf-8' };
@@ -49,7 +50,7 @@ const server = http.createServer(async (req, res) => {
     }
     if (path === '/api/catalog') return json(res, 200, await catalog.read());
     if (path === '/api/research' || path.startsWith('/api/research/')) {
-      const store = await openResearchStore(process.env.EVIDENCE_RESEARCH_DIR || resolve(WORKSPACE_DIR, 'research-library'));
+      const store = await openResearchStore(RESEARCH_DIR);
       try {
         const parts = path.split('/').filter(Boolean);
         let result;
@@ -88,7 +89,7 @@ const server = http.createServer(async (req, res) => {
     return json(res, 404, { error: 'Not found' });
   } catch (error) {
     if (error instanceof CatalogError) return json(res, error.status, { error: error.message });
-    console.error(error.message);
+    void logEvent('reader', { event: 'request_failed', level: 'error', error: error.message });
     if (!res.headersSent) json(res, error instanceof URIError ? 400 : 500, { error: error instanceof URIError ? 'Invalid URL' : 'Could not read the requested resource' });
     else res.end();
   }

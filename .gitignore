@@ -10,3 +10,9 @@ cases/
 !.env.example
 workspace/
 *.tgz
+
+# Local research data
+/data/
+/workspace
+/deliverables
+/cases

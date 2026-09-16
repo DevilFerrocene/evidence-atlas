@@ -127,11 +127,12 @@ services:
       LITERATURE_PUBLISHER_POLICY: /config/publishers.json
       LITERATURE_PROBES_CONFIG: /config/probes.json
       LITERATURE_HEALTH_REPORT: /state/reports/latest.json
-      LITERATURE_REQUEST_LOG_DIR: /state/reports/requests
+      LITERATURE_REQUEST_LOG_DIR: /logs
       LITERATURE_REQUEST_LOG_HOST_DIR: ${LITERATURE_REQUEST_LOG_HOST_DIR:-}
     volumes:
       - ./config:/config:ro
       - ${LITERATURE_PUBLISHER_POLICY_FILE:-./config/publishers.json}:/config/publishers.json:ro
+      - ${LITERATURE_LOG_DIR:-${LITERATURE_STATE_DIR:-./state}/reports/requests}:/logs
       - ${LITERATURE_STATE_DIR:-./state}/reports:/state/reports
       - ${LITERATURE_DOWNLOADS_DIR:-${LITERATURE_STATE_DIR:-./state}/downloads}:/downloads
     profiles:
@@ -160,6 +161,7 @@ services:
     volumes:
       - ./config:/config:ro
       - ${LITERATURE_PUBLISHER_POLICY_FILE:-./config/publishers.json}:/config/publishers.json:ro
+      - ${LITERATURE_LOG_DIR:-${LITERATURE_STATE_DIR:-./state}/reports/requests}:/logs
       - ${LITERATURE_STATE_DIR:-./state}/reports:/state/reports
       - ${RESEARCH_GATEWAY_KEYS_DIR:-${LITERATURE_STATE_DIR:-./state}/private/research-gateway}:/run/secrets/research-gateway:ro
       - ${RESEARCH_GATEWAY_AUDIT_DIR:-${LITERATURE_STATE_DIR:-./state}/audit}:/state/audit
@@ -246,6 +248,7 @@ services:
     volumes:
       - ./config:/config:ro
       - ${LITERATURE_PUBLISHER_POLICY_FILE:-./config/publishers.json}:/config/publishers.json:ro
+      - ${LITERATURE_LOG_DIR:-${LITERATURE_STATE_DIR:-./state}/reports/requests}:/logs
       - ${LITERATURE_STATE_DIR:-./state}/reports:/state/reports
     depends_on:
       browser:

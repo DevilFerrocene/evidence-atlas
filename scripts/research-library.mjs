@@ -2,9 +2,9 @@
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { resolve, dirname } from 'node:path';
 import { openResearchStore } from '../packages/core/research-store.mjs';
-import { WORKSPACE_DIR } from '../packages/core/paths.mjs';
+import { WORKSPACE_DIR, RESEARCH_DIR } from '../packages/core/paths.mjs';
 const [command,...args]=process.argv.slice(2);
-const store=await openResearchStore(process.env.EVIDENCE_RESEARCH_DIR||resolve(WORKSPACE_DIR,'research-library'));
+const store=await openResearchStore(RESEARCH_DIR);
 try{
  let result;
  if(command==='import'){

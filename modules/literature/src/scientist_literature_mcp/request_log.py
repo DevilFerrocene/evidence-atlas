@@ -42,7 +42,7 @@ def log_location() -> str:
     return str(Path(os.environ.get("LITERATURE_REQUEST_LOG_HOST_DIR") or log_directory()) / "requests.jsonl")
 
 
-def append_event(event: dict) -> None:
+def _append_event(event: dict) -> None:
     directory = log_directory()
     directory.mkdir(mode=0o700, parents=True, exist_ok=True)
     destination = directory / "requests.jsonl"
@@ -88,3 +88,11 @@ def outcome_details(value: dict) -> dict:
                            if key in item and isinstance(item[key], (str, int, bool, type(None)))}
                           for item in (value.get("figures") or [])[:30] if isinstance(item, dict)] if isinstance(value.get("figures", []), list) else []
     return result
+
+
+def append_event(event: dict) -> None:
+    try:
+        _append_event({"module": "literature", "level": "info", **event})
+    except OSError as error:
+        import sys
+        print(f"Log write failed: {type(error).__name__}", file=sys.stderr)

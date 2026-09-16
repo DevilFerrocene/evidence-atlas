@@ -1,8 +1,10 @@
 #!/usr/bin/env node
 import { existsSync } from 'node:fs';
 import { resolve } from 'node:path';
-import { ROOT } from '../packages/core/paths.mjs';
+import { ROOT, LOG_DIR } from '../packages/core/paths.mjs';
 import { startBridge } from '../agent/literature-bridge.mjs';
+process.env.LITERATURE_LOG_DIR = resolve(LOG_DIR, 'literature');
+process.env.LITERATURE_REQUEST_LOG_HOST_DIR = process.env.LITERATURE_LOG_DIR;
 const legacy = resolve(ROOT, '../Scientist-literature-browser-mcp');
 const state = process.env.LITERATURE_STATE_DIR || resolve(legacy, 'state');
 process.env.LITERATURE_STATE_DIR = state;

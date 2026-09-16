@@ -1,7 +1,7 @@
 import { readFile, writeFile, mkdir, copyFile, readdir, realpath, stat, rename, rm } from 'node:fs/promises';
 import { resolve, dirname, basename, relative, isAbsolute } from 'node:path';
 import { randomUUID } from 'node:crypto';
-import { DATA_DIR, EXAMPLE_DIR, WORKSPACE_DIR } from './paths.mjs';
+import { DATA_DIR, EXAMPLE_DIR, WORKSPACE_DIR, RESEARCH_DIR } from './paths.mjs';
 import { readDataset, loadLibrary } from './dataset.mjs';
 
 import { requireFullText } from './full-text.mjs';
@@ -83,7 +83,7 @@ export async function publishBundle({ file, sourceDir = dirname(resolve(file)), 
     for (const source of data.sources) if (source.local_path) source.local_path = paths.get(source.local_path);
     for (const figure of data.figures || []) if (figure.original_path) figure.original_path = paths.get(figure.original_path);
     await writeFile(temporary, JSON.stringify(data, null, 2) + '\n', { flag: 'wx' });
-    const store = await openResearchStore(process.env.EVIDENCE_RESEARCH_DIR || resolve(WORKSPACE_DIR, 'research-library'));
+    const store = await openResearchStore(RESEARCH_DIR);
     let archived;
     try { archived = await store.ingest(data, libraryBase); } finally { store.close(); }
     await rename(temporary, destination);

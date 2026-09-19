@@ -117,6 +117,37 @@
             }
           },
           "description": "Published bilingual article: source_id identifies the complete UTF-8 article text. Its content must match all original-language paragraph segments in order, ignoring whitespace. Verify source completeness against the article before publication."
+        },
+        "trace_policy": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "max_depth": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 12
+            },
+            "mode": {
+              "enum": [
+                "targeted",
+                "balanced",
+                "deep"
+              ]
+            },
+            "crosscheck": {
+              "enum": [
+                "off",
+                "when-needed",
+                "always-for-core"
+              ]
+            },
+            "stop_conditions": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
         }
       }
     },

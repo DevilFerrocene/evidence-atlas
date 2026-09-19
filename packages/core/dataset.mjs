@@ -42,6 +42,17 @@ export function validateDataset(data) {
     for (const paragraph of c.story || []) for (const id of paragraph.evidence_ids) requireRef(evidence, id, c.id);
     for (const f of c.findings || []) for (const id of f.evidence_ids) requireRef(evidence, id, c.id);
   }
+  const policy = data.paper.trace_policy;
+  const depthMemo = new Map();
+  const depth = (id, visiting = new Set()) => {
+    if (depthMemo.has(id)) return depthMemo.get(id);
+    if (visiting.has(id)) return 0;
+    visiting.add(id);
+    const item = evidence.get(id), value = item?.depends_on?.length ? 1 + Math.max(...item.depends_on.map(edge => depth(edge.evidence_id, visiting))) : 0;
+    visiting.delete(id); depthMemo.set(id, value); return value;
+  };
+  for (const id of evidence.keys()) depth(id);
+  if (policy?.max_depth !== undefined) for (const [id, value] of depthMemo) if (value > policy.max_depth) errors.push(`${id}: trace depth ${value} exceeds policy max_depth ${policy.max_depth}`);
   for (const e of evidence.values()) {
     if (e.source_id !== null) requireRef(sources, e.source_id, e.id);
     if (!e.depends_on.length && !e.terminal) errors.push(`${e.id}: leaf must explain where the investigation stops`);
@@ -109,7 +120,10 @@ export function coverage(data) {
   const excluded = segments.length - annotated;
   const statuses = {};
   for (const c of data.claims) statuses[c.assessment] = (statuses[c.assessment] || 0) + 1;
-  return { paragraphs: data.paragraphs.length, segments: segments.length, annotated_segments: annotated, excluded_context_segments: excluded, claims: data.claims.length, sources: data.sources.length, figures: (data.figures || []).length, evidence_nodes: data.evidence.length, statuses };
+  const evidenceMap = new Map(data.evidence.map(e => [e.id, e]));
+  const depth = (id, seen = new Set()) => { if (seen.has(id)) return 0; seen.add(id); const e = evidenceMap.get(id); return e?.depends_on?.length ? 1 + Math.max(...e.depends_on.map(d => depth(d.evidence_id, new Set(seen)))) : 0; };
+  const depths = data.evidence.map(e => depth(e.id));
+  return { paragraphs: data.paragraphs.length, segments: segments.length, annotated_segments: annotated, excluded_context_segments: excluded, claims: data.claims.length, sources: data.sources.length, figures: (data.figures || []).length, evidence_nodes: data.evidence.length, statuses, trace: { max_depth: depths.length ? Math.max(...depths) : 0, policy: data.paper.trace_policy || null } };
 }
 
 export async function readDataset(path) {

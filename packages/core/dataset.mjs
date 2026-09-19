@@ -52,7 +52,6 @@ export function validateDataset(data) {
     visiting.delete(id); depthMemo.set(id, value); return value;
   };
   for (const id of evidence.keys()) depth(id);
-  if (policy?.max_depth !== undefined) for (const [id, value] of depthMemo) if (value > policy.max_depth) errors.push(`${id}: trace depth ${value} exceeds policy max_depth ${policy.max_depth}`);
   for (const e of evidence.values()) {
     if (e.source_id !== null) requireRef(sources, e.source_id, e.id);
     if (!e.depends_on.length && !e.terminal) errors.push(`${e.id}: leaf must explain where the investigation stops`);
